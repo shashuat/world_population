@@ -211,82 +211,106 @@ const AnimationViz = {
             });
         });
     },
-    
     /**
-     * Update visualization for given year
-     */
-    update(year) {
-        this.state.currentYear = year;
-        
-        // Update displays
-        d3.select('#year-display').text(year);
-        document.getElementById('anim-slider-label').textContent = year;
-        document.getElementById('anim-year-slider').value = year;
-        
-        // Filter data for current year
-        const yearData = this.data.filter(d => 
-            d.year === year && d.region !== 'Unknown');
-        
-        // Tooltip
-        const tooltip = d3.select('#tooltip');
-        const self = this;
-        
-        // Data join
-        const circles = this.svg.selectAll('.circle')
-            .data(yearData, d => d.country);
-        
-        // Enter
-        circles.enter()
-            .append('circle')
-            .attr('class', 'circle')
-            .attr('cx', d => this.xScale(d.fertility))
-            .attr('cy', d => this.yScale(d.lifeExpectancy))
-            .attr('r', 0)
-            .attr('fill', d => this.colorScale(d.region))
-            .attr('fill-opacity', 0.7)
-            .attr('stroke', '#333')
-            .attr('stroke-width', 1)
-            .on('mouseover', function(d) {
-                d3.select(this)
-                    .raise()
-                    .transition()
-                    .duration(100)
-                    .attr('r', self.sizeScale(d.population) * 1.3);
-                
-                tooltip
-                    .style('display', 'block')
-                    .style('left', d3.event.pageX + 10 + 'px')
-                    .style('top', d3.event.pageY - 10 + 'px')
-                    .html(`
-                        <div style="font-weight: 600; margin-bottom: 4px;">${d.country}</div>
-                        <div>Year: ${d.year}</div>
-                        <div>Fertility: ${d.fertility.toFixed(2)} births/woman</div>
-                        <div>Life Expectancy: ${d.lifeExpectancy.toFixed(1)} years</div>
-                        <div>Population: ${d3.format(',.0f')(d.population)}k (${d3.format(',.1f')(d.population/1000)}M)</div>
-                    `);
-            })
-            .on('mouseout', function(d) {
-                d3.select(this)
-                    .transition()
-                    .duration(200)
-                    .attr('r', self.sizeScale(d.population));
-                
-                tooltip.style('display', 'none');
-            })
-            .merge(circles)
-            .transition()
-            .duration(this.state.animationSpeed * 0.8)
-            .attr('cx', d => this.xScale(d.fertility))
-            .attr('cy', d => this.yScale(d.lifeExpectancy))
-            .attr('r', d => this.sizeScale(d.population));
-        
-        // Exit
-        circles.exit()
-            .transition()
-            .duration(this.state.animationSpeed * 0.3)
-            .attr('r', 0)
-            .remove();
-    },
+ * Update visualization for given year
+ */
+update(year) {
+    this.state.currentYear = year;
+    
+    // Update displays
+    d3.select('#year-display').text(year);
+    document.getElementById('anim-slider-label').textContent = year;
+    document.getElementById('anim-year-slider').value = year;
+    
+    // Filter data for current year
+    const yearData = this.data.filter(d => 
+        d.year === year && d.region !== 'Unknown');
+    
+    // Tooltip
+    const tooltip = d3.select('#tooltip');
+    const self = this;
+    
+    // Data join
+    const circles = this.svg.selectAll('.circle')
+        .data(yearData, d => d.country);
+    
+    // Enter + Update
+    circles.enter()
+        .append('circle')
+        .attr('class', 'circle')
+        .attr('cx', d => this.xScale(d.fertility))
+        .attr('cy', d => this.yScale(d.lifeExpectancy))
+        .attr('r', 0)
+        .attr('fill', d => this.colorScale(d.region))
+        .attr('fill-opacity', 0.7)
+        .attr('stroke', '#333')
+        .attr('stroke-width', 1)
+        .on('mouseover', function(d) {
+            // Highlight bubble
+            d3.select(this)
+                .raise()
+                .transition()
+                .duration(100)
+                .attr('r', self.sizeScale(d.population) * 1.3)
+                .attr('stroke-width', 2)
+                .attr('fill-opacity', 1);
+            
+            // Show Tooltip with Flag and Name
+            tooltip
+                .style('display', 'block')
+                .style('opacity', 1) // Critical fix: ensure opacity is 1
+                .style('left', d3.event.pageX + 15 + 'px')
+                .style('top', d3.event.pageY - 15 + 'px')
+                .html(`
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px; border-bottom: 1px solid #555; padding-bottom: 6px;">
+                        <img src="img/flags/${d.iso3}.png" alt="" style="width: 28px; height: 20px; border-radius: 2px; object-fit: cover; box-shadow: 0 1px 3px rgba(0,0,0,0.3);">
+                        <div style="font-weight: 700; font-size: 15px; color: #fff;">${d.country}</div>
+                    </div>
+                    <div style="font-size: 13px; line-height: 1.5;">
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Fertility:</span> <strong>${d.fertility.toFixed(2)}</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Life Exp:</span> <strong>${d.lifeExpectancy.toFixed(1)}y</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Pop:</span> <strong>${d3.format(',.1f')(d.population/1000)}M</strong>
+                        </div>
+                    </div>
+                `);
+        })
+        .on('mousemove', function() {
+            // Keep tooltip following cursor
+            tooltip
+                .style('left', d3.event.pageX + 15 + 'px')
+                .style('top', d3.event.pageY - 15 + 'px');
+        })
+        .on('mouseout', function(d) {
+            // Restore bubble
+            d3.select(this)
+                .transition()
+                .duration(200)
+                .attr('r', self.sizeScale(d.population))
+                .attr('stroke-width', 1)
+                .attr('fill-opacity', 0.7);
+            
+            // Hide tooltip
+            tooltip.style('opacity', 0).style('display', 'none');
+        })
+        .merge(circles)
+        .transition()
+        .duration(this.state.animationSpeed * 0.8)
+        .attr('cx', d => this.xScale(d.fertility))
+        .attr('cy', d => this.yScale(d.lifeExpectancy))
+        .attr('r', d => this.sizeScale(d.population));
+    
+    // Exit
+    circles.exit()
+        .transition()
+        .duration(this.state.animationSpeed * 0.3)
+        .attr('r', 0)
+        .remove();
+},
     
     /**
      * Play animation

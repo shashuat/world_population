@@ -197,14 +197,6 @@ function switchVisualization(vizType) {
             }
             break;
             
-        case 'ridgeline':
-            document.getElementById('ridgeline-view').classList.add('active');
-            document.getElementById('details-title').textContent = 'Global Ageing Distribution';
-            if (!AppState.data.processed.ridgeline) {
-                RidgelinePlotViz.init(d3.select('#ridgeline-chart'), AppState);
-            }
-            break;
-            
         case 'growth-drivers':
             document.getElementById('growth-drivers-view').classList.add('active');
             document.getElementById('details-title').textContent = 'Drivers of Population Growth';

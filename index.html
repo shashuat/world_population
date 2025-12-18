@@ -37,10 +37,6 @@
                     <span class="icon">🎯</span>
                     <span>DNA Profile</span>
                 </button>
-                <button class="viz-btn" data-viz="ridgeline">
-                    <span class="icon">🏔️</span>
-                    <span>Ageing</span>
-                </button>
                 <button class="viz-btn" data-viz="growth-drivers">
                     <span class="icon">💹</span>
                     <span>Growth</span>
@@ -309,15 +305,6 @@
                     <div id="radar-legend" class="viz-legend"></div>
                 </div>
                 
-                <!-- Ridgeline Plot View -->
-                <div id="ridgeline-view" class="viz-view">
-                    <div class="viz-header">
-                        <h3>Global Ageing Distribution (1950-2023)</h3>
-                        <p class="viz-description">How median age has shifted across countries over time</p>
-                    </div>
-                    <svg id="ridgeline-chart" class="main-chart" style="height: 600px;"></svg>
-                </div>
-                
                 <!-- Growth Drivers View -->
                 <div id="growth-drivers-view" class="viz-view">
                     <div class="viz-header">
@@ -340,14 +327,8 @@
                 <!-- Gender Gap View -->
                 <div id="gender-gap-view" class="viz-view">
                     <div class="viz-header">
-                        <h3>Life Expectancy Gender Gap (1950 vs 2023)</h3>
-                        <p class="viz-description">How the gap between male and female life expectancy has evolved</p>
-                    </div>
-                    <div class="comparison-controls">
-                        <div class="mode-selector">
-                            <button class="mode-btn active" data-mode="slopegraph">Slopegraph</button>
-                            <button class="mode-btn" data-mode="timeseries">Time Series</button>
-                        </div>
+                        <h3>Life Expectancy Gender Gap</h3>
+                        <p class="viz-description">How the gap between male and female life expectancy has evolved over time</p>
                     </div>
                     <svg id="gender-gap-chart" class="main-chart" style="height: 700px;"></svg>
                     <div id="gender-gap-legend" class="viz-legend"></div>
@@ -390,7 +371,6 @@
     <script src="js/smallMultiples.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/radarChart.js"></script>
-    <script src="js/ridgelinePlot.js"></script>
     <script src="js/growthDrivers.js"></script>
     <script src="js/genderGap.js"></script>
     <script src="js/main.js"></script>
