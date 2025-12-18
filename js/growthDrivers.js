@@ -14,7 +14,8 @@ const GrowthDriversViz = {
     state: {
         currentYear: 2023,
         isPlaying: false,
-        animationInterval: null
+        animationInterval: null,
+        labeledCountries: new Set(['China', 'India', 'United States of America', 'Nigeria', 'Brazil', 'Japan', 'Germany', 'United Kingdom'])
     },
     
     // Color scheme (matching regions)
@@ -38,7 +39,7 @@ const GrowthDriversViz = {
         const containerNode = container.node();
         const rect = containerNode.getBoundingClientRect();
         this.width = rect.width - this.margin.left - this.margin.right;
-        this.height = 600 - this.margin.top - this.margin.bottom;
+        this.height = rect.height - this.margin.top - this.margin.bottom;
         
         // Clear existing
         container.selectAll('*').remove();
@@ -46,7 +47,7 @@ const GrowthDriversViz = {
         // Create SVG
         this.svg = container
             .attr('width', this.width + this.margin.left + this.margin.right)
-            .attr('height', 600)
+            .attr('height', this.height + this.margin.top + this.margin.bottom)
             .append('g')
             .attr('transform', `translate(${this.margin.left},${this.margin.top})`);
         
@@ -59,8 +60,8 @@ const GrowthDriversViz = {
             return;
         }
         
-        // Create scales
-        this.xScale = d3.scaleLinear()
+        // Create scales (using symlog to handle clustering and negative values)
+        this.xScale = d3.scaleSymlog()
             .domain([
                 d3.min(growthData, d => d.naturalChange) * 1.1,
                 d3.max(growthData, d => d.naturalChange) * 1.1
@@ -68,7 +69,7 @@ const GrowthDriversViz = {
             .range([0, this.width])
             .nice();
         
-        this.yScale = d3.scaleLinear()
+        this.yScale = d3.scaleSymlog()
             .domain([
                 d3.min(growthData, d => d.migrationRate) * 1.1,
                 d3.max(growthData, d => d.migrationRate) * 1.1
@@ -105,6 +106,18 @@ const GrowthDriversViz = {
      * Draw axes and gridlines
      */
     drawAxes() {
+        // Calculate appropriate tick values for the data
+        const xDomain = this.xScale.domain();
+        const yDomain = this.yScale.domain();
+        
+        // Generate tick values that make sense for natural change rate (-20 to 40)
+        const xTicks = [-20, -10, -5, 0, 5, 10, 15, 20, 25, 30, 35, 40]
+            .filter(v => v >= xDomain[0] && v <= xDomain[1]);
+        
+        // Generate tick values that make sense for migration rate (-10 to 15)
+        const yTicks = [-10, -5, -2, 0, 2, 5, 10, 15]
+            .filter(v => v >= yDomain[0] && v <= yDomain[1]);
+        
         // Gridlines
         this.svg.append('g')
             .attr('class', 'grid')
@@ -112,24 +125,28 @@ const GrowthDriversViz = {
             .call(d3.axisBottom(this.xScale)
                 .tickSize(-this.height)
                 .tickFormat('')
-                .ticks(10));
+                .tickValues(xTicks));
         
         this.svg.append('g')
             .attr('class', 'grid')
             .call(d3.axisLeft(this.yScale)
                 .tickSize(-this.width)
                 .tickFormat('')
-                .ticks(10));
+                .tickValues(yTicks));
         
         // Axes
         this.svg.append('g')
             .attr('class', 'axis')
             .attr('transform', `translate(0,${this.height})`)
-            .call(d3.axisBottom(this.xScale).ticks(10));
+            .call(d3.axisBottom(this.xScale)
+                .tickValues(xTicks)
+                .tickFormat(d => d));
         
         this.svg.append('g')
             .attr('class', 'axis')
-            .call(d3.axisLeft(this.yScale).ticks(10));
+            .call(d3.axisLeft(this.yScale)
+                .tickValues(yTicks)
+                .tickFormat(d => d));
         
         // Zero lines (reference)
         this.svg.append('line')
@@ -290,27 +307,47 @@ const GrowthDriversViz = {
                     .raise()
                     .transition()
                     .duration(100)
-                    .attr('r', self.sizeScale(d.population) * 1.3);
+                    .attr('r', self.sizeScale(d.population) * 1.3)
+                    .attr('stroke-width', 2)
+                    .attr('fill-opacity', 1);
                 
                 tooltip
                     .style('display', 'block')
-                    .style('left', d3.event.pageX + 10 + 'px')
-                    .style('top', d3.event.pageY - 10 + 'px')
+                    .style('opacity', 1)
+                    .style('left', d3.event.pageX + 15 + 'px')
+                    .style('top', d3.event.pageY - 15 + 'px')
                     .html(`
-                        <div style="font-weight: 600; margin-bottom: 4px;">${d.country}</div>
-                        <div>Year: ${d.year}</div>
-                        <div>Natural Change: ${d.naturalChange.toFixed(2)} per 1,000</div>
-                        <div>Migration Rate: ${d.migrationRate.toFixed(2)} per 1,000</div>
-                        <div>Population: ${d3.format(',.0f')(d.population)}k</div>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px; border-bottom: 1px solid #555; padding-bottom: 6px;">
+                            <img src="img/flags/${d.iso3}.png" alt="" style="width: 28px; height: 20px; border-radius: 2px; object-fit: cover; box-shadow: 0 1px 3px rgba(0,0,0,0.3);">
+                            <div style="font-weight: 700; font-size: 15px; color: #fff;">${d.country}</div>
+                        </div>
+                        <div style="font-size: 13px; line-height: 1.5;">
+                            <div style="display: flex; justify-content: space-between; gap: 20px;">
+                                <span>Natural Change:</span> <strong>${d.naturalChange.toFixed(2)} per 1k</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; gap: 20px;">
+                                <span>Migration Rate:</span> <strong>${d.migrationRate.toFixed(2)} per 1k</strong>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; gap: 20px;">
+                                <span>Population:</span> <strong>${d3.format(',.1f')(d.population/1000)}M</strong>
+                            </div>
+                        </div>
                     `);
+            })
+            .on('mousemove', function() {
+                tooltip
+                    .style('left', d3.event.pageX + 15 + 'px')
+                    .style('top', d3.event.pageY - 15 + 'px');
             })
             .on('mouseout', function(d) {
                 d3.select(this)
                     .transition()
                     .duration(200)
-                    .attr('r', self.sizeScale(d.population));
+                    .attr('r', self.sizeScale(d.population))
+                    .attr('stroke-width', 1)
+                    .attr('fill-opacity', 0.7);
                 
-                tooltip.style('display', 'none');
+                tooltip.style('opacity', 0).style('display', 'none');
             })
             .merge(circles)
             .transition()
@@ -324,6 +361,38 @@ const GrowthDriversViz = {
             .transition()
             .duration(300)
             .attr('r', 0)
+            .remove();
+        
+        // Update country labels for selected countries
+        const labeledData = yearData.filter(d => this.state.labeledCountries.has(d.country));
+        
+        const labels = this.svg.selectAll('.country-label')
+            .data(labeledData, d => d.country);
+        
+        // Enter
+        labels.enter()
+            .append('text')
+            .attr('class', 'country-label')
+            .attr('x', d => this.xScale(d.naturalChange))
+            .attr('y', d => this.yScale(d.migrationRate) - this.sizeScale(d.population) - 5)
+            .attr('text-anchor', 'middle')
+            .attr('font-size', '11px')
+            .attr('font-weight', '600')
+            .attr('fill', '#333')
+            .attr('opacity', 0)
+            .text(d => d.country)
+            .merge(labels)
+            .transition()
+            .duration(500)
+            .attr('x', d => this.xScale(d.naturalChange))
+            .attr('y', d => this.yScale(d.migrationRate) - this.sizeScale(d.population) - 5)
+            .attr('opacity', 0.8);
+        
+        // Exit
+        labels.exit()
+            .transition()
+            .duration(300)
+            .attr('opacity', 0)
             .remove();
     },
     

@@ -39,16 +39,21 @@ const AnimationViz = {
         // Calculate dimensions
         const containerNode = container.node();
         const rect = containerNode.getBoundingClientRect();
-        this.width = rect.width - this.margin.left - this.margin.right;
-        this.height = 600 - this.margin.top - this.margin.bottom;
+        const totalWidth = rect.width;
+        const totalHeight = rect.height > 0 ? rect.height : 600; // Use container height or fallback to 600
+        
+        this.width = totalWidth - this.margin.left - this.margin.right;
+        this.height = totalHeight - this.margin.top - this.margin.bottom;
         
         // Clear existing
         container.selectAll('*').remove();
         
         // Create SVG
         this.svg = container
-            .attr('width', this.width + this.margin.left + this.margin.right)
-            .attr('height', 600)
+            .attr('width', '100%')
+            .attr('height', '100%')
+            .attr('viewBox', `0 0 ${totalWidth} ${totalHeight}`)
+            .attr('preserveAspectRatio', 'xMidYMid meet')
             .append('g')
             .attr('transform', `translate(${this.margin.left},${this.margin.top})`);
         

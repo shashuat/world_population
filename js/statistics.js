@@ -149,11 +149,30 @@ const StatisticsViz = {
             .call(d3.axisBottom(x))
             .selectAll("text")
             .style("font-size", "12px");
+        
+        // X-axis label
+        g.append("text")
+            .attr("x", width / 2)
+            .attr("y", height + 40)
+            .attr("text-anchor", "middle")
+            .style("font-size", "13px")
+            .style("font-weight", "500")
+            .text(this.getMetricLabel(xKey));
             
         g.append("g")
             .call(d3.axisLeft(y))
             .selectAll("text")
             .style("font-size", "12px");
+        
+        // Y-axis label
+        g.append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("x", -height / 2)
+            .attr("y", -45)
+            .attr("text-anchor", "middle")
+            .style("font-size", "13px")
+            .style("font-weight", "500")
+            .text(this.getMetricLabel(yKey));
 
         // Dots
         g.selectAll("circle")
@@ -264,12 +283,31 @@ const StatisticsViz = {
             .attr("dx", "-.8em")
             .attr("dy", ".15em")
             .attr("transform", "rotate(-45)");
+        
+        // X-axis label
+        g.append("text")
+            .attr("x", width / 2)
+            .attr("y", height + 70)
+            .attr("text-anchor", "middle")
+            .style("font-size", "13px")
+            .style("font-weight", "500")
+            .text("Region");
             
         // Y Axis
         g.append("g")
             .call(d3.axisLeft(y))
             .selectAll("text")
             .style("font-size", "12px");
+        
+        // Y-axis label
+        g.append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("x", -height / 2)
+            .attr("y", -30)
+            .attr("text-anchor", "middle")
+            .style("font-size", "13px")
+            .style("font-weight", "500")
+            .text(this.getMetricLabel(yKey));
 
         // Draw Box Plots
         const boxGroups = g.selectAll(".box")
