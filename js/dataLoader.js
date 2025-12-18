@@ -17,7 +17,8 @@ const DataLoader = {
         radarChartData: null,
         ridgelineData: null,
         growthDriversData: null,
-        genderGapData: null
+        genderGapData: null,
+        projectionData: null
     },
 
     /**
@@ -80,6 +81,10 @@ const DataLoader = {
             console.log('  Loading gender gap data...');
             const genderGapData = await d3.json('data/gender_gap_data.json')
                 .catch(e => { throw new Error('Failed to load gender_gap_data.json: ' + e.message); });
+            
+            console.log('  Loading projection uncertainty data...');
+            const projectionData = await d3.json('data/projection_uncertainty.json')
+                .catch(e => { throw new Error('Failed to load projection_uncertainty.json: ' + e.message); });
 
             // Cache all data
             this.cache.globeData = globeData;
@@ -96,6 +101,7 @@ const DataLoader = {
             this.cache.ridgelineData = ridgelineData;
             this.cache.growthDriversData = growthDriversData;
             this.cache.genderGapData = genderGapData;
+            this.cache.projectionData = projectionData;
 
             console.log('✓ All data loaded successfully');
             console.log(`  - Globe data: ${Object.keys(globeData).length} years`);
@@ -107,6 +113,7 @@ const DataLoader = {
             console.log(`  - Ridgeline data: ${ridgelineData.length} entries`);
             console.log(`  - Growth drivers data: ${growthDriversData.length} records`);
             console.log(`  - Gender gap data: ${genderGapData.comparison ? genderGapData.comparison.length : 0} countries`);
+            console.log(`  - Projection data: ${projectionData.length} projections`);
             
             return {
                 raw: null, // Not loading raw CSV anymore
@@ -130,6 +137,7 @@ const DataLoader = {
             console.error('  - data/ridgeline_data.json');
             console.error('  - data/growth_drivers_data.json');
             console.error('  - data/gender_gap_data.json');
+            console.error('  - data/projection_uncertainty.json');
             throw error;
         }
     },
@@ -261,6 +269,13 @@ const DataLoader = {
      */
     getGenderGapData() {
         return this.cache.genderGapData || { comparison: [], timeseries: [] };
+    },
+    
+    /**
+     * NEW: Get projection uncertainty data
+     */
+    getProjectionData() {
+        return this.cache.projectionData || [];
     }
 };
 

@@ -689,6 +689,71 @@ def prepare_countries_list(df):
     print(f"✓ Created countries_list.json ({len(countries_list)} countries)")
 
 
+def prepare_projection_uncertainty(df):
+    """
+    Create confidence intervals for 2024-2030 population projections
+    Uses simple extrapolation with increasing uncertainty bands
+    """
+    print("\nPreparing projection uncertainty data...")
+    
+    countries_df = df[df['Type'] == 'Country/Area'].copy()
+    projection_data = []
+    
+    for country in countries_df['Region, subregion, country or area *'].unique():
+        # Get historical data for this country
+        country_data = countries_df[countries_df['Region, subregion, country or area *'] == country].sort_values('Year')
+        
+        # Get last 10 years for trend calculation
+        historical = country_data.tail(10)
+        
+        if len(historical) < 5:  # Need at least 5 years for reasonable trend
+            continue
+        
+        # Simple linear trend calculation
+        years = historical['Year'].values
+        populations = historical['Total Population, as of 1 July (thousands)'].values
+        
+        # Remove NaN values
+        valid_mask = ~np.isnan(populations)
+        years = years[valid_mask]
+        populations = populations[valid_mask]
+        
+        if len(years) < 5:
+            continue
+        
+        # Calculate linear trend
+        coefficients = np.polyfit(years, populations, 1)
+        trend_slope = coefficients[0]
+        trend_intercept = coefficients[1]
+        
+        # Project future years (2024-2030)
+        for year in range(2024, 2031):
+            years_ahead = year - 2023
+            uncertainty_factor = 1 + (years_ahead * 0.05)  # 5% per year
+            
+            # Predicted value
+            predicted_pop = trend_slope * year + trend_intercept
+            
+            # Ensure non-negative
+            if predicted_pop < 0:
+                predicted_pop = populations[-1]  # Use last known value
+            
+            projection_data.append({
+                'country': country,
+                'year': int(year),
+                'median': float(predicted_pop),
+                'lower_50': float(predicted_pop * (1 - 0.25 * uncertainty_factor)),
+                'upper_50': float(predicted_pop * (1 + 0.25 * uncertainty_factor)),
+                'lower_95': float(predicted_pop * (1 - 0.5 * uncertainty_factor)),
+                'upper_95': float(predicted_pop * (1 + 0.5 * uncertainty_factor))
+            })
+    
+    with open('data/projection_uncertainty.json', 'w') as f:
+        json.dump(projection_data, f, indent=2)
+    
+    print(f"✓ Created projection_uncertainty.json ({len(projection_data)} projections)")
+
+
 def prepare_animation_data(df):
     """
     Prepare data for Hans Rosling animation
@@ -789,6 +854,7 @@ def main():
     prepare_ridgeline_data(df)
     prepare_growth_drivers_data(df)
     prepare_gender_gap_data(df)
+    prepare_projection_uncertainty(df)
     
     print("\n" + "=" * 80)
     print("PREPROCESSING COMPLETE!")
@@ -808,6 +874,7 @@ def main():
     print(" 10. ridgeline_data.json - Global Ageing Distribution (Ridgeline)")
     print(" 11. growth_drivers_data.json - Natural Change vs Migration (Scatter)")
     print(" 12. gender_gap_data.json - Life Expectancy Gender Gaps (Slopegraph)")
+    print(" 13. projection_uncertainty.json - Population Projections with Confidence Bands (2024-2030)")
     print("\nReady for enhanced D3.js visualizations! 🚀\n")
 
 

@@ -18,6 +18,8 @@ const TimeSeriesViz = {
     selectedCountries: new Set(),
     countryTimeSeriesData: null,
     regionalData: null,
+    projectionData: null,
+    showProjections: false,
     currentMode: 'population',
     useLogScale: false,
     appState: null,
@@ -30,7 +32,7 @@ const TimeSeriesViz = {
             description: 'Population size across regions and countries',
             metrics: [{
                 key: 'population',
-                label: 'Population (thousands)',
+                label: 'Population (millions)',
                 color: '#377eb8',
                 format: d => d >= 1000 ? `${d/1000}M` : `${d}k`,
                 tooltip: d => `${d3.format(',.0f')(d)}k (${d3.format(',.1f')(d / 1000)}M)`
@@ -192,6 +194,7 @@ const TimeSeriesViz = {
         // Get data
         this.regionalData = DataLoader.processRegionalTimeSeries();
         this.countryTimeSeriesData = DataLoader.getCountryTimeSeriesData();
+        this.projectionData = DataLoader.getProjectionData();
         
         const regionMeta = DataLoader.getRegionMetadata();
         
@@ -255,6 +258,19 @@ const TimeSeriesViz = {
     },
     
     /**
+     * Toggle projection confidence bands
+     */
+    toggleProjections() {
+        this.showProjections = !this.showProjections;
+        const btn = document.getElementById('projection-toggle');
+        if (btn) {
+            btn.textContent = this.showProjections ? '📉 Hide Projections' : '🔮 Show Projections (2024-2030)';
+            btn.classList.toggle('active', this.showProjections);
+        }
+        this.draw();
+    },
+    
+    /**
      * Draw/redraw the entire chart
      */
     draw() {
@@ -309,8 +325,9 @@ const TimeSeriesViz = {
         if (maxValue === -Infinity) maxValue = 100;
         
         // Create scales
+        const maxYear = this.showProjections && this.currentMode === 'population' ? 2030 : 2023;
         this.xScale = d3.scaleLinear()
-            .domain([1950, 2023])
+            .domain([1950, maxYear])
             .range([0, this.width]);
         
         // Y scale - logarithmic or linear
@@ -381,6 +398,13 @@ const TimeSeriesViz = {
         
         // Draw country lines for each metric
         this.svg.append('g').attr('class', 'country-lines-container');
+        
+        // Add projection confidence bands (only for population mode)
+        if (this.showProjections && this.currentMode === 'population') {
+            this.svg.append('g').attr('class', 'projection-bands-container');
+            this.selectedCountries.forEach(country => this.addProjectionBands(country));
+        }
+        
         modeConfig.metrics.forEach(metric => {
             this.selectedCountries.forEach(country => this.addCountryLine(country, metric));
         });
@@ -487,6 +511,231 @@ const TimeSeriesViz = {
             this.selectedCountries.add(countryName);
         }
         this.draw();
+    },
+    
+    /**
+     * Add projection confidence bands for a country
+     */
+    addProjectionBands(countryName) {
+        // Get projection data for this country
+        const countryProjections = this.projectionData.filter(d => d.country === countryName);
+        
+        if (!countryProjections || countryProjections.length === 0) {
+            return;
+        }
+        
+        // Sort by year
+        countryProjections.sort((a, b) => a.year - b.year);
+        
+        // Get the last historical data point to connect smoothly
+        const historicalData = this.countryTimeSeriesData[countryName];
+        const lastHistorical = historicalData[historicalData.length - 1];
+        
+        // Prepend last historical point to projections for smooth transition
+        const projectionWithHistory = [
+            { year: lastHistorical.year, 
+              median: lastHistorical.population,
+              lower_95: lastHistorical.population,
+              upper_95: lastHistorical.population,
+              lower_50: lastHistorical.population,
+              upper_50: lastHistorical.population },
+            ...countryProjections
+        ];
+        
+        // Generate a unique color for this country
+        const countryColors = ['#e41a1c', '#377eb8', '#4daf4a', '#984ea3', '#ff7f00', '#a65628', '#f781bf', '#999999'];
+        const colorIndex = Array.from(this.selectedCountries).indexOf(countryName) % countryColors.length;
+        const countryColor = countryColors[colorIndex];
+        
+        // Create projection group
+        const projectionGroup = this.svg.append('g')
+            .attr('class', `projection-bands projection-${countryName.replace(/\s+/g, '-')}`);
+        
+        // 95% confidence band (wider, lighter)
+        const area95 = d3.area()
+            .x(d => this.xScale(d.year))
+            .y0(d => this.yScale(d.lower_95))
+            .y1(d => this.yScale(d.upper_95))
+            .curve(d3.curveMonotoneX);
+        
+        projectionGroup.append('path')
+            .datum(projectionWithHistory)
+            .attr('d', area95)
+            .attr('fill', countryColor)
+            .attr('fill-opacity', 0.1)
+            .attr('class', 'uncertainty-band-95');
+        
+        // 50% confidence band (narrower, darker)
+        const area50 = d3.area()
+            .x(d => this.xScale(d.year))
+            .y0(d => this.yScale(d.lower_50))
+            .y1(d => this.yScale(d.upper_50))
+            .curve(d3.curveMonotoneX);
+        
+        projectionGroup.append('path')
+            .datum(projectionWithHistory)
+            .attr('d', area50)
+            .attr('fill', countryColor)
+            .attr('fill-opacity', 0.2)
+            .attr('class', 'uncertainty-band-50');
+        
+        // Median projection line (dashed)
+        const medianLine = d3.line()
+            .x(d => this.xScale(d.year))
+            .y(d => this.yScale(d.median))
+            .curve(d3.curveMonotoneX);
+        
+        projectionGroup.append('path')
+            .datum(projectionWithHistory)
+            .attr('d', medianLine)
+            .attr('stroke', countryColor)
+            .attr('stroke-width', 1.5)
+            .attr('stroke-dasharray', '5,5')
+            .attr('fill', 'none')
+            .attr('class', 'median-projection');
+        
+        // Add tooltip interaction
+        const tooltip = d3.select('#tooltip');
+        
+        projectionGroup.selectAll('path')
+            .on('mousemove', function() {
+                const mouse = d3.mouse(this);
+                const xPos = mouse[0];
+                const year = Math.round(TimeSeriesViz.xScale.invert(xPos));
+                const dataPoint = countryProjections.find(v => v.year === year);
+                
+                if (dataPoint && year >= 2024) {
+                    tooltip
+                        .style('display', 'block')
+                        .style('left', d3.event.pageX + 10 + 'px')
+                        .style('top', d3.event.pageY - 10 + 'px')
+                        .html(`
+                            <div style="font-weight: 600; margin-bottom: 4px;">${countryName} - Projection</div>
+                            <div>Year: ${dataPoint.year}</div>
+                            <div style="border-top: 1px solid #ddd; margin-top: 4px; padding-top: 4px;">
+                                <div>Median: ${d3.format(',.0f')(dataPoint.median)}k</div>
+                                <div style="font-size: 11px; color: #666;">50% range: ${d3.format(',.0f')(dataPoint.lower_50)}k - ${d3.format(',.0f')(dataPoint.upper_50)}k</div>
+                                <div style="font-size: 11px; color: #666;">95% range: ${d3.format(',.0f')(dataPoint.lower_95)}k - ${d3.format(',.0f')(dataPoint.upper_95)}k</div>
+                            </div>
+                        `);
+                }
+            })
+            .on('mouseout', function() {
+                tooltip.style('display', 'none');
+            });
+    },
+    
+    /**
+     * Add projection confidence bands for a country
+     */
+    addProjectionBands(countryName) {
+        // Get projection data for this country
+        const countryProjections = this.projectionData.filter(d => d.country === countryName);
+        
+        if (!countryProjections || countryProjections.length === 0) {
+            return;
+        }
+        
+        // Sort by year
+        countryProjections.sort((a, b) => a.year - b.year);
+        
+        // Get the last historical data point to connect smoothly
+        const historicalData = this.countryTimeSeriesData[countryName];
+        const lastHistorical = historicalData[historicalData.length - 1];
+        
+        // Prepend last historical point to projections for smooth transition
+        const projectionWithHistory = [
+            { year: lastHistorical.year, 
+              median: lastHistorical.population,
+              lower_95: lastHistorical.population,
+              upper_95: lastHistorical.population,
+              lower_50: lastHistorical.population,
+              upper_50: lastHistorical.population },
+            ...countryProjections
+        ];
+        
+        // Generate a unique color for this country
+        const countryColors = ['#e41a1c', '#377eb8', '#4daf4a', '#984ea3', '#ff7f00', '#a65628', '#f781bf', '#999999'];
+        const colorIndex = Array.from(this.selectedCountries).indexOf(countryName) % countryColors.length;
+        const countryColor = countryColors[colorIndex];
+        
+        // Create projection group
+        const projectionGroup = this.svg.select('.projection-bands-container')
+            .append('g')
+            .attr('class', `projection-bands projection-${countryName.replace(/\s+/g, '-')}`);
+        
+        // 95% confidence band (wider, lighter)
+        const area95 = d3.area()
+            .x(d => this.xScale(d.year))
+            .y0(d => this.yScale(d.lower_95))
+            .y1(d => this.yScale(d.upper_95))
+            .curve(d3.curveMonotoneX);
+        
+        projectionGroup.append('path')
+            .datum(projectionWithHistory)
+            .attr('d', area95)
+            .attr('fill', countryColor)
+            .attr('fill-opacity', 0.1)
+            .attr('class', 'uncertainty-band-95');
+        
+        // 50% confidence band (narrower, darker)
+        const area50 = d3.area()
+            .x(d => this.xScale(d.year))
+            .y0(d => this.yScale(d.lower_50))
+            .y1(d => this.yScale(d.upper_50))
+            .curve(d3.curveMonotoneX);
+        
+        projectionGroup.append('path')
+            .datum(projectionWithHistory)
+            .attr('d', area50)
+            .attr('fill', countryColor)
+            .attr('fill-opacity', 0.2)
+            .attr('class', 'uncertainty-band-50');
+        
+        // Median projection line (dashed)
+        const medianLine = d3.line()
+            .x(d => this.xScale(d.year))
+            .y(d => this.yScale(d.median))
+            .curve(d3.curveMonotoneX);
+        
+        projectionGroup.append('path')
+            .datum(projectionWithHistory)
+            .attr('d', medianLine)
+            .attr('stroke', countryColor)
+            .attr('stroke-width', 1.5)
+            .attr('stroke-dasharray', '5,5')
+            .attr('fill', 'none')
+            .attr('class', 'median-projection');
+        
+        // Add tooltip interaction
+        const tooltip = d3.select('#tooltip');
+        
+        projectionGroup.selectAll('path')
+            .on('mousemove', function() {
+                const mouse = d3.mouse(this);
+                const xPos = mouse[0];
+                const year = Math.round(TimeSeriesViz.xScale.invert(xPos));
+                const dataPoint = countryProjections.find(v => v.year === year);
+                
+                if (dataPoint && year >= 2024) {
+                    tooltip
+                        .style('display', 'block')
+                        .style('left', d3.event.pageX + 10 + 'px')
+                        .style('top', d3.event.pageY - 10 + 'px')
+                        .html(`
+                            <div style="font-weight: 600; margin-bottom: 4px;">${countryName} - Projection</div>
+                            <div>Year: ${dataPoint.year}</div>
+                            <div style="border-top: 1px solid #ddd; margin-top: 4px; padding-top: 4px;">
+                                <div>Median: ${d3.format(',.0f')(dataPoint.median)}k</div>
+                                <div style="font-size: 11px; color: #666;">50% range: ${d3.format(',.0f')(dataPoint.lower_50)}k - ${d3.format(',.0f')(dataPoint.upper_50)}k</div>
+                                <div style="font-size: 11px; color: #666;">95% range: ${d3.format(',.0f')(dataPoint.lower_95)}k - ${d3.format(',.0f')(dataPoint.upper_95)}k</div>
+                            </div>
+                        `);
+                }
+            })
+            .on('mouseout', function() {
+                tooltip.style('display', 'none');
+            });
     },
     
     /**

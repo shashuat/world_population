@@ -227,6 +227,10 @@
                     <div class="viz-header">
                         <h3 id="timeseries-title">Population Trends (1950-2023)</h3>
                         <p class="viz-description" id="timeseries-description">Population trends across major world regions and countries</p>
+                        <div style="margin-top: 12px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                            <button id="projection-toggle" class="control-btn" onclick="TimeSeriesViz.toggleProjections()" style="padding: 8px 16px; background: #667eea; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 500; transition: all 0.2s;" onmouseover="this.style.background='#5568d3'" onmouseout="this.style.background='#667eea'">🔮 Show Projections (2024-2030)</button>
+                            <span style="font-size: 11px; color: #666; font-style: italic;">Select a country to see population projections with confidence intervals</span>
+                        </div>
                     </div>
                     <div class="viz-instruction" style="text-align: center; padding: 10px; background: #e8f5e9; border-radius: 8px; margin-bottom: 12px; color: #2e7d32; font-size: 13px;">
                         <span style="font-size: 18px; margin-right: 6px;">👈</span>
