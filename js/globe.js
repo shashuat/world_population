@@ -41,7 +41,8 @@ const GlobeViz = {
         'growth-drivers': d3.interpolatePurples,
         'longevity-gap': d3.interpolateOranges,
         'fertility-health': d3.interpolatePurples,
-        'healthcare-quality': d3.interpolateReds
+        'healthcare-quality': d3.interpolateReds,
+        'gender-gap': d3.interpolateRdBu  // Diverging: Blue (negative/male advantage) to Red (positive/female advantage)
     },
     
     /**
@@ -242,8 +243,24 @@ const GlobeViz = {
             case 'healthcare-quality':
                 dataValues = data.map(d => d.infant_mortality_number || 0);
                 break;
+            case 'gender-gap':
+                // Calculate gender gap for all countries
+                dataValues = data.map(d => {
+                    const female = d.life_expectancy_female_number || 0;
+                    const male = d.life_expectancy_male_number || 0;
+                    return female - male;
+                });
+                break;
             default:
                 dataValues = data.map(d => d.population_number);
+        }
+        
+        // Handle gender gap with diverging scale (can be negative)
+        if (mode === 'gender-gap') {
+            const [minValue, maxValue] = d3.extent(dataValues);
+            const absMax = Math.max(Math.abs(minValue), Math.abs(maxValue));
+            return d3.scaleSequential(colorScheme)
+                .domain([-absMax, absMax]);  // Symmetric domain for diverging scale
         }
         
         const [minValue, maxValue] = d3.extent(dataValues.filter(v => v > 0));
@@ -298,10 +315,20 @@ const GlobeViz = {
             case 'healthcare-quality':
                 value = countryData.infant_mortality_number || 0;
                 break;
+            case 'gender-gap':
+                // Calculate gender gap from life expectancy data
+                const femaleLE = countryData.life_expectancy_female_number || 0;
+                const maleLE = countryData.life_expectancy_male_number || 0;
+                value = femaleLE - maleLE;
+                break;
             default:
                 value = countryData.population_number;
         }
         
+        // For gender-gap, allow negative values; for others, filter out zero/negative
+        if (mode === 'gender-gap') {
+            return (value !== 0) ? colorPalette(value) : '#ccc';
+        }
         return value > 0 ? colorPalette(value) : '#ccc';
     },
     
@@ -356,6 +383,14 @@ const GlobeViz = {
                     break;
                 case 'healthcare-quality':
                     modeSpecific = `<div><strong>Infant Mortality:</strong> ${countryData.infant_mortality} per 1,000</div>`;
+                    break;
+                case 'gender-gap':
+                    const femaleLE = countryData.life_expectancy_female_number || 0;
+                    const maleLE = countryData.life_expectancy_male_number || 0;
+                    const gap = femaleLE - maleLE;
+                    modeSpecific = `<div><strong>Female Life Expectancy:</strong> ${femaleLE.toFixed(1)} years</div>
+                                   <div><strong>Male Life Expectancy:</strong> ${maleLE.toFixed(1)} years</div>
+                                   <div><strong>Gender Gap:</strong> ${gap.toFixed(1)} years</div>`;
                     break;
             }
             
@@ -417,6 +452,7 @@ const GlobeViz = {
         
         // Determine scale type
         const isLogScale = mode === 'population' || mode === 'density';
+        const isDivergingScale = mode === 'gender-gap';
         
         let xScale;
         if (isLogScale) {
@@ -446,6 +482,8 @@ const GlobeViz = {
                         return d.toFixed(1);
                     case 'healthcare-quality':
                         return d.toFixed(0);
+                    case 'gender-gap':
+                        return d > 0 ? '+' + d.toFixed(1) + 'y' : d.toFixed(1) + 'y';
                     default:
                         return d3.format('.2s')(d);
                 }
@@ -460,6 +498,18 @@ const GlobeViz = {
             .selectAll('text')
             .style('fill', '#4a5568')
             .style('font-size', '11px');
+        
+        // Add center marker for diverging scales
+        if (isDivergingScale) {
+            legendSvg.append('line')
+                .attr('x1', legendWidth / 2)
+                .attr('x2', legendWidth / 2)
+                .attr('y1', 0)
+                .attr('y2', legendHeight / 2)
+                .attr('stroke', '#333')
+                .attr('stroke-width', 2)
+                .attr('stroke-dasharray', '3,3');
+        }
     },
     
     /**

@@ -319,6 +319,11 @@ function setupEventListeners() {
         
         // BRUSHING & LINKING: Highlight country in all other visualizations
         highlightCountryInAllViews(countryName);
+        
+        // Update Gender Gap visualization if it's initialized
+        if (AppState.data.processed.genderGap && GenderGapViz.update) {
+            GenderGapViz.update(countryName);
+        }
     });
     
     // Listen for country highlighting (hover)
