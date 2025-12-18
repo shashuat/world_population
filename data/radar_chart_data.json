@@ -1,0 +1,6598 @@
+{
+  "globalStats": {
+    "fertility": {
+      "min": 0.66,
+      "max": 6.13,
+      "mean": 2.3433755274261605,
+      "median": 1.95
+    },
+    "migration": {
+      "min": -61.7,
+      "max": 39.6,
+      "mean": 0.4181434599156118,
+      "median": -0.1
+    },
+    "lifeExpectancy": {
+      "min": 54.5,
+      "max": 86.4,
+      "mean": 74.1493670886076,
+      "median": 75.3
+    },
+    "medianAge": {
+      "min": 14.3,
+      "max": 59.6,
+      "mean": 31.490717299578055,
+      "median": 32.1
+    },
+    "infantMortality": {
+      "min": 1.0,
+      "max": 71.6,
+      "mean": 16.89324894514768,
+      "median": 10.9
+    }
+  },
+  "worldAverage": {
+    "fertility": {
+      "raw": 2.3433755274261605,
+      "normalized": 0.5
+    },
+    "migration": {
+      "raw": 0.4181434599156118,
+      "normalized": 0.5
+    },
+    "lifeExpectancy": {
+      "raw": 74.1493670886076,
+      "normalized": 0.5
+    },
+    "medianAge": {
+      "raw": 31.490717299578055,
+      "normalized": 0.5
+    },
+    "infantMortality": {
+      "raw": 16.89324894514768,
+      "normalized": 0.5
+    }
+  },
+  "regionalAverages": {
+    "Africa": {
+      "fertility": {
+        "raw": 4.07,
+        "normalized": 0.623400365630713
+      },
+      "migration": {
+        "raw": -0.3,
+        "normalized": 0.6061204343534057
+      },
+      "lifeExpectancy": {
+        "raw": 63.8,
+        "normalized": 0.29153605015673967
+      },
+      "medianAge": {
+        "raw": 19.0,
+        "normalized": 0.10375275938189844
+      },
+      "infantMortality": {
+        "raw": 44.1,
+        "normalized": 0.6104815864022664
+      }
+    },
+    "Asia": {
+      "fertility": {
+        "raw": 1.88,
+        "normalized": 0.22303473491773304
+      },
+      "migration": {
+        "raw": -0.5,
+        "normalized": 0.6041461006910167
+      },
+      "lifeExpectancy": {
+        "raw": 74.6,
+        "normalized": 0.6300940438871471
+      },
+      "medianAge": {
+        "raw": 31.7,
+        "normalized": 0.3841059602649007
+      },
+      "infantMortality": {
+        "raw": 21.3,
+        "normalized": 0.28753541076487255
+      }
+    },
+    "Europe": {
+      "fertility": {
+        "raw": 1.4,
+        "normalized": 0.1352833638025594
+      },
+      "migration": {
+        "raw": 2.0,
+        "normalized": 0.6288252714708785
+      },
+      "lifeExpectancy": {
+        "raw": 79.1,
+        "normalized": 0.7711598746081502
+      },
+      "medianAge": {
+        "raw": 42.2,
+        "normalized": 0.6158940397350994
+      },
+      "infantMortality": {
+        "raw": 3.4,
+        "normalized": 0.0339943342776204
+      }
+    },
+    "Latin America and the Caribbean": {
+      "fertility": {
+        "raw": 1.81,
+        "normalized": 0.21023765996343693
+      },
+      "migration": {
+        "raw": -0.6,
+        "normalized": 0.6031589338598222
+      },
+      "lifeExpectancy": {
+        "raw": 75.7,
+        "normalized": 0.664576802507837
+      },
+      "medianAge": {
+        "raw": 30.9,
+        "normalized": 0.36644591611479027
+      },
+      "infantMortality": {
+        "raw": 13.1,
+        "normalized": 0.17138810198300283
+      }
+    },
+    "Northern America": {
+      "fertility": {
+        "raw": 1.6,
+        "normalized": 0.17184643510054848
+      },
+      "migration": {
+        "raw": 4.6,
+        "normalized": 0.6544916090819347
+      },
+      "lifeExpectancy": {
+        "raw": 79.6,
+        "normalized": 0.7868338557993727
+      },
+      "medianAge": {
+        "raw": 38.3,
+        "normalized": 0.5298013245033112
+      },
+      "infantMortality": {
+        "raw": 5.2,
+        "normalized": 0.0594900849858357
+      }
+    },
+    "Oceania": {
+      "fertility": {
+        "raw": 2.14,
+        "normalized": 0.27056672760511885
+      },
+      "migration": {
+        "raw": 3.2,
+        "normalized": 0.6406712734452122
+      },
+      "lifeExpectancy": {
+        "raw": 79.1,
+        "normalized": 0.7711598746081502
+      },
+      "medianAge": {
+        "raw": 32.9,
+        "normalized": 0.4105960264900662
+      },
+      "infantMortality": {
+        "raw": 15.4,
+        "normalized": 0.2039660056657224
+      }
+    }
+  },
+  "countries": {
+    "Burundi": {
+      "country": "Burundi",
+      "iso3": "BDI",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.88,
+          "normalized": 0.7714808043875685
+        },
+        "migration": {
+          "raw": 0.1,
+          "normalized": 0.6100691016781836
+        },
+        "lifeExpectancy": {
+          "raw": 63.7,
+          "normalized": 0.28840125391849536
+        },
+        "medianAge": {
+          "raw": 15.9,
+          "normalized": 0.035320088300220744
+        },
+        "infantMortality": {
+          "raw": 35.4,
+          "normalized": 0.5127478753541077
+        }
+      }
+    },
+    "Comoros": {
+      "country": "Comoros",
+      "iso3": "COM",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.88,
+          "normalized": 0.5886654478976234
+        },
+        "migration": {
+          "raw": -2.4,
+          "normalized": 0.5853899308983218
+        },
+        "lifeExpectancy": {
+          "raw": 66.8,
+          "normalized": 0.3855799373040751
+        },
+        "medianAge": {
+          "raw": 20.3,
+          "normalized": 0.13245033112582782
+        },
+        "infantMortality": {
+          "raw": 37.2,
+          "normalized": 0.4872521246458923
+        }
+      }
+    },
+    "Djibouti": {
+      "country": "Djibouti",
+      "iso3": "DJI",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 2.61,
+          "normalized": 0.356489945155393
+        },
+        "migration": {
+          "raw": 0.4,
+          "normalized": 0.613030602171767
+        },
+        "lifeExpectancy": {
+          "raw": 66.0,
+          "normalized": 0.36050156739811906
+        },
+        "medianAge": {
+          "raw": 24.4,
+          "normalized": 0.22295805739514346
+        },
+        "infantMortality": {
+          "raw": 36.3,
+          "normalized": 0.5
+        }
+      }
+    },
+    "Eritrea": {
+      "country": "Eritrea",
+      "iso3": "ERI",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.71,
+          "normalized": 0.5575868372943327
+        },
+        "migration": {
+          "raw": -4.4,
+          "normalized": 0.5656465942744323
+        },
+        "lifeExpectancy": {
+          "raw": 68.6,
+          "normalized": 0.44200626959247624
+        },
+        "medianAge": {
+          "raw": 18.7,
+          "normalized": 0.09713024282560703
+        },
+        "infantMortality": {
+          "raw": 27.1,
+          "normalized": 0.6303116147308782
+        }
+      }
+    },
+    "Ethiopia": {
+      "country": "Ethiopia",
+      "iso3": "ETH",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.99,
+          "normalized": 0.6087751371115174
+        },
+        "migration": {
+          "raw": -0.1,
+          "normalized": 0.6080947680157947
+        },
+        "lifeExpectancy": {
+          "raw": 67.3,
+          "normalized": 0.4012539184952976
+        },
+        "medianAge": {
+          "raw": 18.7,
+          "normalized": 0.09713024282560703
+        },
+        "infantMortality": {
+          "raw": 33.0,
+          "normalized": 0.546742209631728
+        }
+      }
+    },
+    "Kenya": {
+      "country": "Kenya",
+      "iso3": "KEN",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.21,
+          "normalized": 0.46617915904936014
+        },
+        "migration": {
+          "raw": -0.2,
+          "normalized": 0.6071076011846002
+        },
+        "lifeExpectancy": {
+          "raw": 63.6,
+          "normalized": 0.2852664576802508
+        },
+        "medianAge": {
+          "raw": 19.5,
+          "normalized": 0.11479028697571743
+        },
+        "infantMortality": {
+          "raw": 29.7,
+          "normalized": 0.5934844192634561
+        }
+      }
+    },
+    "Madagascar": {
+      "country": "Madagascar",
+      "iso3": "MDG",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.97,
+          "normalized": 0.6051188299817185
+        },
+        "migration": {
+          "raw": -0.0,
+          "normalized": 0.6090819348469891
+        },
+        "lifeExpectancy": {
+          "raw": 63.6,
+          "normalized": 0.2852664576802508
+        },
+        "medianAge": {
+          "raw": 18.9,
+          "normalized": 0.10154525386313462
+        },
+        "infantMortality": {
+          "raw": 45.0,
+          "normalized": 0.37677053824362605
+        }
+      }
+    },
+    "Malawi": {
+      "country": "Malawi",
+      "iso3": "MWI",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.65,
+          "normalized": 0.546617915904936
+        },
+        "migration": {
+          "raw": -0.3,
+          "normalized": 0.6061204343534057
+        },
+        "lifeExpectancy": {
+          "raw": 67.4,
+          "normalized": 0.40438871473354243
+        },
+        "medianAge": {
+          "raw": 17.6,
+          "normalized": 0.07284768211920532
+        },
+        "infantMortality": {
+          "raw": 29.5,
+          "normalized": 0.5963172804532577
+        }
+      }
+    },
+    "Mauritius": {
+      "country": "Mauritius",
+      "iso3": "MUS",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 1.24,
+          "normalized": 0.10603290676416818
+        },
+        "migration": {
+          "raw": -2.2,
+          "normalized": 0.5873642645607107
+        },
+        "lifeExpectancy": {
+          "raw": 74.9,
+          "normalized": 0.639498432601881
+        },
+        "medianAge": {
+          "raw": 36.9,
+          "normalized": 0.4988962472406181
+        },
+        "infantMortality": {
+          "raw": 12.9,
+          "normalized": 0.8314447592067988
+        }
+      }
+    },
+    "Mayotte": {
+      "country": "Mayotte",
+      "iso3": "MYT",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.62,
+          "normalized": 0.7239488117001829
+        },
+        "migration": {
+          "raw": 0.4,
+          "normalized": 0.613030602171767
+        },
+        "lifeExpectancy": {
+          "raw": 76.1,
+          "normalized": 0.6771159874608147
+        },
+        "medianAge": {
+          "raw": 16.8,
+          "normalized": 0.05518763796909493
+        },
+        "infantMortality": {
+          "raw": 8.9,
+          "normalized": 0.8881019830028328
+        }
+      }
+    },
+    "Mozambique": {
+      "country": "Mozambique",
+      "iso3": "MOZ",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.76,
+          "normalized": 0.7495429616087751
+        },
+        "migration": {
+          "raw": -1.1,
+          "normalized": 0.5982230997038499
+        },
+        "lifeExpectancy": {
+          "raw": 63.6,
+          "normalized": 0.2852664576802508
+        },
+        "medianAge": {
+          "raw": 16.3,
+          "normalized": 0.04415011037527594
+        },
+        "infantMortality": {
+          "raw": 49.7,
+          "normalized": 0.310198300283286
+        }
+      }
+    },
+    "R\u00e9union": {
+      "country": "R\u00e9union",
+      "iso3": "REU",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 2.17,
+          "normalized": 0.2760511882998172
+        },
+        "migration": {
+          "raw": -4.1,
+          "normalized": 0.5686080947680158
+        },
+        "lifeExpectancy": {
+          "raw": 83.5,
+          "normalized": 0.909090909090909
+        },
+        "medianAge": {
+          "raw": 37.4,
+          "normalized": 0.509933774834437
+        },
+        "infantMortality": {
+          "raw": 5.1,
+          "normalized": 0.9419263456090652
+        }
+      }
+    },
+    "Rwanda": {
+      "country": "Rwanda",
+      "iso3": "RWA",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.7,
+          "normalized": 0.5557586837294333
+        },
+        "migration": {
+          "raw": -0.6,
+          "normalized": 0.6031589338598222
+        },
+        "lifeExpectancy": {
+          "raw": 67.8,
+          "normalized": 0.4169278996865202
+        },
+        "medianAge": {
+          "raw": 19.4,
+          "normalized": 0.1125827814569536
+        },
+        "infantMortality": {
+          "raw": 27.5,
+          "normalized": 0.6246458923512748
+        }
+      }
+    },
+    "Seychelles": {
+      "country": "Seychelles",
+      "iso3": "SYC",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 2.13,
+          "normalized": 0.26873857404021934
+        },
+        "migration": {
+          "raw": 14.1,
+          "normalized": 0.7482724580454095
+        },
+        "lifeExpectancy": {
+          "raw": 72.9,
+          "normalized": 0.5768025078369907
+        },
+        "medianAge": {
+          "raw": 33.7,
+          "normalized": 0.4282560706401767
+        },
+        "infantMortality": {
+          "raw": 11.8,
+          "normalized": 0.8470254957507082
+        }
+      }
+    },
+    "Somalia": {
+      "country": "Somalia",
+      "iso3": "SOM",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 6.13,
+          "normalized": 1.0
+        },
+        "migration": {
+          "raw": 2.5,
+          "normalized": 0.6337611056268508
+        },
+        "lifeExpectancy": {
+          "raw": 58.8,
+          "normalized": 0.134796238244514
+        },
+        "medianAge": {
+          "raw": 15.4,
+          "normalized": 0.024282560706401758
+        },
+        "infantMortality": {
+          "raw": 66.3,
+          "normalized": 0.07507082152974498
+        }
+      }
+    },
+    "South Sudan": {
+      "country": "South Sudan",
+      "iso3": "SSD",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.86,
+          "normalized": 0.5850091407678245
+        },
+        "migration": {
+          "raw": 39.6,
+          "normalized": 1.0
+        },
+        "lifeExpectancy": {
+          "raw": 57.6,
+          "normalized": 0.09717868338557996
+        },
+        "medianAge": {
+          "raw": 18.0,
+          "normalized": 0.08167770419426047
+        },
+        "infantMortality": {
+          "raw": 63.8,
+          "normalized": 0.11048158640226624
+        }
+      }
+    },
+    "Uganda": {
+      "country": "Uganda",
+      "iso3": "UGA",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.28,
+          "normalized": 0.6617915904936015
+        },
+        "migration": {
+          "raw": -2.6,
+          "normalized": 0.5834155972359328
+        },
+        "lifeExpectancy": {
+          "raw": 68.3,
+          "normalized": 0.43260188087774276
+        },
+        "medianAge": {
+          "raw": 16.5,
+          "normalized": 0.048565121412803516
+        },
+        "infantMortality": {
+          "raw": 28.8,
+          "normalized": 0.6062322946175637
+        }
+      }
+    },
+    "United Republic of Tanzania": {
+      "country": "United Republic of Tanzania",
+      "iso3": "TZA",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.61,
+          "normalized": 0.7221206581352835
+        },
+        "migration": {
+          "raw": -0.6,
+          "normalized": 0.6031589338598222
+        },
+        "lifeExpectancy": {
+          "raw": 67.0,
+          "normalized": 0.3918495297805642
+        },
+        "medianAge": {
+          "raw": 17.2,
+          "normalized": 0.06401766004415008
+        },
+        "infantMortality": {
+          "raw": 28.9,
+          "normalized": 0.6048158640226629
+        }
+      }
+    },
+    "Zambia": {
+      "country": "Zambia",
+      "iso3": "ZMB",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.1,
+          "normalized": 0.6288848263254113
+        },
+        "migration": {
+          "raw": 0.5,
+          "normalized": 0.6140177690029615
+        },
+        "lifeExpectancy": {
+          "raw": 66.3,
+          "normalized": 0.3699059561128525
+        },
+        "medianAge": {
+          "raw": 17.5,
+          "normalized": 0.07064017660044149
+        },
+        "infantMortality": {
+          "raw": 38.2,
+          "normalized": 0.47308781869688377
+        }
+      }
+    },
+    "Zimbabwe": {
+      "country": "Zimbabwe",
+      "iso3": "ZWE",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.72,
+          "normalized": 0.5594149908592322
+        },
+        "migration": {
+          "raw": -6.0,
+          "normalized": 0.5498519249753208
+        },
+        "lifeExpectancy": {
+          "raw": 62.8,
+          "normalized": 0.26018808777429453
+        },
+        "medianAge": {
+          "raw": 17.8,
+          "normalized": 0.0772626931567329
+        },
+        "infantMortality": {
+          "raw": 33.2,
+          "normalized": 0.5439093484419263
+        }
+      }
+    },
+    "Angola": {
+      "country": "Angola",
+      "iso3": "AGO",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 5.12,
+          "normalized": 0.8153564899451554
+        },
+        "migration": {
+          "raw": -0.0,
+          "normalized": 0.6090819348469891
+        },
+        "lifeExpectancy": {
+          "raw": 64.6,
+          "normalized": 0.3166144200626957
+        },
+        "medianAge": {
+          "raw": 16.5,
+          "normalized": 0.048565121412803516
+        },
+        "infantMortality": {
+          "raw": 48.6,
+          "normalized": 0.32577903682719545
+        }
+      }
+    },
+    "Cameroon": {
+      "country": "Cameroon",
+      "iso3": "CMR",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.32,
+          "normalized": 0.6691042047531993
+        },
+        "migration": {
+          "raw": -0.2,
+          "normalized": 0.6071076011846002
+        },
+        "lifeExpectancy": {
+          "raw": 63.7,
+          "normalized": 0.28840125391849536
+        },
+        "medianAge": {
+          "raw": 17.8,
+          "normalized": 0.0772626931567329
+        },
+        "infantMortality": {
+          "raw": 47.4,
+          "normalized": 0.3427762039660056
+        }
+      }
+    },
+    "Central African Republic": {
+      "country": "Central African Republic",
+      "iso3": "CAF",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 6.01,
+          "normalized": 0.9780621572212066
+        },
+        "migration": {
+          "raw": -2.8,
+          "normalized": 0.5814412635735439
+        },
+        "lifeExpectancy": {
+          "raw": 57.4,
+          "normalized": 0.09090909090909084
+        },
+        "medianAge": {
+          "raw": 14.3,
+          "normalized": 0.0
+        },
+        "infantMortality": {
+          "raw": 68.5,
+          "normalized": 0.04390934844192629
+        }
+      }
+    },
+    "Chad": {
+      "country": "Chad",
+      "iso3": "TCD",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 6.12,
+          "normalized": 0.9981718464351006
+        },
+        "migration": {
+          "raw": 25.7,
+          "normalized": 0.8627838104639683
+        },
+        "lifeExpectancy": {
+          "raw": 55.1,
+          "normalized": 0.018808777429467127
+        },
+        "medianAge": {
+          "raw": 15.4,
+          "normalized": 0.024282560706401758
+        },
+        "infantMortality": {
+          "raw": 64.2,
+          "normalized": 0.10481586402266274
+        }
+      }
+    },
+    "Congo": {
+      "country": "Congo",
+      "iso3": "COG",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.16,
+          "normalized": 0.6398537477148081
+        },
+        "migration": {
+          "raw": -0.2,
+          "normalized": 0.6071076011846002
+        },
+        "lifeExpectancy": {
+          "raw": 65.8,
+          "normalized": 0.35423197492162994
+        },
+        "medianAge": {
+          "raw": 18.3,
+          "normalized": 0.08830022075055188
+        },
+        "infantMortality": {
+          "raw": 28.8,
+          "normalized": 0.6062322946175637
+        }
+      }
+    },
+    "Democratic Republic of the Congo": {
+      "country": "Democratic Republic of the Congo",
+      "iso3": "COD",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 6.05,
+          "normalized": 0.9853747714808043
+        },
+        "migration": {
+          "raw": -0.1,
+          "normalized": 0.6080947680157947
+        },
+        "lifeExpectancy": {
+          "raw": 61.9,
+          "normalized": 0.23197492163009395
+        },
+        "medianAge": {
+          "raw": 15.8,
+          "normalized": 0.033112582781456956
+        },
+        "infantMortality": {
+          "raw": 49.3,
+          "normalized": 0.3158640226628895
+        }
+      }
+    },
+    "Equatorial Guinea": {
+      "country": "Equatorial Guinea",
+      "iso3": "GNQ",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.08,
+          "normalized": 0.6252285191956124
+        },
+        "migration": {
+          "raw": 2.2,
+          "normalized": 0.6307996051332675
+        },
+        "lifeExpectancy": {
+          "raw": 63.7,
+          "normalized": 0.28840125391849536
+        },
+        "medianAge": {
+          "raw": 21.0,
+          "normalized": 0.1479028697571744
+        },
+        "infantMortality": {
+          "raw": 52.9,
+          "normalized": 0.2648725212464589
+        }
+      }
+    },
+    "Gabon": {
+      "country": "Gabon",
+      "iso3": "GAB",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.65,
+          "normalized": 0.546617915904936
+        },
+        "migration": {
+          "raw": 0.4,
+          "normalized": 0.613030602171767
+        },
+        "lifeExpectancy": {
+          "raw": 68.3,
+          "normalized": 0.43260188087774276
+        },
+        "medianAge": {
+          "raw": 21.5,
+          "normalized": 0.15894039735099338
+        },
+        "infantMortality": {
+          "raw": 27.5,
+          "normalized": 0.6246458923512748
+        }
+      }
+    },
+    "Sao Tome and Principe": {
+      "country": "Sao Tome and Principe",
+      "iso3": "STP",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.64,
+          "normalized": 0.5447897623400366
+        },
+        "migration": {
+          "raw": -2.6,
+          "normalized": 0.5834155972359328
+        },
+        "lifeExpectancy": {
+          "raw": 69.7,
+          "normalized": 0.47648902821316613
+        },
+        "medianAge": {
+          "raw": 19.1,
+          "normalized": 0.10596026490066228
+        },
+        "infantMortality": {
+          "raw": 11.5,
+          "normalized": 0.8512747875354107
+        }
+      }
+    },
+    "Algeria": {
+      "country": "Algeria",
+      "iso3": "DZA",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 2.77,
+          "normalized": 0.38574040219378425
+        },
+        "migration": {
+          "raw": -0.6,
+          "normalized": 0.6031589338598222
+        },
+        "lifeExpectancy": {
+          "raw": 76.3,
+          "normalized": 0.6833855799373039
+        },
+        "medianAge": {
+          "raw": 28.2,
+          "normalized": 0.3068432671081678
+        },
+        "infantMortality": {
+          "raw": 17.8,
+          "normalized": 0.7620396600566572
+        }
+      }
+    },
+    "Egypt": {
+      "country": "Egypt",
+      "iso3": "EGY",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 2.75,
+          "normalized": 0.3820840950639854
+        },
+        "migration": {
+          "raw": 2.7,
+          "normalized": 0.6357354392892398
+        },
+        "lifeExpectancy": {
+          "raw": 71.6,
+          "normalized": 0.5360501567398116
+        },
+        "medianAge": {
+          "raw": 24.0,
+          "normalized": 0.2141280353200883
+        },
+        "infantMortality": {
+          "raw": 14.6,
+          "normalized": 0.8073654390934843
+        }
+      }
+    },
+    "Libya": {
+      "country": "Libya",
+      "iso3": "LBY",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 2.36,
+          "normalized": 0.31078610603290674
+        },
+        "migration": {
+          "raw": -0.3,
+          "normalized": 0.6061204343534057
+        },
+        "lifeExpectancy": {
+          "raw": 69.3,
+          "normalized": 0.4639498432601879
+        },
+        "medianAge": {
+          "raw": 27.2,
+          "normalized": 0.2847682119205298
+        },
+        "infantMortality": {
+          "raw": 16.0,
+          "normalized": 0.7875354107648725
+        }
+      }
+    },
+    "Morocco": {
+      "country": "Morocco",
+      "iso3": "MAR",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 2.23,
+          "normalized": 0.2870201096892139
+        },
+        "migration": {
+          "raw": -1.1,
+          "normalized": 0.5982230997038499
+        },
+        "lifeExpectancy": {
+          "raw": 75.3,
+          "normalized": 0.6520376175548588
+        },
+        "medianAge": {
+          "raw": 29.2,
+          "normalized": 0.32891832229580575
+        },
+        "infantMortality": {
+          "raw": 14.3,
+          "normalized": 0.8116147308781869
+        }
+      }
+    },
+    "Sudan": {
+      "country": "Sudan",
+      "iso3": "SDN",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.32,
+          "normalized": 0.6691042047531993
+        },
+        "migration": {
+          "raw": -27.0,
+          "normalized": 0.3425468904244817
+        },
+        "lifeExpectancy": {
+          "raw": 66.3,
+          "normalized": 0.3699059561128525
+        },
+        "medianAge": {
+          "raw": 18.3,
+          "normalized": 0.08830022075055188
+        },
+        "infantMortality": {
+          "raw": 36.2,
+          "normalized": 0.5014164305949007
+        }
+      }
+    },
+    "Tunisia": {
+      "country": "Tunisia",
+      "iso3": "TUN",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 1.83,
+          "normalized": 0.21389396709323583
+        },
+        "migration": {
+          "raw": -1.1,
+          "normalized": 0.5982230997038499
+        },
+        "lifeExpectancy": {
+          "raw": 76.5,
+          "normalized": 0.6896551724137929
+        },
+        "medianAge": {
+          "raw": 32.1,
+          "normalized": 0.3929359823399559
+        },
+        "infantMortality": {
+          "raw": 9.0,
+          "normalized": 0.886685552407932
+        }
+      }
+    },
+    "Western Sahara": {
+      "country": "Western Sahara",
+      "iso3": "ESH",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 2.16,
+          "normalized": 0.27422303473491777
+        },
+        "migration": {
+          "raw": 9.7,
+          "normalized": 0.7048371174728529
+        },
+        "lifeExpectancy": {
+          "raw": 71.4,
+          "normalized": 0.529780564263323
+        },
+        "medianAge": {
+          "raw": 32.0,
+          "normalized": 0.39072847682119205
+        },
+        "infantMortality": {
+          "raw": 23.8,
+          "normalized": 0.6770538243626062
+        }
+      }
+    },
+    "Botswana": {
+      "country": "Botswana",
+      "iso3": "BWA",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 2.73,
+          "normalized": 0.37842778793418647
+        },
+        "migration": {
+          "raw": -2.6,
+          "normalized": 0.5834155972359328
+        },
+        "lifeExpectancy": {
+          "raw": 69.2,
+          "normalized": 0.4608150470219436
+        },
+        "medianAge": {
+          "raw": 22.9,
+          "normalized": 0.1898454746136865
+        },
+        "infantMortality": {
+          "raw": 28.4,
+          "normalized": 0.6118980169971671
+        }
+      }
+    },
+    "Eswatini": {
+      "country": "Eswatini",
+      "iso3": "SWZ",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 2.75,
+          "normalized": 0.3820840950639854
+        },
+        "migration": {
+          "raw": -6.9,
+          "normalized": 0.5409674234945706
+        },
+        "lifeExpectancy": {
+          "raw": 64.1,
+          "normalized": 0.30094043887147315
+        },
+        "medianAge": {
+          "raw": 22.0,
+          "normalized": 0.16997792494481237
+        },
+        "infantMortality": {
+          "raw": 37.6,
+          "normalized": 0.4815864022662889
+        }
+      }
+    },
+    "Lesotho": {
+      "country": "Lesotho",
+      "iso3": "LSO",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 2.69,
+          "normalized": 0.3711151736745886
+        },
+        "migration": {
+          "raw": -2.2,
+          "normalized": 0.5873642645607107
+        },
+        "lifeExpectancy": {
+          "raw": 57.4,
+          "normalized": 0.09090909090909084
+        },
+        "medianAge": {
+          "raw": 21.4,
+          "normalized": 0.15673289183222955
+        },
+        "infantMortality": {
+          "raw": 56.5,
+          "normalized": 0.21388101983002827
+        }
+      }
+    },
+    "Namibia": {
+      "country": "Namibia",
+      "iso3": "NAM",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.21,
+          "normalized": 0.46617915904936014
+        },
+        "migration": {
+          "raw": 3.9,
+          "normalized": 0.6475814412635735
+        },
+        "lifeExpectancy": {
+          "raw": 67.4,
+          "normalized": 0.40438871473354243
+        },
+        "medianAge": {
+          "raw": 21.0,
+          "normalized": 0.1479028697571744
+        },
+        "infantMortality": {
+          "raw": 27.2,
+          "normalized": 0.6288951841359773
+        }
+      }
+    },
+    "South Africa": {
+      "country": "South Africa",
+      "iso3": "ZAF",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 2.22,
+          "normalized": 0.28519195612431447
+        },
+        "migration": {
+          "raw": 3.6,
+          "normalized": 0.6446199407699901
+        },
+        "lifeExpectancy": {
+          "raw": 66.1,
+          "normalized": 0.36363636363636337
+        },
+        "medianAge": {
+          "raw": 28.2,
+          "normalized": 0.3068432671081678
+        },
+        "infantMortality": {
+          "raw": 27.8,
+          "normalized": 0.6203966005665722
+        }
+      }
+    },
+    "Benin": {
+      "country": "Benin",
+      "iso3": "BEN",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.56,
+          "normalized": 0.712979890310786
+        },
+        "migration": {
+          "raw": -0.0,
+          "normalized": 0.6090819348469891
+        },
+        "lifeExpectancy": {
+          "raw": 60.8,
+          "normalized": 0.19749216300940425
+        },
+        "medianAge": {
+          "raw": 17.8,
+          "normalized": 0.0772626931567329
+        },
+        "infantMortality": {
+          "raw": 52.3,
+          "normalized": 0.273371104815864
+        }
+      }
+    },
+    "Burkina Faso": {
+      "country": "Burkina Faso",
+      "iso3": "BFA",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.19,
+          "normalized": 0.6453382084095065
+        },
+        "migration": {
+          "raw": -1.1,
+          "normalized": 0.5982230997038499
+        },
+        "lifeExpectancy": {
+          "raw": 61.1,
+          "normalized": 0.20689655172413793
+        },
+        "medianAge": {
+          "raw": 17.3,
+          "normalized": 0.06622516556291391
+        },
+        "infantMortality": {
+          "raw": 52.3,
+          "normalized": 0.273371104815864
+        }
+      }
+    },
+    "Cabo Verde": {
+      "country": "Cabo Verde",
+      "iso3": "CPV",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 1.52,
+          "normalized": 0.15722120658135283
+        },
+        "migration": {
+          "raw": -2.3,
+          "normalized": 0.5863770977295163
+        },
+        "lifeExpectancy": {
+          "raw": 76.1,
+          "normalized": 0.6771159874608147
+        },
+        "medianAge": {
+          "raw": 27.9,
+          "normalized": 0.30022075055187636
+        },
+        "infantMortality": {
+          "raw": 9.8,
+          "normalized": 0.8753541076487252
+        }
+      }
+    },
+    "C\u00f4te d'Ivoire": {
+      "country": "C\u00f4te d'Ivoire",
+      "iso3": "CIV",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.28,
+          "normalized": 0.6617915904936015
+        },
+        "migration": {
+          "raw": 0.2,
+          "normalized": 0.6110562685093781
+        },
+        "lifeExpectancy": {
+          "raw": 61.9,
+          "normalized": 0.23197492163009395
+        },
+        "medianAge": {
+          "raw": 18.1,
+          "normalized": 0.08388520971302431
+        },
+        "infantMortality": {
+          "raw": 51.7,
+          "normalized": 0.28186968838526905
+        }
+      }
+    },
+    "Gambia": {
+      "country": "Gambia",
+      "iso3": "GMB",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.01,
+          "normalized": 0.6124314442413162
+        },
+        "migration": {
+          "raw": -1.1,
+          "normalized": 0.5982230997038499
+        },
+        "lifeExpectancy": {
+          "raw": 65.9,
+          "normalized": 0.3573667711598747
+        },
+        "medianAge": {
+          "raw": 18.2,
+          "normalized": 0.08609271523178805
+        },
+        "infantMortality": {
+          "raw": 29.5,
+          "normalized": 0.5963172804532577
+        }
+      }
+    },
+    "Ghana": {
+      "country": "Ghana",
+      "iso3": "GHA",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.4,
+          "normalized": 0.5009140767824497
+        },
+        "migration": {
+          "raw": -0.3,
+          "normalized": 0.6061204343534057
+        },
+        "lifeExpectancy": {
+          "raw": 65.5,
+          "normalized": 0.34482758620689646
+        },
+        "medianAge": {
+          "raw": 20.9,
+          "normalized": 0.14569536423841056
+        },
+        "infantMortality": {
+          "raw": 30.7,
+          "normalized": 0.5793201133144475
+        }
+      }
+    },
+    "Guinea": {
+      "country": "Guinea",
+      "iso3": "GIN",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.22,
+          "normalized": 0.6508226691042047
+        },
+        "migration": {
+          "raw": -0.3,
+          "normalized": 0.6061204343534057
+        },
+        "lifeExpectancy": {
+          "raw": 60.7,
+          "normalized": 0.19435736677115992
+        },
+        "medianAge": {
+          "raw": 18.0,
+          "normalized": 0.08167770419426047
+        },
+        "infantMortality": {
+          "raw": 65.4,
+          "normalized": 0.08781869688385258
+        }
+      }
+    },
+    "Guinea-Bissau": {
+      "country": "Guinea-Bissau",
+      "iso3": "GNB",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.84,
+          "normalized": 0.5813528336380256
+        },
+        "migration": {
+          "raw": -0.7,
+          "normalized": 0.6021717670286277
+        },
+        "lifeExpectancy": {
+          "raw": 64.1,
+          "normalized": 0.30094043887147315
+        },
+        "medianAge": {
+          "raw": 18.9,
+          "normalized": 0.10154525386313462
+        },
+        "infantMortality": {
+          "raw": 48.9,
+          "normalized": 0.3215297450424929
+        }
+      }
+    },
+    "Liberia": {
+      "country": "Liberia",
+      "iso3": "LBR",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.95,
+          "normalized": 0.6014625228519196
+        },
+        "migration": {
+          "raw": -0.9,
+          "normalized": 0.6001974333662389
+        },
+        "lifeExpectancy": {
+          "raw": 62.2,
+          "normalized": 0.24137931034482762
+        },
+        "medianAge": {
+          "raw": 18.4,
+          "normalized": 0.09050772626931564
+        },
+        "infantMortality": {
+          "raw": 55.9,
+          "normalized": 0.2223796033994334
+        }
+      }
+    },
+    "Mali": {
+      "country": "Mali",
+      "iso3": "MLI",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 5.61,
+          "normalized": 0.9049360146252285
+        },
+        "migration": {
+          "raw": -1.7,
+          "normalized": 0.5923000987166831
+        },
+        "lifeExpectancy": {
+          "raw": 60.4,
+          "normalized": 0.18495297805642624
+        },
+        "medianAge": {
+          "raw": 15.5,
+          "normalized": 0.02649006622516555
+        },
+        "infantMortality": {
+          "raw": 60.8,
+          "normalized": 0.1529745042492917
+        }
+      }
+    },
+    "Mauritania": {
+      "country": "Mauritania",
+      "iso3": "MRT",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.7,
+          "normalized": 0.7385740402193784
+        },
+        "migration": {
+          "raw": 0.6,
+          "normalized": 0.6150049358341559
+        },
+        "lifeExpectancy": {
+          "raw": 68.5,
+          "normalized": 0.4388714733542319
+        },
+        "medianAge": {
+          "raw": 17.1,
+          "normalized": 0.06181015452538633
+        },
+        "infantMortality": {
+          "raw": 30.8,
+          "normalized": 0.5779036827195467
+        }
+      }
+    },
+    "Niger": {
+      "country": "Niger",
+      "iso3": "NER",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 6.06,
+          "normalized": 0.9872029250457038
+        },
+        "migration": {
+          "raw": 0.0,
+          "normalized": 0.6090819348469891
+        },
+        "lifeExpectancy": {
+          "raw": 61.2,
+          "normalized": 0.2100313479623825
+        },
+        "medianAge": {
+          "raw": 15.3,
+          "normalized": 0.02207505518763797
+        },
+        "infantMortality": {
+          "raw": 64.6,
+          "normalized": 0.09915014164305946
+        }
+      }
+    },
+    "Nigeria": {
+      "country": "Nigeria",
+      "iso3": "NGA",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.48,
+          "normalized": 0.6983546617915906
+        },
+        "migration": {
+          "raw": -0.3,
+          "normalized": 0.6061204343534057
+        },
+        "lifeExpectancy": {
+          "raw": 54.5,
+          "normalized": 0.0
+        },
+        "medianAge": {
+          "raw": 17.8,
+          "normalized": 0.0772626931567329
+        },
+        "infantMortality": {
+          "raw": 69.5,
+          "normalized": 0.02974504249291776
+        }
+      }
+    },
+    "Saint Helena": {
+      "country": "Saint Helena",
+      "iso3": "SHN",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 1.64,
+          "normalized": 0.17915904936014623
+        },
+        "migration": {
+          "raw": 0.0,
+          "normalized": 0.6090819348469891
+        },
+        "lifeExpectancy": {
+          "raw": 76.8,
+          "normalized": 0.6990595611285264
+        },
+        "medianAge": {
+          "raw": 50.5,
+          "normalized": 0.7991169977924946
+        },
+        "infantMortality": {
+          "raw": 12.1,
+          "normalized": 0.8427762039660056
+        }
+      }
+    },
+    "Senegal": {
+      "country": "Senegal",
+      "iso3": "SEN",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.82,
+          "normalized": 0.5776965265082267
+        },
+        "migration": {
+          "raw": -0.6,
+          "normalized": 0.6031589338598222
+        },
+        "lifeExpectancy": {
+          "raw": 68.7,
+          "normalized": 0.445141065830721
+        },
+        "medianAge": {
+          "raw": 19.1,
+          "normalized": 0.10596026490066228
+        },
+        "infantMortality": {
+          "raw": 24.1,
+          "normalized": 0.6728045325779036
+        }
+      }
+    },
+    "Sierra Leone": {
+      "country": "Sierra Leone",
+      "iso3": "SLE",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 3.79,
+          "normalized": 0.5722120658135283
+        },
+        "migration": {
+          "raw": -0.5,
+          "normalized": 0.6041461006910167
+        },
+        "lifeExpectancy": {
+          "raw": 61.8,
+          "normalized": 0.2288401253918494
+        },
+        "medianAge": {
+          "raw": 19.3,
+          "normalized": 0.11037527593818985
+        },
+        "infantMortality": {
+          "raw": 71.6,
+          "normalized": 0.0
+        }
+      }
+    },
+    "Togo": {
+      "country": "Togo",
+      "iso3": "TGO",
+      "region": "Africa",
+      "values": {
+        "fertility": {
+          "raw": 4.19,
+          "normalized": 0.6453382084095065
+        },
+        "migration": {
+          "raw": -0.2,
+          "normalized": 0.6071076011846002
+        },
+        "lifeExpectancy": {
+          "raw": 62.7,
+          "normalized": 0.2570532915360502
+        },
+        "medianAge": {
+          "raw": 18.8,
+          "normalized": 0.09933774834437087
+        },
+        "infantMortality": {
+          "raw": 41.4,
+          "normalized": 0.42776203966005666
+        }
+      }
+    },
+    "Kazakhstan": {
+      "country": "Kazakhstan",
+      "iso3": "KAZ",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 3.01,
+          "normalized": 0.42961608775137106
+        },
+        "migration": {
+          "raw": -0.2,
+          "normalized": 0.6071076011846002
+        },
+        "lifeExpectancy": {
+          "raw": 74.4,
+          "normalized": 0.6238244514106583
+        },
+        "medianAge": {
+          "raw": 29.5,
+          "normalized": 0.3355408388520971
+        },
+        "infantMortality": {
+          "raw": 8.1,
+          "normalized": 0.8994334277620397
+        }
+      }
+    },
+    "Kyrgyzstan": {
+      "country": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 2.8,
+          "normalized": 0.39122486288848257
+        },
+        "migration": {
+          "raw": 0.8,
+          "normalized": 0.6169792694965448
+        },
+        "lifeExpectancy": {
+          "raw": 71.7,
+          "normalized": 0.5391849529780565
+        },
+        "medianAge": {
+          "raw": 25.1,
+          "normalized": 0.2384105960264901
+        },
+        "infantMortality": {
+          "raw": 14.3,
+          "normalized": 0.8116147308781869
+        }
+      }
+    },
+    "Tajikistan": {
+      "country": "Tajikistan",
+      "iso3": "TJK",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 3.07,
+          "normalized": 0.4405850091407678
+        },
+        "migration": {
+          "raw": -1.9,
+          "normalized": 0.5903257650542941
+        },
+        "lifeExpectancy": {
+          "raw": 71.8,
+          "normalized": 0.5423197492163008
+        },
+        "medianAge": {
+          "raw": 21.9,
+          "normalized": 0.16777041942604853
+        },
+        "infantMortality": {
+          "raw": 24.5,
+          "normalized": 0.6671388101983002
+        }
+      }
+    },
+    "Turkmenistan": {
+      "country": "Turkmenistan",
+      "iso3": "TKM",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 2.69,
+          "normalized": 0.3711151736745886
+        },
+        "migration": {
+          "raw": 2.0,
+          "normalized": 0.6288252714708785
+        },
+        "lifeExpectancy": {
+          "raw": 70.1,
+          "normalized": 0.4890282131661439
+        },
+        "medianAge": {
+          "raw": 26.2,
+          "normalized": 0.26269315673289184
+        },
+        "infantMortality": {
+          "raw": 31.8,
+          "normalized": 0.5637393767705382
+        }
+      }
+    },
+    "Uzbekistan": {
+      "country": "Uzbekistan",
+      "iso3": "UZB",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 3.5,
+          "normalized": 0.5191956124314442
+        },
+        "migration": {
+          "raw": -0.2,
+          "normalized": 0.6071076011846002
+        },
+        "lifeExpectancy": {
+          "raw": 72.4,
+          "normalized": 0.5611285266457681
+        },
+        "medianAge": {
+          "raw": 26.9,
+          "normalized": 0.2781456953642384
+        },
+        "infantMortality": {
+          "raw": 11.1,
+          "normalized": 0.8569405099150141
+        }
+      }
+    },
+    "China": {
+      "country": "China",
+      "iso3": "CHN",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.0,
+          "normalized": 0.06215722120658135
+        },
+        "migration": {
+          "raw": -0.4,
+          "normalized": 0.6051332675222112
+        },
+        "lifeExpectancy": {
+          "raw": 78.0,
+          "normalized": 0.7366771159874607
+        },
+        "medianAge": {
+          "raw": 39.1,
+          "normalized": 0.5474613686534217
+        },
+        "infantMortality": {
+          "raw": 5.1,
+          "normalized": 0.9419263456090652
+        }
+      }
+    },
+    "China, Hong Kong SAR": {
+      "country": "China, Hong Kong SAR",
+      "iso3": "HKG",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 0.72,
+          "normalized": 0.010968921389396698
+        },
+        "migration": {
+          "raw": -0.5,
+          "normalized": 0.6041461006910167
+        },
+        "lifeExpectancy": {
+          "raw": 85.5,
+          "normalized": 0.9717868338557992
+        },
+        "medianAge": {
+          "raw": 46.2,
+          "normalized": 0.7041942604856513
+        },
+        "infantMortality": {
+          "raw": 1.3,
+          "normalized": 0.9957507082152974
+        }
+      }
+    },
+    "China, Macao SAR": {
+      "country": "China, Macao SAR",
+      "iso3": "MAC",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 0.66,
+          "normalized": 0.0
+        },
+        "migration": {
+          "raw": 12.3,
+          "normalized": 0.7305034550839091
+        },
+        "lifeExpectancy": {
+          "raw": 83.1,
+          "normalized": 0.8965517241379307
+        },
+        "medianAge": {
+          "raw": 38.3,
+          "normalized": 0.5298013245033112
+        },
+        "infantMortality": {
+          "raw": 2.3,
+          "normalized": 0.9815864022662889
+        }
+      }
+    },
+    "China, Taiwan Province of China": {
+      "country": "China, Taiwan Province of China",
+      "iso3": "TWN",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 0.87,
+          "normalized": 0.03839122486288848
+        },
+        "migration": {
+          "raw": -1.4,
+          "normalized": 0.5952615992102666
+        },
+        "lifeExpectancy": {
+          "raw": 80.6,
+          "normalized": 0.8181818181818179
+        },
+        "medianAge": {
+          "raw": 43.5,
+          "normalized": 0.6445916114790288
+        },
+        "infantMortality": {
+          "raw": 3.0,
+          "normalized": 0.971671388101983
+        }
+      }
+    },
+    "Dem. People's Republic of Korea": {
+      "country": "Dem. People's Republic of Korea",
+      "iso3": "PRK",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.78,
+          "normalized": 0.2047531992687386
+        },
+        "migration": {
+          "raw": -0.1,
+          "normalized": 0.6080947680157947
+        },
+        "lifeExpectancy": {
+          "raw": 73.6,
+          "normalized": 0.5987460815047019
+        },
+        "medianAge": {
+          "raw": 36.0,
+          "normalized": 0.47902869757174393
+        },
+        "infantMortality": {
+          "raw": 14.5,
+          "normalized": 0.8087818696883853
+        }
+      }
+    },
+    "Japan": {
+      "country": "Japan",
+      "iso3": "JPN",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.21,
+          "normalized": 0.10054844606946983
+        },
+        "migration": {
+          "raw": 1.4,
+          "normalized": 0.6229022704837117
+        },
+        "lifeExpectancy": {
+          "raw": 84.7,
+          "normalized": 0.9467084639498432
+        },
+        "medianAge": {
+          "raw": 49.0,
+          "normalized": 0.7660044150110377
+        },
+        "infantMortality": {
+          "raw": 1.6,
+          "normalized": 0.9915014164305949
+        }
+      }
+    },
+    "Mongolia": {
+      "country": "Mongolia",
+      "iso3": "MNG",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 2.69,
+          "normalized": 0.3711151736745886
+        },
+        "migration": {
+          "raw": 0.0,
+          "normalized": 0.6090819348469891
+        },
+        "lifeExpectancy": {
+          "raw": 71.7,
+          "normalized": 0.5391849529780565
+        },
+        "medianAge": {
+          "raw": 26.8,
+          "normalized": 0.27593818984547464
+        },
+        "infantMortality": {
+          "raw": 10.6,
+          "normalized": 0.8640226628895185
+        }
+      }
+    },
+    "Republic of Korea": {
+      "country": "Republic of Korea",
+      "iso3": "KOR",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 0.72,
+          "normalized": 0.010968921389396698
+        },
+        "migration": {
+          "raw": 1.7,
+          "normalized": 0.6258637709772952
+        },
+        "lifeExpectancy": {
+          "raw": 84.3,
+          "normalized": 0.934169278996865
+        },
+        "medianAge": {
+          "raw": 44.5,
+          "normalized": 0.6666666666666667
+        },
+        "infantMortality": {
+          "raw": 2.1,
+          "normalized": 0.9844192634560907
+        }
+      }
+    },
+    "Afghanistan": {
+      "country": "Afghanistan",
+      "iso3": "AFG",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 4.84,
+          "normalized": 0.7641681901279708
+        },
+        "migration": {
+          "raw": -1.2,
+          "normalized": 0.5972359328726554
+        },
+        "lifeExpectancy": {
+          "raw": 66.0,
+          "normalized": 0.36050156739811906
+        },
+        "medianAge": {
+          "raw": 16.9,
+          "normalized": 0.05739514348785867
+        },
+        "infantMortality": {
+          "raw": 44.0,
+          "normalized": 0.39093484419263447
+        }
+      }
+    },
+    "Bangladesh": {
+      "country": "Bangladesh",
+      "iso3": "BGD",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 2.16,
+          "normalized": 0.27422303473491777
+        },
+        "migration": {
+          "raw": -3.2,
+          "normalized": 0.5774925962487659
+        },
+        "lifeExpectancy": {
+          "raw": 74.7,
+          "normalized": 0.6332288401253918
+        },
+        "medianAge": {
+          "raw": 25.3,
+          "normalized": 0.24282560706401768
+        },
+        "infantMortality": {
+          "raw": 22.8,
+          "normalized": 0.6912181303116147
+        }
+      }
+    },
+    "Bhutan": {
+      "country": "Bhutan",
+      "iso3": "BTN",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.46,
+          "normalized": 0.14625228519195613
+        },
+        "migration": {
+          "raw": 0.4,
+          "normalized": 0.613030602171767
+        },
+        "lifeExpectancy": {
+          "raw": 73.0,
+          "normalized": 0.579937304075235
+        },
+        "medianAge": {
+          "raw": 29.4,
+          "normalized": 0.3333333333333333
+        },
+        "infantMortality": {
+          "raw": 19.3,
+          "normalized": 0.7407932011331444
+        }
+      }
+    },
+    "India": {
+      "country": "India",
+      "iso3": "IND",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.98,
+          "normalized": 0.24131627056672758
+        },
+        "migration": {
+          "raw": -0.7,
+          "normalized": 0.6021717670286277
+        },
+        "lifeExpectancy": {
+          "raw": 72.0,
+          "normalized": 0.5485893416927898
+        },
+        "medianAge": {
+          "raw": 28.1,
+          "normalized": 0.30463576158940403
+        },
+        "infantMortality": {
+          "raw": 22.6,
+          "normalized": 0.6940509915014164
+        }
+      }
+    },
+    "Iran (Islamic Republic of)": {
+      "country": "Iran (Islamic Republic of)",
+      "iso3": "IRN",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.7,
+          "normalized": 0.190127970749543
+        },
+        "migration": {
+          "raw": 2.9,
+          "normalized": 0.6377097729516288
+        },
+        "lifeExpectancy": {
+          "raw": 77.7,
+          "normalized": 0.7272727272727272
+        },
+        "medianAge": {
+          "raw": 32.9,
+          "normalized": 0.4105960264900662
+        },
+        "infantMortality": {
+          "raw": 9.9,
+          "normalized": 0.8739376770538243
+        }
+      }
+    },
+    "Maldives": {
+      "country": "Maldives",
+      "iso3": "MDV",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.58,
+          "normalized": 0.16819012797074956
+        },
+        "migration": {
+          "raw": -5.5,
+          "normalized": 0.5547877591312932
+        },
+        "lifeExpectancy": {
+          "raw": 81.0,
+          "normalized": 0.8307210031347961
+        },
+        "medianAge": {
+          "raw": 31.1,
+          "normalized": 0.37086092715231794
+        },
+        "infantMortality": {
+          "raw": 4.3,
+          "normalized": 0.953257790368272
+        }
+      }
+    },
+    "Nepal": {
+      "country": "Nepal",
+      "iso3": "NPL",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.98,
+          "normalized": 0.24131627056672758
+        },
+        "migration": {
+          "raw": -13.8,
+          "normalized": 0.472852912142152
+        },
+        "lifeExpectancy": {
+          "raw": 70.4,
+          "normalized": 0.49843260188087785
+        },
+        "medianAge": {
+          "raw": 24.7,
+          "normalized": 0.22958057395143486
+        },
+        "infantMortality": {
+          "raw": 21.9,
+          "normalized": 0.7039660056657224
+        }
+      }
+    },
+    "Pakistan": {
+      "country": "Pakistan",
+      "iso3": "PAK",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 3.61,
+          "normalized": 0.5393053016453382
+        },
+        "migration": {
+          "raw": -6.5,
+          "normalized": 0.5449160908193484
+        },
+        "lifeExpectancy": {
+          "raw": 67.6,
+          "normalized": 0.4106583072100311
+        },
+        "medianAge": {
+          "raw": 20.3,
+          "normalized": 0.13245033112582782
+        },
+        "infantMortality": {
+          "raw": 49.4,
+          "normalized": 0.31444759206798867
+        }
+      }
+    },
+    "Sri Lanka": {
+      "country": "Sri Lanka",
+      "iso3": "LKA",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.97,
+          "normalized": 0.23948811700182818
+        },
+        "migration": {
+          "raw": -1.2,
+          "normalized": 0.5972359328726554
+        },
+        "lifeExpectancy": {
+          "raw": 77.5,
+          "normalized": 0.7210031347962381
+        },
+        "medianAge": {
+          "raw": 32.8,
+          "normalized": 0.40838852097130235
+        },
+        "infantMortality": {
+          "raw": 5.1,
+          "normalized": 0.9419263456090652
+        }
+      }
+    },
+    "Brunei Darussalam": {
+      "country": "Brunei Darussalam",
+      "iso3": "BRN",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.75,
+          "normalized": 0.1992687385740402
+        },
+        "migration": {
+          "raw": 0.0,
+          "normalized": 0.6090819348469891
+        },
+        "lifeExpectancy": {
+          "raw": 75.3,
+          "normalized": 0.6520376175548588
+        },
+        "medianAge": {
+          "raw": 31.8,
+          "normalized": 0.3863134657836645
+        },
+        "infantMortality": {
+          "raw": 8.1,
+          "normalized": 0.8994334277620397
+        }
+      }
+    },
+    "Cambodia": {
+      "country": "Cambodia",
+      "iso3": "KHM",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 2.58,
+          "normalized": 0.3510054844606947
+        },
+        "migration": {
+          "raw": -1.8,
+          "normalized": 0.5913129318854886
+        },
+        "lifeExpectancy": {
+          "raw": 70.7,
+          "normalized": 0.5078369905956113
+        },
+        "medianAge": {
+          "raw": 25.8,
+          "normalized": 0.25386313465783666
+        },
+        "infantMortality": {
+          "raw": 19.2,
+          "normalized": 0.7422096317280453
+        }
+      }
+    },
+    "Indonesia": {
+      "country": "Indonesia",
+      "iso3": "IDN",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 2.13,
+          "normalized": 0.26873857404021934
+        },
+        "migration": {
+          "raw": -0.1,
+          "normalized": 0.6080947680157947
+        },
+        "lifeExpectancy": {
+          "raw": 71.1,
+          "normalized": 0.5203761755485891
+        },
+        "medianAge": {
+          "raw": 29.8,
+          "normalized": 0.34216335540838855
+        },
+        "infantMortality": {
+          "raw": 17.1,
+          "normalized": 0.7719546742209631
+        }
+      }
+    },
+    "Lao People's Democratic Republic": {
+      "country": "Lao People's Democratic Republic",
+      "iso3": "LAO",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 2.42,
+          "normalized": 0.32175502742230344
+        },
+        "migration": {
+          "raw": -1.3,
+          "normalized": 0.596248766041461
+        },
+        "lifeExpectancy": {
+          "raw": 69.0,
+          "normalized": 0.4545454545454545
+        },
+        "medianAge": {
+          "raw": 24.3,
+          "normalized": 0.2207505518763797
+        },
+        "infantMortality": {
+          "raw": 31.7,
+          "normalized": 0.565155807365439
+        }
+      }
+    },
+    "Malaysia": {
+      "country": "Malaysia",
+      "iso3": "MYS",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.55,
+          "normalized": 0.1627056672760512
+        },
+        "migration": {
+          "raw": 5.2,
+          "normalized": 0.6604146100691016
+        },
+        "lifeExpectancy": {
+          "raw": 76.7,
+          "normalized": 0.6959247648902821
+        },
+        "medianAge": {
+          "raw": 30.1,
+          "normalized": 0.34878587196467997
+        },
+        "infantMortality": {
+          "raw": 6.4,
+          "normalized": 0.9235127478753541
+        }
+      }
+    },
+    "Myanmar": {
+      "country": "Myanmar",
+      "iso3": "MMR",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 2.12,
+          "normalized": 0.26691042047531993
+        },
+        "migration": {
+          "raw": -0.6,
+          "normalized": 0.6031589338598222
+        },
+        "lifeExpectancy": {
+          "raw": 66.9,
+          "normalized": 0.38871473354231983
+        },
+        "medianAge": {
+          "raw": 29.5,
+          "normalized": 0.3355408388520971
+        },
+        "infantMortality": {
+          "raw": 31.8,
+          "normalized": 0.5637393767705382
+        }
+      }
+    },
+    "Philippines": {
+      "country": "Philippines",
+      "iso3": "PHL",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.92,
+          "normalized": 0.23034734917733088
+        },
+        "migration": {
+          "raw": -1.4,
+          "normalized": 0.5952615992102666
+        },
+        "lifeExpectancy": {
+          "raw": 69.8,
+          "normalized": 0.4796238244514105
+        },
+        "medianAge": {
+          "raw": 25.3,
+          "normalized": 0.24282560706401768
+        },
+        "infantMortality": {
+          "raw": 20.7,
+          "normalized": 0.7209631728045326
+        }
+      }
+    },
+    "Singapore": {
+      "country": "Singapore",
+      "iso3": "SGP",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 0.94,
+          "normalized": 0.05118829981718463
+        },
+        "migration": {
+          "raw": 4.7,
+          "normalized": 0.6554787759131293
+        },
+        "lifeExpectancy": {
+          "raw": 83.7,
+          "normalized": 0.915360501567398
+        },
+        "medianAge": {
+          "raw": 35.1,
+          "normalized": 0.4591611479028698
+        },
+        "infantMortality": {
+          "raw": 1.7,
+          "normalized": 0.990084985835694
+        }
+      }
+    },
+    "Thailand": {
+      "country": "Thailand",
+      "iso3": "THA",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.21,
+          "normalized": 0.10054844606946983
+        },
+        "migration": {
+          "raw": 0.3,
+          "normalized": 0.6120434353405725
+        },
+        "lifeExpectancy": {
+          "raw": 76.4,
+          "normalized": 0.6865203761755486
+        },
+        "medianAge": {
+          "raw": 39.7,
+          "normalized": 0.5607064017660045
+        },
+        "infantMortality": {
+          "raw": 6.2,
+          "normalized": 0.9263456090651558
+        }
+      }
+    },
+    "Timor-Leste": {
+      "country": "Timor-Leste",
+      "iso3": "TLS",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 2.71,
+          "normalized": 0.37477148080438755
+        },
+        "migration": {
+          "raw": -4.1,
+          "normalized": 0.5686080947680158
+        },
+        "lifeExpectancy": {
+          "raw": 67.7,
+          "normalized": 0.41379310344827586
+        },
+        "medianAge": {
+          "raw": 21.0,
+          "normalized": 0.1479028697571744
+        },
+        "infantMortality": {
+          "raw": 37.6,
+          "normalized": 0.4815864022662889
+        }
+      }
+    },
+    "Viet Nam": {
+      "country": "Viet Nam",
+      "iso3": "VNM",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.91,
+          "normalized": 0.22851919561243145
+        },
+        "migration": {
+          "raw": -0.8,
+          "normalized": 0.6011846001974334
+        },
+        "lifeExpectancy": {
+          "raw": 74.6,
+          "normalized": 0.6300940438871471
+        },
+        "medianAge": {
+          "raw": 32.4,
+          "normalized": 0.3995584988962472
+        },
+        "infantMortality": {
+          "raw": 15.1,
+          "normalized": 0.8002832861189801
+        }
+      }
+    },
+    "Armenia": {
+      "country": "Armenia",
+      "iso3": "ARM",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.71,
+          "normalized": 0.1919561243144424
+        },
+        "migration": {
+          "raw": 25.5,
+          "normalized": 0.8608094768015794
+        },
+        "lifeExpectancy": {
+          "raw": 75.7,
+          "normalized": 0.664576802507837
+        },
+        "medianAge": {
+          "raw": 35.8,
+          "normalized": 0.47461368653421626
+        },
+        "infantMortality": {
+          "raw": 8.7,
+          "normalized": 0.8909348441926346
+        }
+      }
+    },
+    "Azerbaijan": {
+      "country": "Azerbaijan",
+      "iso3": "AZE",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.67,
+          "normalized": 0.18464351005484458
+        },
+        "migration": {
+          "raw": -8.2,
+          "normalized": 0.5281342546890424
+        },
+        "lifeExpectancy": {
+          "raw": 74.4,
+          "normalized": 0.6238244514106583
+        },
+        "medianAge": {
+          "raw": 32.6,
+          "normalized": 0.4039735099337749
+        },
+        "infantMortality": {
+          "raw": 14.9,
+          "normalized": 0.8031161473087818
+        }
+      }
+    },
+    "Bahrain": {
+      "country": "Bahrain",
+      "iso3": "BHR",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.82,
+          "normalized": 0.21206581352833642
+        },
+        "migration": {
+          "raw": 12.7,
+          "normalized": 0.7344521224086871
+        },
+        "lifeExpectancy": {
+          "raw": 81.3,
+          "normalized": 0.8401253918495295
+        },
+        "medianAge": {
+          "raw": 32.9,
+          "normalized": 0.4105960264900662
+        },
+        "infantMortality": {
+          "raw": 5.3,
+          "normalized": 0.9390934844192634
+        }
+      }
+    },
+    "Cyprus": {
+      "country": "Cyprus",
+      "iso3": "CYP",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.39,
+          "normalized": 0.13345521023765994
+        },
+        "migration": {
+          "raw": 6.5,
+          "normalized": 0.6732477788746297
+        },
+        "lifeExpectancy": {
+          "raw": 81.6,
+          "normalized": 0.849529780564263
+        },
+        "medianAge": {
+          "raw": 37.8,
+          "normalized": 0.5187637969094923
+        },
+        "infantMortality": {
+          "raw": 3.1,
+          "normalized": 0.9702549575070821
+        }
+      }
+    },
+    "Georgia": {
+      "country": "Georgia",
+      "iso3": "GEO",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.81,
+          "normalized": 0.21023765996343693
+        },
+        "migration": {
+          "raw": 0.5,
+          "normalized": 0.6140177690029615
+        },
+        "lifeExpectancy": {
+          "raw": 74.5,
+          "normalized": 0.6269592476489028
+        },
+        "medianAge": {
+          "raw": 36.8,
+          "normalized": 0.49668874172185423
+        },
+        "infantMortality": {
+          "raw": 8.1,
+          "normalized": 0.8994334277620397
+        }
+      }
+    },
+    "Iraq": {
+      "country": "Iraq",
+      "iso3": "IRQ",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 3.25,
+          "normalized": 0.473491773308958
+        },
+        "migration": {
+          "raw": -0.1,
+          "normalized": 0.6080947680157947
+        },
+        "lifeExpectancy": {
+          "raw": 72.3,
+          "normalized": 0.5579937304075233
+        },
+        "medianAge": {
+          "raw": 20.3,
+          "normalized": 0.13245033112582782
+        },
+        "infantMortality": {
+          "raw": 19.0,
+          "normalized": 0.745042492917847
+        }
+      }
+    },
+    "Israel": {
+      "country": "Israel",
+      "iso3": "ISR",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 2.83,
+          "normalized": 0.396709323583181
+        },
+        "migration": {
+          "raw": 1.1,
+          "normalized": 0.6199407699901283
+        },
+        "lifeExpectancy": {
+          "raw": 82.4,
+          "normalized": 0.8746081504702194
+        },
+        "medianAge": {
+          "raw": 29.2,
+          "normalized": 0.32891832229580575
+        },
+        "infantMortality": {
+          "raw": 2.8,
+          "normalized": 0.9745042492917847
+        }
+      }
+    },
+    "Jordan": {
+      "country": "Jordan",
+      "iso3": "JOR",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 2.64,
+          "normalized": 0.36197440585009144
+        },
+        "migration": {
+          "raw": -1.5,
+          "normalized": 0.5942744323790721
+        },
+        "lifeExpectancy": {
+          "raw": 77.8,
+          "normalized": 0.7304075235109716
+        },
+        "medianAge": {
+          "raw": 24.3,
+          "normalized": 0.2207505518763797
+        },
+        "infantMortality": {
+          "raw": 11.8,
+          "normalized": 0.8470254957507082
+        }
+      }
+    },
+    "Kuwait": {
+      "country": "Kuwait",
+      "iso3": "KWT",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.53,
+          "normalized": 0.1590493601462523
+        },
+        "migration": {
+          "raw": 10.3,
+          "normalized": 0.7107601184600196
+        },
+        "lifeExpectancy": {
+          "raw": 80.4,
+          "normalized": 0.8119122257053292
+        },
+        "medianAge": {
+          "raw": 34.5,
+          "normalized": 0.445916114790287
+        },
+        "infantMortality": {
+          "raw": 7.2,
+          "normalized": 0.9121813031161473
+        }
+      }
+    },
+    "Lebanon": {
+      "country": "Lebanon",
+      "iso3": "LBN",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 2.24,
+          "normalized": 0.2888482632541134
+        },
+        "migration": {
+          "raw": -5.9,
+          "normalized": 0.5508390918065152
+        },
+        "lifeExpectancy": {
+          "raw": 77.8,
+          "normalized": 0.7304075235109716
+        },
+        "medianAge": {
+          "raw": 28.3,
+          "normalized": 0.3090507726269316
+        },
+        "infantMortality": {
+          "raw": 15.7,
+          "normalized": 0.791784702549575
+        }
+      }
+    },
+    "Oman": {
+      "country": "Oman",
+      "iso3": "OMN",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 2.53,
+          "normalized": 0.3418647166361974
+        },
+        "migration": {
+          "raw": 31.0,
+          "normalized": 0.9151036525172753
+        },
+        "lifeExpectancy": {
+          "raw": 80.0,
+          "normalized": 0.7993730407523509
+        },
+        "medianAge": {
+          "raw": 29.3,
+          "normalized": 0.33112582781456956
+        },
+        "infantMortality": {
+          "raw": 8.6,
+          "normalized": 0.8923512747875354
+        }
+      }
+    },
+    "Qatar": {
+      "country": "Qatar",
+      "iso3": "QAT",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.73,
+          "normalized": 0.19561243144424129
+        },
+        "migration": {
+          "raw": 13.4,
+          "normalized": 0.7413622902270484
+        },
+        "lifeExpectancy": {
+          "raw": 82.4,
+          "normalized": 0.8746081504702194
+        },
+        "medianAge": {
+          "raw": 33.2,
+          "normalized": 0.4172185430463577
+        },
+        "infantMortality": {
+          "raw": 4.2,
+          "normalized": 0.9546742209631728
+        }
+      }
+    },
+    "Saudi Arabia": {
+      "country": "Saudi Arabia",
+      "iso3": "SAU",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 2.28,
+          "normalized": 0.2961608775137111
+        },
+        "migration": {
+          "raw": 9.8,
+          "normalized": 0.7058242843040473
+        },
+        "lifeExpectancy": {
+          "raw": 78.7,
+          "normalized": 0.7586206896551724
+        },
+        "medianAge": {
+          "raw": 29.2,
+          "normalized": 0.32891832229580575
+        },
+        "infantMortality": {
+          "raw": 5.1,
+          "normalized": 0.9419263456090652
+        }
+      }
+    },
+    "State of Palestine": {
+      "country": "State of Palestine",
+      "iso3": "PSE",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 3.31,
+          "normalized": 0.4844606946983547
+        },
+        "migration": {
+          "raw": -4.6,
+          "normalized": 0.5636722606120433
+        },
+        "lifeExpectancy": {
+          "raw": 65.2,
+          "normalized": 0.33542319749216304
+        },
+        "medianAge": {
+          "raw": 19.8,
+          "normalized": 0.12141280353200884
+        },
+        "infantMortality": {
+          "raw": 14.2,
+          "normalized": 0.8130311614730878
+        }
+      }
+    },
+    "Syrian Arab Republic": {
+      "country": "Syrian Arab Republic",
+      "iso3": "SYR",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 2.71,
+          "normalized": 0.37477148080438755
+        },
+        "migration": {
+          "raw": 32.1,
+          "normalized": 0.9259624876604147
+        },
+        "lifeExpectancy": {
+          "raw": 72.1,
+          "normalized": 0.5517241379310343
+        },
+        "medianAge": {
+          "raw": 22.2,
+          "normalized": 0.17439293598233993
+        },
+        "infantMortality": {
+          "raw": 16.7,
+          "normalized": 0.7776203966005666
+        }
+      }
+    },
+    "T\u00fcrkiye": {
+      "country": "T\u00fcrkiye",
+      "iso3": "TUR",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.63,
+          "normalized": 0.17733089579524677
+        },
+        "migration": {
+          "raw": -3.6,
+          "normalized": 0.5735439289239881
+        },
+        "lifeExpectancy": {
+          "raw": 77.2,
+          "normalized": 0.7115987460815046
+        },
+        "medianAge": {
+          "raw": 32.5,
+          "normalized": 0.40176600441501104
+        },
+        "infantMortality": {
+          "raw": 9.2,
+          "normalized": 0.8838526912181304
+        }
+      }
+    },
+    "United Arab Emirates": {
+      "country": "United Arab Emirates",
+      "iso3": "ARE",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 1.2,
+          "normalized": 0.09872029250457037
+        },
+        "migration": {
+          "raw": 28.2,
+          "normalized": 0.8874629812438302
+        },
+        "lifeExpectancy": {
+          "raw": 82.9,
+          "normalized": 0.890282131661442
+        },
+        "medianAge": {
+          "raw": 31.2,
+          "normalized": 0.3730684326710817
+        },
+        "infantMortality": {
+          "raw": 4.9,
+          "normalized": 0.9447592067988668
+        }
+      }
+    },
+    "Yemen": {
+      "country": "Yemen",
+      "iso3": "YEM",
+      "region": "Asia",
+      "values": {
+        "fertility": {
+          "raw": 4.59,
+          "normalized": 0.7184643510054844
+        },
+        "migration": {
+          "raw": -0.1,
+          "normalized": 0.6080947680157947
+        },
+        "lifeExpectancy": {
+          "raw": 69.3,
+          "normalized": 0.4639498432601879
+        },
+        "medianAge": {
+          "raw": 18.2,
+          "normalized": 0.08609271523178805
+        },
+        "infantMortality": {
+          "raw": 32.3,
+          "normalized": 0.556657223796034
+        }
+      }
+    },
+    "Belarus": {
+      "country": "Belarus",
+      "iso3": "BLR",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.21,
+          "normalized": 0.10054844606946983
+        },
+        "migration": {
+          "raw": -0.3,
+          "normalized": 0.6061204343534057
+        },
+        "lifeExpectancy": {
+          "raw": 74.4,
+          "normalized": 0.6238244514106583
+        },
+        "medianAge": {
+          "raw": 40.5,
+          "normalized": 0.5783664459161149
+        },
+        "infantMortality": {
+          "raw": 1.9,
+          "normalized": 0.9872521246458924
+        }
+      }
+    },
+    "Bulgaria": {
+      "country": "Bulgaria",
+      "iso3": "BGR",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.75,
+          "normalized": 0.1992687385740402
+        },
+        "migration": {
+          "raw": 0.8,
+          "normalized": 0.6169792694965448
+        },
+        "lifeExpectancy": {
+          "raw": 75.6,
+          "normalized": 0.6614420062695922
+        },
+        "medianAge": {
+          "raw": 44.3,
+          "normalized": 0.662251655629139
+        },
+        "infantMortality": {
+          "raw": 4.7,
+          "normalized": 0.9475920679886686
+        }
+      }
+    },
+    "Czechia": {
+      "country": "Czechia",
+      "iso3": "CZE",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.45,
+          "normalized": 0.14442413162705667
+        },
+        "migration": {
+          "raw": -1.4,
+          "normalized": 0.5952615992102666
+        },
+        "lifeExpectancy": {
+          "raw": 79.8,
+          "normalized": 0.7931034482758619
+        },
+        "medianAge": {
+          "raw": 42.7,
+          "normalized": 0.6269315673289184
+        },
+        "infantMortality": {
+          "raw": 2.2,
+          "normalized": 0.9830028328611898
+        }
+      }
+    },
+    "Hungary": {
+      "country": "Hungary",
+      "iso3": "HUN",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.49,
+          "normalized": 0.15173674588665448
+        },
+        "migration": {
+          "raw": 5.1,
+          "normalized": 0.6594274432379071
+        },
+        "lifeExpectancy": {
+          "raw": 77.0,
+          "normalized": 0.7053291536050156
+        },
+        "medianAge": {
+          "raw": 43.3,
+          "normalized": 0.640176600441501
+        },
+        "infantMortality": {
+          "raw": 3.2,
+          "normalized": 0.9688385269121813
+        }
+      }
+    },
+    "Poland": {
+      "country": "Poland",
+      "iso3": "POL",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.3,
+          "normalized": 0.11700182815356491
+        },
+        "migration": {
+          "raw": -0.2,
+          "normalized": 0.6071076011846002
+        },
+        "lifeExpectancy": {
+          "raw": 78.6,
+          "normalized": 0.7554858934169276
+        },
+        "medianAge": {
+          "raw": 41.3,
+          "normalized": 0.5960264900662251
+        },
+        "infantMortality": {
+          "raw": 3.2,
+          "normalized": 0.9688385269121813
+        }
+      }
+    },
+    "Republic of Moldova": {
+      "country": "Republic of Moldova",
+      "iso3": "MDA",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.73,
+          "normalized": 0.19561243144424129
+        },
+        "migration": {
+          "raw": -6.1,
+          "normalized": 0.5488647581441263
+        },
+        "lifeExpectancy": {
+          "raw": 71.2,
+          "normalized": 0.5235109717868338
+        },
+        "medianAge": {
+          "raw": 37.8,
+          "normalized": 0.5187637969094923
+        },
+        "infantMortality": {
+          "raw": 11.7,
+          "normalized": 0.8484419263456091
+        }
+      }
+    },
+    "Romania": {
+      "country": "Romania",
+      "iso3": "ROU",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.71,
+          "normalized": 0.1919561243144424
+        },
+        "migration": {
+          "raw": -1.5,
+          "normalized": 0.5942744323790721
+        },
+        "lifeExpectancy": {
+          "raw": 75.9,
+          "normalized": 0.6708463949843261
+        },
+        "medianAge": {
+          "raw": 42.6,
+          "normalized": 0.6247240618101546
+        },
+        "infantMortality": {
+          "raw": 4.8,
+          "normalized": 0.9461756373937678
+        }
+      }
+    },
+    "Russian Federation": {
+      "country": "Russian Federation",
+      "iso3": "RUS",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.45,
+          "normalized": 0.14442413162705667
+        },
+        "migration": {
+          "raw": 0.2,
+          "normalized": 0.6110562685093781
+        },
+        "lifeExpectancy": {
+          "raw": 73.2,
+          "normalized": 0.5862068965517241
+        },
+        "medianAge": {
+          "raw": 39.5,
+          "normalized": 0.5562913907284769
+        },
+        "infantMortality": {
+          "raw": 3.5,
+          "normalized": 0.9645892351274787
+        }
+      }
+    },
+    "Slovakia": {
+      "country": "Slovakia",
+      "iso3": "SVK",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.56,
+          "normalized": 0.16453382084095064
+        },
+        "migration": {
+          "raw": 0.9,
+          "normalized": 0.6179664363277393
+        },
+        "lifeExpectancy": {
+          "raw": 78.3,
+          "normalized": 0.7460815047021941
+        },
+        "medianAge": {
+          "raw": 41.3,
+          "normalized": 0.5960264900662251
+        },
+        "infantMortality": {
+          "raw": 4.5,
+          "normalized": 0.9504249291784702
+        }
+      }
+    },
+    "Ukraine": {
+      "country": "Ukraine",
+      "iso3": "UKR",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 0.98,
+          "normalized": 0.05850091407678244
+        },
+        "migration": {
+          "raw": -8.0,
+          "normalized": 0.5301085883514314
+        },
+        "lifeExpectancy": {
+          "raw": 73.4,
+          "normalized": 0.5924764890282133
+        },
+        "medianAge": {
+          "raw": 42.0,
+          "normalized": 0.6114790286975718
+        },
+        "infantMortality": {
+          "raw": 5.9,
+          "normalized": 0.9305949008498584
+        }
+      }
+    },
+    "Denmark": {
+      "country": "Denmark",
+      "iso3": "DNK",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.51,
+          "normalized": 0.1553930530164534
+        },
+        "migration": {
+          "raw": 5.2,
+          "normalized": 0.6604146100691016
+        },
+        "lifeExpectancy": {
+          "raw": 81.9,
+          "normalized": 0.8589341692789969
+        },
+        "medianAge": {
+          "raw": 41.2,
+          "normalized": 0.5938189845474614
+        },
+        "infantMortality": {
+          "raw": 2.9,
+          "normalized": 0.9730878186968839
+        }
+      }
+    },
+    "Estonia": {
+      "country": "Estonia",
+      "iso3": "EST",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.35,
+          "normalized": 0.12614259597806218
+        },
+        "migration": {
+          "raw": 4.2,
+          "normalized": 0.650542941757157
+        },
+        "lifeExpectancy": {
+          "raw": 79.2,
+          "normalized": 0.7742946708463949
+        },
+        "medianAge": {
+          "raw": 41.9,
+          "normalized": 0.609271523178808
+        },
+        "infantMortality": {
+          "raw": 1.4,
+          "normalized": 0.9943342776203966
+        }
+      }
+    },
+    "Faroe Islands": {
+      "country": "Faroe Islands",
+      "iso3": "FRO",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 2.24,
+          "normalized": 0.2888482632541134
+        },
+        "migration": {
+          "raw": 10.9,
+          "normalized": 0.7166831194471865
+        },
+        "lifeExpectancy": {
+          "raw": 80.2,
+          "normalized": 0.8056426332288401
+        },
+        "medianAge": {
+          "raw": 37.3,
+          "normalized": 0.5077262693156732
+        },
+        "infantMortality": {
+          "raw": 6.1,
+          "normalized": 0.9277620396600567
+        }
+      }
+    },
+    "Finland": {
+      "country": "Finland",
+      "iso3": "FIN",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.28,
+          "normalized": 0.113345521023766
+        },
+        "migration": {
+          "raw": 6.8,
+          "normalized": 0.6762092793682132
+        },
+        "lifeExpectancy": {
+          "raw": 81.9,
+          "normalized": 0.8589341692789969
+        },
+        "medianAge": {
+          "raw": 42.8,
+          "normalized": 0.6291390728476821
+        },
+        "infantMortality": {
+          "raw": 1.9,
+          "normalized": 0.9872521246458924
+        }
+      }
+    },
+    "Guernsey": {
+      "country": "Guernsey",
+      "iso3": "GGY",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.36,
+          "normalized": 0.12797074954296161
+        },
+        "migration": {
+          "raw": 5.9,
+          "normalized": 0.667324777887463
+        },
+        "lifeExpectancy": {
+          "raw": 83.3,
+          "normalized": 0.9028213166144198
+        },
+        "medianAge": {
+          "raw": 44.0,
+          "normalized": 0.6556291390728477
+        },
+        "infantMortality": {
+          "raw": 5.8,
+          "normalized": 0.9320113314447592
+        }
+      }
+    },
+    "Iceland": {
+      "country": "Iceland",
+      "iso3": "ISL",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.54,
+          "normalized": 0.16087751371115175
+        },
+        "migration": {
+          "raw": 11.9,
+          "normalized": 0.7265547877591313
+        },
+        "lifeExpectancy": {
+          "raw": 82.7,
+          "normalized": 0.8840125391849529
+        },
+        "medianAge": {
+          "raw": 35.8,
+          "normalized": 0.47461368653421626
+        },
+        "infantMortality": {
+          "raw": 1.0,
+          "normalized": 1.0
+        }
+      }
+    },
+    "Ireland": {
+      "country": "Ireland",
+      "iso3": "IRL",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.6,
+          "normalized": 0.17184643510054848
+        },
+        "migration": {
+          "raw": 8.4,
+          "normalized": 0.6920039486673247
+        },
+        "lifeExpectancy": {
+          "raw": 82.4,
+          "normalized": 0.8746081504702194
+        },
+        "medianAge": {
+          "raw": 38.4,
+          "normalized": 0.532008830022075
+        },
+        "infantMortality": {
+          "raw": 2.9,
+          "normalized": 0.9730878186968839
+        }
+      }
+    },
+    "Isle of Man": {
+      "country": "Isle of Man",
+      "iso3": "IMN",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.55,
+          "normalized": 0.1627056672760512
+        },
+        "migration": {
+          "raw": 2.3,
+          "normalized": 0.6317867719644619
+        },
+        "lifeExpectancy": {
+          "raw": 81.0,
+          "normalized": 0.8307210031347961
+        },
+        "medianAge": {
+          "raw": 45.7,
+          "normalized": 0.6931567328918323
+        },
+        "infantMortality": {
+          "raw": 10.7,
+          "normalized": 0.8626062322946175
+        }
+      }
+    },
+    "Jersey": {
+      "country": "Jersey",
+      "iso3": "JEY",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.37,
+          "normalized": 0.12979890310786107
+        },
+        "migration": {
+          "raw": 4.6,
+          "normalized": 0.6544916090819347
+        },
+        "lifeExpectancy": {
+          "raw": 79.7,
+          "normalized": 0.7899686520376175
+        },
+        "medianAge": {
+          "raw": 43.1,
+          "normalized": 0.6357615894039735
+        },
+        "infantMortality": {
+          "raw": 8.6,
+          "normalized": 0.8923512747875354
+        }
+      }
+    },
+    "Latvia": {
+      "country": "Latvia",
+      "iso3": "LVA",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.34,
+          "normalized": 0.12431444241316272
+        },
+        "migration": {
+          "raw": 4.2,
+          "normalized": 0.650542941757157
+        },
+        "lifeExpectancy": {
+          "raw": 76.2,
+          "normalized": 0.6802507836990596
+        },
+        "medianAge": {
+          "raw": 43.1,
+          "normalized": 0.6357615894039735
+        },
+        "infantMortality": {
+          "raw": 2.9,
+          "normalized": 0.9730878186968839
+        }
+      }
+    },
+    "Lithuania": {
+      "country": "Lithuania",
+      "iso3": "LTU",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.2,
+          "normalized": 0.09872029250457037
+        },
+        "migration": {
+          "raw": 15.7,
+          "normalized": 0.7640671273445212
+        },
+        "lifeExpectancy": {
+          "raw": 76.0,
+          "normalized": 0.6739811912225704
+        },
+        "medianAge": {
+          "raw": 42.1,
+          "normalized": 0.6136865342163356
+        },
+        "infantMortality": {
+          "raw": 2.8,
+          "normalized": 0.9745042492917847
+        }
+      }
+    },
+    "Norway": {
+      "country": "Norway",
+      "iso3": "NOR",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.41,
+          "normalized": 0.13711151736745886
+        },
+        "migration": {
+          "raw": 9.7,
+          "normalized": 0.7048371174728529
+        },
+        "lifeExpectancy": {
+          "raw": 83.3,
+          "normalized": 0.9028213166144198
+        },
+        "medianAge": {
+          "raw": 39.5,
+          "normalized": 0.5562913907284769
+        },
+        "infantMortality": {
+          "raw": 1.9,
+          "normalized": 0.9872521246458924
+        }
+      }
+    },
+    "Sweden": {
+      "country": "Sweden",
+      "iso3": "SWE",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.43,
+          "normalized": 0.14076782449725775
+        },
+        "migration": {
+          "raw": 5.2,
+          "normalized": 0.6604146100691016
+        },
+        "lifeExpectancy": {
+          "raw": 83.3,
+          "normalized": 0.9028213166144198
+        },
+        "medianAge": {
+          "raw": 39.9,
+          "normalized": 0.565121412803532
+        },
+        "infantMortality": {
+          "raw": 1.9,
+          "normalized": 0.9872521246458924
+        }
+      }
+    },
+    "United Kingdom": {
+      "country": "United Kingdom",
+      "iso3": "GBR",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.56,
+          "normalized": 0.16453382084095064
+        },
+        "migration": {
+          "raw": 6.5,
+          "normalized": 0.6732477788746297
+        },
+        "lifeExpectancy": {
+          "raw": 81.3,
+          "normalized": 0.8401253918495295
+        },
+        "medianAge": {
+          "raw": 39.8,
+          "normalized": 0.5629139072847682
+        },
+        "infantMortality": {
+          "raw": 3.7,
+          "normalized": 0.9617563739376771
+        }
+      }
+    },
+    "Albania": {
+      "country": "Albania",
+      "iso3": "ALB",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.35,
+          "normalized": 0.12614259597806218
+        },
+        "migration": {
+          "raw": -9.0,
+          "normalized": 0.5202369200394866
+        },
+        "lifeExpectancy": {
+          "raw": 79.6,
+          "normalized": 0.7868338557993727
+        },
+        "medianAge": {
+          "raw": 36.3,
+          "normalized": 0.48565121412803525
+        },
+        "infantMortality": {
+          "raw": 8.1,
+          "normalized": 0.8994334277620397
+        }
+      }
+    },
+    "Andorra": {
+      "country": "Andorra",
+      "iso3": "AND",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.08,
+          "normalized": 0.07678244972577698
+        },
+        "migration": {
+          "raw": 13.1,
+          "normalized": 0.7384007897334648
+        },
+        "lifeExpectancy": {
+          "raw": 84.0,
+          "normalized": 0.9247648902821315
+        },
+        "medianAge": {
+          "raw": 43.2,
+          "normalized": 0.6379690949227373
+        },
+        "infantMortality": {
+          "raw": 5.3,
+          "normalized": 0.9390934844192634
+        }
+      }
+    },
+    "Bosnia and Herzegovina": {
+      "country": "Bosnia and Herzegovina",
+      "iso3": "BIH",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.49,
+          "normalized": 0.15173674588665448
+        },
+        "migration": {
+          "raw": -0.2,
+          "normalized": 0.6071076011846002
+        },
+        "lifeExpectancy": {
+          "raw": 77.9,
+          "normalized": 0.7335423197492164
+        },
+        "medianAge": {
+          "raw": 44.9,
+          "normalized": 0.6754966887417219
+        },
+        "infantMortality": {
+          "raw": 5.3,
+          "normalized": 0.9390934844192634
+        }
+      }
+    },
+    "Croatia": {
+      "country": "Croatia",
+      "iso3": "HRV",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.47,
+          "normalized": 0.14808043875685556
+        },
+        "migration": {
+          "raw": 2.6,
+          "normalized": 0.6347482724580453
+        },
+        "lifeExpectancy": {
+          "raw": 78.6,
+          "normalized": 0.7554858934169276
+        },
+        "medianAge": {
+          "raw": 44.8,
+          "normalized": 0.673289183222958
+        },
+        "infantMortality": {
+          "raw": 3.5,
+          "normalized": 0.9645892351274787
+        }
+      }
+    },
+    "Gibraltar": {
+      "country": "Gibraltar",
+      "iso3": "GIB",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.89,
+          "normalized": 0.22486288848263256
+        },
+        "migration": {
+          "raw": 17.9,
+          "normalized": 0.7857847976307994
+        },
+        "lifeExpectancy": {
+          "raw": 83.6,
+          "normalized": 0.9122257053291533
+        },
+        "medianAge": {
+          "raw": 38.9,
+          "normalized": 0.543046357615894
+        },
+        "infantMortality": {
+          "raw": 8.3,
+          "normalized": 0.896600566572238
+        }
+      }
+    },
+    "Greece": {
+      "country": "Greece",
+      "iso3": "GRC",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.33,
+          "normalized": 0.12248628884826326
+        },
+        "migration": {
+          "raw": -15.6,
+          "normalized": 0.4550839091806515
+        },
+        "lifeExpectancy": {
+          "raw": 81.9,
+          "normalized": 0.8589341692789969
+        },
+        "medianAge": {
+          "raw": 45.7,
+          "normalized": 0.6931567328918323
+        },
+        "infantMortality": {
+          "raw": 3.3,
+          "normalized": 0.9674220963172805
+        }
+      }
+    },
+    "Holy See": {
+      "country": "Holy See",
+      "iso3": "VAT",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.0,
+          "normalized": 0.06215722120658135
+        },
+        "migration": {
+          "raw": 0.0,
+          "normalized": 0.6090819348469891
+        },
+        "lifeExpectancy": {
+          "raw": 83.0,
+          "normalized": 0.8934169278996864
+        },
+        "medianAge": {
+          "raw": 59.6,
+          "normalized": 1.0
+        },
+        "infantMortality": {
+          "raw": 6.0,
+          "normalized": 0.9291784702549575
+        }
+      }
+    },
+    "Italy": {
+      "country": "Italy",
+      "iso3": "ITA",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.2,
+          "normalized": 0.09872029250457037
+        },
+        "migration": {
+          "raw": 2.5,
+          "normalized": 0.6337611056268508
+        },
+        "lifeExpectancy": {
+          "raw": 83.7,
+          "normalized": 0.915360501567398
+        },
+        "medianAge": {
+          "raw": 47.5,
+          "normalized": 0.7328918322295807
+        },
+        "infantMortality": {
+          "raw": 2.2,
+          "normalized": 0.9830028328611898
+        }
+      }
+    },
+    "Kosovo (under UNSC res. 1244)": {
+      "country": "Kosovo (under UNSC res. 1244)",
+      "iso3": "XKX",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.55,
+          "normalized": 0.1627056672760512
+        },
+        "migration": {
+          "raw": -16.9,
+          "normalized": 0.4422507403751234
+        },
+        "lifeExpectancy": {
+          "raw": 78.0,
+          "normalized": 0.7366771159874607
+        },
+        "medianAge": {
+          "raw": 31.4,
+          "normalized": 0.37748344370860926
+        },
+        "infantMortality": {
+          "raw": 8.1,
+          "normalized": 0.8994334277620397
+        }
+      }
+    },
+    "Malta": {
+      "country": "Malta",
+      "iso3": "MLT",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.1,
+          "normalized": 0.08043875685557589
+        },
+        "migration": {
+          "raw": 12.4,
+          "normalized": 0.7314906219151036
+        },
+        "lifeExpectancy": {
+          "raw": 83.3,
+          "normalized": 0.9028213166144198
+        },
+        "medianAge": {
+          "raw": 40.3,
+          "normalized": 0.5739514348785871
+        },
+        "infantMortality": {
+          "raw": 6.2,
+          "normalized": 0.9263456090651558
+        }
+      }
+    },
+    "Montenegro": {
+      "country": "Montenegro",
+      "iso3": "MNE",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.8,
+          "normalized": 0.2084095063985375
+        },
+        "migration": {
+          "raw": 18.9,
+          "normalized": 0.7956564659427442
+        },
+        "lifeExpectancy": {
+          "raw": 77.1,
+          "normalized": 0.7084639498432599
+        },
+        "medianAge": {
+          "raw": 39.3,
+          "normalized": 0.5518763796909492
+        },
+        "infantMortality": {
+          "raw": 1.7,
+          "normalized": 0.990084985835694
+        }
+      }
+    },
+    "North Macedonia": {
+      "country": "North Macedonia",
+      "iso3": "MKD",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.47,
+          "normalized": 0.14808043875685556
+        },
+        "migration": {
+          "raw": -3.1,
+          "normalized": 0.5784797630799604
+        },
+        "lifeExpectancy": {
+          "raw": 77.4,
+          "normalized": 0.7178683385579938
+        },
+        "medianAge": {
+          "raw": 40.3,
+          "normalized": 0.5739514348785871
+        },
+        "infantMortality": {
+          "raw": 4.7,
+          "normalized": 0.9475920679886686
+        }
+      }
+    },
+    "Portugal": {
+      "country": "Portugal",
+      "iso3": "PRT",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.51,
+          "normalized": 0.1553930530164534
+        },
+        "migration": {
+          "raw": 2.8,
+          "normalized": 0.6367226061204343
+        },
+        "lifeExpectancy": {
+          "raw": 82.4,
+          "normalized": 0.8746081504702194
+        },
+        "medianAge": {
+          "raw": 46.2,
+          "normalized": 0.7041942604856513
+        },
+        "infantMortality": {
+          "raw": 2.6,
+          "normalized": 0.9773371104815864
+        }
+      }
+    },
+    "San Marino": {
+      "country": "San Marino",
+      "iso3": "SMR",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.15,
+          "normalized": 0.0895795246800731
+        },
+        "migration": {
+          "raw": -5.6,
+          "normalized": 0.5538005923000987
+        },
+        "lifeExpectancy": {
+          "raw": 85.7,
+          "normalized": 0.9780564263322883
+        },
+        "medianAge": {
+          "raw": 47.4,
+          "normalized": 0.7306843267108167
+        },
+        "infantMortality": {
+          "raw": 1.1,
+          "normalized": 0.9985835694050992
+        }
+      }
+    },
+    "Serbia": {
+      "country": "Serbia",
+      "iso3": "SRB",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.5,
+          "normalized": 0.15356489945155394
+        },
+        "migration": {
+          "raw": 0.6,
+          "normalized": 0.6150049358341559
+        },
+        "lifeExpectancy": {
+          "raw": 76.8,
+          "normalized": 0.6990595611285264
+        },
+        "medianAge": {
+          "raw": 43.9,
+          "normalized": 0.6534216335540839
+        },
+        "infantMortality": {
+          "raw": 4.2,
+          "normalized": 0.9546742209631728
+        }
+      }
+    },
+    "Slovenia": {
+      "country": "Slovenia",
+      "iso3": "SVN",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.58,
+          "normalized": 0.16819012797074956
+        },
+        "migration": {
+          "raw": 2.5,
+          "normalized": 0.6337611056268508
+        },
+        "lifeExpectancy": {
+          "raw": 81.6,
+          "normalized": 0.849529780564263
+        },
+        "medianAge": {
+          "raw": 43.9,
+          "normalized": 0.6534216335540839
+        },
+        "infantMortality": {
+          "raw": 1.8,
+          "normalized": 0.9886685552407932
+        }
+      }
+    },
+    "Spain": {
+      "country": "Spain",
+      "iso3": "ESP",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.21,
+          "normalized": 0.10054844606946983
+        },
+        "migration": {
+          "raw": 2.5,
+          "normalized": 0.6337611056268508
+        },
+        "lifeExpectancy": {
+          "raw": 83.7,
+          "normalized": 0.915360501567398
+        },
+        "medianAge": {
+          "raw": 44.9,
+          "normalized": 0.6754966887417219
+        },
+        "infantMortality": {
+          "raw": 2.4,
+          "normalized": 0.9801699716713881
+        }
+      }
+    },
+    "Austria": {
+      "country": "Austria",
+      "iso3": "AUT",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.32,
+          "normalized": 0.12065813528336382
+        },
+        "migration": {
+          "raw": 0.5,
+          "normalized": 0.6140177690029615
+        },
+        "lifeExpectancy": {
+          "raw": 82.0,
+          "normalized": 0.8620689655172412
+        },
+        "medianAge": {
+          "raw": 43.1,
+          "normalized": 0.6357615894039735
+        },
+        "infantMortality": {
+          "raw": 2.8,
+          "normalized": 0.9745042492917847
+        }
+      }
+    },
+    "Belgium": {
+      "country": "Belgium",
+      "iso3": "BEL",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.38,
+          "normalized": 0.1316270566727605
+        },
+        "migration": {
+          "raw": 3.6,
+          "normalized": 0.6446199407699901
+        },
+        "lifeExpectancy": {
+          "raw": 82.1,
+          "normalized": 0.8652037617554855
+        },
+        "medianAge": {
+          "raw": 41.4,
+          "normalized": 0.5982339955849889
+        },
+        "infantMortality": {
+          "raw": 3.3,
+          "normalized": 0.9674220963172805
+        }
+      }
+    },
+    "France": {
+      "country": "France",
+      "iso3": "FRA",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.64,
+          "normalized": 0.17915904936014623
+        },
+        "migration": {
+          "raw": 1.4,
+          "normalized": 0.6229022704837117
+        },
+        "lifeExpectancy": {
+          "raw": 83.3,
+          "normalized": 0.9028213166144198
+        },
+        "medianAge": {
+          "raw": 41.8,
+          "normalized": 0.6070640176600441
+        },
+        "infantMortality": {
+          "raw": 3.5,
+          "normalized": 0.9645892351274787
+        }
+      }
+    },
+    "Germany": {
+      "country": "Germany",
+      "iso3": "DEU",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.44,
+          "normalized": 0.1425959780621572
+        },
+        "migration": {
+          "raw": 7.2,
+          "normalized": 0.6801579466929911
+        },
+        "lifeExpectancy": {
+          "raw": 81.4,
+          "normalized": 0.8432601880877744
+        },
+        "medianAge": {
+          "raw": 45.1,
+          "normalized": 0.6799116997792495
+        },
+        "infantMortality": {
+          "raw": 3.0,
+          "normalized": 0.971671388101983
+        }
+      }
+    },
+    "Liechtenstein": {
+      "country": "Liechtenstein",
+      "iso3": "LIE",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.54,
+          "normalized": 0.16087751371115175
+        },
+        "migration": {
+          "raw": 5.4,
+          "normalized": 0.6623889437314906
+        },
+        "lifeExpectancy": {
+          "raw": 83.6,
+          "normalized": 0.9122257053291533
+        },
+        "medianAge": {
+          "raw": 44.2,
+          "normalized": 0.6600441501103753
+        },
+        "infantMortality": {
+          "raw": 5.6,
+          "normalized": 0.9348441926345609
+        }
+      }
+    },
+    "Luxembourg": {
+      "country": "Luxembourg",
+      "iso3": "LUX",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.4,
+          "normalized": 0.1352833638025594
+        },
+        "migration": {
+          "raw": 8.9,
+          "normalized": 0.6969397828232972
+        },
+        "lifeExpectancy": {
+          "raw": 82.2,
+          "normalized": 0.8683385579937304
+        },
+        "medianAge": {
+          "raw": 38.9,
+          "normalized": 0.543046357615894
+        },
+        "infantMortality": {
+          "raw": 4.4,
+          "normalized": 0.9518413597733711
+        }
+      }
+    },
+    "Monaco": {
+      "country": "Monaco",
+      "iso3": "MCO",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 2.11,
+          "normalized": 0.2650822669104204
+        },
+        "migration": {
+          "raw": 2.3,
+          "normalized": 0.6317867719644619
+        },
+        "lifeExpectancy": {
+          "raw": 86.4,
+          "normalized": 1.0
+        },
+        "medianAge": {
+          "raw": 54.4,
+          "normalized": 0.8852097130242825
+        },
+        "infantMortality": {
+          "raw": 3.9,
+          "normalized": 0.9589235127478754
+        }
+      }
+    },
+    "Netherlands": {
+      "country": "Netherlands",
+      "iso3": "NLD",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.43,
+          "normalized": 0.14076782449725775
+        },
+        "migration": {
+          "raw": 8.0,
+          "normalized": 0.6880552813425468
+        },
+        "lifeExpectancy": {
+          "raw": 82.2,
+          "normalized": 0.8683385579937304
+        },
+        "medianAge": {
+          "raw": 41.4,
+          "normalized": 0.5982339955849889
+        },
+        "infantMortality": {
+          "raw": 3.4,
+          "normalized": 0.9660056657223796
+        }
+      }
+    },
+    "Switzerland": {
+      "country": "Switzerland",
+      "iso3": "CHE",
+      "region": "Europe",
+      "values": {
+        "fertility": {
+          "raw": 1.43,
+          "normalized": 0.14076782449725775
+        },
+        "migration": {
+          "raw": 5.1,
+          "normalized": 0.6594274432379071
+        },
+        "lifeExpectancy": {
+          "raw": 84.0,
+          "normalized": 0.9247648902821315
+        },
+        "medianAge": {
+          "raw": 42.3,
+          "normalized": 0.6181015452538631
+        },
+        "infantMortality": {
+          "raw": 3.2,
+          "normalized": 0.9688385269121813
+        }
+      }
+    },
+    "Anguilla": {
+      "country": "Anguilla",
+      "iso3": "AIA",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.36,
+          "normalized": 0.12797074954296161
+        },
+        "migration": {
+          "raw": 13.9,
+          "normalized": 0.7462981243830207
+        },
+        "lifeExpectancy": {
+          "raw": 79.3,
+          "normalized": 0.7774294670846392
+        },
+        "medianAge": {
+          "raw": 38.0,
+          "normalized": 0.5231788079470199
+        },
+        "infantMortality": {
+          "raw": 4.9,
+          "normalized": 0.9447592067988668
+        }
+      }
+    },
+    "Antigua and Barbuda": {
+      "country": "Antigua and Barbuda",
+      "iso3": "ATG",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.58,
+          "normalized": 0.16819012797074956
+        },
+        "migration": {
+          "raw": 0.0,
+          "normalized": 0.6090819348469891
+        },
+        "lifeExpectancy": {
+          "raw": 77.6,
+          "normalized": 0.7241379310344824
+        },
+        "medianAge": {
+          "raw": 35.5,
+          "normalized": 0.46799116997792495
+        },
+        "infantMortality": {
+          "raw": 7.5,
+          "normalized": 0.9079320113314447
+        }
+      }
+    },
+    "Aruba": {
+      "country": "Aruba",
+      "iso3": "ABW",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.6,
+          "normalized": 0.17184643510054848
+        },
+        "migration": {
+          "raw": 1.4,
+          "normalized": 0.6229022704837117
+        },
+        "lifeExpectancy": {
+          "raw": 76.4,
+          "normalized": 0.6865203761755486
+        },
+        "medianAge": {
+          "raw": 41.0,
+          "normalized": 0.5894039735099338
+        },
+        "infantMortality": {
+          "raw": 12.0,
+          "normalized": 0.8441926345609065
+        }
+      }
+    },
+    "Bahamas": {
+      "country": "Bahamas",
+      "iso3": "BHS",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.37,
+          "normalized": 0.12979890310786107
+        },
+        "migration": {
+          "raw": 2.5,
+          "normalized": 0.6337611056268508
+        },
+        "lifeExpectancy": {
+          "raw": 74.6,
+          "normalized": 0.6300940438871471
+        },
+        "medianAge": {
+          "raw": 34.6,
+          "normalized": 0.44812362030905084
+        },
+        "infantMortality": {
+          "raw": 10.9,
+          "normalized": 0.8597733711048159
+        }
+      }
+    },
+    "Barbados": {
+      "country": "Barbados",
+      "iso3": "BRB",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.71,
+          "normalized": 0.1919561243144424
+        },
+        "migration": {
+          "raw": -0.3,
+          "normalized": 0.6061204343534057
+        },
+        "lifeExpectancy": {
+          "raw": 76.2,
+          "normalized": 0.6802507836990596
+        },
+        "medianAge": {
+          "raw": 38.9,
+          "normalized": 0.543046357615894
+        },
+        "infantMortality": {
+          "raw": 9.4,
+          "normalized": 0.8810198300283286
+        }
+      }
+    },
+    "Bonaire, Sint Eustatius and Saba": {
+      "country": "Bonaire, Sint Eustatius and Saba",
+      "iso3": "BES",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.47,
+          "normalized": 0.14808043875685556
+        },
+        "migration": {
+          "raw": 27.4,
+          "normalized": 0.8795656465942743
+        },
+        "lifeExpectancy": {
+          "raw": 77.4,
+          "normalized": 0.7178683385579938
+        },
+        "medianAge": {
+          "raw": 39.7,
+          "normalized": 0.5607064017660045
+        },
+        "infantMortality": {
+          "raw": 11.0,
+          "normalized": 0.858356940509915
+        }
+      }
+    },
+    "British Virgin Islands": {
+      "country": "British Virgin Islands",
+      "iso3": "VGB",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.05,
+          "normalized": 0.07129798903107862
+        },
+        "migration": {
+          "raw": 15.1,
+          "normalized": 0.7581441263573543
+        },
+        "lifeExpectancy": {
+          "raw": 77.3,
+          "normalized": 0.714733542319749
+        },
+        "medianAge": {
+          "raw": 37.5,
+          "normalized": 0.512141280353201
+        },
+        "infantMortality": {
+          "raw": 11.0,
+          "normalized": 0.858356940509915
+        }
+      }
+    },
+    "Cayman Islands": {
+      "country": "Cayman Islands",
+      "iso3": "CYM",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.53,
+          "normalized": 0.1590493601462523
+        },
+        "migration": {
+          "raw": 12.6,
+          "normalized": 0.7334649555774925
+        },
+        "lifeExpectancy": {
+          "raw": 80.4,
+          "normalized": 0.8119122257053292
+        },
+        "medianAge": {
+          "raw": 37.9,
+          "normalized": 0.5209713024282561
+        },
+        "infantMortality": {
+          "raw": 1.1,
+          "normalized": 0.9985835694050992
+        }
+      }
+    },
+    "Cuba": {
+      "country": "Cuba",
+      "iso3": "CUB",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.44,
+          "normalized": 0.1425959780621572
+        },
+        "migration": {
+          "raw": -2.1,
+          "normalized": 0.5883514313919052
+        },
+        "lifeExpectancy": {
+          "raw": 78.1,
+          "normalized": 0.739811912225705
+        },
+        "medianAge": {
+          "raw": 41.7,
+          "normalized": 0.6048565121412804
+        },
+        "infantMortality": {
+          "raw": 4.4,
+          "normalized": 0.9518413597733711
+        }
+      }
+    },
+    "Cura\u00e7ao": {
+      "country": "Cura\u00e7ao",
+      "iso3": "CUW",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.07,
+          "normalized": 0.07495429616087752
+        },
+        "migration": {
+          "raw": 2.8,
+          "normalized": 0.6367226061204343
+        },
+        "lifeExpectancy": {
+          "raw": 76.8,
+          "normalized": 0.6990595611285264
+        },
+        "medianAge": {
+          "raw": 38.2,
+          "normalized": 0.5275938189845475
+        },
+        "infantMortality": {
+          "raw": 8.6,
+          "normalized": 0.8923512747875354
+        }
+      }
+    },
+    "Dominica": {
+      "country": "Dominica",
+      "iso3": "DMA",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.48,
+          "normalized": 0.14990859232175502
+        },
+        "migration": {
+          "raw": -3.0,
+          "normalized": 0.5794669299111549
+        },
+        "lifeExpectancy": {
+          "raw": 71.1,
+          "normalized": 0.5203761755485891
+        },
+        "medianAge": {
+          "raw": 35.6,
+          "normalized": 0.4701986754966888
+        },
+        "infantMortality": {
+          "raw": 27.7,
+          "normalized": 0.6218130311614731
+        }
+      }
+    },
+    "Dominican Republic": {
+      "country": "Dominican Republic",
+      "iso3": "DOM",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.24,
+          "normalized": 0.2888482632541134
+        },
+        "migration": {
+          "raw": -3.1,
+          "normalized": 0.5784797630799604
+        },
+        "lifeExpectancy": {
+          "raw": 73.7,
+          "normalized": 0.6018808777429467
+        },
+        "medianAge": {
+          "raw": 27.7,
+          "normalized": 0.2958057395143488
+        },
+        "infantMortality": {
+          "raw": 25.6,
+          "normalized": 0.6515580736543909
+        }
+      }
+    },
+    "Grenada": {
+      "country": "Grenada",
+      "iso3": "GRD",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.49,
+          "normalized": 0.15173674588665448
+        },
+        "migration": {
+          "raw": -1.6,
+          "normalized": 0.5932872655478776
+        },
+        "lifeExpectancy": {
+          "raw": 75.2,
+          "normalized": 0.6489028213166144
+        },
+        "medianAge": {
+          "raw": 33.4,
+          "normalized": 0.4216335540838852
+        },
+        "infantMortality": {
+          "raw": 13.1,
+          "normalized": 0.8286118980169972
+        }
+      }
+    },
+    "Guadeloupe": {
+      "country": "Guadeloupe",
+      "iso3": "GLP",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.09,
+          "normalized": 0.26142595978062155
+        },
+        "migration": {
+          "raw": -5.8,
+          "normalized": 0.5518262586377097
+        },
+        "lifeExpectancy": {
+          "raw": 82.1,
+          "normalized": 0.8652037617554855
+        },
+        "medianAge": {
+          "raw": 46.6,
+          "normalized": 0.7130242825607064
+        },
+        "infantMortality": {
+          "raw": 7.6,
+          "normalized": 0.9065155807365439
+        }
+      }
+    },
+    "Haiti": {
+      "country": "Haiti",
+      "iso3": "HTI",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.66,
+          "normalized": 0.3656307129798903
+        },
+        "migration": {
+          "raw": -2.7,
+          "normalized": 0.5824284304047384
+        },
+        "lifeExpectancy": {
+          "raw": 64.9,
+          "normalized": 0.3260188087774296
+        },
+        "medianAge": {
+          "raw": 23.5,
+          "normalized": 0.20309050772626933
+        },
+        "infantMortality": {
+          "raw": 43.4,
+          "normalized": 0.3994334277620396
+        }
+      }
+    },
+    "Jamaica": {
+      "country": "Jamaica",
+      "iso3": "JAM",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.36,
+          "normalized": 0.12797074954296161
+        },
+        "migration": {
+          "raw": -3.5,
+          "normalized": 0.5745310957551826
+        },
+        "lifeExpectancy": {
+          "raw": 71.5,
+          "normalized": 0.5329153605015673
+        },
+        "medianAge": {
+          "raw": 31.7,
+          "normalized": 0.3841059602649007
+        },
+        "infantMortality": {
+          "raw": 15.9,
+          "normalized": 0.7889518413597734
+        }
+      }
+    },
+    "Martinique": {
+      "country": "Martinique",
+      "iso3": "MTQ",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.01,
+          "normalized": 0.2468007312614259
+        },
+        "migration": {
+          "raw": -8.9,
+          "normalized": 0.5212240868706811
+        },
+        "lifeExpectancy": {
+          "raw": 82.6,
+          "normalized": 0.8808777429467082
+        },
+        "medianAge": {
+          "raw": 48.8,
+          "normalized": 0.7615894039735099
+        },
+        "infantMortality": {
+          "raw": 7.3,
+          "normalized": 0.9107648725212465
+        }
+      }
+    },
+    "Montserrat": {
+      "country": "Montserrat",
+      "iso3": "MSR",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.44,
+          "normalized": 0.1425959780621572
+        },
+        "migration": {
+          "raw": -2.7,
+          "normalized": 0.5824284304047384
+        },
+        "lifeExpectancy": {
+          "raw": 76.2,
+          "normalized": 0.6802507836990596
+        },
+        "medianAge": {
+          "raw": 41.5,
+          "normalized": 0.6004415011037528
+        },
+        "infantMortality": {
+          "raw": 5.3,
+          "normalized": 0.9390934844192634
+        }
+      }
+    },
+    "Puerto Rico": {
+      "country": "Puerto Rico",
+      "iso3": "PRI",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 0.94,
+          "normalized": 0.05118829981718463
+        },
+        "migration": {
+          "raw": 6.1,
+          "normalized": 0.6692991115498518
+        },
+        "lifeExpectancy": {
+          "raw": 81.7,
+          "normalized": 0.8526645768025077
+        },
+        "medianAge": {
+          "raw": 45.3,
+          "normalized": 0.684326710816777
+        },
+        "infantMortality": {
+          "raw": 5.2,
+          "normalized": 0.9405099150141643
+        }
+      }
+    },
+    "Saint Barth\u00e9lemy": {
+      "country": "Saint Barth\u00e9lemy",
+      "iso3": "BLM",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 0.8,
+          "normalized": 0.025594149908592326
+        },
+        "migration": {
+          "raw": 18.0,
+          "normalized": 0.786771964461994
+        },
+        "lifeExpectancy": {
+          "raw": 84.3,
+          "normalized": 0.934169278996865
+        },
+        "medianAge": {
+          "raw": 38.8,
+          "normalized": 0.5408388520971302
+        },
+        "infantMortality": {
+          "raw": 5.3,
+          "normalized": 0.9390934844192634
+        }
+      }
+    },
+    "Saint Kitts and Nevis": {
+      "country": "Saint Kitts and Nevis",
+      "iso3": "KNA",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.51,
+          "normalized": 0.1553930530164534
+        },
+        "migration": {
+          "raw": 0.0,
+          "normalized": 0.6090819348469891
+        },
+        "lifeExpectancy": {
+          "raw": 72.1,
+          "normalized": 0.5517241379310343
+        },
+        "medianAge": {
+          "raw": 35.3,
+          "normalized": 0.4635761589403973
+        },
+        "infantMortality": {
+          "raw": 12.6,
+          "normalized": 0.8356940509915014
+        }
+      }
+    },
+    "Saint Lucia": {
+      "country": "Saint Lucia",
+      "iso3": "LCA",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.38,
+          "normalized": 0.1316270566727605
+        },
+        "migration": {
+          "raw": 0.0,
+          "normalized": 0.6090819348469891
+        },
+        "lifeExpectancy": {
+          "raw": 72.7,
+          "normalized": 0.5705329153605015
+        },
+        "medianAge": {
+          "raw": 33.7,
+          "normalized": 0.4282560706401767
+        },
+        "infantMortality": {
+          "raw": 14.4,
+          "normalized": 0.8101983002832861
+        }
+      }
+    },
+    "Saint Martin (French part)": {
+      "country": "Saint Martin (French part)",
+      "iso3": "MAF",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.72,
+          "normalized": 0.37659963436928706
+        },
+        "migration": {
+          "raw": -61.7,
+          "normalized": 0.0
+        },
+        "lifeExpectancy": {
+          "raw": 80.2,
+          "normalized": 0.8056426332288401
+        },
+        "medianAge": {
+          "raw": 39.4,
+          "normalized": 0.554083885209713
+        },
+        "infantMortality": {
+          "raw": 8.3,
+          "normalized": 0.896600566572238
+        }
+      }
+    },
+    "Saint Vincent and the Grenadines": {
+      "country": "Saint Vincent and the Grenadines",
+      "iso3": "VCT",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.78,
+          "normalized": 0.2047531992687386
+        },
+        "migration": {
+          "raw": -7.7,
+          "normalized": 0.5330700888450147
+        },
+        "lifeExpectancy": {
+          "raw": 71.2,
+          "normalized": 0.5235109717868338
+        },
+        "medianAge": {
+          "raw": 33.9,
+          "normalized": 0.4326710816777042
+        },
+        "infantMortality": {
+          "raw": 13.2,
+          "normalized": 0.8271954674220963
+        }
+      }
+    },
+    "Sint Maarten (Dutch part)": {
+      "country": "Sint Maarten (Dutch part)",
+      "iso3": "SXM",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.45,
+          "normalized": 0.14442413162705667
+        },
+        "migration": {
+          "raw": 13.3,
+          "normalized": 0.7403751233958538
+        },
+        "lifeExpectancy": {
+          "raw": 76.4,
+          "normalized": 0.6865203761755486
+        },
+        "medianAge": {
+          "raw": 41.6,
+          "normalized": 0.6026490066225166
+        },
+        "infantMortality": {
+          "raw": 12.8,
+          "normalized": 0.8328611898016997
+        }
+      }
+    },
+    "Trinidad and Tobago": {
+      "country": "Trinidad and Tobago",
+      "iso3": "TTO",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.53,
+          "normalized": 0.1590493601462523
+        },
+        "migration": {
+          "raw": 1.4,
+          "normalized": 0.6229022704837117
+        },
+        "lifeExpectancy": {
+          "raw": 73.5,
+          "normalized": 0.5956112852664576
+        },
+        "medianAge": {
+          "raw": 36.7,
+          "normalized": 0.4944812362030906
+        },
+        "infantMortality": {
+          "raw": 13.5,
+          "normalized": 0.8229461756373937
+        }
+      }
+    },
+    "Turks and Caicos Islands": {
+      "country": "Turks and Caicos Islands",
+      "iso3": "TCA",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.46,
+          "normalized": 0.14625228519195613
+        },
+        "migration": {
+          "raw": 4.2,
+          "normalized": 0.650542941757157
+        },
+        "lifeExpectancy": {
+          "raw": 78.0,
+          "normalized": 0.7366771159874607
+        },
+        "medianAge": {
+          "raw": 38.3,
+          "normalized": 0.5298013245033112
+        },
+        "infantMortality": {
+          "raw": 4.8,
+          "normalized": 0.9461756373937678
+        }
+      }
+    },
+    "United States Virgin Islands": {
+      "country": "United States Virgin Islands",
+      "iso3": "VIR",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.09,
+          "normalized": 0.26142595978062155
+        },
+        "migration": {
+          "raw": -5.2,
+          "normalized": 0.5577492596248765
+        },
+        "lifeExpectancy": {
+          "raw": 75.5,
+          "normalized": 0.6583072100313478
+        },
+        "medianAge": {
+          "raw": 44.7,
+          "normalized": 0.6710816777041944
+        },
+        "infantMortality": {
+          "raw": 4.9,
+          "normalized": 0.9447592067988668
+        }
+      }
+    },
+    "Belize": {
+      "country": "Belize",
+      "iso3": "BLZ",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.01,
+          "normalized": 0.2468007312614259
+        },
+        "migration": {
+          "raw": 1.4,
+          "normalized": 0.6229022704837117
+        },
+        "lifeExpectancy": {
+          "raw": 73.6,
+          "normalized": 0.5987460815047019
+        },
+        "medianAge": {
+          "raw": 25.9,
+          "normalized": 0.2560706401766004
+        },
+        "infantMortality": {
+          "raw": 8.7,
+          "normalized": 0.8909348441926346
+        }
+      }
+    },
+    "Costa Rica": {
+      "country": "Costa Rica",
+      "iso3": "CRI",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.33,
+          "normalized": 0.12248628884826326
+        },
+        "migration": {
+          "raw": 0.2,
+          "normalized": 0.6110562685093781
+        },
+        "lifeExpectancy": {
+          "raw": 80.8,
+          "normalized": 0.824451410658307
+        },
+        "medianAge": {
+          "raw": 34.1,
+          "normalized": 0.43708609271523186
+        },
+        "infantMortality": {
+          "raw": 6.5,
+          "normalized": 0.9220963172804533
+        }
+      }
+    },
+    "El Salvador": {
+      "country": "El Salvador",
+      "iso3": "SLV",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.78,
+          "normalized": 0.2047531992687386
+        },
+        "migration": {
+          "raw": -3.7,
+          "normalized": 0.5725567620927936
+        },
+        "lifeExpectancy": {
+          "raw": 72.1,
+          "normalized": 0.5517241379310343
+        },
+        "medianAge": {
+          "raw": 27.0,
+          "normalized": 0.2803532008830022
+        },
+        "infantMortality": {
+          "raw": 9.5,
+          "normalized": 0.8796033994334278
+        }
+      }
+    },
+    "Guatemala": {
+      "country": "Guatemala",
+      "iso3": "GTM",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.31,
+          "normalized": 0.3016453382084095
+        },
+        "migration": {
+          "raw": -0.5,
+          "normalized": 0.6041461006910167
+        },
+        "lifeExpectancy": {
+          "raw": 72.6,
+          "normalized": 0.5673981191222568
+        },
+        "medianAge": {
+          "raw": 22.6,
+          "normalized": 0.18322295805739516
+        },
+        "infantMortality": {
+          "raw": 17.6,
+          "normalized": 0.7648725212464589
+        }
+      }
+    },
+    "Honduras": {
+      "country": "Honduras",
+      "iso3": "HND",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.5,
+          "normalized": 0.33638025594149906
+        },
+        "migration": {
+          "raw": -0.5,
+          "normalized": 0.6041461006910167
+        },
+        "lifeExpectancy": {
+          "raw": 72.9,
+          "normalized": 0.5768025078369907
+        },
+        "medianAge": {
+          "raw": 23.5,
+          "normalized": 0.20309050772626933
+        },
+        "infantMortality": {
+          "raw": 13.0,
+          "normalized": 0.830028328611898
+        }
+      }
+    },
+    "Mexico": {
+      "country": "Mexico",
+      "iso3": "MEX",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.91,
+          "normalized": 0.22851919561243145
+        },
+        "migration": {
+          "raw": -0.8,
+          "normalized": 0.6011846001974334
+        },
+        "lifeExpectancy": {
+          "raw": 75.1,
+          "normalized": 0.6457680250783696
+        },
+        "medianAge": {
+          "raw": 28.9,
+          "normalized": 0.32229580573951433
+        },
+        "infantMortality": {
+          "raw": 10.3,
+          "normalized": 0.8682719546742209
+        }
+      }
+    },
+    "Nicaragua": {
+      "country": "Nicaragua",
+      "iso3": "NIC",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.22,
+          "normalized": 0.28519195612431447
+        },
+        "migration": {
+          "raw": -1.2,
+          "normalized": 0.5972359328726554
+        },
+        "lifeExpectancy": {
+          "raw": 74.9,
+          "normalized": 0.639498432601881
+        },
+        "medianAge": {
+          "raw": 25.3,
+          "normalized": 0.24282560706401768
+        },
+        "infantMortality": {
+          "raw": 12.3,
+          "normalized": 0.839943342776204
+        }
+      }
+    },
+    "Panama": {
+      "country": "Panama",
+      "iso3": "PAN",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.12,
+          "normalized": 0.26691042047531993
+        },
+        "migration": {
+          "raw": 1.6,
+          "normalized": 0.6248766041461007
+        },
+        "lifeExpectancy": {
+          "raw": 79.6,
+          "normalized": 0.7868338557993727
+        },
+        "medianAge": {
+          "raw": 29.6,
+          "normalized": 0.337748344370861
+        },
+        "infantMortality": {
+          "raw": 12.6,
+          "normalized": 0.8356940509915014
+        }
+      }
+    },
+    "Argentina": {
+      "country": "Argentina",
+      "iso3": "ARG",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.5,
+          "normalized": 0.15356489945155394
+        },
+        "migration": {
+          "raw": 0.1,
+          "normalized": 0.6100691016781836
+        },
+        "lifeExpectancy": {
+          "raw": 77.4,
+          "normalized": 0.7178683385579938
+        },
+        "medianAge": {
+          "raw": 32.1,
+          "normalized": 0.3929359823399559
+        },
+        "infantMortality": {
+          "raw": 9.0,
+          "normalized": 0.886685552407932
+        }
+      }
+    },
+    "Bolivia (Plurinational State of)": {
+      "country": "Bolivia (Plurinational State of)",
+      "iso3": "BOL",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.55,
+          "normalized": 0.3455210237659963
+        },
+        "migration": {
+          "raw": -0.2,
+          "normalized": 0.6071076011846002
+        },
+        "lifeExpectancy": {
+          "raw": 68.6,
+          "normalized": 0.44200626959247624
+        },
+        "medianAge": {
+          "raw": 24.7,
+          "normalized": 0.22958057395143486
+        },
+        "infantMortality": {
+          "raw": 31.8,
+          "normalized": 0.5637393767705382
+        }
+      }
+    },
+    "Brazil": {
+      "country": "Brazil",
+      "iso3": "BRA",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.62,
+          "normalized": 0.17550274223034737
+        },
+        "migration": {
+          "raw": -1.1,
+          "normalized": 0.5982230997038499
+        },
+        "lifeExpectancy": {
+          "raw": 75.8,
+          "normalized": 0.6677115987460813
+        },
+        "medianAge": {
+          "raw": 33.9,
+          "normalized": 0.4326710816777042
+        },
+        "infantMortality": {
+          "raw": 12.1,
+          "normalized": 0.8427762039660056
+        }
+      }
+    },
+    "Chile": {
+      "country": "Chile",
+      "iso3": "CHL",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.17,
+          "normalized": 0.09323583180987201
+        },
+        "migration": {
+          "raw": 3.2,
+          "normalized": 0.6406712734452122
+        },
+        "lifeExpectancy": {
+          "raw": 81.2,
+          "normalized": 0.8369905956112852
+        },
+        "medianAge": {
+          "raw": 36.0,
+          "normalized": 0.47902869757174393
+        },
+        "infantMortality": {
+          "raw": 4.1,
+          "normalized": 0.9560906515580736
+        }
+      }
+    },
+    "Colombia": {
+      "country": "Colombia",
+      "iso3": "COL",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.65,
+          "normalized": 0.1809872029250457
+        },
+        "migration": {
+          "raw": 3.0,
+          "normalized": 0.6386969397828233
+        },
+        "lifeExpectancy": {
+          "raw": 77.7,
+          "normalized": 0.7272727272727272
+        },
+        "medianAge": {
+          "raw": 31.6,
+          "normalized": 0.38189845474613693
+        },
+        "infantMortality": {
+          "raw": 9.8,
+          "normalized": 0.8753541076487252
+        }
+      }
+    },
+    "Ecuador": {
+      "country": "Ecuador",
+      "iso3": "ECU",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.82,
+          "normalized": 0.21206581352833642
+        },
+        "migration": {
+          "raw": -1.2,
+          "normalized": 0.5972359328726554
+        },
+        "lifeExpectancy": {
+          "raw": 77.4,
+          "normalized": 0.7178683385579938
+        },
+        "medianAge": {
+          "raw": 28.4,
+          "normalized": 0.31125827814569534
+        },
+        "infantMortality": {
+          "raw": 9.6,
+          "normalized": 0.8781869688385269
+        }
+      }
+    },
+    "Falkland Islands (Malvinas)": {
+      "country": "Falkland Islands (Malvinas)",
+      "iso3": "FLK",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.69,
+          "normalized": 0.18829981718464348
+        },
+        "migration": {
+          "raw": -6.0,
+          "normalized": 0.5498519249753208
+        },
+        "lifeExpectancy": {
+          "raw": 79.2,
+          "normalized": 0.7742946708463949
+        },
+        "medianAge": {
+          "raw": 41.5,
+          "normalized": 0.6004415011037528
+        },
+        "infantMortality": {
+          "raw": 9.2,
+          "normalized": 0.8838526912181304
+        }
+      }
+    },
+    "French Guiana": {
+      "country": "French Guiana",
+      "iso3": "GUF",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 3.39,
+          "normalized": 0.4990859232175503
+        },
+        "migration": {
+          "raw": -3.6,
+          "normalized": 0.5735439289239881
+        },
+        "lifeExpectancy": {
+          "raw": 77.0,
+          "normalized": 0.7053291536050156
+        },
+        "medianAge": {
+          "raw": 25.2,
+          "normalized": 0.24061810154525384
+        },
+        "infantMortality": {
+          "raw": 8.9,
+          "normalized": 0.8881019830028328
+        }
+      }
+    },
+    "Guyana": {
+      "country": "Guyana",
+      "iso3": "GUY",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.41,
+          "normalized": 0.31992687385740404
+        },
+        "migration": {
+          "raw": -7.5,
+          "normalized": 0.5350444225074037
+        },
+        "lifeExpectancy": {
+          "raw": 70.2,
+          "normalized": 0.49216300940438873
+        },
+        "medianAge": {
+          "raw": 25.6,
+          "normalized": 0.24944812362030908
+        },
+        "infantMortality": {
+          "raw": 21.3,
+          "normalized": 0.7124645892351275
+        }
+      }
+    },
+    "Paraguay": {
+      "country": "Paraguay",
+      "iso3": "PRY",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.42,
+          "normalized": 0.32175502742230344
+        },
+        "migration": {
+          "raw": -1.8,
+          "normalized": 0.5913129318854886
+        },
+        "lifeExpectancy": {
+          "raw": 73.8,
+          "normalized": 0.605015673981191
+        },
+        "medianAge": {
+          "raw": 26.3,
+          "normalized": 0.26490066225165565
+        },
+        "infantMortality": {
+          "raw": 14.0,
+          "normalized": 0.8158640226628895
+        }
+      }
+    },
+    "Peru": {
+      "country": "Peru",
+      "iso3": "PER",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.98,
+          "normalized": 0.24131627056672758
+        },
+        "migration": {
+          "raw": 0.7,
+          "normalized": 0.6159921026653504
+        },
+        "lifeExpectancy": {
+          "raw": 77.7,
+          "normalized": 0.7272727272727272
+        },
+        "medianAge": {
+          "raw": 29.5,
+          "normalized": 0.3355408388520971
+        },
+        "infantMortality": {
+          "raw": 11.7,
+          "normalized": 0.8484419263456091
+        }
+      }
+    },
+    "Suriname": {
+      "country": "Suriname",
+      "iso3": "SUR",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.25,
+          "normalized": 0.2906764168190128
+        },
+        "migration": {
+          "raw": -1.6,
+          "normalized": 0.5932872655478776
+        },
+        "lifeExpectancy": {
+          "raw": 73.6,
+          "normalized": 0.5987460815047019
+        },
+        "medianAge": {
+          "raw": 28.1,
+          "normalized": 0.30463576158940403
+        },
+        "infantMortality": {
+          "raw": 14.1,
+          "normalized": 0.8144475920679887
+        }
+      }
+    },
+    "Uruguay": {
+      "country": "Uruguay",
+      "iso3": "URY",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 1.41,
+          "normalized": 0.13711151736745886
+        },
+        "migration": {
+          "raw": -0.4,
+          "normalized": 0.6051332675222112
+        },
+        "lifeExpectancy": {
+          "raw": 78.1,
+          "normalized": 0.739811912225705
+        },
+        "medianAge": {
+          "raw": 35.8,
+          "normalized": 0.47461368653421626
+        },
+        "infantMortality": {
+          "raw": 5.6,
+          "normalized": 0.9348441926345609
+        }
+      }
+    },
+    "Venezuela (Bolivarian Republic of)": {
+      "country": "Venezuela (Bolivarian Republic of)",
+      "iso3": "VEN",
+      "region": "Latin America and the Caribbean",
+      "values": {
+        "fertility": {
+          "raw": 2.08,
+          "normalized": 0.2595978062157221
+        },
+        "migration": {
+          "raw": -4.0,
+          "normalized": 0.5695952615992103
+        },
+        "lifeExpectancy": {
+          "raw": 72.5,
+          "normalized": 0.5642633228840125
+        },
+        "medianAge": {
+          "raw": 29.0,
+          "normalized": 0.32450331125827814
+        },
+        "infantMortality": {
+          "raw": 15.7,
+          "normalized": 0.791784702549575
+        }
+      }
+    },
+    "Bermuda": {
+      "country": "Bermuda",
+      "iso3": "BMU",
+      "region": "Unknown",
+      "values": {
+        "fertility": {
+          "raw": 1.4,
+          "normalized": 0.1352833638025594
+        },
+        "migration": {
+          "raw": 0.0,
+          "normalized": 0.6090819348469891
+        },
+        "lifeExpectancy": {
+          "raw": 82.3,
+          "normalized": 0.8714733542319747
+        },
+        "medianAge": {
+          "raw": 45.1,
+          "normalized": 0.6799116997792495
+        },
+        "infantMortality": {
+          "raw": 2.0,
+          "normalized": 0.9858356940509915
+        }
+      }
+    },
+    "Canada": {
+      "country": "Canada",
+      "iso3": "CAN",
+      "region": "Unknown",
+      "values": {
+        "fertility": {
+          "raw": 1.35,
+          "normalized": 0.12614259597806218
+        },
+        "migration": {
+          "raw": 11.0,
+          "normalized": 0.717670286278381
+        },
+        "lifeExpectancy": {
+          "raw": 82.6,
+          "normalized": 0.8808777429467082
+        },
+        "medianAge": {
+          "raw": 40.3,
+          "normalized": 0.5739514348785871
+        },
+        "infantMortality": {
+          "raw": 4.3,
+          "normalized": 0.953257790368272
+        }
+      }
+    },
+    "Greenland": {
+      "country": "Greenland",
+      "iso3": "GRL",
+      "region": "Unknown",
+      "values": {
+        "fertility": {
+          "raw": 1.95,
+          "normalized": 0.23583180987202926
+        },
+        "migration": {
+          "raw": -5.7,
+          "normalized": 0.5528134254689042
+        },
+        "lifeExpectancy": {
+          "raw": 70.1,
+          "normalized": 0.4890282131661439
+        },
+        "medianAge": {
+          "raw": 34.2,
+          "normalized": 0.43929359823399566
+        },
+        "infantMortality": {
+          "raw": 9.9,
+          "normalized": 0.8739376770538243
+        }
+      }
+    },
+    "Saint Pierre and Miquelon": {
+      "country": "Saint Pierre and Miquelon",
+      "iso3": "SPM",
+      "region": "Unknown",
+      "values": {
+        "fertility": {
+          "raw": 1.27,
+          "normalized": 0.11151736745886655
+        },
+        "migration": {
+          "raw": 0.0,
+          "normalized": 0.6090819348469891
+        },
+        "lifeExpectancy": {
+          "raw": 76.8,
+          "normalized": 0.6990595611285264
+        },
+        "medianAge": {
+          "raw": 46.4,
+          "normalized": 0.7086092715231788
+        },
+        "infantMortality": {
+          "raw": 8.1,
+          "normalized": 0.8994334277620397
+        }
+      }
+    },
+    "United States of America": {
+      "country": "United States of America",
+      "iso3": "USA",
+      "region": "Unknown",
+      "values": {
+        "fertility": {
+          "raw": 1.62,
+          "normalized": 0.17550274223034737
+        },
+        "migration": {
+          "raw": 3.9,
+          "normalized": 0.6475814412635735
+        },
+        "lifeExpectancy": {
+          "raw": 79.3,
+          "normalized": 0.7774294670846392
+        },
+        "medianAge": {
+          "raw": 38.0,
+          "normalized": 0.5231788079470199
+        },
+        "infantMortality": {
+          "raw": 5.3,
+          "normalized": 0.9390934844192634
+        }
+      }
+    },
+    "Australia": {
+      "country": "Australia",
+      "iso3": "AUS",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 1.64,
+          "normalized": 0.17915904936014623
+        },
+        "migration": {
+          "raw": 5.3,
+          "normalized": 0.6614017769002961
+        },
+        "lifeExpectancy": {
+          "raw": 83.9,
+          "normalized": 0.9216300940438872
+        },
+        "medianAge": {
+          "raw": 37.8,
+          "normalized": 0.5187637969094923
+        },
+        "infantMortality": {
+          "raw": 3.2,
+          "normalized": 0.9688385269121813
+        }
+      }
+    },
+    "New Zealand": {
+      "country": "New Zealand",
+      "iso3": "NZL",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 1.67,
+          "normalized": 0.18464351005484458
+        },
+        "migration": {
+          "raw": 4.1,
+          "normalized": 0.6495557749259624
+        },
+        "lifeExpectancy": {
+          "raw": 82.1,
+          "normalized": 0.8652037617554855
+        },
+        "medianAge": {
+          "raw": 37.3,
+          "normalized": 0.5077262693156732
+        },
+        "infantMortality": {
+          "raw": 4.3,
+          "normalized": 0.953257790368272
+        }
+      }
+    },
+    "Fiji": {
+      "country": "Fiji",
+      "iso3": "FJI",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 2.28,
+          "normalized": 0.2961608775137111
+        },
+        "migration": {
+          "raw": -3.6,
+          "normalized": 0.5735439289239881
+        },
+        "lifeExpectancy": {
+          "raw": 67.3,
+          "normalized": 0.4012539184952976
+        },
+        "medianAge": {
+          "raw": 27.7,
+          "normalized": 0.2958057395143488
+        },
+        "infantMortality": {
+          "raw": 22.9,
+          "normalized": 0.6898016997167139
+        }
+      }
+    },
+    "New Caledonia": {
+      "country": "New Caledonia",
+      "iso3": "NCL",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 1.98,
+          "normalized": 0.24131627056672758
+        },
+        "migration": {
+          "raw": 1.7,
+          "normalized": 0.6258637709772952
+        },
+        "lifeExpectancy": {
+          "raw": 78.8,
+          "normalized": 0.7617554858934167
+        },
+        "medianAge": {
+          "raw": 33.9,
+          "normalized": 0.4326710816777042
+        },
+        "infantMortality": {
+          "raw": 9.4,
+          "normalized": 0.8810198300283286
+        }
+      }
+    },
+    "Papua New Guinea": {
+      "country": "Papua New Guinea",
+      "iso3": "PNG",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 3.1,
+          "normalized": 0.4460694698354662
+        },
+        "migration": {
+          "raw": -0.1,
+          "normalized": 0.6080947680157947
+        },
+        "lifeExpectancy": {
+          "raw": 66.1,
+          "normalized": 0.36363636363636337
+        },
+        "medianAge": {
+          "raw": 22.3,
+          "normalized": 0.17660044150110377
+        },
+        "infantMortality": {
+          "raw": 32.2,
+          "normalized": 0.5580736543909348
+        }
+      }
+    },
+    "Solomon Islands": {
+      "country": "Solomon Islands",
+      "iso3": "SLB",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 3.56,
+          "normalized": 0.5301645338208409
+        },
+        "migration": {
+          "raw": 2.0,
+          "normalized": 0.6288252714708785
+        },
+        "lifeExpectancy": {
+          "raw": 70.5,
+          "normalized": 0.5015673981191222
+        },
+        "medianAge": {
+          "raw": 20.3,
+          "normalized": 0.13245033112582782
+        },
+        "infantMortality": {
+          "raw": 14.5,
+          "normalized": 0.8087818696883853
+        }
+      }
+    },
+    "Vanuatu": {
+      "country": "Vanuatu",
+      "iso3": "VUT",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 3.6,
+          "normalized": 0.5374771480804388
+        },
+        "migration": {
+          "raw": 0.0,
+          "normalized": 0.6090819348469891
+        },
+        "lifeExpectancy": {
+          "raw": 71.5,
+          "normalized": 0.5329153605015673
+        },
+        "medianAge": {
+          "raw": 20.1,
+          "normalized": 0.12803532008830024
+        },
+        "infantMortality": {
+          "raw": 14.8,
+          "normalized": 0.8045325779036827
+        }
+      }
+    },
+    "Guam": {
+      "country": "Guam",
+      "iso3": "GUM",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 2.78,
+          "normalized": 0.3875685557586837
+        },
+        "migration": {
+          "raw": -3.0,
+          "normalized": 0.5794669299111549
+        },
+        "lifeExpectancy": {
+          "raw": 77.2,
+          "normalized": 0.7115987460815046
+        },
+        "medianAge": {
+          "raw": 31.1,
+          "normalized": 0.37086092715231794
+        },
+        "infantMortality": {
+          "raw": 11.4,
+          "normalized": 0.8526912181303116
+        }
+      }
+    },
+    "Kiribati": {
+      "country": "Kiribati",
+      "iso3": "KIR",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 3.15,
+          "normalized": 0.45521023765996343
+        },
+        "migration": {
+          "raw": -3.7,
+          "normalized": 0.5725567620927936
+        },
+        "lifeExpectancy": {
+          "raw": 66.5,
+          "normalized": 0.3761755485893416
+        },
+        "medianAge": {
+          "raw": 22.7,
+          "normalized": 0.18543046357615892
+        },
+        "infantMortality": {
+          "raw": 43.3,
+          "normalized": 0.40084985835694054
+        }
+      }
+    },
+    "Marshall Islands": {
+      "country": "Marshall Islands",
+      "iso3": "MHL",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 2.92,
+          "normalized": 0.41316270566727603
+        },
+        "migration": {
+          "raw": -47.2,
+          "normalized": 0.1431391905231984
+        },
+        "lifeExpectancy": {
+          "raw": 66.9,
+          "normalized": 0.38871473354231983
+        },
+        "medianAge": {
+          "raw": 20.7,
+          "normalized": 0.14128035320088297
+        },
+        "infantMortality": {
+          "raw": 22.1,
+          "normalized": 0.7011331444759206
+        }
+      }
+    },
+    "Micronesia (Fed. States of)": {
+      "country": "Micronesia (Fed. States of)",
+      "iso3": "FSM",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 2.75,
+          "normalized": 0.3820840950639854
+        },
+        "migration": {
+          "raw": -10.1,
+          "normalized": 0.5093780848963474
+        },
+        "lifeExpectancy": {
+          "raw": 67.2,
+          "normalized": 0.3981191222570533
+        },
+        "medianAge": {
+          "raw": 22.9,
+          "normalized": 0.1898454746136865
+        },
+        "infantMortality": {
+          "raw": 18.8,
+          "normalized": 0.7478753541076487
+        }
+      }
+    },
+    "Nauru": {
+      "country": "Nauru",
+      "iso3": "NRU",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 3.33,
+          "normalized": 0.4881170018281536
+        },
+        "migration": {
+          "raw": -12.5,
+          "normalized": 0.4856860809476801
+        },
+        "lifeExpectancy": {
+          "raw": 62.1,
+          "normalized": 0.23824451410658307
+        },
+        "medianAge": {
+          "raw": 20.4,
+          "normalized": 0.13465783664459158
+        },
+        "infantMortality": {
+          "raw": 20.5,
+          "normalized": 0.7237960339943342
+        }
+      }
+    },
+    "Northern Mariana Islands": {
+      "country": "Northern Mariana Islands",
+      "iso3": "MNP",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 2.35,
+          "normalized": 0.30895795246800734
+        },
+        "migration": {
+          "raw": -29.3,
+          "normalized": 0.3198420533070089
+        },
+        "lifeExpectancy": {
+          "raw": 78.8,
+          "normalized": 0.7617554858934167
+        },
+        "medianAge": {
+          "raw": 36.1,
+          "normalized": 0.4812362030905078
+        },
+        "infantMortality": {
+          "raw": 4.9,
+          "normalized": 0.9447592067988668
+        }
+      }
+    },
+    "Palau": {
+      "country": "Palau",
+      "iso3": "PLW",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 1.91,
+          "normalized": 0.22851919561243145
+        },
+        "migration": {
+          "raw": -1.1,
+          "normalized": 0.5982230997038499
+        },
+        "lifeExpectancy": {
+          "raw": 69.3,
+          "normalized": 0.4639498432601879
+        },
+        "medianAge": {
+          "raw": 37.8,
+          "normalized": 0.5187637969094923
+        },
+        "infantMortality": {
+          "raw": 18.1,
+          "normalized": 0.7577903682719547
+        }
+      }
+    },
+    "American Samoa": {
+      "country": "American Samoa",
+      "iso3": "ASM",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 2.29,
+          "normalized": 0.2979890310786106
+        },
+        "migration": {
+          "raw": -24.4,
+          "normalized": 0.368213228035538
+        },
+        "lifeExpectancy": {
+          "raw": 72.9,
+          "normalized": 0.5768025078369907
+        },
+        "medianAge": {
+          "raw": 28.4,
+          "normalized": 0.31125827814569534
+        },
+        "infantMortality": {
+          "raw": 8.4,
+          "normalized": 0.8951841359773371
+        }
+      }
+    },
+    "Cook Islands": {
+      "country": "Cook Islands",
+      "iso3": "COK",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 2.05,
+          "normalized": 0.2541133455210237
+        },
+        "migration": {
+          "raw": -39.2,
+          "normalized": 0.22211253701875613
+        },
+        "lifeExpectancy": {
+          "raw": 75.3,
+          "normalized": 0.6520376175548588
+        },
+        "medianAge": {
+          "raw": 35.1,
+          "normalized": 0.4591611479028698
+        },
+        "infantMortality": {
+          "raw": 5.5,
+          "normalized": 0.9362606232294618
+        }
+      }
+    },
+    "French Polynesia": {
+      "country": "French Polynesia",
+      "iso3": "PYF",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 1.5,
+          "normalized": 0.15356489945155394
+        },
+        "migration": {
+          "raw": -4.8,
+          "normalized": 0.5616979269496545
+        },
+        "lifeExpectancy": {
+          "raw": 84.1,
+          "normalized": 0.9278996865203758
+        },
+        "medianAge": {
+          "raw": 34.8,
+          "normalized": 0.4525386313465783
+        },
+        "infantMortality": {
+          "raw": 5.3,
+          "normalized": 0.9390934844192634
+        }
+      }
+    },
+    "Niue": {
+      "country": "Niue",
+      "iso3": "NIU",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 2.51,
+          "normalized": 0.33820840950639847
+        },
+        "migration": {
+          "raw": 0.0,
+          "normalized": 0.6090819348469891
+        },
+        "lifeExpectancy": {
+          "raw": 70.0,
+          "normalized": 0.4858934169278996
+        },
+        "medianAge": {
+          "raw": 36.6,
+          "normalized": 0.4922737306843268
+        },
+        "infantMortality": {
+          "raw": 19.5,
+          "normalized": 0.7379603399433428
+        }
+      }
+    },
+    "Samoa": {
+      "country": "Samoa",
+      "iso3": "WSM",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 3.83,
+          "normalized": 0.5795246800731262
+        },
+        "migration": {
+          "raw": -13.0,
+          "normalized": 0.48075024679170775
+        },
+        "lifeExpectancy": {
+          "raw": 71.7,
+          "normalized": 0.5391849529780565
+        },
+        "medianAge": {
+          "raw": 19.9,
+          "normalized": 0.12362030905077259
+        },
+        "infantMortality": {
+          "raw": 13.1,
+          "normalized": 0.8286118980169972
+        }
+      }
+    },
+    "Tokelau": {
+      "country": "Tokelau",
+      "iso3": "TKL",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 2.61,
+          "normalized": 0.356489945155393
+        },
+        "migration": {
+          "raw": 30.4,
+          "normalized": 0.9091806515301084
+        },
+        "lifeExpectancy": {
+          "raw": 77.1,
+          "normalized": 0.7084639498432599
+        },
+        "medianAge": {
+          "raw": 26.7,
+          "normalized": 0.2737306843267108
+        },
+        "infantMortality": {
+          "raw": 4.0,
+          "normalized": 0.9575070821529745
+        }
+      }
+    },
+    "Tonga": {
+      "country": "Tonga",
+      "iso3": "TON",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 3.13,
+          "normalized": 0.4515539305301645
+        },
+        "migration": {
+          "raw": -20.8,
+          "normalized": 0.403751233958539
+        },
+        "lifeExpectancy": {
+          "raw": 72.9,
+          "normalized": 0.5768025078369907
+        },
+        "medianAge": {
+          "raw": 20.7,
+          "normalized": 0.14128035320088297
+        },
+        "infantMortality": {
+          "raw": 9.0,
+          "normalized": 0.886685552407932
+        }
+      }
+    },
+    "Tuvalu": {
+      "country": "Tuvalu",
+      "iso3": "TUV",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 3.21,
+          "normalized": 0.46617915904936014
+        },
+        "migration": {
+          "raw": -32.9,
+          "normalized": 0.2843040473840079
+        },
+        "lifeExpectancy": {
+          "raw": 67.1,
+          "normalized": 0.3949843260188085
+        },
+        "medianAge": {
+          "raw": 24.3,
+          "normalized": 0.2207505518763797
+        },
+        "infantMortality": {
+          "raw": 16.1,
+          "normalized": 0.7861189801699716
+        }
+      }
+    },
+    "Wallis and Futuna Islands": {
+      "country": "Wallis and Futuna Islands",
+      "iso3": "WLF",
+      "region": "Oceania",
+      "values": {
+        "fertility": {
+          "raw": 1.41,
+          "normalized": 0.13711151736745886
+        },
+        "migration": {
+          "raw": -9.4,
+          "normalized": 0.5162882527147088
+        },
+        "lifeExpectancy": {
+          "raw": 78.6,
+          "normalized": 0.7554858934169276
+        },
+        "medianAge": {
+          "raw": 37.2,
+          "normalized": 0.5055187637969095
+        },
+        "infantMortality": {
+          "raw": 11.1,
+          "normalized": 0.8569405099150141
+        }
+      }
+    }
+  },
+  "indicators": {
+    "fertility": "Total Fertility Rate",
+    "migration": "Net Migration Rate",
+    "lifeExpectancy": "Life Expectancy",
+    "medianAge": "Median Age",
+    "infantMortality": "Infant Mortality (inverted)"
+  }
+}

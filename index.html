@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Demographics Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/globe.ico">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav id="top-navbar">
+        <div class="navbar-left">
+            <h1 class="app-title">World Demographics Explorer</h1>
+            <span class="dataset-info">UN Population Data (1950-2023)</span>
+        </div>
+        
+        <div class="navbar-center">
+            <div class="viz-selector">
+                <button class="viz-btn active" data-viz="overview">
+                    <span class="icon">🌍</span>
+                    <span>Overview</span>
+                </button>
+                <button class="viz-btn" data-viz="timeseries">
+                    <span class="icon">📈</span>
+                    <span>Trends</span>
+                </button>
+                <button class="viz-btn" data-viz="multiples">
+                    <span class="icon">📊</span>
+                    <span>Regions</span>
+                </button>
+                <button class="viz-btn" data-viz="animation">
+                    <span class="icon">🎬</span>
+                    <span>Animation</span>
+                </button>
+                <button class="viz-btn" data-viz="radar">
+                    <span class="icon">🎯</span>
+                    <span>DNA Profile</span>
+                </button>
+                <button class="viz-btn" data-viz="ridgeline">
+                    <span class="icon">🏔️</span>
+                    <span>Ageing</span>
+                </button>
+                <button class="viz-btn" data-viz="growth-drivers">
+                    <span class="icon">💹</span>
+                    <span>Growth</span>
+                </button>
+                <button class="viz-btn" data-viz="gender-gap">
+                    <span class="icon">⚖️</span>
+                    <span>Gender Gap</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="navbar-right">
+            <button id="info-btn" class="icon-btn" title="About this dashboard">
+                <span>ℹ️</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Loading Indicator -->
+    <div id="loading-screen">
+        <div class="spinner"></div>
+        <p>Loading demographic data...</p>
+    </div>
+
+    <!-- Main Container: Split Layout -->
+    <div id="main-container">
+        <!-- Left Pane: Globe View (1/3 width) -->
+        <div id="globe-pane" class="pane">
+            <div class="pane-header">
+                <h2 class="pane-title">Global View</h2>
+                <div class="pane-controls">
+                    <button class="control-btn" id="globe-maximize" title="Maximize">⛶</button>
+                </div>
+            </div>
+            
+            <div class="pane-content">
+                <!-- Globe Controls -->
+                <div id="globe-controls">
+                    <div class="control-group">
+                        <label for="globe-mode-selector">
+                            <span class="control-label">Visualization Mode</span>
+                        </label>
+                        <select id="globe-mode-selector" style="padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; width: 100%; max-width: 300px;">
+                            <option value="population" selected>Population</option>
+                            <option value="density">Density</option>
+                            <option value="sex-ratio">Sex Ratio</option>
+                            <option value="median-age">Median Age</option>
+                            <option value="demographic-transition">Demographic Transition</option>
+                            <option value="growth-drivers">Growth Drivers</option>
+                            <option value="longevity-gap">Life Expectancy & Gender Gap</option>
+                            <option value="fertility-health">Fertility & Reproductive Health</option>
+                            <option value="healthcare-quality">Healthcare Quality Indicators</option>
+                        </select>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="year-slider">
+                            <span class="control-label">Year: <strong id="current-year">2023</strong></span>
+                        </label>
+                        <div class="timeline-controls-row">
+                            <div class="slider-container">
+                                <span class="year-mark">1950</span>
+                                <input type="range" id="year-slider" min="1950" max="2023" value="2023" step="1">
+                                <span class="year-mark">2023</span>
+                            </div>
+                            <div class="right-controls">
+                                <div class="playback-controls">
+                                    <button id="play-btn" class="playback-btn" title="Play animation">▶</button>
+                                    <button id="pause-btn" class="playback-btn" title="Pause animation" style="display: none;">⏸</button>
+                                    <button id="reset-btn" class="playback-btn" title="Reset to 2023">⟲</button>
+                                </div>
+                                <button id="view-toggle-btn" class="toggle-btn-compact">
+                                    <span id="toggle-text">Map</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Globe Container -->
+                <div id="globe-container"></div>
+                
+                <!-- Color Legend -->
+                <div id="color-scale" class="color-legend"></div>
+            </div>
+        </div>
+
+        <!-- Right Pane: Details/Visualizations (2/3 width) -->
+        <div id="details-pane" class="pane">
+            <div class="pane-header">
+                <h2 class="pane-title" id="details-title">Select a country to explore</h2>
+                <div class="pane-controls">
+                    <button class="control-btn" id="details-maximize" title="Maximize">⛶</button>
+                </div>
+            </div>
+            
+            <div class="pane-content">
+                <!-- Overview Mode (Default) -->
+                <div id="overview-view" class="viz-view active">
+                    <div class="welcome-message">
+                        <div class="welcome-icon">🌍</div>
+                        <h3>Welcome to World Demographics Explorer</h3>
+                        <p>Click on any country on the globe to see detailed demographic trends and insights.</p>
+                        <p>Use the navigation menu above to switch between different visualizations.</p>
+                        <div class="quick-stats">
+                            <div class="stat-card">
+                                <div class="stat-value" id="total-countries">237</div>
+                                <div class="stat-label">Countries</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value">74</div>
+                                <div class="stat-label">Years</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value">50+</div>
+                                <div class="stat-label">Indicators</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Country Detail Mode -->
+                <div id="country-detail-view" class="viz-view">
+                    <div class="country-header">
+                        <button id="close-detail-btn" class="close-btn" title="Close detail view">✕</button>
+                        <img id="detail-flag" class="country-flag" src="" alt="Country Flag">
+                        <div class="country-info">
+                            <h2 id="detail-country-name">Country Name</h2>
+                            <p id="detail-country-stats" class="country-stats"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="charts-grid">
+                        <div class="chart-card">
+                            <h3 class="chart-title">Population Over Time</h3>
+                            <svg id="population-chart" class="detail-chart"></svg>
+                        </div>
+                        <div class="chart-card">
+                            <h3 class="chart-title">Population Density</h3>
+                            <svg id="density-chart" class="detail-chart"></svg>
+                        </div>
+                        <div class="chart-card">
+                            <h3 class="chart-title">Sex Ratio (Males per 100 Females)</h3>
+                            <svg id="sex-ratio-chart" class="detail-chart"></svg>
+                        </div>
+                        <div class="chart-card">
+                            <h3 class="chart-title">Median Age</h3>
+                            <svg id="median-age-chart" class="detail-chart"></svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Time Series View -->
+                <div id="timeseries-view" class="viz-view">
+                    <div class="viz-header">
+                        <h3 id="timeseries-title">Population Trends (1950-2023)</h3>
+                        <p class="viz-description" id="timeseries-description">Population trends across major world regions and countries</p>
+                    </div>
+                    <div class="viz-instruction" style="text-align: center; padding: 10px; background: #e8f5e9; border-radius: 8px; margin-bottom: 12px; color: #2e7d32; font-size: 13px;">
+                        <span style="font-size: 18px; margin-right: 6px;">👈</span>
+                        <strong>Click on any country on the globe</strong> to add/remove its trend line. Use the <strong>Global View dropdown</strong> to switch between visualization modes.
+                    </div>
+                    <svg id="timeseries-chart" class="main-chart"></svg>
+                    <div class="viz-legend" id="timeseries-legend"></div>
+                </div>
+                
+                <!-- Small Multiples View -->
+                <div id="multiples-view" class="viz-view">
+                    <div class="viz-header">
+                        <h3>Birth & Death Rates by Region</h3>
+                        <p class="viz-description">Demographic transition patterns (1950-2023)</p>
+                    </div>
+                    <div class="viz-instruction" style="text-align: center; padding: 10px; background: #fff3e0; border-radius: 8px; margin-bottom: 12px; color: #e65100; font-size: 13px;">
+                        <span style="font-size: 18px; margin-right: 6px;">👈</span>
+                        <strong>Click on any country on the globe</strong> to add its birth/death rate chart below
+                    </div>
+                    <div class="multiples-legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: rgba(77, 175, 74, 0.7);"></div>
+                            <span>Birth Rate (per 1,000)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: rgba(228, 26, 28, 0.7);"></div>
+                            <span>Death Rate (per 1,000)</span>
+                        </div>
+                    </div>
+                    <div id="multiples-container" class="multiples-grid"></div>
+                    <div id="multiples-legend" class="viz-legend"></div>
+                </div>
+                
+                <!-- Animation View -->
+                <div id="animation-view" class="viz-view">
+                    <div class="viz-header">
+                        <h3>Demographic Transition Animation</h3>
+                        <p class="viz-description">Fertility vs. Life Expectancy (1950-2023)</p>
+                    </div>
+                    <div class="animation-container">
+                        <svg id="animation-chart" class="main-chart"></svg>
+                        <div id="year-display" class="year-display">1950</div>
+                    </div>
+                    <div class="animation-controls">
+                        <button id="anim-play-btn" class="control-btn primary">▶ Play</button>
+                        <button id="anim-pause-btn" class="control-btn" disabled>⏸ Pause</button>
+                        <button id="anim-reset-btn" class="control-btn">↺ Reset</button>
+                        <div class="speed-controls">
+                            <span class="control-label">Speed:</span>
+                            <button class="speed-btn" data-speed="2000">0.5×</button>
+                            <button class="speed-btn active" data-speed="1000">1×</button>
+                            <button class="speed-btn" data-speed="500">2×</button>
+                        </div>
+                        <div class="slider-wrapper">
+                            <input type="range" id="anim-year-slider" min="1950" max="2023" value="1950" step="1">
+                            <span id="anim-slider-label" class="slider-label">1950</span>
+                        </div>
+                    </div>
+                    <div id="animation-legend" class="viz-legend"></div>
+                </div>
+                
+                <!-- Radar Chart View -->
+                <div id="radar-view" class="viz-view">
+                    <div class="viz-header">
+                        <h3>Country DNA Profile</h3>
+                        <p class="viz-description">Multi-dimensional demographic fingerprint</p>
+                    </div>
+                    <div id="radar-controls" class="comparison-controls" style="display: none;">
+                        <label>Select Country:</label>
+                        <select id="radar-country-select">
+                            <option value="">Choose a country...</option>
+                        </select>
+                    </div>
+                    <div id="radar-instructions" class="viz-instruction" style="text-align: center; padding: 12px; background: #e3f2fd; border-radius: 8px; margin-bottom: 16px; color: #1565c0; font-size: 14px;">
+                        <span style="font-size: 20px; margin-right: 8px;">👈</span>
+                        <strong>Click on any country on the globe</strong> to see its demographic DNA profile
+                    </div>
+                    <div id="radar-container" style="display: flex; justify-content: center; align-items: center; min-height: 500px;">
+                        <svg id="radar-chart" class="main-chart"></svg>
+                    </div>
+                    <div id="radar-legend" class="viz-legend"></div>
+                </div>
+                
+                <!-- Ridgeline Plot View -->
+                <div id="ridgeline-view" class="viz-view">
+                    <div class="viz-header">
+                        <h3>Global Ageing Distribution (1950-2023)</h3>
+                        <p class="viz-description">How median age has shifted across countries over time</p>
+                    </div>
+                    <svg id="ridgeline-chart" class="main-chart" style="height: 600px;"></svg>
+                </div>
+                
+                <!-- Growth Drivers View -->
+                <div id="growth-drivers-view" class="viz-view">
+                    <div class="viz-header">
+                        <h3>Drivers of Population Growth</h3>
+                        <p class="viz-description">Natural change vs. migration by country</p>
+                    </div>
+                    <div class="animation-controls">
+                        <button id="growth-play-btn" class="control-btn primary">▶ Play</button>
+                        <button id="growth-pause-btn" class="control-btn" disabled>⏸ Pause</button>
+                        <button id="growth-reset-btn" class="control-btn">↻ Reset</button>
+                        <div class="slider-wrapper">
+                            <input type="range" id="growth-year-slider" min="1950" max="2023" value="2023" step="1">
+                            <span id="growth-slider-label" class="slider-label">2023</span>
+                        </div>
+                    </div>
+                    <svg id="growth-drivers-chart" class="main-chart"></svg>
+                    <div id="growth-legend" class="viz-legend"></div>
+                </div>
+                
+                <!-- Gender Gap View -->
+                <div id="gender-gap-view" class="viz-view">
+                    <div class="viz-header">
+                        <h3>Life Expectancy Gender Gap (1950 vs 2023)</h3>
+                        <p class="viz-description">How the gap between male and female life expectancy has evolved</p>
+                    </div>
+                    <div class="comparison-controls">
+                        <div class="mode-selector">
+                            <button class="mode-btn active" data-mode="slopegraph">Slopegraph</button>
+                            <button class="mode-btn" data-mode="timeseries">Time Series</button>
+                        </div>
+                    </div>
+                    <svg id="gender-gap-chart" class="main-chart" style="height: 700px;"></svg>
+                    <div id="gender-gap-legend" class="viz-legend"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tooltip (Global) -->
+    <div id="tooltip" class="tooltip"></div>
+
+    <!-- Info Modal -->
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">✕</button>
+            <h2>About World Demographics Explorer</h2>
+            <p>This interactive dashboard visualizes demographic data from the UN World Population Prospects 2024 dataset.</p>
+            <h3>Features:</h3>
+            <ul>
+                <li>Interactive 3D globe with multiple visualization modes</li>
+                <li>Time series analysis of regional trends</li>
+                <li>Country comparison tools</li>
+                <li>Small multiples for regional patterns</li>
+                <li>Hans Rosling-style animated transitions</li>
+            </ul>
+            <h3>Data Source:</h3>
+            <p>UN World Population Prospects 2024 • 237 Countries • 1950-2023 • 50+ Indicators</p>
+        </div>
+    </div>
+
+    <!-- D3.js v5 -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    
+    <!-- Application Scripts -->
+    <script src="js/dataLoader.js"></script>
+    <script src="js/globe.js"></script>
+    <script src="js/timeseries.js"></script>
+    <script src="js/comparison.js"></script>
+    <script src="js/smallMultiples.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/radarChart.js"></script>
+    <script src="js/ridgelinePlot.js"></script>
+    <script src="js/growthDrivers.js"></script>
+    <script src="js/genderGap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8292 @@
+{
+  "comparison": [
+    {
+      "country": "Burundi",
+      "iso3": "BDI",
+      "region": "Africa",
+      "year1950": {
+        "male": 39.6,
+        "female": 42.2,
+        "gap": 2.6000000000000014
+      },
+      "year2023.0": {
+        "male": 61.6,
+        "female": 65.7,
+        "gap": 4.100000000000001
+      },
+      "gapChange": 1.5
+    },
+    {
+      "country": "Comoros",
+      "iso3": "COM",
+      "region": "Africa",
+      "year1950": {
+        "male": 35.6,
+        "female": 39.3,
+        "gap": 3.6999999999999957
+      },
+      "year2023.0": {
+        "male": 64.8,
+        "female": 68.9,
+        "gap": 4.1000000000000085
+      },
+      "gapChange": 0.4000000000000128
+    },
+    {
+      "country": "Djibouti",
+      "iso3": "DJI",
+      "region": "Africa",
+      "year1950": {
+        "male": 38.7,
+        "female": 42.8,
+        "gap": 4.099999999999994
+      },
+      "year2023.0": {
+        "male": 63.5,
+        "female": 68.5,
+        "gap": 5.0
+      },
+      "gapChange": 0.9000000000000057
+    },
+    {
+      "country": "Eritrea",
+      "iso3": "ERI",
+      "region": "Africa",
+      "year1950": {
+        "male": 31.3,
+        "female": 35.4,
+        "gap": 4.099999999999998
+      },
+      "year2023.0": {
+        "male": 66.5,
+        "female": 70.7,
+        "gap": 4.200000000000003
+      },
+      "gapChange": 0.10000000000000497
+    },
+    {
+      "country": "Ethiopia",
+      "iso3": "ETH",
+      "region": "Africa",
+      "year1950": {
+        "male": 32.3,
+        "female": 39.1,
+        "gap": 6.800000000000004
+      },
+      "year2023.0": {
+        "male": 64.1,
+        "female": 70.7,
+        "gap": 6.6000000000000085
+      },
+      "gapChange": -0.19999999999999574
+    },
+    {
+      "country": "Kenya",
+      "iso3": "KEN",
+      "region": "Africa",
+      "year1950": {
+        "male": 35.8,
+        "female": 38.2,
+        "gap": 2.4000000000000057
+      },
+      "year2023.0": {
+        "male": 61.5,
+        "female": 65.9,
+        "gap": 4.400000000000006
+      },
+      "gapChange": 2.0
+    },
+    {
+      "country": "Madagascar",
+      "iso3": "MDG",
+      "region": "Africa",
+      "year1950": {
+        "male": 38.6,
+        "female": 40.7,
+        "gap": 2.1000000000000014
+      },
+      "year2023.0": {
+        "male": 61.9,
+        "female": 65.4,
+        "gap": 3.500000000000007
+      },
+      "gapChange": 1.4000000000000057
+    },
+    {
+      "country": "Malawi",
+      "iso3": "MWI",
+      "region": "Africa",
+      "year1950": {
+        "male": 30.9,
+        "female": 34.4,
+        "gap": 3.5
+      },
+      "year2023.0": {
+        "male": 64.1,
+        "female": 70.6,
+        "gap": 6.5
+      },
+      "gapChange": 3.0
+    },
+    {
+      "country": "Mauritius",
+      "iso3": "MUS",
+      "region": "Africa",
+      "year1950": {
+        "male": 50.7,
+        "female": 53.3,
+        "gap": 2.5999999999999943
+      },
+      "year2023.0": {
+        "male": 71.9,
+        "female": 78.2,
+        "gap": 6.299999999999997
+      },
+      "gapChange": 3.700000000000003
+    },
+    {
+      "country": "Mayotte",
+      "iso3": "MYT",
+      "region": "Africa",
+      "year1950": {
+        "male": 42.2,
+        "female": 42.5,
+        "gap": 0.29999999999999716
+      },
+      "year2023.0": {
+        "male": 74.1,
+        "female": 78.3,
+        "gap": 4.200000000000003
+      },
+      "gapChange": 3.9000000000000057
+    },
+    {
+      "country": "Mozambique",
+      "iso3": "MOZ",
+      "region": "Africa",
+      "year1950": {
+        "male": 35.9,
+        "female": 38.7,
+        "gap": 2.8000000000000043
+      },
+      "year2023.0": {
+        "male": 60.3,
+        "female": 66.5,
+        "gap": 6.200000000000003
+      },
+      "gapChange": 3.3999999999999986
+    },
+    {
+      "country": "R\u00e9union",
+      "iso3": "REU",
+      "region": "Africa",
+      "year1950": {
+        "male": 44.6,
+        "female": 50.2,
+        "gap": 5.600000000000001
+      },
+      "year2023.0": {
+        "male": 80.5,
+        "female": 86.3,
+        "gap": 5.799999999999997
+      },
+      "gapChange": 0.19999999999999574
+    },
+    {
+      "country": "Rwanda",
+      "iso3": "RWA",
+      "region": "Africa",
+      "year1950": {
+        "male": 42.7,
+        "female": 43.7,
+        "gap": 1.0
+      },
+      "year2023.0": {
+        "male": 65.5,
+        "female": 69.9,
+        "gap": 4.400000000000006
+      },
+      "gapChange": 3.4000000000000057
+    },
+    {
+      "country": "Seychelles",
+      "iso3": "SYC",
+      "region": "Africa",
+      "year1950": {
+        "male": 56.2,
+        "female": 59.9,
+        "gap": 3.6999999999999957
+      },
+      "year2023.0": {
+        "male": 69.9,
+        "female": 76.5,
+        "gap": 6.599999999999994
+      },
+      "gapChange": 2.8999999999999986
+    },
+    {
+      "country": "Somalia",
+      "iso3": "SOM",
+      "region": "Africa",
+      "year1950": {
+        "male": 40.0,
+        "female": 42.9,
+        "gap": 2.8999999999999986
+      },
+      "year2023.0": {
+        "male": 56.4,
+        "female": 61.4,
+        "gap": 5.0
+      },
+      "gapChange": 2.1000000000000014
+    },
+    {
+      "country": "South Sudan",
+      "iso3": "SSD",
+      "region": "Africa",
+      "year1950": {
+        "male": 28.1,
+        "female": 32.7,
+        "gap": 4.600000000000001
+      },
+      "year2023.0": {
+        "male": 54.6,
+        "female": 60.6,
+        "gap": 6.0
+      },
+      "gapChange": 1.3999999999999986
+    },
+    {
+      "country": "Uganda",
+      "iso3": "UGA",
+      "region": "Africa",
+      "year1950": {
+        "male": 38.2,
+        "female": 41.4,
+        "gap": 3.1999999999999957
+      },
+      "year2023.0": {
+        "male": 65.3,
+        "female": 71.1,
+        "gap": 5.799999999999997
+      },
+      "gapChange": 2.6000000000000014
+    },
+    {
+      "country": "United Republic of Tanzania",
+      "iso3": "TZA",
+      "region": "Africa",
+      "year1950": {
+        "male": 39.6,
+        "female": 42.5,
+        "gap": 2.8999999999999986
+      },
+      "year2023.0": {
+        "male": 64.2,
+        "female": 69.8,
+        "gap": 5.599999999999994
+      },
+      "gapChange": 2.6999999999999957
+    },
+    {
+      "country": "Zambia",
+      "iso3": "ZMB",
+      "region": "Africa",
+      "year1950": {
+        "male": 45.7,
+        "female": 47.9,
+        "gap": 2.1999999999999957
+      },
+      "year2023.0": {
+        "male": 63.9,
+        "female": 68.7,
+        "gap": 4.800000000000004
+      },
+      "gapChange": 2.6000000000000085
+    },
+    {
+      "country": "Zimbabwe",
+      "iso3": "ZWE",
+      "region": "Africa",
+      "year1950": {
+        "male": 47.2,
+        "female": 51.7,
+        "gap": 4.5
+      },
+      "year2023.0": {
+        "male": 60.2,
+        "female": 65.0,
+        "gap": 4.799999999999997
+      },
+      "gapChange": 0.29999999999999716
+    },
+    {
+      "country": "Angola",
+      "iso3": "AGO",
+      "region": "Africa",
+      "year1950": {
+        "male": 34.2,
+        "female": 37.6,
+        "gap": 3.3999999999999986
+      },
+      "year2023.0": {
+        "male": 62.1,
+        "female": 67.1,
+        "gap": 4.999999999999993
+      },
+      "gapChange": 1.5999999999999943
+    },
+    {
+      "country": "Cameroon",
+      "iso3": "CMR",
+      "region": "Africa",
+      "year1950": {
+        "male": 31.6,
+        "female": 34.6,
+        "gap": 3.0
+      },
+      "year2023.0": {
+        "male": 61.5,
+        "female": 65.9,
+        "gap": 4.400000000000006
+      },
+      "gapChange": 1.4000000000000057
+    },
+    {
+      "country": "Central African Republic",
+      "iso3": "CAF",
+      "region": "Africa",
+      "year1950": {
+        "male": 34.3,
+        "female": 36.7,
+        "gap": 2.4000000000000057
+      },
+      "year2023.0": {
+        "male": 55.3,
+        "female": 59.3,
+        "gap": 4.0
+      },
+      "gapChange": 1.5999999999999943
+    },
+    {
+      "country": "Chad",
+      "iso3": "TCD",
+      "region": "Africa",
+      "year1950": {
+        "male": 33.4,
+        "female": 37.2,
+        "gap": 3.8000000000000043
+      },
+      "year2023.0": {
+        "male": 53.2,
+        "female": 57.0,
+        "gap": 3.799999999999997
+      },
+      "gapChange": -7.105427357601002e-15
+    },
+    {
+      "country": "Congo",
+      "iso3": "COG",
+      "region": "Africa",
+      "year1950": {
+        "male": 38.4,
+        "female": 40.8,
+        "gap": 2.3999999999999986
+      },
+      "year2023.0": {
+        "male": 64.1,
+        "female": 67.5,
+        "gap": 3.4000000000000057
+      },
+      "gapChange": 1.000000000000007
+    },
+    {
+      "country": "Democratic Republic of the Congo",
+      "iso3": "COD",
+      "region": "Africa",
+      "year1950": {
+        "male": 37.1,
+        "female": 39.3,
+        "gap": 2.1999999999999957
+      },
+      "year2023.0": {
+        "male": 59.8,
+        "female": 64.0,
+        "gap": 4.200000000000003
+      },
+      "gapChange": 2.000000000000007
+    },
+    {
+      "country": "Equatorial Guinea",
+      "iso3": "GNQ",
+      "region": "Africa",
+      "year1950": {
+        "male": 37.4,
+        "female": 43.1,
+        "gap": 5.700000000000003
+      },
+      "year2023.0": {
+        "male": 62.0,
+        "female": 65.7,
+        "gap": 3.700000000000003
+      },
+      "gapChange": -2.0
+    },
+    {
+      "country": "Gabon",
+      "iso3": "GAB",
+      "region": "Africa",
+      "year1950": {
+        "male": 36.6,
+        "female": 42.1,
+        "gap": 5.5
+      },
+      "year2023.0": {
+        "male": 65.9,
+        "female": 71.1,
+        "gap": 5.199999999999989
+      },
+      "gapChange": -0.30000000000001137
+    },
+    {
+      "country": "Sao Tome and Principe",
+      "iso3": "STP",
+      "region": "Africa",
+      "year1950": {
+        "male": 38.2,
+        "female": 40.1,
+        "gap": 1.8999999999999986
+      },
+      "year2023.0": {
+        "male": 66.2,
+        "female": 73.7,
+        "gap": 7.5
+      },
+      "gapChange": 5.600000000000001
+    },
+    {
+      "country": "Algeria",
+      "iso3": "DZA",
+      "region": "Africa",
+      "year1950": {
+        "male": 42.0,
+        "female": 43.5,
+        "gap": 1.5
+      },
+      "year2023.0": {
+        "male": 74.9,
+        "female": 77.7,
+        "gap": 2.799999999999997
+      },
+      "gapChange": 1.2999999999999972
+    },
+    {
+      "country": "Egypt",
+      "iso3": "EGY",
+      "region": "Africa",
+      "year1950": {
+        "male": 32.1,
+        "female": 36.0,
+        "gap": 3.8999999999999986
+      },
+      "year2023.0": {
+        "male": 69.5,
+        "female": 73.8,
+        "gap": 4.299999999999997
+      },
+      "gapChange": 0.3999999999999986
+    },
+    {
+      "country": "Libya",
+      "iso3": "LBY",
+      "region": "Africa",
+      "year1950": {
+        "male": 30.7,
+        "female": 36.1,
+        "gap": 5.400000000000002
+      },
+      "year2023.0": {
+        "male": 68.3,
+        "female": 70.4,
+        "gap": 2.1000000000000085
+      },
+      "gapChange": -3.2999999999999936
+    },
+    {
+      "country": "Morocco",
+      "iso3": "MAR",
+      "region": "Africa",
+      "year1950": {
+        "male": 37.8,
+        "female": 39.8,
+        "gap": 2.0
+      },
+      "year2023.0": {
+        "male": 73.2,
+        "female": 77.6,
+        "gap": 4.3999999999999915
+      },
+      "gapChange": 2.3999999999999915
+    },
+    {
+      "country": "Sudan",
+      "iso3": "SDN",
+      "region": "Africa",
+      "year1950": {
+        "male": 45.1,
+        "female": 46.6,
+        "gap": 1.5
+      },
+      "year2023.0": {
+        "male": 63.3,
+        "female": 69.6,
+        "gap": 6.299999999999997
+      },
+      "gapChange": 4.799999999999997
+    },
+    {
+      "country": "Tunisia",
+      "iso3": "TUN",
+      "region": "Africa",
+      "year1950": {
+        "male": 37.2,
+        "female": 39.2,
+        "gap": 2.0
+      },
+      "year2023.0": {
+        "male": 73.9,
+        "female": 79.1,
+        "gap": 5.199999999999989
+      },
+      "gapChange": 3.1999999999999886
+    },
+    {
+      "country": "Western Sahara",
+      "iso3": "ESH",
+      "region": "Africa",
+      "year1950": {
+        "male": 33.4,
+        "female": 36.5,
+        "gap": 3.1000000000000014
+      },
+      "year2023.0": {
+        "male": 69.7,
+        "female": 73.5,
+        "gap": 3.799999999999997
+      },
+      "gapChange": 0.6999999999999957
+    },
+    {
+      "country": "Botswana",
+      "iso3": "BWA",
+      "region": "Africa",
+      "year1950": {
+        "male": 44.2,
+        "female": 48.0,
+        "gap": 3.799999999999997
+      },
+      "year2023.0": {
+        "male": 66.7,
+        "female": 71.7,
+        "gap": 5.0
+      },
+      "gapChange": 1.2000000000000028
+    },
+    {
+      "country": "Eswatini",
+      "iso3": "SWZ",
+      "region": "Africa",
+      "year1950": {
+        "male": 42.2,
+        "female": 44.7,
+        "gap": 2.5
+      },
+      "year2023.0": {
+        "male": 61.2,
+        "female": 67.0,
+        "gap": 5.799999999999997
+      },
+      "gapChange": 3.299999999999997
+    },
+    {
+      "country": "Lesotho",
+      "iso3": "LSO",
+      "region": "Africa",
+      "year1950": {
+        "male": 41.2,
+        "female": 47.4,
+        "gap": 6.199999999999996
+      },
+      "year2023.0": {
+        "male": 54.6,
+        "female": 60.0,
+        "gap": 5.399999999999999
+      },
+      "gapChange": -0.7999999999999972
+    },
+    {
+      "country": "Namibia",
+      "iso3": "NAM",
+      "region": "Africa",
+      "year1950": {
+        "male": 39.8,
+        "female": 44.2,
+        "gap": 4.400000000000006
+      },
+      "year2023.0": {
+        "male": 63.3,
+        "female": 71.3,
+        "gap": 8.0
+      },
+      "gapChange": 3.5999999999999943
+    },
+    {
+      "country": "South Africa",
+      "iso3": "ZAF",
+      "region": "Africa",
+      "year1950": {
+        "male": 42.2,
+        "female": 44.1,
+        "gap": 1.8999999999999986
+      },
+      "year2023.0": {
+        "male": 62.6,
+        "female": 69.6,
+        "gap": 6.999999999999993
+      },
+      "gapChange": 5.099999999999994
+    },
+    {
+      "country": "Benin",
+      "iso3": "BEN",
+      "region": "Africa",
+      "year1950": {
+        "male": 33.6,
+        "female": 37.2,
+        "gap": 3.6000000000000014
+      },
+      "year2023.0": {
+        "male": 59.3,
+        "female": 62.2,
+        "gap": 2.9000000000000057
+      },
+      "gapChange": -0.6999999999999957
+    },
+    {
+      "country": "Burkina Faso",
+      "iso3": "BFA",
+      "region": "Africa",
+      "year1950": {
+        "male": 32.1,
+        "female": 34.1,
+        "gap": 2.0
+      },
+      "year2023.0": {
+        "male": 58.9,
+        "female": 63.2,
+        "gap": 4.300000000000004
+      },
+      "gapChange": 2.3000000000000043
+    },
+    {
+      "country": "Cabo Verde",
+      "iso3": "CPV",
+      "region": "Africa",
+      "year1950": {
+        "male": 43.6,
+        "female": 45.9,
+        "gap": 2.299999999999997
+      },
+      "year2023.0": {
+        "male": 72.9,
+        "female": 79.2,
+        "gap": 6.299999999999997
+      },
+      "gapChange": 4.0
+    },
+    {
+      "country": "C\u00f4te d'Ivoire",
+      "iso3": "CIV",
+      "region": "Africa",
+      "year1950": {
+        "male": 28.4,
+        "female": 33.6,
+        "gap": 5.200000000000003
+      },
+      "year2023.0": {
+        "male": 60.0,
+        "female": 64.1,
+        "gap": 4.099999999999994
+      },
+      "gapChange": -1.1000000000000085
+    },
+    {
+      "country": "Gambia",
+      "iso3": "GMB",
+      "region": "Africa",
+      "year1950": {
+        "male": 30.6,
+        "female": 31.8,
+        "gap": 1.1999999999999993
+      },
+      "year2023.0": {
+        "male": 64.2,
+        "female": 67.5,
+        "gap": 3.299999999999997
+      },
+      "gapChange": 2.099999999999998
+    },
+    {
+      "country": "Ghana",
+      "iso3": "GHA",
+      "region": "Africa",
+      "year1950": {
+        "male": 41.3,
+        "female": 45.3,
+        "gap": 4.0
+      },
+      "year2023.0": {
+        "male": 63.1,
+        "female": 67.9,
+        "gap": 4.800000000000004
+      },
+      "gapChange": 0.8000000000000043
+    },
+    {
+      "country": "Guinea",
+      "iso3": "GIN",
+      "region": "Africa",
+      "year1950": {
+        "male": 34.3,
+        "female": 36.9,
+        "gap": 2.6000000000000014
+      },
+      "year2023.0": {
+        "male": 59.5,
+        "female": 61.9,
+        "gap": 2.3999999999999986
+      },
+      "gapChange": -0.20000000000000284
+    },
+    {
+      "country": "Guinea-Bissau",
+      "iso3": "GNB",
+      "region": "Africa",
+      "year1950": {
+        "male": 34.1,
+        "female": 37.4,
+        "gap": 3.299999999999997
+      },
+      "year2023.0": {
+        "male": 61.7,
+        "female": 66.4,
+        "gap": 4.700000000000003
+      },
+      "gapChange": 1.4000000000000057
+    },
+    {
+      "country": "Liberia",
+      "iso3": "LBR",
+      "region": "Africa",
+      "year1950": {
+        "male": 37.0,
+        "female": 39.0,
+        "gap": 2.0
+      },
+      "year2023.0": {
+        "male": 60.9,
+        "female": 63.4,
+        "gap": 2.5
+      },
+      "gapChange": 0.5
+    },
+    {
+      "country": "Mali",
+      "iso3": "MLI",
+      "region": "Africa",
+      "year1950": {
+        "male": 27.8,
+        "female": 29.8,
+        "gap": 2.0
+      },
+      "year2023.0": {
+        "male": 59.0,
+        "female": 61.9,
+        "gap": 2.8999999999999986
+      },
+      "gapChange": 0.8999999999999986
+    },
+    {
+      "country": "Mauritania",
+      "iso3": "MRT",
+      "region": "Africa",
+      "year1950": {
+        "male": 37.4,
+        "female": 39.4,
+        "gap": 2.0
+      },
+      "year2023.0": {
+        "male": 66.5,
+        "female": 70.5,
+        "gap": 4.0
+      },
+      "gapChange": 2.0
+    },
+    {
+      "country": "Niger",
+      "iso3": "NER",
+      "region": "Africa",
+      "year1950": {
+        "male": 35.5,
+        "female": 36.2,
+        "gap": 0.7000000000000028
+      },
+      "year2023.0": {
+        "male": 60.3,
+        "female": 62.1,
+        "gap": 1.8000000000000043
+      },
+      "gapChange": 1.1000000000000014
+    },
+    {
+      "country": "Nigeria",
+      "iso3": "NGA",
+      "region": "Africa",
+      "year1950": {
+        "male": 33.6,
+        "female": 37.5,
+        "gap": 3.8999999999999986
+      },
+      "year2023.0": {
+        "male": 54.2,
+        "female": 54.7,
+        "gap": 0.5
+      },
+      "gapChange": -3.3999999999999986
+    },
+    {
+      "country": "Saint Helena",
+      "iso3": "SHN",
+      "region": "Africa",
+      "year1950": {
+        "male": 64.3,
+        "female": 67.9,
+        "gap": 3.6000000000000085
+      },
+      "year2023.0": {
+        "male": 73.9,
+        "female": 80.6,
+        "gap": 6.699999999999989
+      },
+      "gapChange": 3.09999999999998
+    },
+    {
+      "country": "Senegal",
+      "iso3": "SEN",
+      "region": "Africa",
+      "year1950": {
+        "male": 36.0,
+        "female": 37.0,
+        "gap": 1.0
+      },
+      "year2023.0": {
+        "male": 66.8,
+        "female": 70.8,
+        "gap": 4.0
+      },
+      "gapChange": 3.0
+    },
+    {
+      "country": "Sierra Leone",
+      "iso3": "SLE",
+      "region": "Africa",
+      "year1950": {
+        "male": 27.5,
+        "female": 30.4,
+        "gap": 2.8999999999999986
+      },
+      "year2023.0": {
+        "male": 60.1,
+        "female": 63.5,
+        "gap": 3.3999999999999986
+      },
+      "gapChange": 0.5
+    },
+    {
+      "country": "Togo",
+      "iso3": "TGO",
+      "region": "Africa",
+      "year1950": {
+        "male": 40.4,
+        "female": 43.5,
+        "gap": 3.1000000000000014
+      },
+      "year2023.0": {
+        "male": 62.5,
+        "female": 62.9,
+        "gap": 0.3999999999999986
+      },
+      "gapChange": -2.700000000000003
+    },
+    {
+      "country": "Kazakhstan",
+      "iso3": "KAZ",
+      "region": "Asia",
+      "year1950": {
+        "male": 51.2,
+        "female": 60.3,
+        "gap": 9.099999999999994
+      },
+      "year2023.0": {
+        "male": 70.1,
+        "female": 78.4,
+        "gap": 8.300000000000011
+      },
+      "gapChange": -0.799999999999983
+    },
+    {
+      "country": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "region": "Asia",
+      "year1950": {
+        "male": 48.2,
+        "female": 56.3,
+        "gap": 8.099999999999994
+      },
+      "year2023.0": {
+        "male": 68.2,
+        "female": 75.2,
+        "gap": 7.0
+      },
+      "gapChange": -1.0999999999999943
+    },
+    {
+      "country": "Tajikistan",
+      "iso3": "TJK",
+      "region": "Asia",
+      "year1950": {
+        "male": 47.4,
+        "female": 51.4,
+        "gap": 4.0
+      },
+      "year2023.0": {
+        "male": 69.6,
+        "female": 74.0,
+        "gap": 4.400000000000006
+      },
+      "gapChange": 0.4000000000000057
+    },
+    {
+      "country": "Turkmenistan",
+      "iso3": "TKM",
+      "region": "Asia",
+      "year1950": {
+        "male": 44.1,
+        "female": 52.6,
+        "gap": 8.5
+      },
+      "year2023.0": {
+        "male": 66.9,
+        "female": 72.8,
+        "gap": 5.8999999999999915
+      },
+      "gapChange": -2.6000000000000085
+    },
+    {
+      "country": "Uzbekistan",
+      "iso3": "UZB",
+      "region": "Asia",
+      "year1950": {
+        "male": 51.4,
+        "female": 55.3,
+        "gap": 3.8999999999999986
+      },
+      "year2023.0": {
+        "male": 69.5,
+        "female": 75.4,
+        "gap": 5.900000000000006
+      },
+      "gapChange": 2.000000000000007
+    },
+    {
+      "country": "China",
+      "iso3": "CHN",
+      "region": "Asia",
+      "year1950": {
+        "male": 42.2,
+        "female": 45.7,
+        "gap": 3.5
+      },
+      "year2023.0": {
+        "male": 75.2,
+        "female": 80.9,
+        "gap": 5.700000000000003
+      },
+      "gapChange": 2.200000000000003
+    },
+    {
+      "country": "China, Hong Kong SAR",
+      "iso3": "HKG",
+      "region": "Asia",
+      "year1950": {
+        "male": 53.6,
+        "female": 61.4,
+        "gap": 7.799999999999997
+      },
+      "year2023.0": {
+        "male": 82.8,
+        "female": 88.1,
+        "gap": 5.299999999999997
+      },
+      "gapChange": -2.5
+    },
+    {
+      "country": "China, Macao SAR",
+      "iso3": "MAC",
+      "region": "Asia",
+      "year1950": {
+        "male": 56.5,
+        "female": 59.9,
+        "gap": 3.3999999999999986
+      },
+      "year2023.0": {
+        "male": 80.8,
+        "female": 85.2,
+        "gap": 4.400000000000006
+      },
+      "gapChange": 1.000000000000007
+    },
+    {
+      "country": "China, Taiwan Province of China",
+      "iso3": "TWN",
+      "region": "Asia",
+      "year1950": {
+        "male": 54.4,
+        "female": 58.8,
+        "gap": 4.399999999999999
+      },
+      "year2023.0": {
+        "male": 77.6,
+        "female": 83.6,
+        "gap": 6.0
+      },
+      "gapChange": 1.6000000000000014
+    },
+    {
+      "country": "Dem. People's Republic of Korea",
+      "iso3": "PRK",
+      "region": "Asia",
+      "year1950": {
+        "male": 11.4,
+        "female": 21.1,
+        "gap": 9.700000000000001
+      },
+      "year2023.0": {
+        "male": 71.5,
+        "female": 75.7,
+        "gap": 4.200000000000003
+      },
+      "gapChange": -5.499999999999998
+    },
+    {
+      "country": "Japan",
+      "iso3": "JPN",
+      "region": "Asia",
+      "year1950": {
+        "male": 57.6,
+        "female": 60.9,
+        "gap": 3.299999999999997
+      },
+      "year2023.0": {
+        "male": 81.7,
+        "female": 87.7,
+        "gap": 6.0
+      },
+      "gapChange": 2.700000000000003
+    },
+    {
+      "country": "Mongolia",
+      "iso3": "MNG",
+      "region": "Asia",
+      "year1950": {
+        "male": 35.7,
+        "female": 41.7,
+        "gap": 6.0
+      },
+      "year2023.0": {
+        "male": 67.2,
+        "female": 76.4,
+        "gap": 9.200000000000003
+      },
+      "gapChange": 3.200000000000003
+    },
+    {
+      "country": "Republic of Korea",
+      "iso3": "KOR",
+      "region": "Asia",
+      "year1950": {
+        "male": 17.5,
+        "female": 34.6,
+        "gap": 17.1
+      },
+      "year2023.0": {
+        "male": 81.2,
+        "female": 87.2,
+        "gap": 6.0
+      },
+      "gapChange": -11.100000000000001
+    },
+    {
+      "country": "Afghanistan",
+      "iso3": "AFG",
+      "region": "Asia",
+      "year1950": {
+        "male": 27.5,
+        "female": 28.8,
+        "gap": 1.3000000000000007
+      },
+      "year2023.0": {
+        "male": 64.5,
+        "female": 67.5,
+        "gap": 3.0
+      },
+      "gapChange": 1.6999999999999993
+    },
+    {
+      "country": "Bangladesh",
+      "iso3": "BGD",
+      "region": "Asia",
+      "year1950": {
+        "male": 37.6,
+        "female": 37.2,
+        "gap": -0.3999999999999986
+      },
+      "year2023.0": {
+        "male": 73.0,
+        "female": 76.4,
+        "gap": 3.4000000000000057
+      },
+      "gapChange": 3.8000000000000043
+    },
+    {
+      "country": "Bhutan",
+      "iso3": "BTN",
+      "region": "Asia",
+      "year1950": {
+        "male": 34.4,
+        "female": 36.2,
+        "gap": 1.8000000000000043
+      },
+      "year2023.0": {
+        "male": 71.3,
+        "female": 75.0,
+        "gap": 3.700000000000003
+      },
+      "gapChange": 1.8999999999999986
+    },
+    {
+      "country": "India",
+      "iso3": "IND",
+      "region": "Asia",
+      "year1950": {
+        "male": 41.9,
+        "female": 40.4,
+        "gap": -1.5
+      },
+      "year2023.0": {
+        "male": 70.5,
+        "female": 73.6,
+        "gap": 3.0999999999999943
+      },
+      "gapChange": 4.599999999999994
+    },
+    {
+      "country": "Iran (Islamic Republic of)",
+      "iso3": "IRN",
+      "region": "Asia",
+      "year1950": {
+        "male": 38.9,
+        "female": 37.4,
+        "gap": -1.5
+      },
+      "year2023.0": {
+        "male": 75.8,
+        "female": 79.6,
+        "gap": 3.799999999999997
+      },
+      "gapChange": 5.299999999999997
+    },
+    {
+      "country": "Maldives",
+      "iso3": "MDV",
+      "region": "Asia",
+      "year1950": {
+        "male": 35.5,
+        "female": 37.5,
+        "gap": 2.0
+      },
+      "year2023.0": {
+        "male": 79.7,
+        "female": 82.8,
+        "gap": 3.0999999999999943
+      },
+      "gapChange": 1.0999999999999943
+    },
+    {
+      "country": "Nepal",
+      "iso3": "NPL",
+      "region": "Asia",
+      "year1950": {
+        "male": 37.0,
+        "female": 38.1,
+        "gap": 1.1000000000000014
+      },
+      "year2023.0": {
+        "male": 68.8,
+        "female": 71.8,
+        "gap": 3.0
+      },
+      "gapChange": 1.8999999999999986
+    },
+    {
+      "country": "Pakistan",
+      "iso3": "PAK",
+      "region": "Asia",
+      "year1950": {
+        "male": 35.4,
+        "female": 32.8,
+        "gap": -2.6000000000000014
+      },
+      "year2023.0": {
+        "male": 65.3,
+        "female": 70.2,
+        "gap": 4.900000000000006
+      },
+      "gapChange": 7.500000000000007
+    },
+    {
+      "country": "Sri Lanka",
+      "iso3": "LKA",
+      "region": "Asia",
+      "year1950": {
+        "male": 52.1,
+        "female": 54.7,
+        "gap": 2.6000000000000014
+      },
+      "year2023.0": {
+        "male": 74.2,
+        "female": 80.6,
+        "gap": 6.3999999999999915
+      },
+      "gapChange": 3.79999999999999
+    },
+    {
+      "country": "Brunei Darussalam",
+      "iso3": "BRN",
+      "region": "Asia",
+      "year1950": {
+        "male": 48.8,
+        "female": 52.5,
+        "gap": 3.700000000000003
+      },
+      "year2023.0": {
+        "male": 73.3,
+        "female": 77.6,
+        "gap": 4.299999999999997
+      },
+      "gapChange": 0.5999999999999943
+    },
+    {
+      "country": "Cambodia",
+      "iso3": "KHM",
+      "region": "Asia",
+      "year1950": {
+        "male": 38.1,
+        "female": 39.6,
+        "gap": 1.5
+      },
+      "year2023.0": {
+        "male": 68.0,
+        "female": 73.2,
+        "gap": 5.200000000000003
+      },
+      "gapChange": 3.700000000000003
+    },
+    {
+      "country": "Indonesia",
+      "iso3": "IDN",
+      "region": "Asia",
+      "year1950": {
+        "male": 38.7,
+        "female": 41.8,
+        "gap": 3.0999999999999943
+      },
+      "year2023.0": {
+        "male": 69.0,
+        "female": 73.3,
+        "gap": 4.299999999999997
+      },
+      "gapChange": 1.2000000000000028
+    },
+    {
+      "country": "Lao People's Democratic Republic",
+      "iso3": "LAO",
+      "region": "Asia",
+      "year1950": {
+        "male": 38.0,
+        "female": 39.9,
+        "gap": 1.8999999999999986
+      },
+      "year2023.0": {
+        "male": 66.8,
+        "female": 71.3,
+        "gap": 4.5
+      },
+      "gapChange": 2.6000000000000014
+    },
+    {
+      "country": "Malaysia",
+      "iso3": "MYS",
+      "region": "Asia",
+      "year1950": {
+        "male": 47.9,
+        "female": 49.2,
+        "gap": 1.3000000000000043
+      },
+      "year2023.0": {
+        "male": 74.3,
+        "female": 79.4,
+        "gap": 5.1000000000000085
+      },
+      "gapChange": 3.8000000000000043
+    },
+    {
+      "country": "Myanmar",
+      "iso3": "MMR",
+      "region": "Asia",
+      "year1950": {
+        "male": 34.1,
+        "female": 37.4,
+        "gap": 3.299999999999997
+      },
+      "year2023.0": {
+        "male": 63.8,
+        "female": 70.2,
+        "gap": 6.400000000000006
+      },
+      "gapChange": 3.1000000000000085
+    },
+    {
+      "country": "Philippines",
+      "iso3": "PHL",
+      "region": "Asia",
+      "year1950": {
+        "male": 52.6,
+        "female": 54.8,
+        "gap": 2.1999999999999957
+      },
+      "year2023.0": {
+        "male": 66.9,
+        "female": 72.8,
+        "gap": 5.8999999999999915
+      },
+      "gapChange": 3.6999999999999957
+    },
+    {
+      "country": "Singapore",
+      "iso3": "SGP",
+      "region": "Asia",
+      "year1950": {
+        "male": 50.2,
+        "female": 59.2,
+        "gap": 9.0
+      },
+      "year2023.0": {
+        "male": 81.2,
+        "female": 86.2,
+        "gap": 5.0
+      },
+      "gapChange": -4.0
+    },
+    {
+      "country": "Thailand",
+      "iso3": "THA",
+      "region": "Asia",
+      "year1950": {
+        "male": 44.3,
+        "female": 46.1,
+        "gap": 1.8000000000000043
+      },
+      "year2023.0": {
+        "male": 72.2,
+        "female": 80.9,
+        "gap": 8.700000000000003
+      },
+      "gapChange": 6.899999999999999
+    },
+    {
+      "country": "Timor-Leste",
+      "iso3": "TLS",
+      "region": "Asia",
+      "year1950": {
+        "male": 27.8,
+        "female": 30.6,
+        "gap": 2.8000000000000007
+      },
+      "year2023.0": {
+        "male": 66.1,
+        "female": 69.4,
+        "gap": 3.3000000000000114
+      },
+      "gapChange": 0.5000000000000107
+    },
+    {
+      "country": "Viet Nam",
+      "iso3": "VNM",
+      "region": "Asia",
+      "year1950": {
+        "male": 43.9,
+        "female": 52.8,
+        "gap": 8.899999999999999
+      },
+      "year2023.0": {
+        "male": 69.9,
+        "female": 79.3,
+        "gap": 9.399999999999991
+      },
+      "gapChange": 0.4999999999999929
+    },
+    {
+      "country": "Armenia",
+      "iso3": "ARM",
+      "region": "Asia",
+      "year1950": {
+        "male": 51.6,
+        "female": 57.6,
+        "gap": 6.0
+      },
+      "year2023.0": {
+        "male": 71.4,
+        "female": 79.5,
+        "gap": 8.099999999999994
+      },
+      "gapChange": 2.0999999999999943
+    },
+    {
+      "country": "Azerbaijan",
+      "iso3": "AZE",
+      "region": "Asia",
+      "year1950": {
+        "male": 42.2,
+        "female": 50.3,
+        "gap": 8.099999999999994
+      },
+      "year2023.0": {
+        "male": 71.6,
+        "female": 77.1,
+        "gap": 5.5
+      },
+      "gapChange": -2.5999999999999943
+    },
+    {
+      "country": "Bahrain",
+      "iso3": "BHR",
+      "region": "Asia",
+      "year1950": {
+        "male": 36.9,
+        "female": 40.8,
+        "gap": 3.8999999999999986
+      },
+      "year2023.0": {
+        "male": 80.7,
+        "female": 82.0,
+        "gap": 1.2999999999999972
+      },
+      "gapChange": -2.6000000000000014
+    },
+    {
+      "country": "Cyprus",
+      "iso3": "CYP",
+      "region": "Asia",
+      "year1950": {
+        "male": 52.0,
+        "female": 60.2,
+        "gap": 8.200000000000003
+      },
+      "year2023.0": {
+        "male": 79.6,
+        "female": 83.7,
+        "gap": 4.1000000000000085
+      },
+      "gapChange": -4.099999999999994
+    },
+    {
+      "country": "Georgia",
+      "iso3": "GEO",
+      "region": "Asia",
+      "year1950": {
+        "male": 53.6,
+        "female": 62.1,
+        "gap": 8.5
+      },
+      "year2023.0": {
+        "male": 69.6,
+        "female": 79.1,
+        "gap": 9.5
+      },
+      "gapChange": 1.0
+    },
+    {
+      "country": "Iraq",
+      "iso3": "IRQ",
+      "region": "Asia",
+      "year1950": {
+        "male": 34.3,
+        "female": 41.0,
+        "gap": 6.700000000000003
+      },
+      "year2023.0": {
+        "male": 70.4,
+        "female": 74.1,
+        "gap": 3.6999999999999886
+      },
+      "gapChange": -3.000000000000014
+    },
+    {
+      "country": "Israel",
+      "iso3": "ISR",
+      "region": "Asia",
+      "year1950": {
+        "male": 68.4,
+        "female": 71.5,
+        "gap": 3.0999999999999943
+      },
+      "year2023.0": {
+        "male": 80.2,
+        "female": 84.6,
+        "gap": 4.3999999999999915
+      },
+      "gapChange": 1.2999999999999972
+    },
+    {
+      "country": "Jordan",
+      "iso3": "JOR",
+      "region": "Asia",
+      "year1950": {
+        "male": 40.5,
+        "female": 41.4,
+        "gap": 0.8999999999999986
+      },
+      "year2023.0": {
+        "male": 75.7,
+        "female": 80.2,
+        "gap": 4.5
+      },
+      "gapChange": 3.6000000000000014
+    },
+    {
+      "country": "Kuwait",
+      "iso3": "KWT",
+      "region": "Asia",
+      "year1950": {
+        "male": 47.9,
+        "female": 52.2,
+        "gap": 4.300000000000004
+      },
+      "year2023.0": {
+        "male": 79.3,
+        "female": 81.8,
+        "gap": 2.5
+      },
+      "gapChange": -1.8000000000000043
+    },
+    {
+      "country": "Lebanon",
+      "iso3": "LBN",
+      "region": "Asia",
+      "year1950": {
+        "male": 57.9,
+        "female": 62.1,
+        "gap": 4.200000000000003
+      },
+      "year2023.0": {
+        "male": 75.7,
+        "female": 79.7,
+        "gap": 4.0
+      },
+      "gapChange": -0.20000000000000284
+    },
+    {
+      "country": "Oman",
+      "iso3": "OMN",
+      "region": "Asia",
+      "year1950": {
+        "male": 27.2,
+        "female": 31.8,
+        "gap": 4.600000000000001
+      },
+      "year2023.0": {
+        "male": 78.5,
+        "female": 81.9,
+        "gap": 3.4000000000000057
+      },
+      "gapChange": -1.1999999999999957
+    },
+    {
+      "country": "Qatar",
+      "iso3": "QAT",
+      "region": "Asia",
+      "year1950": {
+        "male": 48.4,
+        "female": 53.3,
+        "gap": 4.899999999999999
+      },
+      "year2023.0": {
+        "male": 81.6,
+        "female": 83.4,
+        "gap": 1.8000000000000114
+      },
+      "gapChange": -3.099999999999987
+    },
+    {
+      "country": "Saudi Arabia",
+      "iso3": "SAU",
+      "region": "Asia",
+      "year1950": {
+        "male": 37.8,
+        "female": 42.5,
+        "gap": 4.700000000000003
+      },
+      "year2023.0": {
+        "male": 77.1,
+        "female": 81.2,
+        "gap": 4.1000000000000085
+      },
+      "gapChange": -0.5999999999999943
+    },
+    {
+      "country": "State of Palestine",
+      "iso3": "PSE",
+      "region": "Asia",
+      "year1950": {
+        "male": 43.5,
+        "female": 48.4,
+        "gap": 4.899999999999999
+      },
+      "year2023.0": {
+        "male": 59.7,
+        "female": 71.5,
+        "gap": 11.799999999999997
+      },
+      "gapChange": 6.899999999999999
+    },
+    {
+      "country": "Syrian Arab Republic",
+      "iso3": "SYR",
+      "region": "Asia",
+      "year1950": {
+        "male": 41.3,
+        "female": 43.8,
+        "gap": 2.5
+      },
+      "year2023.0": {
+        "male": 69.8,
+        "female": 74.4,
+        "gap": 4.6000000000000085
+      },
+      "gapChange": 2.1000000000000085
+    },
+    {
+      "country": "T\u00fcrkiye",
+      "iso3": "TUR",
+      "region": "Asia",
+      "year1950": {
+        "male": 44.2,
+        "female": 50.4,
+        "gap": 6.199999999999996
+      },
+      "year2023.0": {
+        "male": 74.5,
+        "female": 79.9,
+        "gap": 5.400000000000006
+      },
+      "gapChange": -0.79999999999999
+    },
+    {
+      "country": "United Arab Emirates",
+      "iso3": "ARE",
+      "region": "Asia",
+      "year1950": {
+        "male": 38.3,
+        "female": 47.0,
+        "gap": 8.700000000000003
+      },
+      "year2023.0": {
+        "male": 82.0,
+        "female": 84.2,
+        "gap": 2.200000000000003
+      },
+      "gapChange": -6.5
+    },
+    {
+      "country": "Yemen",
+      "iso3": "YEM",
+      "region": "Asia",
+      "year1950": {
+        "male": 26.6,
+        "female": 31.6,
+        "gap": 5.0
+      },
+      "year2023.0": {
+        "male": 67.2,
+        "female": 71.4,
+        "gap": 4.200000000000003
+      },
+      "gapChange": -0.7999999999999972
+    },
+    {
+      "country": "Belarus",
+      "iso3": "BLR",
+      "region": "Europe",
+      "year1950": {
+        "male": 54.6,
+        "female": 62.2,
+        "gap": 7.600000000000001
+      },
+      "year2023.0": {
+        "male": 69.5,
+        "female": 79.1,
+        "gap": 9.599999999999994
+      },
+      "gapChange": 1.999999999999993
+    },
+    {
+      "country": "Bulgaria",
+      "iso3": "BGR",
+      "region": "Europe",
+      "year1950": {
+        "male": 59.7,
+        "female": 63.3,
+        "gap": 3.5999999999999943
+      },
+      "year2023.0": {
+        "male": 72.2,
+        "female": 79.2,
+        "gap": 7.0
+      },
+      "gapChange": 3.4000000000000057
+    },
+    {
+      "country": "Czechia",
+      "iso3": "CZE",
+      "region": "Europe",
+      "year1950": {
+        "male": 61.9,
+        "female": 66.8,
+        "gap": 4.899999999999999
+      },
+      "year2023.0": {
+        "male": 77.0,
+        "female": 82.6,
+        "gap": 5.599999999999994
+      },
+      "gapChange": 0.6999999999999957
+    },
+    {
+      "country": "Hungary",
+      "iso3": "HUN",
+      "region": "Europe",
+      "year1950": {
+        "male": 59.9,
+        "female": 64.3,
+        "gap": 4.399999999999999
+      },
+      "year2023.0": {
+        "male": 73.7,
+        "female": 80.2,
+        "gap": 6.5
+      },
+      "gapChange": 2.1000000000000014
+    },
+    {
+      "country": "Poland",
+      "iso3": "POL",
+      "region": "Europe",
+      "year1950": {
+        "male": 55.5,
+        "female": 61.1,
+        "gap": 5.600000000000001
+      },
+      "year2023.0": {
+        "male": 74.9,
+        "female": 82.4,
+        "gap": 7.5
+      },
+      "gapChange": 1.8999999999999986
+    },
+    {
+      "country": "Republic of Moldova",
+      "iso3": "MDA",
+      "region": "Europe",
+      "year1950": {
+        "male": 50.4,
+        "female": 57.3,
+        "gap": 6.899999999999999
+      },
+      "year2023.0": {
+        "male": 66.6,
+        "female": 75.5,
+        "gap": 8.900000000000006
+      },
+      "gapChange": 2.000000000000007
+    },
+    {
+      "country": "Romania",
+      "iso3": "ROU",
+      "region": "Europe",
+      "year1950": {
+        "male": 58.5,
+        "female": 62.4,
+        "gap": 3.8999999999999986
+      },
+      "year2023.0": {
+        "male": 72.4,
+        "female": 79.6,
+        "gap": 7.199999999999989
+      },
+      "gapChange": 3.29999999999999
+    },
+    {
+      "country": "Russian Federation",
+      "iso3": "RUS",
+      "region": "Europe",
+      "year1950": {
+        "male": 51.0,
+        "female": 58.9,
+        "gap": 7.899999999999999
+      },
+      "year2023.0": {
+        "male": 67.3,
+        "female": 79.0,
+        "gap": 11.700000000000003
+      },
+      "gapChange": 3.8000000000000043
+    },
+    {
+      "country": "Slovakia",
+      "iso3": "SVK",
+      "region": "Europe",
+      "year1950": {
+        "male": 59.0,
+        "female": 62.5,
+        "gap": 3.5
+      },
+      "year2023.0": {
+        "male": 75.0,
+        "female": 81.6,
+        "gap": 6.599999999999994
+      },
+      "gapChange": 3.0999999999999943
+    },
+    {
+      "country": "Ukraine",
+      "iso3": "UKR",
+      "region": "Europe",
+      "year1950": {
+        "male": 58.0,
+        "female": 63.6,
+        "gap": 5.600000000000001
+      },
+      "year2023.0": {
+        "male": 66.9,
+        "female": 80.2,
+        "gap": 13.299999999999997
+      },
+      "gapChange": 7.699999999999996
+    },
+    {
+      "country": "Denmark",
+      "iso3": "DNK",
+      "region": "Europe",
+      "year1950": {
+        "male": 69.1,
+        "female": 71.5,
+        "gap": 2.4000000000000057
+      },
+      "year2023.0": {
+        "male": 80.0,
+        "female": 83.9,
+        "gap": 3.9000000000000057
+      },
+      "gapChange": 1.5
+    },
+    {
+      "country": "Estonia",
+      "iso3": "EST",
+      "region": "Europe",
+      "year1950": {
+        "male": 62.1,
+        "female": 69.6,
+        "gap": 7.499999999999993
+      },
+      "year2023.0": {
+        "male": 74.9,
+        "female": 83.0,
+        "gap": 8.099999999999994
+      },
+      "gapChange": 0.6000000000000014
+    },
+    {
+      "country": "Faroe Islands",
+      "iso3": "FRO",
+      "region": "Europe",
+      "year1950": {
+        "male": 59.1,
+        "female": 62.1,
+        "gap": 3.0
+      },
+      "year2023.0": {
+        "male": 78.2,
+        "female": 82.5,
+        "gap": 4.299999999999997
+      },
+      "gapChange": 1.2999999999999972
+    },
+    {
+      "country": "Finland",
+      "iso3": "FIN",
+      "region": "Europe",
+      "year1950": {
+        "male": 60.4,
+        "female": 67.9,
+        "gap": 7.500000000000007
+      },
+      "year2023.0": {
+        "male": 79.2,
+        "female": 84.7,
+        "gap": 5.5
+      },
+      "gapChange": -2.000000000000007
+    },
+    {
+      "country": "Guernsey",
+      "iso3": "GGY",
+      "region": "Europe",
+      "year1950": {
+        "male": 67.8,
+        "female": 74.7,
+        "gap": 6.900000000000006
+      },
+      "year2023.0": {
+        "male": 81.0,
+        "female": 85.6,
+        "gap": 4.599999999999994
+      },
+      "gapChange": -2.3000000000000114
+    },
+    {
+      "country": "Iceland",
+      "iso3": "ISL",
+      "region": "Europe",
+      "year1950": {
+        "male": 68.6,
+        "female": 73.5,
+        "gap": 4.900000000000006
+      },
+      "year2023.0": {
+        "male": 81.0,
+        "female": 84.5,
+        "gap": 3.5
+      },
+      "gapChange": -1.4000000000000057
+    },
+    {
+      "country": "Ireland",
+      "iso3": "IRL",
+      "region": "Europe",
+      "year1950": {
+        "male": 64.5,
+        "female": 66.7,
+        "gap": 2.200000000000003
+      },
+      "year2023.0": {
+        "male": 80.4,
+        "female": 84.5,
+        "gap": 4.099999999999994
+      },
+      "gapChange": 1.8999999999999915
+    },
+    {
+      "country": "Isle of Man",
+      "iso3": "IMN",
+      "region": "Europe",
+      "year1950": {
+        "male": 58.5,
+        "female": 67.7,
+        "gap": 9.200000000000003
+      },
+      "year2023.0": {
+        "male": 78.9,
+        "female": 83.1,
+        "gap": 4.199999999999989
+      },
+      "gapChange": -5.000000000000014
+    },
+    {
+      "country": "Jersey",
+      "iso3": "JEY",
+      "region": "Europe",
+      "year1950": {
+        "male": 66.4,
+        "female": 72.3,
+        "gap": 5.8999999999999915
+      },
+      "year2023.0": {
+        "male": 77.7,
+        "female": 81.8,
+        "gap": 4.099999999999994
+      },
+      "gapChange": -1.7999999999999972
+    },
+    {
+      "country": "Latvia",
+      "iso3": "LVA",
+      "region": "Europe",
+      "year1950": {
+        "male": 60.5,
+        "female": 68.0,
+        "gap": 7.5
+      },
+      "year2023.0": {
+        "male": 71.6,
+        "female": 80.5,
+        "gap": 8.900000000000006
+      },
+      "gapChange": 1.4000000000000057
+    },
+    {
+      "country": "Lithuania",
+      "iso3": "LTU",
+      "region": "Europe",
+      "year1950": {
+        "male": 62.6,
+        "female": 69.1,
+        "gap": 6.499999999999993
+      },
+      "year2023.0": {
+        "male": 71.2,
+        "female": 80.7,
+        "gap": 9.5
+      },
+      "gapChange": 3.000000000000007
+    },
+    {
+      "country": "Norway",
+      "iso3": "NOR",
+      "region": "Europe",
+      "year1950": {
+        "male": 69.9,
+        "female": 73.3,
+        "gap": 3.3999999999999915
+      },
+      "year2023.0": {
+        "male": 81.7,
+        "female": 84.8,
+        "gap": 3.0999999999999943
+      },
+      "gapChange": -0.29999999999999716
+    },
+    {
+      "country": "Sweden",
+      "iso3": "SWE",
+      "region": "Europe",
+      "year1950": {
+        "male": 69.8,
+        "female": 72.4,
+        "gap": 2.6000000000000085
+      },
+      "year2023.0": {
+        "male": 81.4,
+        "female": 85.1,
+        "gap": 3.6999999999999886
+      },
+      "gapChange": 1.09999999999998
+    },
+    {
+      "country": "United Kingdom",
+      "iso3": "GBR",
+      "region": "Europe",
+      "year1950": {
+        "male": 66.2,
+        "female": 70.9,
+        "gap": 4.700000000000003
+      },
+      "year2023.0": {
+        "male": 79.4,
+        "female": 83.2,
+        "gap": 3.799999999999997
+      },
+      "gapChange": -0.9000000000000057
+    },
+    {
+      "country": "Albania",
+      "iso3": "ALB",
+      "region": "Europe",
+      "year1950": {
+        "male": 41.9,
+        "female": 47.3,
+        "gap": 5.399999999999999
+      },
+      "year2023.0": {
+        "male": 77.7,
+        "female": 81.4,
+        "gap": 3.700000000000003
+      },
+      "gapChange": -1.6999999999999957
+    },
+    {
+      "country": "Andorra",
+      "iso3": "AND",
+      "region": "Europe",
+      "year1950": {
+        "male": 63.7,
+        "female": 70.6,
+        "gap": 6.8999999999999915
+      },
+      "year2023.0": {
+        "male": 82.1,
+        "female": 86.1,
+        "gap": 4.0
+      },
+      "gapChange": -2.8999999999999915
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "iso3": "BIH",
+      "region": "Europe",
+      "year1950": {
+        "male": 45.1,
+        "female": 49.6,
+        "gap": 4.5
+      },
+      "year2023.0": {
+        "male": 74.4,
+        "female": 80.9,
+        "gap": 6.5
+      },
+      "gapChange": 2.0
+    },
+    {
+      "country": "Croatia",
+      "iso3": "HRV",
+      "region": "Europe",
+      "year1950": {
+        "male": 56.1,
+        "female": 60.6,
+        "gap": 4.5
+      },
+      "year2023.0": {
+        "male": 75.4,
+        "female": 81.7,
+        "gap": 6.299999999999997
+      },
+      "gapChange": 1.7999999999999972
+    },
+    {
+      "country": "Gibraltar",
+      "iso3": "GIB",
+      "region": "Europe",
+      "year1950": {
+        "male": 60.7,
+        "female": 69.3,
+        "gap": 8.599999999999994
+      },
+      "year2023.0": {
+        "male": 80.9,
+        "female": 86.1,
+        "gap": 5.199999999999989
+      },
+      "gapChange": -3.4000000000000057
+    },
+    {
+      "country": "Greece",
+      "iso3": "GRC",
+      "region": "Europe",
+      "year1950": {
+        "male": 64.2,
+        "female": 68.1,
+        "gap": 3.8999999999999915
+      },
+      "year2023.0": {
+        "male": 79.3,
+        "female": 84.3,
+        "gap": 5.0
+      },
+      "gapChange": 1.1000000000000085
+    },
+    {
+      "country": "Holy See",
+      "iso3": "VAT",
+      "region": "Europe",
+      "year1950": {
+        "male": 64.2,
+        "female": 67.4,
+        "gap": 3.200000000000003
+      },
+      "year2023.0": {
+        "male": 80.8,
+        "female": 85.1,
+        "gap": 4.299999999999997
+      },
+      "gapChange": 1.0999999999999943
+    },
+    {
+      "country": "Italy",
+      "iso3": "ITA",
+      "region": "Europe",
+      "year1950": {
+        "male": 63.9,
+        "female": 67.4,
+        "gap": 3.500000000000007
+      },
+      "year2023.0": {
+        "male": 81.6,
+        "female": 85.7,
+        "gap": 4.1000000000000085
+      },
+      "gapChange": 0.6000000000000014
+    },
+    {
+      "country": "Kosovo (under UNSC res. 1244)",
+      "iso3": "XKX",
+      "region": "Europe",
+      "year1950": {
+        "male": 43.0,
+        "female": 44.0,
+        "gap": 1.0
+      },
+      "year2023.0": {
+        "male": 75.8,
+        "female": 80.1,
+        "gap": 4.299999999999997
+      },
+      "gapChange": 3.299999999999997
+    },
+    {
+      "country": "Malta",
+      "iso3": "MLT",
+      "region": "Europe",
+      "year1950": {
+        "male": 62.0,
+        "female": 65.0,
+        "gap": 3.0
+      },
+      "year2023.0": {
+        "male": 81.3,
+        "female": 85.3,
+        "gap": 4.0
+      },
+      "gapChange": 1.0
+    },
+    {
+      "country": "Montenegro",
+      "iso3": "MNE",
+      "region": "Europe",
+      "year1950": {
+        "male": 56.7,
+        "female": 59.2,
+        "gap": 2.5
+      },
+      "year2023.0": {
+        "male": 73.7,
+        "female": 80.3,
+        "gap": 6.599999999999994
+      },
+      "gapChange": 4.099999999999994
+    },
+    {
+      "country": "North Macedonia",
+      "iso3": "MKD",
+      "region": "Europe",
+      "year1950": {
+        "male": 50.4,
+        "female": 50.8,
+        "gap": 0.3999999999999986
+      },
+      "year2023.0": {
+        "male": 75.1,
+        "female": 79.6,
+        "gap": 4.5
+      },
+      "gapChange": 4.100000000000001
+    },
+    {
+      "country": "Portugal",
+      "iso3": "PRT",
+      "region": "Europe",
+      "year1950": {
+        "male": 55.8,
+        "female": 61.0,
+        "gap": 5.200000000000003
+      },
+      "year2023.0": {
+        "male": 79.4,
+        "female": 85.1,
+        "gap": 5.699999999999989
+      },
+      "gapChange": 0.4999999999999858
+    },
+    {
+      "country": "San Marino",
+      "iso3": "SMR",
+      "region": "Europe",
+      "year1950": {
+        "male": 68.6,
+        "female": 74.9,
+        "gap": 6.300000000000011
+      },
+      "year2023.0": {
+        "male": 84.2,
+        "female": 87.1,
+        "gap": 2.8999999999999915
+      },
+      "gapChange": -3.40000000000002
+    },
+    {
+      "country": "Serbia",
+      "iso3": "SRB",
+      "region": "Europe",
+      "year1950": {
+        "male": 53.6,
+        "female": 56.5,
+        "gap": 2.8999999999999986
+      },
+      "year2023.0": {
+        "male": 73.5,
+        "female": 80.0,
+        "gap": 6.5
+      },
+      "gapChange": 3.6000000000000014
+    },
+    {
+      "country": "Slovenia",
+      "iso3": "SVN",
+      "region": "Europe",
+      "year1950": {
+        "male": 58.8,
+        "female": 64.7,
+        "gap": 5.900000000000006
+      },
+      "year2023.0": {
+        "male": 78.9,
+        "female": 84.3,
+        "gap": 5.3999999999999915
+      },
+      "gapChange": -0.5000000000000142
+    },
+    {
+      "country": "Spain",
+      "iso3": "ESP",
+      "region": "Europe",
+      "year1950": {
+        "male": 59.3,
+        "female": 64.1,
+        "gap": 4.799999999999997
+      },
+      "year2023.0": {
+        "male": 81.0,
+        "female": 86.3,
+        "gap": 5.299999999999997
+      },
+      "gapChange": 0.5
+    },
+    {
+      "country": "Austria",
+      "iso3": "AUT",
+      "region": "Europe",
+      "year1950": {
+        "male": 62.2,
+        "female": 67.3,
+        "gap": 5.099999999999994
+      },
+      "year2023.0": {
+        "male": 79.5,
+        "female": 84.3,
+        "gap": 4.799999999999997
+      },
+      "gapChange": -0.29999999999999716
+    },
+    {
+      "country": "Belgium",
+      "iso3": "BEL",
+      "region": "Europe",
+      "year1950": {
+        "male": 63.8,
+        "female": 68.9,
+        "gap": 5.1000000000000085
+      },
+      "year2023.0": {
+        "male": 79.9,
+        "female": 84.3,
+        "gap": 4.3999999999999915
+      },
+      "gapChange": -0.700000000000017
+    },
+    {
+      "country": "France",
+      "iso3": "FRA",
+      "region": "Europe",
+      "year1950": {
+        "male": 63.4,
+        "female": 69.2,
+        "gap": 5.800000000000004
+      },
+      "year2023.0": {
+        "male": 80.4,
+        "female": 86.1,
+        "gap": 5.699999999999989
+      },
+      "gapChange": -0.10000000000001563
+    },
+    {
+      "country": "Germany",
+      "iso3": "DEU",
+      "region": "Europe",
+      "year1950": {
+        "male": 64.1,
+        "female": 69.3,
+        "gap": 5.200000000000003
+      },
+      "year2023.0": {
+        "male": 79.0,
+        "female": 83.8,
+        "gap": 4.799999999999997
+      },
+      "gapChange": -0.4000000000000057
+    },
+    {
+      "country": "Liechtenstein",
+      "iso3": "LIE",
+      "region": "Europe",
+      "year1950": {
+        "male": 62.7,
+        "female": 68.1,
+        "gap": 5.3999999999999915
+      },
+      "year2023.0": {
+        "male": 81.8,
+        "female": 85.3,
+        "gap": 3.5
+      },
+      "gapChange": -1.8999999999999915
+    },
+    {
+      "country": "Luxembourg",
+      "iso3": "LUX",
+      "region": "Europe",
+      "year1950": {
+        "male": 63.4,
+        "female": 67.9,
+        "gap": 4.500000000000007
+      },
+      "year2023.0": {
+        "male": 80.6,
+        "female": 83.8,
+        "gap": 3.200000000000003
+      },
+      "gapChange": -1.3000000000000043
+    },
+    {
+      "country": "Monaco",
+      "iso3": "MCO",
+      "region": "Europe",
+      "year1950": {
+        "male": 64.8,
+        "female": 71.0,
+        "gap": 6.200000000000003
+      },
+      "year2023.0": {
+        "male": 84.4,
+        "female": 88.5,
+        "gap": 4.099999999999994
+      },
+      "gapChange": -2.1000000000000085
+    },
+    {
+      "country": "Netherlands",
+      "iso3": "NLD",
+      "region": "Europe",
+      "year1950": {
+        "male": 70.3,
+        "female": 72.6,
+        "gap": 2.299999999999997
+      },
+      "year2023.0": {
+        "male": 80.5,
+        "female": 83.7,
+        "gap": 3.200000000000003
+      },
+      "gapChange": 0.9000000000000057
+    },
+    {
+      "country": "Switzerland",
+      "iso3": "CHE",
+      "region": "Europe",
+      "year1950": {
+        "male": 66.7,
+        "female": 71.1,
+        "gap": 4.3999999999999915
+      },
+      "year2023.0": {
+        "male": 82.0,
+        "female": 85.8,
+        "gap": 3.799999999999997
+      },
+      "gapChange": -0.5999999999999943
+    },
+    {
+      "country": "Anguilla",
+      "iso3": "AIA",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 50.4,
+        "female": 59.9,
+        "gap": 9.5
+      },
+      "year2023.0": {
+        "male": 76.0,
+        "female": 82.7,
+        "gap": 6.700000000000003
+      },
+      "gapChange": -2.799999999999997
+    },
+    {
+      "country": "Antigua and Barbuda",
+      "iso3": "ATG",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 55.8,
+        "female": 59.8,
+        "gap": 4.0
+      },
+      "year2023.0": {
+        "male": 74.5,
+        "female": 80.3,
+        "gap": 5.799999999999997
+      },
+      "gapChange": 1.7999999999999972
+    },
+    {
+      "country": "Aruba",
+      "iso3": "ABW",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 55.2,
+        "female": 60.9,
+        "gap": 5.699999999999996
+      },
+      "year2023.0": {
+        "male": 73.7,
+        "female": 78.8,
+        "gap": 5.099999999999994
+      },
+      "gapChange": -0.6000000000000014
+    },
+    {
+      "country": "Bahamas",
+      "iso3": "BHS",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 55.9,
+        "female": 61.7,
+        "gap": 5.800000000000004
+      },
+      "year2023.0": {
+        "male": 70.9,
+        "female": 78.2,
+        "gap": 7.299999999999997
+      },
+      "gapChange": 1.499999999999993
+    },
+    {
+      "country": "Barbados",
+      "iso3": "BRB",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 51.3,
+        "female": 55.1,
+        "gap": 3.8000000000000043
+      },
+      "year2023.0": {
+        "male": 73.6,
+        "female": 78.6,
+        "gap": 5.0
+      },
+      "gapChange": 1.1999999999999957
+    },
+    {
+      "country": "Bonaire, Sint Eustatius and Saba",
+      "iso3": "BES",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 58.3,
+        "female": 64.4,
+        "gap": 6.1000000000000085
+      },
+      "year2023.0": {
+        "male": 75.2,
+        "female": 80.2,
+        "gap": 5.0
+      },
+      "gapChange": -1.1000000000000085
+    },
+    {
+      "country": "British Virgin Islands",
+      "iso3": "VGB",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 52.2,
+        "female": 54.6,
+        "gap": 2.3999999999999986
+      },
+      "year2023.0": {
+        "male": 74.5,
+        "female": 80.0,
+        "gap": 5.5
+      },
+      "gapChange": 3.1000000000000014
+    },
+    {
+      "country": "Cayman Islands",
+      "iso3": "CYM",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 51.7,
+        "female": 56.1,
+        "gap": 4.399999999999999
+      },
+      "year2023.0": {
+        "male": 78.0,
+        "female": 82.9,
+        "gap": 4.900000000000006
+      },
+      "gapChange": 0.5000000000000071
+    },
+    {
+      "country": "Cuba",
+      "iso3": "CUB",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 57.1,
+        "female": 61.3,
+        "gap": 4.199999999999996
+      },
+      "year2023.0": {
+        "male": 75.7,
+        "female": 80.5,
+        "gap": 4.799999999999997
+      },
+      "gapChange": 0.6000000000000014
+    },
+    {
+      "country": "Cura\u00e7ao",
+      "iso3": "CUW",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 58.2,
+        "female": 62.0,
+        "gap": 3.799999999999997
+      },
+      "year2023.0": {
+        "male": 72.5,
+        "female": 80.8,
+        "gap": 8.299999999999997
+      },
+      "gapChange": 4.5
+    },
+    {
+      "country": "Dominica",
+      "iso3": "DMA",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 43.1,
+        "female": 46.0,
+        "gap": 2.8999999999999986
+      },
+      "year2023.0": {
+        "male": 68.2,
+        "female": 74.5,
+        "gap": 6.299999999999997
+      },
+      "gapChange": 3.3999999999999986
+    },
+    {
+      "country": "Dominican Republic",
+      "iso3": "DOM",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 43.0,
+        "female": 45.3,
+        "gap": 2.299999999999997
+      },
+      "year2023.0": {
+        "male": 70.5,
+        "female": 77.0,
+        "gap": 6.5
+      },
+      "gapChange": 4.200000000000003
+    },
+    {
+      "country": "Grenada",
+      "iso3": "GRD",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 50.8,
+        "female": 54.2,
+        "gap": 3.4000000000000057
+      },
+      "year2023.0": {
+        "male": 72.4,
+        "female": 78.4,
+        "gap": 6.0
+      },
+      "gapChange": 2.5999999999999943
+    },
+    {
+      "country": "Guadeloupe",
+      "iso3": "GLP",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 50.8,
+        "female": 55.3,
+        "gap": 4.5
+      },
+      "year2023.0": {
+        "male": 78.1,
+        "female": 85.5,
+        "gap": 7.400000000000006
+      },
+      "gapChange": 2.9000000000000057
+    },
+    {
+      "country": "Haiti",
+      "iso3": "HTI",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 34.8,
+        "female": 39.8,
+        "gap": 5.0
+      },
+      "year2023.0": {
+        "male": 61.7,
+        "female": 68.3,
+        "gap": 6.599999999999994
+      },
+      "gapChange": 1.5999999999999943
+    },
+    {
+      "country": "Jamaica",
+      "iso3": "JAM",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 55.1,
+        "female": 57.9,
+        "gap": 2.799999999999997
+      },
+      "year2023.0": {
+        "male": 69.0,
+        "female": 74.0,
+        "gap": 5.0
+      },
+      "gapChange": 2.200000000000003
+    },
+    {
+      "country": "Martinique",
+      "iso3": "MTQ",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 52.4,
+        "female": 57.6,
+        "gap": 5.200000000000003
+      },
+      "year2023.0": {
+        "male": 79.3,
+        "female": 85.6,
+        "gap": 6.299999999999997
+      },
+      "gapChange": 1.0999999999999943
+    },
+    {
+      "country": "Montserrat",
+      "iso3": "MSR",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 47.5,
+        "female": 49.7,
+        "gap": 2.200000000000003
+      },
+      "year2023.0": {
+        "male": 74.1,
+        "female": 78.8,
+        "gap": 4.700000000000003
+      },
+      "gapChange": 2.5
+    },
+    {
+      "country": "Puerto Rico",
+      "iso3": "PRI",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 58.9,
+        "female": 62.0,
+        "gap": 3.1000000000000014
+      },
+      "year2023.0": {
+        "male": 78.0,
+        "female": 85.2,
+        "gap": 7.200000000000003
+      },
+      "gapChange": 4.100000000000001
+    },
+    {
+      "country": "Saint Barth\u00e9lemy",
+      "iso3": "BLM",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 52.3,
+        "female": 55.6,
+        "gap": 3.3000000000000043
+      },
+      "year2023.0": {
+        "male": 81.5,
+        "female": 86.8,
+        "gap": 5.299999999999997
+      },
+      "gapChange": 1.999999999999993
+    },
+    {
+      "country": "Saint Kitts and Nevis",
+      "iso3": "KNA",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 51.5,
+        "female": 57.5,
+        "gap": 6.0
+      },
+      "year2023.0": {
+        "male": 68.6,
+        "female": 76.0,
+        "gap": 7.400000000000006
+      },
+      "gapChange": 1.4000000000000057
+    },
+    {
+      "country": "Saint Lucia",
+      "iso3": "LCA",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 47.0,
+        "female": 49.4,
+        "gap": 2.3999999999999986
+      },
+      "year2023.0": {
+        "male": 69.3,
+        "female": 76.3,
+        "gap": 7.0
+      },
+      "gapChange": 4.600000000000001
+    },
+    {
+      "country": "Saint Martin (French part)",
+      "iso3": "MAF",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 61.9,
+        "female": 68.1,
+        "gap": 6.199999999999996
+      },
+      "year2023.0": {
+        "male": 76.8,
+        "female": 83.8,
+        "gap": 7.0
+      },
+      "gapChange": 0.8000000000000043
+    },
+    {
+      "country": "Saint Vincent and the Grenadines",
+      "iso3": "VCT",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 44.7,
+        "female": 48.8,
+        "gap": 4.099999999999994
+      },
+      "year2023.0": {
+        "male": 68.7,
+        "female": 74.3,
+        "gap": 5.599999999999994
+      },
+      "gapChange": 1.5
+    },
+    {
+      "country": "Sint Maarten (Dutch part)",
+      "iso3": "SXM",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 60.5,
+        "female": 63.6,
+        "gap": 3.1000000000000014
+      },
+      "year2023.0": {
+        "male": 73.7,
+        "female": 79.5,
+        "gap": 5.799999999999997
+      },
+      "gapChange": 2.6999999999999957
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "iso3": "TTO",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 56.1,
+        "female": 57.9,
+        "gap": 1.7999999999999972
+      },
+      "year2023.0": {
+        "male": 70.4,
+        "female": 76.7,
+        "gap": 6.299999999999997
+      },
+      "gapChange": 4.5
+    },
+    {
+      "country": "Turks and Caicos Islands",
+      "iso3": "TCA",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 43.9,
+        "female": 52.7,
+        "gap": 8.800000000000004
+      },
+      "year2023.0": {
+        "male": 75.8,
+        "female": 80.3,
+        "gap": 4.5
+      },
+      "gapChange": -4.300000000000004
+    },
+    {
+      "country": "United States Virgin Islands",
+      "iso3": "VIR",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 57.8,
+        "female": 62.0,
+        "gap": 4.200000000000003
+      },
+      "year2023.0": {
+        "male": 70.5,
+        "female": 81.4,
+        "gap": 10.900000000000006
+      },
+      "gapChange": 6.700000000000003
+    },
+    {
+      "country": "Belize",
+      "iso3": "BLZ",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 47.1,
+        "female": 51.4,
+        "gap": 4.299999999999997
+      },
+      "year2023.0": {
+        "male": 70.9,
+        "female": 76.5,
+        "gap": 5.599999999999994
+      },
+      "gapChange": 1.2999999999999972
+    },
+    {
+      "country": "Costa Rica",
+      "iso3": "CRI",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 56.9,
+        "female": 58.0,
+        "gap": 1.1000000000000014
+      },
+      "year2023.0": {
+        "male": 78.1,
+        "female": 83.4,
+        "gap": 5.300000000000011
+      },
+      "gapChange": 4.20000000000001
+    },
+    {
+      "country": "El Salvador",
+      "iso3": "SLV",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 42.3,
+        "female": 46.2,
+        "gap": 3.9000000000000057
+      },
+      "year2023.0": {
+        "male": 67.5,
+        "female": 76.3,
+        "gap": 8.799999999999997
+      },
+      "gapChange": 4.8999999999999915
+    },
+    {
+      "country": "Guatemala",
+      "iso3": "GTM",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 37.7,
+        "female": 37.9,
+        "gap": 0.19999999999999574
+      },
+      "year2023.0": {
+        "male": 70.3,
+        "female": 74.9,
+        "gap": 4.6000000000000085
+      },
+      "gapChange": 4.400000000000013
+    },
+    {
+      "country": "Honduras",
+      "iso3": "HND",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 39.4,
+        "female": 42.8,
+        "gap": 3.3999999999999986
+      },
+      "year2023.0": {
+        "male": 70.3,
+        "female": 75.5,
+        "gap": 5.200000000000003
+      },
+      "gapChange": 1.8000000000000043
+    },
+    {
+      "country": "Mexico",
+      "iso3": "MEX",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 42.3,
+        "female": 45.5,
+        "gap": 3.200000000000003
+      },
+      "year2023.0": {
+        "male": 72.2,
+        "female": 77.8,
+        "gap": 5.599999999999994
+      },
+      "gapChange": 2.3999999999999915
+    },
+    {
+      "country": "Nicaragua",
+      "iso3": "NIC",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 39.3,
+        "female": 42.0,
+        "gap": 2.700000000000003
+      },
+      "year2023.0": {
+        "male": 72.3,
+        "female": 77.4,
+        "gap": 5.1000000000000085
+      },
+      "gapChange": 2.4000000000000057
+    },
+    {
+      "country": "Panama",
+      "iso3": "PAN",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 54.4,
+        "female": 56.6,
+        "gap": 2.200000000000003
+      },
+      "year2023.0": {
+        "male": 76.7,
+        "female": 82.6,
+        "gap": 5.8999999999999915
+      },
+      "gapChange": 3.6999999999999886
+    },
+    {
+      "country": "Argentina",
+      "iso3": "ARG",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 58.7,
+        "female": 64.3,
+        "gap": 5.599999999999994
+      },
+      "year2023.0": {
+        "male": 74.8,
+        "female": 79.9,
+        "gap": 5.1000000000000085
+      },
+      "gapChange": -0.4999999999999858
+    },
+    {
+      "country": "Bolivia (Plurinational State of)",
+      "iso3": "BOL",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 38.4,
+        "female": 43.1,
+        "gap": 4.700000000000003
+      },
+      "year2023.0": {
+        "male": 66.1,
+        "female": 71.1,
+        "gap": 5.0
+      },
+      "gapChange": 0.29999999999999716
+    },
+    {
+      "country": "Brazil",
+      "iso3": "BRA",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 46.4,
+        "female": 50.9,
+        "gap": 4.5
+      },
+      "year2023.0": {
+        "male": 72.8,
+        "female": 79.0,
+        "gap": 6.200000000000003
+      },
+      "gapChange": 1.7000000000000028
+    },
+    {
+      "country": "Chile",
+      "iso3": "CHL",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 51.3,
+        "female": 55.1,
+        "gap": 3.8000000000000043
+      },
+      "year2023.0": {
+        "male": 79.2,
+        "female": 83.1,
+        "gap": 3.8999999999999915
+      },
+      "gapChange": 0.09999999999998721
+    },
+    {
+      "country": "Colombia",
+      "iso3": "COL",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 46.1,
+        "female": 50.6,
+        "gap": 4.5
+      },
+      "year2023.0": {
+        "male": 75.0,
+        "female": 80.5,
+        "gap": 5.5
+      },
+      "gapChange": 1.0
+    },
+    {
+      "country": "Ecuador",
+      "iso3": "ECU",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 46.7,
+        "female": 50.2,
+        "gap": 3.5
+      },
+      "year2023.0": {
+        "male": 74.7,
+        "female": 80.1,
+        "gap": 5.3999999999999915
+      },
+      "gapChange": 1.8999999999999915
+    },
+    {
+      "country": "Falkland Islands (Malvinas)",
+      "iso3": "FLK",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 47.7,
+        "female": 51.3,
+        "gap": 3.5999999999999943
+      },
+      "year2023.0": {
+        "male": 77.2,
+        "female": 81.2,
+        "gap": 4.0
+      },
+      "gapChange": 0.4000000000000057
+    },
+    {
+      "country": "French Guiana",
+      "iso3": "GUF",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 44.8,
+        "female": 51.3,
+        "gap": 6.5
+      },
+      "year2023.0": {
+        "male": 74.1,
+        "female": 80.0,
+        "gap": 5.900000000000006
+      },
+      "gapChange": -0.5999999999999943
+    },
+    {
+      "country": "Guyana",
+      "iso3": "GUY",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 47.0,
+        "female": 51.7,
+        "gap": 4.700000000000003
+      },
+      "year2023.0": {
+        "male": 66.5,
+        "female": 73.9,
+        "gap": 7.400000000000006
+      },
+      "gapChange": 2.700000000000003
+    },
+    {
+      "country": "Paraguay",
+      "iso3": "PRY",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 55.5,
+        "female": 60.7,
+        "gap": 5.200000000000003
+      },
+      "year2023.0": {
+        "male": 70.9,
+        "female": 77.0,
+        "gap": 6.099999999999994
+      },
+      "gapChange": 0.8999999999999915
+    },
+    {
+      "country": "Peru",
+      "iso3": "PER",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 44.6,
+        "female": 47.5,
+        "gap": 2.8999999999999986
+      },
+      "year2023.0": {
+        "male": 75.4,
+        "female": 80.1,
+        "gap": 4.699999999999989
+      },
+      "gapChange": 1.79999999999999
+    },
+    {
+      "country": "Suriname",
+      "iso3": "SUR",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 49.1,
+        "female": 52.7,
+        "gap": 3.6000000000000014
+      },
+      "year2023.0": {
+        "male": 70.5,
+        "female": 76.8,
+        "gap": 6.299999999999997
+      },
+      "gapChange": 2.6999999999999957
+    },
+    {
+      "country": "Uruguay",
+      "iso3": "URY",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 62.8,
+        "female": 68.8,
+        "gap": 6.0
+      },
+      "year2023.0": {
+        "male": 74.2,
+        "female": 81.9,
+        "gap": 7.700000000000003
+      },
+      "gapChange": 1.7000000000000028
+    },
+    {
+      "country": "Venezuela (Bolivarian Republic of)",
+      "iso3": "VEN",
+      "region": "Latin America and the Caribbean",
+      "year1950": {
+        "male": 49.0,
+        "female": 53.5,
+        "gap": 4.5
+      },
+      "year2023.0": {
+        "male": 68.7,
+        "female": 76.5,
+        "gap": 7.799999999999997
+      },
+      "gapChange": 3.299999999999997
+    },
+    {
+      "country": "Bermuda",
+      "iso3": "BMU",
+      "region": "Unknown",
+      "year1950": {
+        "male": 56.2,
+        "female": 64.9,
+        "gap": 8.700000000000003
+      },
+      "year2023.0": {
+        "male": 78.9,
+        "female": 85.7,
+        "gap": 6.799999999999997
+      },
+      "gapChange": -1.9000000000000057
+    },
+    {
+      "country": "Canada",
+      "iso3": "CAN",
+      "region": "Unknown",
+      "year1950": {
+        "male": 66.2,
+        "female": 70.6,
+        "gap": 4.3999999999999915
+      },
+      "year2023.0": {
+        "male": 80.4,
+        "female": 84.8,
+        "gap": 4.3999999999999915
+      },
+      "gapChange": 0.0
+    },
+    {
+      "country": "Greenland",
+      "iso3": "GRL",
+      "region": "Unknown",
+      "year1950": {
+        "male": 39.2,
+        "female": 39.8,
+        "gap": 0.5999999999999943
+      },
+      "year2023.0": {
+        "male": 68.1,
+        "female": 72.4,
+        "gap": 4.300000000000011
+      },
+      "gapChange": 3.700000000000017
+    },
+    {
+      "country": "Saint Pierre and Miquelon",
+      "iso3": "SPM",
+      "region": "Unknown",
+      "year1950": {
+        "male": 57.3,
+        "female": 68.9,
+        "gap": 11.600000000000009
+      },
+      "year2023.0": {
+        "male": 72.8,
+        "female": 81.5,
+        "gap": 8.700000000000003
+      },
+      "gapChange": -2.9000000000000057
+    },
+    {
+      "country": "United States of America",
+      "iso3": "USA",
+      "region": "Unknown",
+      "year1950": {
+        "male": 65.4,
+        "female": 71.0,
+        "gap": 5.599999999999994
+      },
+      "year2023.0": {
+        "male": 76.9,
+        "female": 81.8,
+        "gap": 4.8999999999999915
+      },
+      "gapChange": -0.7000000000000028
+    },
+    {
+      "country": "Australia",
+      "iso3": "AUS",
+      "region": "Oceania",
+      "year1950": {
+        "male": 66.5,
+        "female": 71.7,
+        "gap": 5.200000000000003
+      },
+      "year2023.0": {
+        "male": 82.1,
+        "female": 85.7,
+        "gap": 3.6000000000000085
+      },
+      "gapChange": -1.5999999999999943
+    },
+    {
+      "country": "New Zealand",
+      "iso3": "NZL",
+      "region": "Oceania",
+      "year1950": {
+        "male": 67.4,
+        "female": 71.2,
+        "gap": 3.799999999999997
+      },
+      "year2023.0": {
+        "male": 80.4,
+        "female": 83.8,
+        "gap": 3.3999999999999915
+      },
+      "gapChange": -0.4000000000000057
+    },
+    {
+      "country": "Fiji",
+      "iso3": "FJI",
+      "region": "Oceania",
+      "year1950": {
+        "male": 51.6,
+        "female": 51.9,
+        "gap": 0.29999999999999716
+      },
+      "year2023.0": {
+        "male": 65.3,
+        "female": 69.4,
+        "gap": 4.1000000000000085
+      },
+      "gapChange": 3.8000000000000114
+    },
+    {
+      "country": "New Caledonia",
+      "iso3": "NCL",
+      "region": "Oceania",
+      "year1950": {
+        "male": 41.4,
+        "female": 49.9,
+        "gap": 8.5
+      },
+      "year2023.0": {
+        "male": 76.3,
+        "female": 81.3,
+        "gap": 5.0
+      },
+      "gapChange": -3.5
+    },
+    {
+      "country": "Papua New Guinea",
+      "iso3": "PNG",
+      "region": "Oceania",
+      "year1950": {
+        "male": 37.4,
+        "female": 42.2,
+        "gap": 4.800000000000004
+      },
+      "year2023.0": {
+        "male": 63.7,
+        "female": 69.1,
+        "gap": 5.3999999999999915
+      },
+      "gapChange": 0.5999999999999872
+    },
+    {
+      "country": "Solomon Islands",
+      "iso3": "SLB",
+      "region": "Oceania",
+      "year1950": {
+        "male": 39.9,
+        "female": 43.8,
+        "gap": 3.8999999999999986
+      },
+      "year2023.0": {
+        "male": 69.2,
+        "female": 72.0,
+        "gap": 2.799999999999997
+      },
+      "gapChange": -1.1000000000000014
+    },
+    {
+      "country": "Vanuatu",
+      "iso3": "VUT",
+      "region": "Oceania",
+      "year1950": {
+        "male": 43.3,
+        "female": 45.2,
+        "gap": 1.9000000000000057
+      },
+      "year2023.0": {
+        "male": 69.4,
+        "female": 73.9,
+        "gap": 4.5
+      },
+      "gapChange": 2.5999999999999943
+    },
+    {
+      "country": "Guam",
+      "iso3": "GUM",
+      "region": "Oceania",
+      "year1950": {
+        "male": 58.5,
+        "female": 61.9,
+        "gap": 3.3999999999999986
+      },
+      "year2023.0": {
+        "male": 73.4,
+        "female": 81.4,
+        "gap": 8.0
+      },
+      "gapChange": 4.600000000000001
+    },
+    {
+      "country": "Kiribati",
+      "iso3": "KIR",
+      "region": "Oceania",
+      "year1950": {
+        "male": 44.5,
+        "female": 46.9,
+        "gap": 2.3999999999999986
+      },
+      "year2023.0": {
+        "male": 64.6,
+        "female": 68.2,
+        "gap": 3.6000000000000085
+      },
+      "gapChange": 1.20000000000001
+    },
+    {
+      "country": "Marshall Islands",
+      "iso3": "MHL",
+      "region": "Oceania",
+      "year1950": {
+        "male": 49.3,
+        "female": 56.6,
+        "gap": 7.300000000000004
+      },
+      "year2023.0": {
+        "male": 64.9,
+        "female": 69.3,
+        "gap": 4.3999999999999915
+      },
+      "gapChange": -2.900000000000013
+    },
+    {
+      "country": "Micronesia (Fed. States of)",
+      "iso3": "FSM",
+      "region": "Oceania",
+      "year1950": {
+        "male": 45.5,
+        "female": 51.9,
+        "gap": 6.399999999999999
+      },
+      "year2023.0": {
+        "male": 63.5,
+        "female": 71.1,
+        "gap": 7.599999999999994
+      },
+      "gapChange": 1.1999999999999957
+    },
+    {
+      "country": "Nauru",
+      "iso3": "NRU",
+      "region": "Oceania",
+      "year1950": {
+        "male": 54.6,
+        "female": 58.9,
+        "gap": 4.299999999999997
+      },
+      "year2023.0": {
+        "male": 60.3,
+        "female": 64.0,
+        "gap": 3.700000000000003
+      },
+      "gapChange": -0.5999999999999943
+    },
+    {
+      "country": "Northern Mariana Islands",
+      "iso3": "MNP",
+      "region": "Oceania",
+      "year1950": {
+        "male": 55.6,
+        "female": 61.8,
+        "gap": 6.199999999999996
+      },
+      "year2023.0": {
+        "male": 77.1,
+        "female": 80.7,
+        "gap": 3.6000000000000085
+      },
+      "gapChange": -2.599999999999987
+    },
+    {
+      "country": "Palau",
+      "iso3": "PLW",
+      "region": "Oceania",
+      "year1950": {
+        "male": 48.7,
+        "female": 57.5,
+        "gap": 8.799999999999997
+      },
+      "year2023.0": {
+        "male": 67.2,
+        "female": 71.8,
+        "gap": 4.599999999999994
+      },
+      "gapChange": -4.200000000000003
+    },
+    {
+      "country": "American Samoa",
+      "iso3": "ASM",
+      "region": "Oceania",
+      "year1950": {
+        "male": 57.6,
+        "female": 61.0,
+        "gap": 3.3999999999999986
+      },
+      "year2023.0": {
+        "male": 70.2,
+        "female": 75.8,
+        "gap": 5.599999999999994
+      },
+      "gapChange": 2.1999999999999957
+    },
+    {
+      "country": "Cook Islands",
+      "iso3": "COK",
+      "region": "Oceania",
+      "year1950": {
+        "male": 38.6,
+        "female": 37.4,
+        "gap": -1.2000000000000028
+      },
+      "year2023.0": {
+        "male": 71.9,
+        "female": 79.0,
+        "gap": 7.099999999999994
+      },
+      "gapChange": 8.299999999999997
+    },
+    {
+      "country": "French Polynesia",
+      "iso3": "PYF",
+      "region": "Oceania",
+      "year1950": {
+        "male": 50.8,
+        "female": 53.2,
+        "gap": 2.4000000000000057
+      },
+      "year2023.0": {
+        "male": 81.8,
+        "female": 86.5,
+        "gap": 4.700000000000003
+      },
+      "gapChange": 2.299999999999997
+    },
+    {
+      "country": "Niue",
+      "iso3": "NIU",
+      "region": "Oceania",
+      "year1950": {
+        "male": 53.5,
+        "female": 55.6,
+        "gap": 2.1000000000000014
+      },
+      "year2023.0": {
+        "male": 67.4,
+        "female": 72.7,
+        "gap": 5.299999999999997
+      },
+      "gapChange": 3.1999999999999957
+    },
+    {
+      "country": "Samoa",
+      "iso3": "WSM",
+      "region": "Oceania",
+      "year1950": {
+        "male": 47.3,
+        "female": 51.5,
+        "gap": 4.200000000000003
+      },
+      "year2023.0": {
+        "male": 69.9,
+        "female": 73.7,
+        "gap": 3.799999999999997
+      },
+      "gapChange": -0.4000000000000057
+    },
+    {
+      "country": "Tokelau",
+      "iso3": "TKL",
+      "region": "Oceania",
+      "year1950": {
+        "male": 52.5,
+        "female": 56.8,
+        "gap": 4.299999999999997
+      },
+      "year2023.0": {
+        "male": 75.0,
+        "female": 78.9,
+        "gap": 3.9000000000000057
+      },
+      "gapChange": -0.3999999999999915
+    },
+    {
+      "country": "Tonga",
+      "iso3": "TON",
+      "region": "Oceania",
+      "year1950": {
+        "male": 45.2,
+        "female": 52.1,
+        "gap": 6.899999999999999
+      },
+      "year2023.0": {
+        "male": 69.4,
+        "female": 76.4,
+        "gap": 7.0
+      },
+      "gapChange": 0.10000000000000142
+    },
+    {
+      "country": "Tuvalu",
+      "iso3": "TUV",
+      "region": "Oceania",
+      "year1950": {
+        "male": 37.4,
+        "female": 42.9,
+        "gap": 5.5
+      },
+      "year2023.0": {
+        "male": 63.8,
+        "female": 70.7,
+        "gap": 6.900000000000006
+      },
+      "gapChange": 1.4000000000000057
+    },
+    {
+      "country": "Wallis and Futuna Islands",
+      "iso3": "WLF",
+      "region": "Oceania",
+      "year1950": {
+        "male": 43.8,
+        "female": 44.4,
+        "gap": 0.6000000000000014
+      },
+      "year2023.0": {
+        "male": 77.7,
+        "female": 79.6,
+        "gap": 1.8999999999999915
+      },
+      "gapChange": 1.29999999999999
+    }
+  ],
+  "timeseries": [
+    {
+      "country": "China",
+      "values": [
+        {
+          "year": 1950,
+          "male": 42.2,
+          "female": 45.7,
+          "gap": 3.5
+        },
+        {
+          "year": 1951,
+          "male": 42.9,
+          "female": 46.4,
+          "gap": 3.5
+        },
+        {
+          "year": 1952,
+          "male": 43.7,
+          "female": 47.2,
+          "gap": 3.5
+        },
+        {
+          "year": 1953,
+          "male": 44.4,
+          "female": 47.7,
+          "gap": 3.3000000000000043
+        },
+        {
+          "year": 1954,
+          "male": 45.1,
+          "female": 48.6,
+          "gap": 3.5
+        },
+        {
+          "year": 1955,
+          "male": 45.5,
+          "female": 49.2,
+          "gap": 3.700000000000003
+        },
+        {
+          "year": 1956,
+          "male": 46.0,
+          "female": 49.8,
+          "gap": 3.799999999999997
+        },
+        {
+          "year": 1957,
+          "male": 46.6,
+          "female": 50.4,
+          "gap": 3.799999999999997
+        },
+        {
+          "year": 1958,
+          "male": 47.0,
+          "female": 50.9,
+          "gap": 3.8999999999999986
+        },
+        {
+          "year": 1959,
+          "male": 38.6,
+          "female": 42.0,
+          "gap": 3.3999999999999986
+        },
+        {
+          "year": 1960,
+          "male": 32.2,
+          "female": 34.9,
+          "gap": 2.6999999999999957
+        },
+        {
+          "year": 1961,
+          "male": 38.6,
+          "female": 41.9,
+          "gap": 3.299999999999997
+        },
+        {
+          "year": 1962,
+          "male": 48.9,
+          "female": 53.2,
+          "gap": 4.300000000000004
+        },
+        {
+          "year": 1963,
+          "male": 49.7,
+          "female": 53.9,
+          "gap": 4.199999999999996
+        },
+        {
+          "year": 1964,
+          "male": 50.3,
+          "female": 54.5,
+          "gap": 4.200000000000003
+        },
+        {
+          "year": 1965,
+          "male": 51.0,
+          "female": 55.2,
+          "gap": 4.200000000000003
+        },
+        {
+          "year": 1966,
+          "male": 51.7,
+          "female": 55.8,
+          "gap": 4.099999999999994
+        },
+        {
+          "year": 1967,
+          "male": 52.4,
+          "female": 56.5,
+          "gap": 4.100000000000001
+        },
+        {
+          "year": 1968,
+          "male": 53.3,
+          "female": 57.2,
+          "gap": 3.9000000000000057
+        },
+        {
+          "year": 1969,
+          "male": 54.1,
+          "female": 58.0,
+          "gap": 3.8999999999999986
+        },
+        {
+          "year": 1970,
+          "male": 54.9,
+          "female": 58.8,
+          "gap": 3.8999999999999986
+        },
+        {
+          "year": 1971,
+          "male": 55.9,
+          "female": 59.6,
+          "gap": 3.700000000000003
+        },
+        {
+          "year": 1972,
+          "male": 56.7,
+          "female": 60.5,
+          "gap": 3.799999999999997
+        },
+        {
+          "year": 1973,
+          "male": 57.6,
+          "female": 61.5,
+          "gap": 3.8999999999999986
+        },
+        {
+          "year": 1974,
+          "male": 58.2,
+          "female": 62.3,
+          "gap": 4.099999999999994
+        },
+        {
+          "year": 1975,
+          "male": 58.9,
+          "female": 63.1,
+          "gap": 4.200000000000003
+        },
+        {
+          "year": 1976,
+          "male": 59.2,
+          "female": 63.3,
+          "gap": 4.099999999999994
+        },
+        {
+          "year": 1977,
+          "male": 60.3,
+          "female": 64.7,
+          "gap": 4.400000000000006
+        },
+        {
+          "year": 1978,
+          "male": 60.9,
+          "female": 65.3,
+          "gap": 4.399999999999999
+        },
+        {
+          "year": 1979,
+          "male": 61.5,
+          "female": 66.0,
+          "gap": 4.5
+        },
+        {
+          "year": 1980,
+          "male": 62.1,
+          "female": 66.5,
+          "gap": 4.399999999999999
+        },
+        {
+          "year": 1981,
+          "male": 62.6,
+          "female": 67.1,
+          "gap": 4.499999999999993
+        },
+        {
+          "year": 1982,
+          "male": 63.0,
+          "female": 67.6,
+          "gap": 4.599999999999994
+        },
+        {
+          "year": 1983,
+          "male": 63.5,
+          "female": 68.1,
+          "gap": 4.599999999999994
+        },
+        {
+          "year": 1984,
+          "male": 63.9,
+          "female": 68.5,
+          "gap": 4.600000000000001
+        },
+        {
+          "year": 1985,
+          "male": 64.2,
+          "female": 68.9,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 1986,
+          "male": 64.6,
+          "female": 69.3,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 1987,
+          "male": 64.9,
+          "female": 69.7,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 1988,
+          "male": 65.2,
+          "female": 70.1,
+          "gap": 4.8999999999999915
+        },
+        {
+          "year": 1989,
+          "male": 65.6,
+          "female": 70.4,
+          "gap": 4.800000000000011
+        },
+        {
+          "year": 1990,
+          "male": 65.9,
+          "female": 70.6,
+          "gap": 4.699999999999989
+        },
+        {
+          "year": 1991,
+          "male": 66.3,
+          "female": 71.0,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 1992,
+          "male": 66.8,
+          "female": 71.5,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 1993,
+          "male": 67.1,
+          "female": 72.0,
+          "gap": 4.900000000000006
+        },
+        {
+          "year": 1994,
+          "male": 67.4,
+          "female": 72.4,
+          "gap": 5.0
+        },
+        {
+          "year": 1995,
+          "male": 67.9,
+          "female": 73.0,
+          "gap": 5.099999999999994
+        },
+        {
+          "year": 1996,
+          "male": 68.3,
+          "female": 73.5,
+          "gap": 5.200000000000003
+        },
+        {
+          "year": 1997,
+          "male": 68.7,
+          "female": 73.9,
+          "gap": 5.200000000000003
+        },
+        {
+          "year": 1998,
+          "male": 69.1,
+          "female": 74.2,
+          "gap": 5.1000000000000085
+        },
+        {
+          "year": 1999,
+          "male": 69.5,
+          "female": 74.5,
+          "gap": 5.0
+        },
+        {
+          "year": 2000,
+          "male": 69.9,
+          "female": 74.9,
+          "gap": 5.0
+        },
+        {
+          "year": 2001,
+          "male": 70.2,
+          "female": 75.3,
+          "gap": 5.099999999999994
+        },
+        {
+          "year": 2002,
+          "male": 70.6,
+          "female": 75.7,
+          "gap": 5.1000000000000085
+        },
+        {
+          "year": 2003,
+          "male": 70.9,
+          "female": 76.0,
+          "gap": 5.099999999999994
+        },
+        {
+          "year": 2004,
+          "male": 71.3,
+          "female": 76.4,
+          "gap": 5.1000000000000085
+        },
+        {
+          "year": 2005,
+          "male": 71.6,
+          "female": 76.8,
+          "gap": 5.200000000000003
+        },
+        {
+          "year": 2006,
+          "male": 71.9,
+          "female": 77.1,
+          "gap": 5.199999999999989
+        },
+        {
+          "year": 2007,
+          "male": 72.3,
+          "female": 77.4,
+          "gap": 5.1000000000000085
+        },
+        {
+          "year": 2008,
+          "male": 72.4,
+          "female": 77.5,
+          "gap": 5.099999999999994
+        },
+        {
+          "year": 2009,
+          "male": 72.8,
+          "female": 78.0,
+          "gap": 5.200000000000003
+        },
+        {
+          "year": 2010,
+          "male": 73.2,
+          "female": 78.3,
+          "gap": 5.099999999999994
+        },
+        {
+          "year": 2011,
+          "male": 73.3,
+          "female": 78.7,
+          "gap": 5.400000000000006
+        },
+        {
+          "year": 2012,
+          "male": 73.6,
+          "female": 79.0,
+          "gap": 5.400000000000006
+        },
+        {
+          "year": 2013,
+          "male": 73.9,
+          "female": 79.2,
+          "gap": 5.299999999999997
+        },
+        {
+          "year": 2014,
+          "male": 74.1,
+          "female": 79.5,
+          "gap": 5.400000000000006
+        },
+        {
+          "year": 2015,
+          "male": 74.4,
+          "female": 79.8,
+          "gap": 5.3999999999999915
+        },
+        {
+          "year": 2016,
+          "male": 74.6,
+          "female": 80.1,
+          "gap": 5.5
+        },
+        {
+          "year": 2017,
+          "male": 74.4,
+          "female": 80.3,
+          "gap": 5.8999999999999915
+        },
+        {
+          "year": 2018,
+          "male": 75.0,
+          "female": 80.6,
+          "gap": 5.599999999999994
+        },
+        {
+          "year": 2019,
+          "male": 75.3,
+          "female": 80.7,
+          "gap": 5.400000000000006
+        },
+        {
+          "year": 2020,
+          "male": 75.2,
+          "female": 81.0,
+          "gap": 5.799999999999997
+        },
+        {
+          "year": 2021,
+          "male": 75.5,
+          "female": 80.9,
+          "gap": 5.400000000000006
+        },
+        {
+          "year": 2022,
+          "male": 75.5,
+          "female": 81.1,
+          "gap": 5.599999999999994
+        },
+        {
+          "year": 2023,
+          "male": 75.2,
+          "female": 80.9,
+          "gap": 5.700000000000003
+        }
+      ]
+    },
+    {
+      "country": "India",
+      "values": [
+        {
+          "year": 1950,
+          "male": 41.9,
+          "female": 40.4,
+          "gap": -1.5
+        },
+        {
+          "year": 1951,
+          "male": 42.3,
+          "female": 40.8,
+          "gap": -1.5
+        },
+        {
+          "year": 1952,
+          "male": 42.8,
+          "female": 41.3,
+          "gap": -1.5
+        },
+        {
+          "year": 1953,
+          "male": 43.1,
+          "female": 41.7,
+          "gap": -1.3999999999999986
+        },
+        {
+          "year": 1954,
+          "male": 43.9,
+          "female": 42.5,
+          "gap": -1.3999999999999986
+        },
+        {
+          "year": 1955,
+          "male": 44.4,
+          "female": 43.0,
+          "gap": -1.3999999999999986
+        },
+        {
+          "year": 1956,
+          "male": 44.8,
+          "female": 43.4,
+          "gap": -1.3999999999999986
+        },
+        {
+          "year": 1957,
+          "male": 45.1,
+          "female": 43.7,
+          "gap": -1.3999999999999986
+        },
+        {
+          "year": 1958,
+          "male": 45.5,
+          "female": 44.1,
+          "gap": -1.3999999999999986
+        },
+        {
+          "year": 1959,
+          "male": 46.0,
+          "female": 44.5,
+          "gap": -1.5
+        },
+        {
+          "year": 1960,
+          "male": 46.3,
+          "female": 44.9,
+          "gap": -1.3999999999999986
+        },
+        {
+          "year": 1961,
+          "male": 46.5,
+          "female": 45.1,
+          "gap": -1.3999999999999986
+        },
+        {
+          "year": 1962,
+          "male": 46.8,
+          "female": 45.4,
+          "gap": -1.3999999999999986
+        },
+        {
+          "year": 1963,
+          "male": 47.1,
+          "female": 45.8,
+          "gap": -1.3000000000000043
+        },
+        {
+          "year": 1964,
+          "male": 47.3,
+          "female": 46.1,
+          "gap": -1.1999999999999957
+        },
+        {
+          "year": 1965,
+          "male": 46.1,
+          "female": 45.0,
+          "gap": -1.1000000000000014
+        },
+        {
+          "year": 1966,
+          "male": 46.4,
+          "female": 45.3,
+          "gap": -1.1000000000000014
+        },
+        {
+          "year": 1967,
+          "male": 46.7,
+          "female": 45.6,
+          "gap": -1.1000000000000014
+        },
+        {
+          "year": 1968,
+          "male": 48.5,
+          "female": 47.3,
+          "gap": -1.2000000000000028
+        },
+        {
+          "year": 1969,
+          "male": 48.8,
+          "female": 47.7,
+          "gap": -1.0999999999999943
+        },
+        {
+          "year": 1970,
+          "male": 49.1,
+          "female": 48.0,
+          "gap": -1.1000000000000014
+        },
+        {
+          "year": 1971,
+          "male": 49.4,
+          "female": 48.3,
+          "gap": -1.1000000000000014
+        },
+        {
+          "year": 1972,
+          "male": 49.7,
+          "female": 48.7,
+          "gap": -1.0
+        },
+        {
+          "year": 1973,
+          "male": 50.1,
+          "female": 49.1,
+          "gap": -1.0
+        },
+        {
+          "year": 1974,
+          "male": 50.7,
+          "female": 49.7,
+          "gap": -1.0
+        },
+        {
+          "year": 1975,
+          "male": 51.2,
+          "female": 50.3,
+          "gap": -0.9000000000000057
+        },
+        {
+          "year": 1976,
+          "male": 51.7,
+          "female": 50.9,
+          "gap": -0.8000000000000043
+        },
+        {
+          "year": 1977,
+          "male": 52.2,
+          "female": 51.4,
+          "gap": -0.8000000000000043
+        },
+        {
+          "year": 1978,
+          "male": 52.7,
+          "female": 52.1,
+          "gap": -0.6000000000000014
+        },
+        {
+          "year": 1979,
+          "male": 53.2,
+          "female": 52.8,
+          "gap": -0.4000000000000057
+        },
+        {
+          "year": 1980,
+          "male": 53.7,
+          "female": 53.5,
+          "gap": -0.20000000000000284
+        },
+        {
+          "year": 1981,
+          "male": 54.2,
+          "female": 54.2,
+          "gap": 0.0
+        },
+        {
+          "year": 1982,
+          "male": 54.7,
+          "female": 54.8,
+          "gap": 0.09999999999999432
+        },
+        {
+          "year": 1983,
+          "male": 55.1,
+          "female": 55.5,
+          "gap": 0.3999999999999986
+        },
+        {
+          "year": 1984,
+          "male": 55.5,
+          "female": 56.1,
+          "gap": 0.6000000000000014
+        },
+        {
+          "year": 1985,
+          "male": 56.0,
+          "female": 56.7,
+          "gap": 0.7000000000000028
+        },
+        {
+          "year": 1986,
+          "male": 56.4,
+          "female": 57.3,
+          "gap": 0.8999999999999986
+        },
+        {
+          "year": 1987,
+          "male": 56.8,
+          "female": 57.9,
+          "gap": 1.1000000000000014
+        },
+        {
+          "year": 1988,
+          "male": 57.2,
+          "female": 58.4,
+          "gap": 1.1999999999999957
+        },
+        {
+          "year": 1989,
+          "male": 57.6,
+          "female": 58.9,
+          "gap": 1.2999999999999972
+        },
+        {
+          "year": 1990,
+          "male": 58.0,
+          "female": 59.4,
+          "gap": 1.3999999999999986
+        },
+        {
+          "year": 1991,
+          "male": 58.3,
+          "female": 59.8,
+          "gap": 1.5
+        },
+        {
+          "year": 1992,
+          "male": 58.7,
+          "female": 60.2,
+          "gap": 1.5
+        },
+        {
+          "year": 1993,
+          "male": 59.1,
+          "female": 60.6,
+          "gap": 1.5
+        },
+        {
+          "year": 1994,
+          "male": 59.5,
+          "female": 61.0,
+          "gap": 1.5
+        },
+        {
+          "year": 1995,
+          "male": 59.9,
+          "female": 61.4,
+          "gap": 1.5
+        },
+        {
+          "year": 1996,
+          "male": 60.2,
+          "female": 61.9,
+          "gap": 1.6999999999999957
+        },
+        {
+          "year": 1997,
+          "male": 60.6,
+          "female": 62.3,
+          "gap": 1.6999999999999957
+        },
+        {
+          "year": 1998,
+          "male": 61.0,
+          "female": 62.8,
+          "gap": 1.7999999999999972
+        },
+        {
+          "year": 1999,
+          "male": 61.4,
+          "female": 63.2,
+          "gap": 1.8000000000000043
+        },
+        {
+          "year": 2000,
+          "male": 61.8,
+          "female": 63.8,
+          "gap": 2.0
+        },
+        {
+          "year": 2001,
+          "male": 62.1,
+          "female": 64.3,
+          "gap": 2.1999999999999957
+        },
+        {
+          "year": 2002,
+          "male": 62.5,
+          "female": 64.9,
+          "gap": 2.4000000000000057
+        },
+        {
+          "year": 2003,
+          "male": 62.9,
+          "female": 65.4,
+          "gap": 2.500000000000007
+        },
+        {
+          "year": 2004,
+          "male": 63.2,
+          "female": 65.8,
+          "gap": 2.5999999999999943
+        },
+        {
+          "year": 2005,
+          "male": 63.6,
+          "female": 66.4,
+          "gap": 2.8000000000000043
+        },
+        {
+          "year": 2006,
+          "male": 64.0,
+          "female": 66.9,
+          "gap": 2.9000000000000057
+        },
+        {
+          "year": 2007,
+          "male": 64.4,
+          "female": 67.4,
+          "gap": 3.0
+        },
+        {
+          "year": 2008,
+          "male": 64.8,
+          "female": 67.8,
+          "gap": 3.0
+        },
+        {
+          "year": 2009,
+          "male": 65.2,
+          "female": 68.3,
+          "gap": 3.0999999999999943
+        },
+        {
+          "year": 2010,
+          "male": 65.6,
+          "female": 68.8,
+          "gap": 3.200000000000003
+        },
+        {
+          "year": 2011,
+          "male": 66.1,
+          "female": 69.3,
+          "gap": 3.200000000000003
+        },
+        {
+          "year": 2012,
+          "male": 66.5,
+          "female": 69.7,
+          "gap": 3.200000000000003
+        },
+        {
+          "year": 2013,
+          "male": 67.0,
+          "female": 70.2,
+          "gap": 3.200000000000003
+        },
+        {
+          "year": 2014,
+          "male": 67.4,
+          "female": 70.6,
+          "gap": 3.1999999999999886
+        },
+        {
+          "year": 2015,
+          "male": 67.8,
+          "female": 70.9,
+          "gap": 3.1000000000000085
+        },
+        {
+          "year": 2016,
+          "male": 68.2,
+          "female": 71.3,
+          "gap": 3.0999999999999943
+        },
+        {
+          "year": 2017,
+          "male": 68.6,
+          "female": 71.6,
+          "gap": 3.0
+        },
+        {
+          "year": 2018,
+          "male": 69.0,
+          "female": 72.0,
+          "gap": 3.0
+        },
+        {
+          "year": 2019,
+          "male": 69.3,
+          "female": 72.3,
+          "gap": 3.0
+        },
+        {
+          "year": 2020,
+          "male": 68.5,
+          "female": 71.9,
+          "gap": 3.4000000000000057
+        },
+        {
+          "year": 2021,
+          "male": 65.9,
+          "female": 68.8,
+          "gap": 2.8999999999999915
+        },
+        {
+          "year": 2022,
+          "male": 70.2,
+          "female": 73.3,
+          "gap": 3.0999999999999943
+        },
+        {
+          "year": 2023,
+          "male": 70.5,
+          "female": 73.6,
+          "gap": 3.0999999999999943
+        }
+      ]
+    },
+    {
+      "country": "United States of America",
+      "values": [
+        {
+          "year": 1950,
+          "male": 65.4,
+          "female": 71.0,
+          "gap": 5.599999999999994
+        },
+        {
+          "year": 1951,
+          "male": 65.4,
+          "female": 71.2,
+          "gap": 5.799999999999997
+        },
+        {
+          "year": 1952,
+          "male": 65.5,
+          "female": 71.5,
+          "gap": 6.0
+        },
+        {
+          "year": 1953,
+          "male": 65.8,
+          "female": 71.9,
+          "gap": 6.1000000000000085
+        },
+        {
+          "year": 1954,
+          "male": 66.6,
+          "female": 72.7,
+          "gap": 6.1000000000000085
+        },
+        {
+          "year": 1955,
+          "male": 66.6,
+          "female": 72.8,
+          "gap": 6.200000000000003
+        },
+        {
+          "year": 1956,
+          "male": 66.6,
+          "female": 72.9,
+          "gap": 6.300000000000011
+        },
+        {
+          "year": 1957,
+          "male": 66.4,
+          "female": 72.7,
+          "gap": 6.299999999999997
+        },
+        {
+          "year": 1958,
+          "male": 66.6,
+          "female": 73.0,
+          "gap": 6.400000000000006
+        },
+        {
+          "year": 1959,
+          "male": 66.8,
+          "female": 73.3,
+          "gap": 6.5
+        },
+        {
+          "year": 1960,
+          "male": 66.6,
+          "female": 73.3,
+          "gap": 6.700000000000003
+        },
+        {
+          "year": 1961,
+          "male": 67.0,
+          "female": 73.7,
+          "gap": 6.700000000000003
+        },
+        {
+          "year": 1962,
+          "male": 66.9,
+          "female": 73.6,
+          "gap": 6.699999999999989
+        },
+        {
+          "year": 1963,
+          "male": 66.6,
+          "female": 73.5,
+          "gap": 6.900000000000006
+        },
+        {
+          "year": 1964,
+          "male": 66.8,
+          "female": 73.8,
+          "gap": 7.0
+        },
+        {
+          "year": 1965,
+          "male": 66.8,
+          "female": 73.9,
+          "gap": 7.1000000000000085
+        },
+        {
+          "year": 1966,
+          "male": 66.7,
+          "female": 74.0,
+          "gap": 7.299999999999997
+        },
+        {
+          "year": 1967,
+          "male": 66.9,
+          "female": 74.3,
+          "gap": 7.3999999999999915
+        },
+        {
+          "year": 1968,
+          "male": 66.6,
+          "female": 74.1,
+          "gap": 7.5
+        },
+        {
+          "year": 1969,
+          "male": 66.8,
+          "female": 74.4,
+          "gap": 7.6000000000000085
+        },
+        {
+          "year": 1970,
+          "male": 67.0,
+          "female": 74.6,
+          "gap": 7.599999999999994
+        },
+        {
+          "year": 1971,
+          "male": 67.4,
+          "female": 75.0,
+          "gap": 7.599999999999994
+        },
+        {
+          "year": 1972,
+          "male": 67.4,
+          "female": 75.1,
+          "gap": 7.699999999999989
+        },
+        {
+          "year": 1973,
+          "male": 67.6,
+          "female": 75.3,
+          "gap": 7.700000000000003
+        },
+        {
+          "year": 1974,
+          "male": 68.2,
+          "female": 75.8,
+          "gap": 7.599999999999994
+        },
+        {
+          "year": 1975,
+          "male": 68.7,
+          "female": 76.5,
+          "gap": 7.799999999999997
+        },
+        {
+          "year": 1976,
+          "male": 69.1,
+          "female": 76.7,
+          "gap": 7.6000000000000085
+        },
+        {
+          "year": 1977,
+          "male": 69.4,
+          "female": 77.1,
+          "gap": 7.699999999999989
+        },
+        {
+          "year": 1978,
+          "male": 69.6,
+          "female": 77.2,
+          "gap": 7.6000000000000085
+        },
+        {
+          "year": 1979,
+          "male": 70.0,
+          "female": 77.7,
+          "gap": 7.700000000000003
+        },
+        {
+          "year": 1980,
+          "male": 70.0,
+          "female": 77.5,
+          "gap": 7.5
+        },
+        {
+          "year": 1981,
+          "male": 70.4,
+          "female": 77.8,
+          "gap": 7.3999999999999915
+        },
+        {
+          "year": 1982,
+          "male": 70.8,
+          "female": 78.1,
+          "gap": 7.299999999999997
+        },
+        {
+          "year": 1983,
+          "male": 71.0,
+          "female": 78.1,
+          "gap": 7.099999999999994
+        },
+        {
+          "year": 1984,
+          "male": 71.1,
+          "female": 78.2,
+          "gap": 7.1000000000000085
+        },
+        {
+          "year": 1985,
+          "male": 71.1,
+          "female": 78.2,
+          "gap": 7.1000000000000085
+        },
+        {
+          "year": 1986,
+          "male": 71.1,
+          "female": 78.3,
+          "gap": 7.200000000000003
+        },
+        {
+          "year": 1987,
+          "male": 71.3,
+          "female": 78.4,
+          "gap": 7.1000000000000085
+        },
+        {
+          "year": 1988,
+          "male": 71.3,
+          "female": 78.3,
+          "gap": 7.0
+        },
+        {
+          "year": 1989,
+          "male": 71.6,
+          "female": 78.6,
+          "gap": 7.0
+        },
+        {
+          "year": 1990,
+          "male": 71.9,
+          "female": 78.8,
+          "gap": 6.8999999999999915
+        },
+        {
+          "year": 1991,
+          "male": 72.0,
+          "female": 79.0,
+          "gap": 7.0
+        },
+        {
+          "year": 1992,
+          "male": 72.3,
+          "female": 79.2,
+          "gap": 6.900000000000006
+        },
+        {
+          "year": 1993,
+          "male": 72.2,
+          "female": 78.9,
+          "gap": 6.700000000000003
+        },
+        {
+          "year": 1994,
+          "male": 72.4,
+          "female": 79.1,
+          "gap": 6.699999999999989
+        },
+        {
+          "year": 1995,
+          "male": 72.6,
+          "female": 79.1,
+          "gap": 6.5
+        },
+        {
+          "year": 1996,
+          "male": 73.1,
+          "female": 79.2,
+          "gap": 6.1000000000000085
+        },
+        {
+          "year": 1997,
+          "male": 73.5,
+          "female": 79.4,
+          "gap": 5.900000000000006
+        },
+        {
+          "year": 1998,
+          "male": 73.8,
+          "female": 79.4,
+          "gap": 5.6000000000000085
+        },
+        {
+          "year": 1999,
+          "male": 73.9,
+          "female": 79.3,
+          "gap": 5.3999999999999915
+        },
+        {
+          "year": 2000,
+          "male": 74.1,
+          "female": 79.4,
+          "gap": 5.300000000000011
+        },
+        {
+          "year": 2001,
+          "male": 74.3,
+          "female": 79.5,
+          "gap": 5.200000000000003
+        },
+        {
+          "year": 2002,
+          "male": 74.3,
+          "female": 79.6,
+          "gap": 5.299999999999997
+        },
+        {
+          "year": 2003,
+          "male": 74.5,
+          "female": 79.7,
+          "gap": 5.200000000000003
+        },
+        {
+          "year": 2004,
+          "male": 75.0,
+          "female": 80.1,
+          "gap": 5.099999999999994
+        },
+        {
+          "year": 2005,
+          "male": 75.0,
+          "female": 80.1,
+          "gap": 5.099999999999994
+        },
+        {
+          "year": 2006,
+          "male": 75.2,
+          "female": 80.3,
+          "gap": 5.099999999999994
+        },
+        {
+          "year": 2007,
+          "male": 75.5,
+          "female": 80.6,
+          "gap": 5.099999999999994
+        },
+        {
+          "year": 2008,
+          "male": 75.6,
+          "female": 80.6,
+          "gap": 5.0
+        },
+        {
+          "year": 2009,
+          "male": 76.0,
+          "female": 80.9,
+          "gap": 4.900000000000006
+        },
+        {
+          "year": 2010,
+          "male": 76.2,
+          "female": 81.1,
+          "gap": 4.8999999999999915
+        },
+        {
+          "year": 2011,
+          "male": 76.3,
+          "female": 81.1,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 2012,
+          "male": 76.4,
+          "female": 81.2,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 2013,
+          "male": 76.4,
+          "female": 81.2,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 2014,
+          "male": 76.5,
+          "female": 81.3,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 2015,
+          "male": 76.3,
+          "female": 81.1,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 2016,
+          "male": 76.2,
+          "female": 81.2,
+          "gap": 5.0
+        },
+        {
+          "year": 2017,
+          "male": 76.2,
+          "female": 81.2,
+          "gap": 5.0
+        },
+        {
+          "year": 2018,
+          "male": 76.3,
+          "female": 81.3,
+          "gap": 5.0
+        },
+        {
+          "year": 2019,
+          "male": 76.5,
+          "female": 81.5,
+          "gap": 5.0
+        },
+        {
+          "year": 2020,
+          "male": 74.3,
+          "female": 79.9,
+          "gap": 5.6000000000000085
+        },
+        {
+          "year": 2021,
+          "male": 73.6,
+          "female": 79.4,
+          "gap": 5.800000000000011
+        },
+        {
+          "year": 2022,
+          "male": 75.3,
+          "female": 80.8,
+          "gap": 5.5
+        },
+        {
+          "year": 2023,
+          "male": 76.9,
+          "female": 81.8,
+          "gap": 4.8999999999999915
+        }
+      ]
+    },
+    {
+      "country": "Indonesia",
+      "values": [
+        {
+          "year": 1950,
+          "male": 38.7,
+          "female": 41.8,
+          "gap": 3.0999999999999943
+        },
+        {
+          "year": 1951,
+          "male": 39.4,
+          "female": 42.3,
+          "gap": 2.8999999999999986
+        },
+        {
+          "year": 1952,
+          "male": 40.1,
+          "female": 43.1,
+          "gap": 3.0
+        },
+        {
+          "year": 1953,
+          "male": 40.7,
+          "female": 43.8,
+          "gap": 3.0999999999999943
+        },
+        {
+          "year": 1954,
+          "male": 41.4,
+          "female": 44.5,
+          "gap": 3.1000000000000014
+        },
+        {
+          "year": 1955,
+          "male": 42.0,
+          "female": 45.2,
+          "gap": 3.200000000000003
+        },
+        {
+          "year": 1956,
+          "male": 42.7,
+          "female": 45.9,
+          "gap": 3.1999999999999957
+        },
+        {
+          "year": 1957,
+          "male": 43.4,
+          "female": 46.6,
+          "gap": 3.200000000000003
+        },
+        {
+          "year": 1958,
+          "male": 43.6,
+          "female": 47.3,
+          "gap": 3.6999999999999957
+        },
+        {
+          "year": 1959,
+          "male": 44.5,
+          "female": 48.0,
+          "gap": 3.5
+        },
+        {
+          "year": 1960,
+          "male": 45.1,
+          "female": 48.6,
+          "gap": 3.5
+        },
+        {
+          "year": 1961,
+          "male": 45.7,
+          "female": 49.2,
+          "gap": 3.5
+        },
+        {
+          "year": 1962,
+          "male": 46.5,
+          "female": 49.8,
+          "gap": 3.299999999999997
+        },
+        {
+          "year": 1963,
+          "male": 47.1,
+          "female": 50.5,
+          "gap": 3.3999999999999986
+        },
+        {
+          "year": 1964,
+          "male": 47.7,
+          "female": 51.3,
+          "gap": 3.5999999999999943
+        },
+        {
+          "year": 1965,
+          "male": 39.0,
+          "female": 47.1,
+          "gap": 8.100000000000001
+        },
+        {
+          "year": 1966,
+          "male": 46.2,
+          "female": 50.7,
+          "gap": 4.5
+        },
+        {
+          "year": 1967,
+          "male": 49.2,
+          "female": 53.5,
+          "gap": 4.299999999999997
+        },
+        {
+          "year": 1968,
+          "male": 49.7,
+          "female": 54.2,
+          "gap": 4.5
+        },
+        {
+          "year": 1969,
+          "male": 50.4,
+          "female": 54.9,
+          "gap": 4.5
+        },
+        {
+          "year": 1970,
+          "male": 51.0,
+          "female": 55.6,
+          "gap": 4.600000000000001
+        },
+        {
+          "year": 1971,
+          "male": 51.5,
+          "female": 56.2,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 1972,
+          "male": 52.1,
+          "female": 56.8,
+          "gap": 4.699999999999996
+        },
+        {
+          "year": 1973,
+          "male": 52.6,
+          "female": 57.3,
+          "gap": 4.699999999999996
+        },
+        {
+          "year": 1974,
+          "male": 53.1,
+          "female": 57.9,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 1975,
+          "male": 53.7,
+          "female": 58.5,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 1976,
+          "male": 54.1,
+          "female": 58.9,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 1977,
+          "male": 54.8,
+          "female": 59.5,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 1978,
+          "male": 55.4,
+          "female": 59.9,
+          "gap": 4.5
+        },
+        {
+          "year": 1979,
+          "male": 56.1,
+          "female": 60.4,
+          "gap": 4.299999999999997
+        },
+        {
+          "year": 1980,
+          "male": 56.7,
+          "female": 60.8,
+          "gap": 4.099999999999994
+        },
+        {
+          "year": 1981,
+          "male": 57.1,
+          "female": 61.1,
+          "gap": 4.0
+        },
+        {
+          "year": 1982,
+          "male": 57.7,
+          "female": 61.7,
+          "gap": 4.0
+        },
+        {
+          "year": 1983,
+          "male": 58.4,
+          "female": 62.4,
+          "gap": 4.0
+        },
+        {
+          "year": 1984,
+          "male": 59.0,
+          "female": 62.9,
+          "gap": 3.8999999999999986
+        },
+        {
+          "year": 1985,
+          "male": 59.5,
+          "female": 63.3,
+          "gap": 3.799999999999997
+        },
+        {
+          "year": 1986,
+          "male": 59.8,
+          "female": 63.7,
+          "gap": 3.9000000000000057
+        },
+        {
+          "year": 1987,
+          "male": 60.2,
+          "female": 64.1,
+          "gap": 3.8999999999999915
+        },
+        {
+          "year": 1988,
+          "male": 60.5,
+          "female": 64.3,
+          "gap": 3.799999999999997
+        },
+        {
+          "year": 1989,
+          "male": 61.0,
+          "female": 64.8,
+          "gap": 3.799999999999997
+        },
+        {
+          "year": 1990,
+          "male": 61.5,
+          "female": 65.1,
+          "gap": 3.5999999999999943
+        },
+        {
+          "year": 1991,
+          "male": 62.0,
+          "female": 65.5,
+          "gap": 3.5
+        },
+        {
+          "year": 1992,
+          "male": 62.5,
+          "female": 65.9,
+          "gap": 3.4000000000000057
+        },
+        {
+          "year": 1993,
+          "male": 63.1,
+          "female": 66.7,
+          "gap": 3.6000000000000014
+        },
+        {
+          "year": 1994,
+          "male": 63.4,
+          "female": 66.7,
+          "gap": 3.3000000000000043
+        },
+        {
+          "year": 1995,
+          "male": 63.7,
+          "female": 66.9,
+          "gap": 3.200000000000003
+        },
+        {
+          "year": 1996,
+          "male": 63.8,
+          "female": 67.1,
+          "gap": 3.299999999999997
+        },
+        {
+          "year": 1997,
+          "male": 64.1,
+          "female": 67.4,
+          "gap": 3.3000000000000114
+        },
+        {
+          "year": 1998,
+          "male": 64.3,
+          "female": 67.6,
+          "gap": 3.299999999999997
+        },
+        {
+          "year": 1999,
+          "male": 64.3,
+          "female": 67.7,
+          "gap": 3.4000000000000057
+        },
+        {
+          "year": 2000,
+          "male": 64.6,
+          "female": 68.0,
+          "gap": 3.4000000000000057
+        },
+        {
+          "year": 2001,
+          "male": 64.9,
+          "female": 68.3,
+          "gap": 3.3999999999999915
+        },
+        {
+          "year": 2002,
+          "male": 65.2,
+          "female": 68.7,
+          "gap": 3.5
+        },
+        {
+          "year": 2003,
+          "male": 65.4,
+          "female": 68.8,
+          "gap": 3.3999999999999915
+        },
+        {
+          "year": 2004,
+          "male": 64.1,
+          "female": 66.9,
+          "gap": 2.8000000000000114
+        },
+        {
+          "year": 2005,
+          "male": 65.8,
+          "female": 69.3,
+          "gap": 3.5
+        },
+        {
+          "year": 2006,
+          "male": 65.9,
+          "female": 69.4,
+          "gap": 3.5
+        },
+        {
+          "year": 2007,
+          "male": 66.1,
+          "female": 69.7,
+          "gap": 3.6000000000000085
+        },
+        {
+          "year": 2008,
+          "male": 66.3,
+          "female": 69.9,
+          "gap": 3.6000000000000085
+        },
+        {
+          "year": 2009,
+          "male": 66.5,
+          "female": 70.0,
+          "gap": 3.5
+        },
+        {
+          "year": 2010,
+          "male": 66.6,
+          "female": 70.2,
+          "gap": 3.6000000000000085
+        },
+        {
+          "year": 2011,
+          "male": 66.8,
+          "female": 70.5,
+          "gap": 3.700000000000003
+        },
+        {
+          "year": 2012,
+          "male": 67.0,
+          "female": 70.7,
+          "gap": 3.700000000000003
+        },
+        {
+          "year": 2013,
+          "male": 67.2,
+          "female": 71.0,
+          "gap": 3.799999999999997
+        },
+        {
+          "year": 2014,
+          "male": 67.4,
+          "female": 71.2,
+          "gap": 3.799999999999997
+        },
+        {
+          "year": 2015,
+          "male": 67.6,
+          "female": 71.5,
+          "gap": 3.9000000000000057
+        },
+        {
+          "year": 2016,
+          "male": 67.8,
+          "female": 71.7,
+          "gap": 3.9000000000000057
+        },
+        {
+          "year": 2017,
+          "male": 68.0,
+          "female": 71.9,
+          "gap": 3.9000000000000057
+        },
+        {
+          "year": 2018,
+          "male": 68.1,
+          "female": 72.1,
+          "gap": 4.0
+        },
+        {
+          "year": 2019,
+          "male": 68.3,
+          "female": 72.4,
+          "gap": 4.1000000000000085
+        },
+        {
+          "year": 2020,
+          "male": 66.6,
+          "female": 71.1,
+          "gap": 4.5
+        },
+        {
+          "year": 2021,
+          "male": 65.5,
+          "female": 69.4,
+          "gap": 3.9000000000000057
+        },
+        {
+          "year": 2022,
+          "male": 68.9,
+          "female": 73.0,
+          "gap": 4.099999999999994
+        },
+        {
+          "year": 2023,
+          "male": 69.0,
+          "female": 73.3,
+          "gap": 4.299999999999997
+        }
+      ]
+    },
+    {
+      "country": "Pakistan",
+      "values": [
+        {
+          "year": 1950,
+          "male": 35.4,
+          "female": 32.8,
+          "gap": -2.6000000000000014
+        },
+        {
+          "year": 1951,
+          "male": 36.6,
+          "female": 33.9,
+          "gap": -2.700000000000003
+        },
+        {
+          "year": 1952,
+          "male": 37.8,
+          "female": 34.9,
+          "gap": -2.8999999999999986
+        },
+        {
+          "year": 1953,
+          "male": 39.0,
+          "female": 36.0,
+          "gap": -3.0
+        },
+        {
+          "year": 1954,
+          "male": 40.0,
+          "female": 36.9,
+          "gap": -3.1000000000000014
+        },
+        {
+          "year": 1955,
+          "male": 41.2,
+          "female": 37.8,
+          "gap": -3.4000000000000057
+        },
+        {
+          "year": 1956,
+          "male": 42.3,
+          "female": 38.7,
+          "gap": -3.5999999999999943
+        },
+        {
+          "year": 1957,
+          "male": 43.3,
+          "female": 39.6,
+          "gap": -3.6999999999999957
+        },
+        {
+          "year": 1958,
+          "male": 44.2,
+          "female": 40.5,
+          "gap": -3.700000000000003
+        },
+        {
+          "year": 1959,
+          "male": 45.2,
+          "female": 41.2,
+          "gap": -4.0
+        },
+        {
+          "year": 1960,
+          "male": 46.0,
+          "female": 42.0,
+          "gap": -4.0
+        },
+        {
+          "year": 1961,
+          "male": 46.8,
+          "female": 42.8,
+          "gap": -4.0
+        },
+        {
+          "year": 1962,
+          "male": 47.7,
+          "female": 43.7,
+          "gap": -4.0
+        },
+        {
+          "year": 1963,
+          "male": 48.5,
+          "female": 44.8,
+          "gap": -3.700000000000003
+        },
+        {
+          "year": 1964,
+          "male": 49.4,
+          "female": 46.1,
+          "gap": -3.299999999999997
+        },
+        {
+          "year": 1965,
+          "male": 50.0,
+          "female": 46.8,
+          "gap": -3.200000000000003
+        },
+        {
+          "year": 1966,
+          "male": 51.1,
+          "female": 48.3,
+          "gap": -2.8000000000000043
+        },
+        {
+          "year": 1967,
+          "male": 51.9,
+          "female": 49.5,
+          "gap": -2.3999999999999986
+        },
+        {
+          "year": 1968,
+          "male": 52.7,
+          "female": 50.4,
+          "gap": -2.3000000000000043
+        },
+        {
+          "year": 1969,
+          "male": 53.2,
+          "female": 51.3,
+          "gap": -1.9000000000000057
+        },
+        {
+          "year": 1970,
+          "male": 53.8,
+          "female": 52.0,
+          "gap": -1.7999999999999972
+        },
+        {
+          "year": 1971,
+          "male": 48.2,
+          "female": 50.0,
+          "gap": 1.7999999999999972
+        },
+        {
+          "year": 1972,
+          "male": 54.4,
+          "female": 53.2,
+          "gap": -1.1999999999999957
+        },
+        {
+          "year": 1973,
+          "male": 54.6,
+          "female": 53.6,
+          "gap": -1.0
+        },
+        {
+          "year": 1974,
+          "male": 54.6,
+          "female": 54.0,
+          "gap": -0.6000000000000014
+        },
+        {
+          "year": 1975,
+          "male": 54.9,
+          "female": 54.6,
+          "gap": -0.29999999999999716
+        },
+        {
+          "year": 1976,
+          "male": 55.1,
+          "female": 55.1,
+          "gap": 0.0
+        },
+        {
+          "year": 1977,
+          "male": 55.3,
+          "female": 55.8,
+          "gap": 0.5
+        },
+        {
+          "year": 1978,
+          "male": 55.7,
+          "female": 56.6,
+          "gap": 0.8999999999999986
+        },
+        {
+          "year": 1979,
+          "male": 56.1,
+          "female": 57.4,
+          "gap": 1.2999999999999972
+        },
+        {
+          "year": 1980,
+          "male": 56.5,
+          "female": 58.2,
+          "gap": 1.7000000000000028
+        },
+        {
+          "year": 1981,
+          "male": 56.9,
+          "female": 58.9,
+          "gap": 2.0
+        },
+        {
+          "year": 1982,
+          "male": 57.4,
+          "female": 59.5,
+          "gap": 2.1000000000000014
+        },
+        {
+          "year": 1983,
+          "male": 57.7,
+          "female": 59.9,
+          "gap": 2.1999999999999957
+        },
+        {
+          "year": 1984,
+          "male": 58.0,
+          "female": 60.1,
+          "gap": 2.1000000000000014
+        },
+        {
+          "year": 1985,
+          "male": 58.2,
+          "female": 60.1,
+          "gap": 1.8999999999999986
+        },
+        {
+          "year": 1986,
+          "male": 58.4,
+          "female": 60.2,
+          "gap": 1.8000000000000043
+        },
+        {
+          "year": 1987,
+          "male": 58.4,
+          "female": 60.3,
+          "gap": 1.8999999999999986
+        },
+        {
+          "year": 1988,
+          "male": 58.5,
+          "female": 60.5,
+          "gap": 2.0
+        },
+        {
+          "year": 1989,
+          "male": 58.6,
+          "female": 60.7,
+          "gap": 2.1000000000000014
+        },
+        {
+          "year": 1990,
+          "male": 58.8,
+          "female": 60.8,
+          "gap": 2.0
+        },
+        {
+          "year": 1991,
+          "male": 59.0,
+          "female": 60.9,
+          "gap": 1.8999999999999986
+        },
+        {
+          "year": 1992,
+          "male": 59.3,
+          "female": 60.9,
+          "gap": 1.6000000000000014
+        },
+        {
+          "year": 1993,
+          "male": 59.5,
+          "female": 60.8,
+          "gap": 1.2999999999999972
+        },
+        {
+          "year": 1994,
+          "male": 59.6,
+          "female": 60.9,
+          "gap": 1.2999999999999972
+        },
+        {
+          "year": 1995,
+          "male": 59.7,
+          "female": 61.0,
+          "gap": 1.2999999999999972
+        },
+        {
+          "year": 1996,
+          "male": 59.8,
+          "female": 61.3,
+          "gap": 1.5
+        },
+        {
+          "year": 1997,
+          "male": 59.9,
+          "female": 61.6,
+          "gap": 1.7000000000000028
+        },
+        {
+          "year": 1998,
+          "male": 60.4,
+          "female": 62.0,
+          "gap": 1.6000000000000014
+        },
+        {
+          "year": 1999,
+          "male": 60.7,
+          "female": 62.5,
+          "gap": 1.7999999999999972
+        },
+        {
+          "year": 2000,
+          "male": 61.0,
+          "female": 62.9,
+          "gap": 1.8999999999999986
+        },
+        {
+          "year": 2001,
+          "male": 61.3,
+          "female": 63.3,
+          "gap": 2.0
+        },
+        {
+          "year": 2002,
+          "male": 61.6,
+          "female": 63.7,
+          "gap": 2.1000000000000014
+        },
+        {
+          "year": 2003,
+          "male": 61.7,
+          "female": 64.1,
+          "gap": 2.3999999999999915
+        },
+        {
+          "year": 2004,
+          "male": 61.9,
+          "female": 64.5,
+          "gap": 2.6000000000000014
+        },
+        {
+          "year": 2005,
+          "male": 61.1,
+          "female": 63.9,
+          "gap": 2.799999999999997
+        },
+        {
+          "year": 2006,
+          "male": 62.0,
+          "female": 65.5,
+          "gap": 3.5
+        },
+        {
+          "year": 2007,
+          "male": 62.0,
+          "female": 65.9,
+          "gap": 3.9000000000000057
+        },
+        {
+          "year": 2008,
+          "male": 62.1,
+          "female": 66.2,
+          "gap": 4.100000000000001
+        },
+        {
+          "year": 2009,
+          "male": 62.2,
+          "female": 66.5,
+          "gap": 4.299999999999997
+        },
+        {
+          "year": 2010,
+          "male": 62.3,
+          "female": 66.7,
+          "gap": 4.400000000000006
+        },
+        {
+          "year": 2011,
+          "male": 62.6,
+          "female": 67.0,
+          "gap": 4.399999999999999
+        },
+        {
+          "year": 2012,
+          "male": 62.8,
+          "female": 67.3,
+          "gap": 4.5
+        },
+        {
+          "year": 2013,
+          "male": 63.0,
+          "female": 67.5,
+          "gap": 4.5
+        },
+        {
+          "year": 2014,
+          "male": 63.2,
+          "female": 67.8,
+          "gap": 4.599999999999994
+        },
+        {
+          "year": 2015,
+          "male": 63.5,
+          "female": 68.1,
+          "gap": 4.599999999999994
+        },
+        {
+          "year": 2016,
+          "male": 63.8,
+          "female": 68.4,
+          "gap": 4.6000000000000085
+        },
+        {
+          "year": 2017,
+          "male": 64.0,
+          "female": 68.7,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 2018,
+          "male": 64.3,
+          "female": 68.9,
+          "gap": 4.6000000000000085
+        },
+        {
+          "year": 2019,
+          "male": 64.5,
+          "female": 69.2,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 2020,
+          "male": 63.3,
+          "female": 68.4,
+          "gap": 5.1000000000000085
+        },
+        {
+          "year": 2021,
+          "male": 63.5,
+          "female": 68.3,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 2022,
+          "male": 65.1,
+          "female": 69.9,
+          "gap": 4.800000000000011
+        },
+        {
+          "year": 2023,
+          "male": 65.3,
+          "female": 70.2,
+          "gap": 4.900000000000006
+        }
+      ]
+    },
+    {
+      "country": "Brazil",
+      "values": [
+        {
+          "year": 1950,
+          "male": 46.4,
+          "female": 50.9,
+          "gap": 4.5
+        },
+        {
+          "year": 1951,
+          "male": 46.8,
+          "female": 51.5,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 1952,
+          "male": 47.3,
+          "female": 52.0,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 1953,
+          "male": 47.8,
+          "female": 52.4,
+          "gap": 4.600000000000001
+        },
+        {
+          "year": 1954,
+          "male": 48.2,
+          "female": 52.8,
+          "gap": 4.599999999999994
+        },
+        {
+          "year": 1955,
+          "male": 48.7,
+          "female": 53.3,
+          "gap": 4.599999999999994
+        },
+        {
+          "year": 1956,
+          "male": 49.2,
+          "female": 53.7,
+          "gap": 4.5
+        },
+        {
+          "year": 1957,
+          "male": 49.6,
+          "female": 54.2,
+          "gap": 4.600000000000001
+        },
+        {
+          "year": 1958,
+          "male": 50.1,
+          "female": 54.6,
+          "gap": 4.5
+        },
+        {
+          "year": 1959,
+          "male": 50.5,
+          "female": 55.1,
+          "gap": 4.600000000000001
+        },
+        {
+          "year": 1960,
+          "male": 51.0,
+          "female": 55.5,
+          "gap": 4.5
+        },
+        {
+          "year": 1961,
+          "male": 51.4,
+          "female": 56.0,
+          "gap": 4.600000000000001
+        },
+        {
+          "year": 1962,
+          "male": 51.8,
+          "female": 56.4,
+          "gap": 4.600000000000001
+        },
+        {
+          "year": 1963,
+          "male": 52.2,
+          "female": 56.9,
+          "gap": 4.699999999999996
+        },
+        {
+          "year": 1964,
+          "male": 52.6,
+          "female": 57.3,
+          "gap": 4.699999999999996
+        },
+        {
+          "year": 1965,
+          "male": 53.0,
+          "female": 57.7,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 1966,
+          "male": 53.3,
+          "female": 58.1,
+          "gap": 4.800000000000004
+        },
+        {
+          "year": 1967,
+          "male": 53.7,
+          "female": 58.5,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 1968,
+          "male": 54.2,
+          "female": 59.0,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 1969,
+          "male": 54.6,
+          "female": 59.4,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 1970,
+          "male": 55.0,
+          "female": 59.8,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 1971,
+          "male": 55.4,
+          "female": 60.3,
+          "gap": 4.899999999999999
+        },
+        {
+          "year": 1972,
+          "male": 55.9,
+          "female": 60.8,
+          "gap": 4.899999999999999
+        },
+        {
+          "year": 1973,
+          "male": 56.3,
+          "female": 61.2,
+          "gap": 4.900000000000006
+        },
+        {
+          "year": 1974,
+          "male": 56.8,
+          "female": 61.5,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 1975,
+          "male": 57.3,
+          "female": 62.0,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 1976,
+          "male": 57.7,
+          "female": 62.4,
+          "gap": 4.699999999999996
+        },
+        {
+          "year": 1977,
+          "male": 58.2,
+          "female": 62.8,
+          "gap": 4.599999999999994
+        },
+        {
+          "year": 1978,
+          "male": 58.7,
+          "female": 63.3,
+          "gap": 4.599999999999994
+        },
+        {
+          "year": 1979,
+          "male": 59.1,
+          "female": 63.7,
+          "gap": 4.600000000000001
+        },
+        {
+          "year": 1980,
+          "male": 59.5,
+          "female": 64.2,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 1981,
+          "male": 60.0,
+          "female": 64.7,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 1982,
+          "male": 60.4,
+          "female": 65.1,
+          "gap": 4.699999999999996
+        },
+        {
+          "year": 1983,
+          "male": 60.8,
+          "female": 65.6,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 1984,
+          "male": 61.2,
+          "female": 66.0,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 1985,
+          "male": 61.6,
+          "female": 66.4,
+          "gap": 4.800000000000004
+        },
+        {
+          "year": 1986,
+          "male": 62.0,
+          "female": 66.9,
+          "gap": 4.900000000000006
+        },
+        {
+          "year": 1987,
+          "male": 62.4,
+          "female": 67.3,
+          "gap": 4.899999999999999
+        },
+        {
+          "year": 1988,
+          "male": 62.7,
+          "female": 67.7,
+          "gap": 5.0
+        },
+        {
+          "year": 1989,
+          "male": 62.9,
+          "female": 68.2,
+          "gap": 5.300000000000004
+        },
+        {
+          "year": 1990,
+          "male": 63.1,
+          "female": 68.7,
+          "gap": 5.600000000000001
+        },
+        {
+          "year": 1991,
+          "male": 63.3,
+          "female": 69.2,
+          "gap": 5.900000000000006
+        },
+        {
+          "year": 1992,
+          "male": 63.6,
+          "female": 69.7,
+          "gap": 6.100000000000001
+        },
+        {
+          "year": 1993,
+          "male": 63.8,
+          "female": 70.1,
+          "gap": 6.299999999999997
+        },
+        {
+          "year": 1994,
+          "male": 64.2,
+          "female": 70.5,
+          "gap": 6.299999999999997
+        },
+        {
+          "year": 1995,
+          "male": 64.6,
+          "female": 70.9,
+          "gap": 6.300000000000011
+        },
+        {
+          "year": 1996,
+          "male": 65.0,
+          "female": 71.4,
+          "gap": 6.400000000000006
+        },
+        {
+          "year": 1997,
+          "male": 65.4,
+          "female": 71.8,
+          "gap": 6.3999999999999915
+        },
+        {
+          "year": 1998,
+          "male": 65.7,
+          "female": 72.2,
+          "gap": 6.5
+        },
+        {
+          "year": 1999,
+          "male": 66.0,
+          "female": 72.5,
+          "gap": 6.5
+        },
+        {
+          "year": 2000,
+          "male": 66.3,
+          "female": 73.0,
+          "gap": 6.700000000000003
+        },
+        {
+          "year": 2001,
+          "male": 66.7,
+          "female": 73.4,
+          "gap": 6.700000000000003
+        },
+        {
+          "year": 2002,
+          "male": 67.1,
+          "female": 73.8,
+          "gap": 6.700000000000003
+        },
+        {
+          "year": 2003,
+          "male": 67.6,
+          "female": 74.3,
+          "gap": 6.700000000000003
+        },
+        {
+          "year": 2004,
+          "male": 68.0,
+          "female": 74.8,
+          "gap": 6.799999999999997
+        },
+        {
+          "year": 2005,
+          "male": 68.5,
+          "female": 75.3,
+          "gap": 6.799999999999997
+        },
+        {
+          "year": 2006,
+          "male": 69.0,
+          "female": 75.7,
+          "gap": 6.700000000000003
+        },
+        {
+          "year": 2007,
+          "male": 69.4,
+          "female": 76.2,
+          "gap": 6.799999999999997
+        },
+        {
+          "year": 2008,
+          "male": 69.7,
+          "female": 76.6,
+          "gap": 6.8999999999999915
+        },
+        {
+          "year": 2009,
+          "male": 70.1,
+          "female": 76.9,
+          "gap": 6.800000000000011
+        },
+        {
+          "year": 2010,
+          "male": 70.4,
+          "female": 77.3,
+          "gap": 6.8999999999999915
+        },
+        {
+          "year": 2011,
+          "male": 70.7,
+          "female": 77.5,
+          "gap": 6.799999999999997
+        },
+        {
+          "year": 2012,
+          "male": 70.9,
+          "female": 77.8,
+          "gap": 6.8999999999999915
+        },
+        {
+          "year": 2013,
+          "male": 71.2,
+          "female": 78.1,
+          "gap": 6.8999999999999915
+        },
+        {
+          "year": 2014,
+          "male": 71.5,
+          "female": 78.3,
+          "gap": 6.799999999999997
+        },
+        {
+          "year": 2015,
+          "male": 71.8,
+          "female": 78.5,
+          "gap": 6.700000000000003
+        },
+        {
+          "year": 2016,
+          "male": 71.7,
+          "female": 78.5,
+          "gap": 6.799999999999997
+        },
+        {
+          "year": 2017,
+          "male": 72.1,
+          "female": 78.8,
+          "gap": 6.700000000000003
+        },
+        {
+          "year": 2018,
+          "male": 72.4,
+          "female": 79.0,
+          "gap": 6.599999999999994
+        },
+        {
+          "year": 2019,
+          "male": 72.7,
+          "female": 79.0,
+          "gap": 6.299999999999997
+        },
+        {
+          "year": 2020,
+          "male": 71.5,
+          "female": 77.6,
+          "gap": 6.099999999999994
+        },
+        {
+          "year": 2021,
+          "male": 69.8,
+          "female": 76.4,
+          "gap": 6.6000000000000085
+        },
+        {
+          "year": 2022,
+          "male": 71.7,
+          "female": 78.1,
+          "gap": 6.3999999999999915
+        },
+        {
+          "year": 2023,
+          "male": 72.8,
+          "female": 79.0,
+          "gap": 6.200000000000003
+        }
+      ]
+    },
+    {
+      "country": "Nigeria",
+      "values": [
+        {
+          "year": 1950,
+          "male": 33.6,
+          "female": 37.5,
+          "gap": 3.8999999999999986
+        },
+        {
+          "year": 1951,
+          "male": 33.8,
+          "female": 37.7,
+          "gap": 3.9000000000000057
+        },
+        {
+          "year": 1952,
+          "male": 34.0,
+          "female": 37.9,
+          "gap": 3.8999999999999986
+        },
+        {
+          "year": 1953,
+          "male": 34.1,
+          "female": 38.1,
+          "gap": 4.0
+        },
+        {
+          "year": 1954,
+          "male": 34.3,
+          "female": 38.3,
+          "gap": 4.0
+        },
+        {
+          "year": 1955,
+          "male": 34.3,
+          "female": 38.5,
+          "gap": 4.200000000000003
+        },
+        {
+          "year": 1956,
+          "male": 34.5,
+          "female": 38.6,
+          "gap": 4.100000000000001
+        },
+        {
+          "year": 1957,
+          "male": 34.6,
+          "female": 38.8,
+          "gap": 4.199999999999996
+        },
+        {
+          "year": 1958,
+          "male": 34.8,
+          "female": 39.0,
+          "gap": 4.200000000000003
+        },
+        {
+          "year": 1959,
+          "male": 35.0,
+          "female": 39.2,
+          "gap": 4.200000000000003
+        },
+        {
+          "year": 1960,
+          "male": 35.2,
+          "female": 39.4,
+          "gap": 4.199999999999996
+        },
+        {
+          "year": 1961,
+          "male": 35.4,
+          "female": 39.6,
+          "gap": 4.200000000000003
+        },
+        {
+          "year": 1962,
+          "male": 35.6,
+          "female": 39.7,
+          "gap": 4.100000000000001
+        },
+        {
+          "year": 1963,
+          "male": 35.8,
+          "female": 39.9,
+          "gap": 4.100000000000001
+        },
+        {
+          "year": 1964,
+          "male": 35.9,
+          "female": 40.1,
+          "gap": 4.200000000000003
+        },
+        {
+          "year": 1965,
+          "male": 36.2,
+          "female": 40.4,
+          "gap": 4.199999999999996
+        },
+        {
+          "year": 1966,
+          "male": 36.4,
+          "female": 40.5,
+          "gap": 4.100000000000001
+        },
+        {
+          "year": 1967,
+          "male": 35.1,
+          "female": 40.1,
+          "gap": 5.0
+        },
+        {
+          "year": 1968,
+          "male": 36.4,
+          "female": 41.0,
+          "gap": 4.600000000000001
+        },
+        {
+          "year": 1969,
+          "male": 36.8,
+          "female": 41.3,
+          "gap": 4.5
+        },
+        {
+          "year": 1970,
+          "male": 38.4,
+          "female": 41.7,
+          "gap": 3.3000000000000043
+        },
+        {
+          "year": 1971,
+          "male": 39.0,
+          "female": 42.3,
+          "gap": 3.299999999999997
+        },
+        {
+          "year": 1972,
+          "male": 39.5,
+          "female": 43.1,
+          "gap": 3.6000000000000014
+        },
+        {
+          "year": 1973,
+          "male": 40.0,
+          "female": 43.7,
+          "gap": 3.700000000000003
+        },
+        {
+          "year": 1974,
+          "male": 40.6,
+          "female": 44.5,
+          "gap": 3.8999999999999986
+        },
+        {
+          "year": 1975,
+          "male": 41.0,
+          "female": 45.2,
+          "gap": 4.200000000000003
+        },
+        {
+          "year": 1976,
+          "male": 42.7,
+          "female": 45.7,
+          "gap": 3.0
+        },
+        {
+          "year": 1977,
+          "male": 43.4,
+          "female": 46.3,
+          "gap": 2.8999999999999986
+        },
+        {
+          "year": 1978,
+          "male": 43.8,
+          "female": 46.9,
+          "gap": 3.1000000000000014
+        },
+        {
+          "year": 1979,
+          "male": 44.2,
+          "female": 47.3,
+          "gap": 3.0999999999999943
+        },
+        {
+          "year": 1980,
+          "male": 44.3,
+          "female": 47.6,
+          "gap": 3.3000000000000043
+        },
+        {
+          "year": 1981,
+          "male": 44.6,
+          "female": 48.0,
+          "gap": 3.3999999999999986
+        },
+        {
+          "year": 1982,
+          "male": 44.7,
+          "female": 48.2,
+          "gap": 3.5
+        },
+        {
+          "year": 1983,
+          "male": 44.8,
+          "female": 48.1,
+          "gap": 3.3000000000000043
+        },
+        {
+          "year": 1984,
+          "male": 44.7,
+          "female": 48.0,
+          "gap": 3.299999999999997
+        },
+        {
+          "year": 1985,
+          "male": 44.6,
+          "female": 47.9,
+          "gap": 3.299999999999997
+        },
+        {
+          "year": 1986,
+          "male": 44.5,
+          "female": 47.5,
+          "gap": 3.0
+        },
+        {
+          "year": 1987,
+          "male": 44.5,
+          "female": 47.4,
+          "gap": 2.8999999999999986
+        },
+        {
+          "year": 1988,
+          "male": 44.4,
+          "female": 47.3,
+          "gap": 2.8999999999999986
+        },
+        {
+          "year": 1989,
+          "male": 44.4,
+          "female": 47.3,
+          "gap": 2.8999999999999986
+        },
+        {
+          "year": 1990,
+          "male": 44.4,
+          "female": 47.1,
+          "gap": 2.700000000000003
+        },
+        {
+          "year": 1991,
+          "male": 44.1,
+          "female": 47.0,
+          "gap": 2.8999999999999986
+        },
+        {
+          "year": 1992,
+          "male": 44.2,
+          "female": 47.0,
+          "gap": 2.799999999999997
+        },
+        {
+          "year": 1993,
+          "male": 44.2,
+          "female": 47.4,
+          "gap": 3.1999999999999957
+        },
+        {
+          "year": 1994,
+          "male": 44.2,
+          "female": 47.3,
+          "gap": 3.0999999999999943
+        },
+        {
+          "year": 1995,
+          "male": 44.4,
+          "female": 47.4,
+          "gap": 3.0
+        },
+        {
+          "year": 1996,
+          "male": 44.4,
+          "female": 47.3,
+          "gap": 2.8999999999999986
+        },
+        {
+          "year": 1997,
+          "male": 44.7,
+          "female": 47.2,
+          "gap": 2.5
+        },
+        {
+          "year": 1998,
+          "male": 45.1,
+          "female": 47.2,
+          "gap": 2.1000000000000014
+        },
+        {
+          "year": 1999,
+          "male": 45.7,
+          "female": 47.5,
+          "gap": 1.7999999999999972
+        },
+        {
+          "year": 2000,
+          "male": 46.3,
+          "female": 48.0,
+          "gap": 1.7000000000000028
+        },
+        {
+          "year": 2001,
+          "male": 46.9,
+          "female": 48.2,
+          "gap": 1.3000000000000043
+        },
+        {
+          "year": 2002,
+          "male": 47.5,
+          "female": 48.5,
+          "gap": 1.0
+        },
+        {
+          "year": 2003,
+          "male": 48.2,
+          "female": 49.1,
+          "gap": 0.8999999999999986
+        },
+        {
+          "year": 2004,
+          "male": 48.8,
+          "female": 49.5,
+          "gap": 0.7000000000000028
+        },
+        {
+          "year": 2005,
+          "male": 49.0,
+          "female": 50.1,
+          "gap": 1.1000000000000014
+        },
+        {
+          "year": 2006,
+          "male": 49.3,
+          "female": 50.4,
+          "gap": 1.1000000000000014
+        },
+        {
+          "year": 2007,
+          "male": 49.8,
+          "female": 50.9,
+          "gap": 1.1000000000000014
+        },
+        {
+          "year": 2008,
+          "male": 50.3,
+          "female": 51.2,
+          "gap": 0.9000000000000057
+        },
+        {
+          "year": 2009,
+          "male": 50.6,
+          "female": 51.6,
+          "gap": 1.0
+        },
+        {
+          "year": 2010,
+          "male": 50.9,
+          "female": 51.8,
+          "gap": 0.8999999999999986
+        },
+        {
+          "year": 2011,
+          "male": 51.1,
+          "female": 51.9,
+          "gap": 0.7999999999999972
+        },
+        {
+          "year": 2012,
+          "male": 51.3,
+          "female": 52.0,
+          "gap": 0.7000000000000028
+        },
+        {
+          "year": 2013,
+          "male": 51.5,
+          "female": 52.2,
+          "gap": 0.7000000000000028
+        },
+        {
+          "year": 2014,
+          "male": 51.6,
+          "female": 52.3,
+          "gap": 0.6999999999999957
+        },
+        {
+          "year": 2015,
+          "male": 51.6,
+          "female": 52.2,
+          "gap": 0.6000000000000014
+        },
+        {
+          "year": 2016,
+          "male": 51.9,
+          "female": 52.4,
+          "gap": 0.5
+        },
+        {
+          "year": 2017,
+          "male": 52.1,
+          "female": 52.6,
+          "gap": 0.5
+        },
+        {
+          "year": 2018,
+          "male": 52.4,
+          "female": 52.9,
+          "gap": 0.5
+        },
+        {
+          "year": 2019,
+          "male": 52.8,
+          "female": 53.2,
+          "gap": 0.4000000000000057
+        },
+        {
+          "year": 2020,
+          "male": 52.7,
+          "female": 53.4,
+          "gap": 0.6999999999999957
+        },
+        {
+          "year": 2021,
+          "male": 53.2,
+          "female": 53.7,
+          "gap": 0.5
+        },
+        {
+          "year": 2022,
+          "male": 53.8,
+          "female": 54.4,
+          "gap": 0.6000000000000014
+        },
+        {
+          "year": 2023,
+          "male": 54.2,
+          "female": 54.7,
+          "gap": 0.5
+        }
+      ]
+    },
+    {
+      "country": "Bangladesh",
+      "values": [
+        {
+          "year": 1950,
+          "male": 37.6,
+          "female": 37.2,
+          "gap": -0.3999999999999986
+        },
+        {
+          "year": 1951,
+          "male": 38.4,
+          "female": 37.8,
+          "gap": -0.6000000000000014
+        },
+        {
+          "year": 1952,
+          "male": 39.2,
+          "female": 38.4,
+          "gap": -0.8000000000000043
+        },
+        {
+          "year": 1953,
+          "male": 39.9,
+          "female": 39.0,
+          "gap": -0.8999999999999986
+        },
+        {
+          "year": 1954,
+          "male": 40.9,
+          "female": 39.8,
+          "gap": -1.1000000000000014
+        },
+        {
+          "year": 1955,
+          "male": 41.6,
+          "female": 40.4,
+          "gap": -1.2000000000000028
+        },
+        {
+          "year": 1956,
+          "male": 42.2,
+          "female": 40.9,
+          "gap": -1.3000000000000043
+        },
+        {
+          "year": 1957,
+          "male": 43.2,
+          "female": 41.9,
+          "gap": -1.3000000000000043
+        },
+        {
+          "year": 1958,
+          "male": 43.8,
+          "female": 42.3,
+          "gap": -1.5
+        },
+        {
+          "year": 1959,
+          "male": 44.4,
+          "female": 43.0,
+          "gap": -1.3999999999999986
+        },
+        {
+          "year": 1960,
+          "male": 44.7,
+          "female": 43.2,
+          "gap": -1.5
+        },
+        {
+          "year": 1961,
+          "male": 45.7,
+          "female": 44.0,
+          "gap": -1.7000000000000028
+        },
+        {
+          "year": 1962,
+          "male": 46.5,
+          "female": 44.9,
+          "gap": -1.6000000000000014
+        },
+        {
+          "year": 1963,
+          "male": 46.6,
+          "female": 44.8,
+          "gap": -1.8000000000000043
+        },
+        {
+          "year": 1964,
+          "male": 47.6,
+          "female": 45.9,
+          "gap": -1.7000000000000028
+        },
+        {
+          "year": 1965,
+          "male": 47.1,
+          "female": 44.9,
+          "gap": -2.200000000000003
+        },
+        {
+          "year": 1966,
+          "male": 48.5,
+          "female": 46.7,
+          "gap": -1.7999999999999972
+        },
+        {
+          "year": 1967,
+          "male": 49.0,
+          "female": 47.1,
+          "gap": -1.8999999999999986
+        },
+        {
+          "year": 1968,
+          "male": 49.3,
+          "female": 47.4,
+          "gap": -1.8999999999999986
+        },
+        {
+          "year": 1969,
+          "male": 49.6,
+          "female": 47.7,
+          "gap": -1.8999999999999986
+        },
+        {
+          "year": 1970,
+          "male": 44.6,
+          "female": 40.7,
+          "gap": -3.8999999999999986
+        },
+        {
+          "year": 1971,
+          "male": 22.8,
+          "female": 32.7,
+          "gap": 9.900000000000002
+        },
+        {
+          "year": 1972,
+          "male": 50.7,
+          "female": 48.6,
+          "gap": -2.1000000000000014
+        },
+        {
+          "year": 1973,
+          "male": 50.9,
+          "female": 48.8,
+          "gap": -2.1000000000000014
+        },
+        {
+          "year": 1974,
+          "male": 50.5,
+          "female": 48.6,
+          "gap": -1.8999999999999986
+        },
+        {
+          "year": 1975,
+          "male": 51.6,
+          "female": 49.6,
+          "gap": -2.0
+        },
+        {
+          "year": 1976,
+          "male": 51.9,
+          "female": 49.9,
+          "gap": -2.0
+        },
+        {
+          "year": 1977,
+          "male": 52.2,
+          "female": 50.2,
+          "gap": -2.0
+        },
+        {
+          "year": 1978,
+          "male": 52.5,
+          "female": 50.6,
+          "gap": -1.8999999999999986
+        },
+        {
+          "year": 1979,
+          "male": 52.9,
+          "female": 51.0,
+          "gap": -1.8999999999999986
+        },
+        {
+          "year": 1980,
+          "male": 53.1,
+          "female": 51.4,
+          "gap": -1.7000000000000028
+        },
+        {
+          "year": 1981,
+          "male": 53.4,
+          "female": 51.8,
+          "gap": -1.6000000000000014
+        },
+        {
+          "year": 1982,
+          "male": 53.7,
+          "female": 52.2,
+          "gap": -1.5
+        },
+        {
+          "year": 1983,
+          "male": 54.1,
+          "female": 52.8,
+          "gap": -1.3000000000000043
+        },
+        {
+          "year": 1984,
+          "male": 54.3,
+          "female": 53.3,
+          "gap": -1.0
+        },
+        {
+          "year": 1985,
+          "male": 54.4,
+          "female": 53.4,
+          "gap": -1.0
+        },
+        {
+          "year": 1986,
+          "male": 54.9,
+          "female": 54.2,
+          "gap": -0.6999999999999957
+        },
+        {
+          "year": 1987,
+          "male": 55.2,
+          "female": 54.6,
+          "gap": -0.6000000000000014
+        },
+        {
+          "year": 1988,
+          "male": 55.4,
+          "female": 54.9,
+          "gap": -0.5
+        },
+        {
+          "year": 1989,
+          "male": 55.7,
+          "female": 55.3,
+          "gap": -0.4000000000000057
+        },
+        {
+          "year": 1990,
+          "male": 56.1,
+          "female": 55.6,
+          "gap": -0.5
+        },
+        {
+          "year": 1991,
+          "male": 54.4,
+          "female": 53.1,
+          "gap": -1.2999999999999972
+        },
+        {
+          "year": 1992,
+          "male": 56.8,
+          "female": 56.4,
+          "gap": -0.3999999999999986
+        },
+        {
+          "year": 1993,
+          "male": 57.2,
+          "female": 57.0,
+          "gap": -0.20000000000000284
+        },
+        {
+          "year": 1994,
+          "male": 57.7,
+          "female": 57.6,
+          "gap": -0.10000000000000142
+        },
+        {
+          "year": 1995,
+          "male": 58.1,
+          "female": 58.4,
+          "gap": 0.29999999999999716
+        },
+        {
+          "year": 1996,
+          "male": 58.7,
+          "female": 59.2,
+          "gap": 0.5
+        },
+        {
+          "year": 1997,
+          "male": 59.3,
+          "female": 60.1,
+          "gap": 0.8000000000000043
+        },
+        {
+          "year": 1998,
+          "male": 60.0,
+          "female": 61.0,
+          "gap": 1.0
+        },
+        {
+          "year": 1999,
+          "male": 60.7,
+          "female": 61.9,
+          "gap": 1.1999999999999957
+        },
+        {
+          "year": 2000,
+          "male": 61.4,
+          "female": 62.8,
+          "gap": 1.3999999999999986
+        },
+        {
+          "year": 2001,
+          "male": 62.1,
+          "female": 63.7,
+          "gap": 1.6000000000000014
+        },
+        {
+          "year": 2002,
+          "male": 62.8,
+          "female": 64.5,
+          "gap": 1.7000000000000028
+        },
+        {
+          "year": 2003,
+          "male": 63.4,
+          "female": 65.3,
+          "gap": 1.8999999999999986
+        },
+        {
+          "year": 2004,
+          "male": 63.9,
+          "female": 66.0,
+          "gap": 2.1000000000000014
+        },
+        {
+          "year": 2005,
+          "male": 64.5,
+          "female": 66.7,
+          "gap": 2.200000000000003
+        },
+        {
+          "year": 2006,
+          "male": 65.0,
+          "female": 67.3,
+          "gap": 2.299999999999997
+        },
+        {
+          "year": 2007,
+          "male": 65.3,
+          "female": 67.7,
+          "gap": 2.4000000000000057
+        },
+        {
+          "year": 2008,
+          "male": 65.8,
+          "female": 68.5,
+          "gap": 2.700000000000003
+        },
+        {
+          "year": 2009,
+          "male": 66.2,
+          "female": 69.1,
+          "gap": 2.8999999999999915
+        },
+        {
+          "year": 2010,
+          "male": 66.5,
+          "female": 69.7,
+          "gap": 3.200000000000003
+        },
+        {
+          "year": 2011,
+          "male": 66.9,
+          "female": 70.3,
+          "gap": 3.3999999999999915
+        },
+        {
+          "year": 2012,
+          "male": 67.3,
+          "female": 70.9,
+          "gap": 3.6000000000000085
+        },
+        {
+          "year": 2013,
+          "male": 67.7,
+          "female": 71.5,
+          "gap": 3.799999999999997
+        },
+        {
+          "year": 2014,
+          "male": 68.2,
+          "female": 72.1,
+          "gap": 3.8999999999999915
+        },
+        {
+          "year": 2015,
+          "male": 68.7,
+          "female": 72.6,
+          "gap": 3.8999999999999915
+        },
+        {
+          "year": 2016,
+          "male": 69.2,
+          "female": 73.1,
+          "gap": 3.8999999999999915
+        },
+        {
+          "year": 2017,
+          "male": 69.8,
+          "female": 73.5,
+          "gap": 3.700000000000003
+        },
+        {
+          "year": 2018,
+          "male": 70.4,
+          "female": 74.0,
+          "gap": 3.5999999999999943
+        },
+        {
+          "year": 2019,
+          "male": 70.9,
+          "female": 74.4,
+          "gap": 3.5
+        },
+        {
+          "year": 2020,
+          "male": 69.6,
+          "female": 73.4,
+          "gap": 3.8000000000000114
+        },
+        {
+          "year": 2021,
+          "male": 69.5,
+          "female": 72.8,
+          "gap": 3.299999999999997
+        },
+        {
+          "year": 2022,
+          "male": 72.6,
+          "female": 76.1,
+          "gap": 3.5
+        },
+        {
+          "year": 2023,
+          "male": 73.0,
+          "female": 76.4,
+          "gap": 3.4000000000000057
+        }
+      ]
+    },
+    {
+      "country": "Russian Federation",
+      "values": [
+        {
+          "year": 1950,
+          "male": 51.0,
+          "female": 58.9,
+          "gap": 7.899999999999999
+        },
+        {
+          "year": 1951,
+          "male": 51.0,
+          "female": 58.5,
+          "gap": 7.5
+        },
+        {
+          "year": 1952,
+          "male": 53.2,
+          "female": 60.9,
+          "gap": 7.699999999999996
+        },
+        {
+          "year": 1953,
+          "male": 54.1,
+          "female": 62.3,
+          "gap": 8.199999999999996
+        },
+        {
+          "year": 1954,
+          "male": 55.4,
+          "female": 63.3,
+          "gap": 7.899999999999999
+        },
+        {
+          "year": 1955,
+          "male": 57.6,
+          "female": 65.3,
+          "gap": 7.699999999999996
+        },
+        {
+          "year": 1956,
+          "male": 61.8,
+          "female": 69.9,
+          "gap": 8.100000000000009
+        },
+        {
+          "year": 1957,
+          "male": 61.2,
+          "female": 69.5,
+          "gap": 8.299999999999997
+        },
+        {
+          "year": 1958,
+          "male": 62.9,
+          "female": 71.1,
+          "gap": 8.199999999999996
+        },
+        {
+          "year": 1959,
+          "male": 62.7,
+          "female": 70.7,
+          "gap": 8.0
+        },
+        {
+          "year": 1960,
+          "male": 63.5,
+          "female": 71.8,
+          "gap": 8.299999999999997
+        },
+        {
+          "year": 1961,
+          "male": 63.7,
+          "female": 72.1,
+          "gap": 8.399999999999991
+        },
+        {
+          "year": 1962,
+          "male": 63.5,
+          "female": 72.1,
+          "gap": 8.599999999999994
+        },
+        {
+          "year": 1963,
+          "male": 64.1,
+          "female": 72.7,
+          "gap": 8.600000000000009
+        },
+        {
+          "year": 1964,
+          "male": 64.6,
+          "female": 73.1,
+          "gap": 8.5
+        },
+        {
+          "year": 1965,
+          "male": 64.2,
+          "female": 73.1,
+          "gap": 8.899999999999991
+        },
+        {
+          "year": 1966,
+          "male": 64.1,
+          "female": 73.3,
+          "gap": 9.200000000000003
+        },
+        {
+          "year": 1967,
+          "male": 63.9,
+          "female": 73.2,
+          "gap": 9.300000000000004
+        },
+        {
+          "year": 1968,
+          "male": 63.5,
+          "female": 73.3,
+          "gap": 9.799999999999997
+        },
+        {
+          "year": 1969,
+          "male": 62.9,
+          "female": 73.1,
+          "gap": 10.199999999999996
+        },
+        {
+          "year": 1970,
+          "male": 63.0,
+          "female": 73.3,
+          "gap": 10.299999999999997
+        },
+        {
+          "year": 1971,
+          "male": 63.1,
+          "female": 73.6,
+          "gap": 10.499999999999993
+        },
+        {
+          "year": 1972,
+          "male": 63.1,
+          "female": 73.5,
+          "gap": 10.399999999999999
+        },
+        {
+          "year": 1973,
+          "male": 63.2,
+          "female": 73.6,
+          "gap": 10.399999999999991
+        },
+        {
+          "year": 1974,
+          "male": 63.0,
+          "female": 73.5,
+          "gap": 10.5
+        },
+        {
+          "year": 1975,
+          "male": 62.4,
+          "female": 73.2,
+          "gap": 10.800000000000004
+        },
+        {
+          "year": 1976,
+          "male": 62.2,
+          "female": 73.2,
+          "gap": 11.0
+        },
+        {
+          "year": 1977,
+          "male": 61.8,
+          "female": 73.2,
+          "gap": 11.400000000000006
+        },
+        {
+          "year": 1978,
+          "male": 61.8,
+          "female": 73.1,
+          "gap": 11.299999999999997
+        },
+        {
+          "year": 1979,
+          "male": 61.5,
+          "female": 73.0,
+          "gap": 11.5
+        },
+        {
+          "year": 1980,
+          "male": 61.4,
+          "female": 73.0,
+          "gap": 11.600000000000001
+        },
+        {
+          "year": 1981,
+          "male": 61.6,
+          "female": 73.1,
+          "gap": 11.499999999999993
+        },
+        {
+          "year": 1982,
+          "male": 62.2,
+          "female": 73.5,
+          "gap": 11.299999999999997
+        },
+        {
+          "year": 1983,
+          "male": 62.1,
+          "female": 73.4,
+          "gap": 11.300000000000004
+        },
+        {
+          "year": 1984,
+          "male": 61.7,
+          "female": 73.0,
+          "gap": 11.299999999999997
+        },
+        {
+          "year": 1985,
+          "male": 62.7,
+          "female": 73.3,
+          "gap": 10.599999999999994
+        },
+        {
+          "year": 1986,
+          "male": 64.8,
+          "female": 74.5,
+          "gap": 9.700000000000003
+        },
+        {
+          "year": 1987,
+          "male": 64.9,
+          "female": 74.5,
+          "gap": 9.599999999999994
+        },
+        {
+          "year": 1988,
+          "male": 64.7,
+          "female": 74.5,
+          "gap": 9.799999999999997
+        },
+        {
+          "year": 1989,
+          "male": 64.2,
+          "female": 74.7,
+          "gap": 10.5
+        },
+        {
+          "year": 1990,
+          "male": 63.8,
+          "female": 74.5,
+          "gap": 10.700000000000003
+        },
+        {
+          "year": 1991,
+          "male": 63.4,
+          "female": 74.4,
+          "gap": 11.000000000000007
+        },
+        {
+          "year": 1992,
+          "male": 61.9,
+          "female": 73.8,
+          "gap": 11.899999999999999
+        },
+        {
+          "year": 1993,
+          "male": 58.7,
+          "female": 71.9,
+          "gap": 13.200000000000003
+        },
+        {
+          "year": 1994,
+          "male": 57.4,
+          "female": 71.1,
+          "gap": 13.699999999999996
+        },
+        {
+          "year": 1995,
+          "male": 57.4,
+          "female": 71.5,
+          "gap": 14.100000000000001
+        },
+        {
+          "year": 1996,
+          "male": 59.2,
+          "female": 72.3,
+          "gap": 13.099999999999994
+        },
+        {
+          "year": 1997,
+          "male": 60.7,
+          "female": 72.8,
+          "gap": 12.099999999999994
+        },
+        {
+          "year": 1998,
+          "male": 61.1,
+          "female": 73.0,
+          "gap": 11.899999999999999
+        },
+        {
+          "year": 1999,
+          "male": 59.4,
+          "female": 72.3,
+          "gap": 12.899999999999999
+        },
+        {
+          "year": 2000,
+          "male": 58.6,
+          "female": 72.1,
+          "gap": 13.499999999999993
+        },
+        {
+          "year": 2001,
+          "male": 58.7,
+          "female": 72.1,
+          "gap": 13.399999999999991
+        },
+        {
+          "year": 2002,
+          "male": 58.4,
+          "female": 71.8,
+          "gap": 13.399999999999999
+        },
+        {
+          "year": 2003,
+          "male": 58.4,
+          "female": 71.8,
+          "gap": 13.399999999999999
+        },
+        {
+          "year": 2004,
+          "male": 58.8,
+          "female": 72.3,
+          "gap": 13.5
+        },
+        {
+          "year": 2005,
+          "male": 58.8,
+          "female": 72.4,
+          "gap": 13.600000000000009
+        },
+        {
+          "year": 2006,
+          "male": 60.3,
+          "female": 73.2,
+          "gap": 12.900000000000006
+        },
+        {
+          "year": 2007,
+          "male": 61.3,
+          "female": 73.9,
+          "gap": 12.600000000000009
+        },
+        {
+          "year": 2008,
+          "male": 61.8,
+          "female": 74.2,
+          "gap": 12.400000000000006
+        },
+        {
+          "year": 2009,
+          "male": 62.7,
+          "female": 74.7,
+          "gap": 12.0
+        },
+        {
+          "year": 2010,
+          "male": 62.2,
+          "female": 74.3,
+          "gap": 12.099999999999994
+        },
+        {
+          "year": 2011,
+          "male": 63.9,
+          "female": 75.6,
+          "gap": 11.699999999999996
+        },
+        {
+          "year": 2012,
+          "male": 64.4,
+          "female": 75.8,
+          "gap": 11.399999999999991
+        },
+        {
+          "year": 2013,
+          "male": 65.0,
+          "female": 76.2,
+          "gap": 11.200000000000003
+        },
+        {
+          "year": 2014,
+          "male": 65.1,
+          "female": 76.4,
+          "gap": 11.300000000000011
+        },
+        {
+          "year": 2015,
+          "male": 65.9,
+          "female": 76.7,
+          "gap": 10.799999999999997
+        },
+        {
+          "year": 2016,
+          "male": 66.6,
+          "female": 77.0,
+          "gap": 10.400000000000006
+        },
+        {
+          "year": 2017,
+          "male": 67.7,
+          "female": 77.7,
+          "gap": 10.0
+        },
+        {
+          "year": 2018,
+          "male": 67.7,
+          "female": 77.9,
+          "gap": 10.200000000000003
+        },
+        {
+          "year": 2019,
+          "male": 67.7,
+          "female": 78.2,
+          "gap": 10.5
+        },
+        {
+          "year": 2020,
+          "male": 66.3,
+          "female": 75.9,
+          "gap": 9.600000000000009
+        },
+        {
+          "year": 2021,
+          "male": 65.2,
+          "female": 74.4,
+          "gap": 9.200000000000003
+        },
+        {
+          "year": 2022,
+          "male": 67.1,
+          "female": 77.8,
+          "gap": 10.700000000000003
+        },
+        {
+          "year": 2023,
+          "male": 67.3,
+          "female": 79.0,
+          "gap": 11.700000000000003
+        }
+      ]
+    },
+    {
+      "country": "Japan",
+      "values": [
+        {
+          "year": 1950,
+          "male": 57.6,
+          "female": 60.9,
+          "gap": 3.299999999999997
+        },
+        {
+          "year": 1951,
+          "male": 59.3,
+          "female": 62.6,
+          "gap": 3.3000000000000043
+        },
+        {
+          "year": 1952,
+          "male": 61.3,
+          "female": 64.7,
+          "gap": 3.4000000000000057
+        },
+        {
+          "year": 1953,
+          "male": 61.5,
+          "female": 65.1,
+          "gap": 3.5999999999999943
+        },
+        {
+          "year": 1954,
+          "male": 62.5,
+          "female": 66.6,
+          "gap": 4.099999999999994
+        },
+        {
+          "year": 1955,
+          "male": 63.6,
+          "female": 67.8,
+          "gap": 4.199999999999996
+        },
+        {
+          "year": 1956,
+          "male": 63.4,
+          "female": 67.7,
+          "gap": 4.300000000000004
+        },
+        {
+          "year": 1957,
+          "male": 63.3,
+          "female": 67.6,
+          "gap": 4.299999999999997
+        },
+        {
+          "year": 1958,
+          "male": 64.8,
+          "female": 69.3,
+          "gap": 4.5
+        },
+        {
+          "year": 1959,
+          "male": 65.1,
+          "female": 69.8,
+          "gap": 4.700000000000003
+        },
+        {
+          "year": 1960,
+          "male": 65.3,
+          "female": 70.1,
+          "gap": 4.799999999999997
+        },
+        {
+          "year": 1961,
+          "male": 65.9,
+          "female": 70.8,
+          "gap": 4.8999999999999915
+        },
+        {
+          "year": 1962,
+          "male": 66.2,
+          "female": 71.1,
+          "gap": 4.8999999999999915
+        },
+        {
+          "year": 1963,
+          "male": 67.2,
+          "female": 72.3,
+          "gap": 5.099999999999994
+        },
+        {
+          "year": 1964,
+          "male": 67.6,
+          "female": 72.8,
+          "gap": 5.200000000000003
+        },
+        {
+          "year": 1965,
+          "male": 67.7,
+          "female": 72.8,
+          "gap": 5.099999999999994
+        },
+        {
+          "year": 1966,
+          "male": 68.4,
+          "female": 73.7,
+          "gap": 5.299999999999997
+        },
+        {
+          "year": 1967,
+          "male": 68.8,
+          "female": 74.0,
+          "gap": 5.200000000000003
+        },
+        {
+          "year": 1968,
+          "male": 69.0,
+          "female": 74.3,
+          "gap": 5.299999999999997
+        },
+        {
+          "year": 1969,
+          "male": 69.2,
+          "female": 74.6,
+          "gap": 5.3999999999999915
+        },
+        {
+          "year": 1970,
+          "male": 69.3,
+          "female": 74.7,
+          "gap": 5.400000000000006
+        },
+        {
+          "year": 1971,
+          "male": 70.1,
+          "female": 75.5,
+          "gap": 5.400000000000006
+        },
+        {
+          "year": 1972,
+          "male": 70.5,
+          "female": 75.9,
+          "gap": 5.400000000000006
+        },
+        {
+          "year": 1973,
+          "male": 70.8,
+          "female": 76.0,
+          "gap": 5.200000000000003
+        },
+        {
+          "year": 1974,
+          "male": 71.3,
+          "female": 76.4,
+          "gap": 5.1000000000000085
+        },
+        {
+          "year": 1975,
+          "male": 71.7,
+          "female": 76.9,
+          "gap": 5.200000000000003
+        },
+        {
+          "year": 1976,
+          "male": 72.1,
+          "female": 77.3,
+          "gap": 5.200000000000003
+        },
+        {
+          "year": 1977,
+          "male": 72.7,
+          "female": 77.9,
+          "gap": 5.200000000000003
+        },
+        {
+          "year": 1978,
+          "male": 73.0,
+          "female": 78.2,
+          "gap": 5.200000000000003
+        },
+        {
+          "year": 1979,
+          "male": 73.4,
+          "female": 78.8,
+          "gap": 5.3999999999999915
+        },
+        {
+          "year": 1980,
+          "male": 73.4,
+          "female": 78.8,
+          "gap": 5.3999999999999915
+        },
+        {
+          "year": 1981,
+          "male": 73.8,
+          "female": 79.2,
+          "gap": 5.400000000000006
+        },
+        {
+          "year": 1982,
+          "male": 74.3,
+          "female": 79.7,
+          "gap": 5.400000000000006
+        },
+        {
+          "year": 1983,
+          "male": 74.2,
+          "female": 79.8,
+          "gap": 5.599999999999994
+        },
+        {
+          "year": 1984,
+          "male": 74.6,
+          "female": 80.3,
+          "gap": 5.700000000000003
+        },
+        {
+          "year": 1985,
+          "male": 74.9,
+          "female": 80.5,
+          "gap": 5.599999999999994
+        },
+        {
+          "year": 1986,
+          "male": 75.3,
+          "female": 81.0,
+          "gap": 5.700000000000003
+        },
+        {
+          "year": 1987,
+          "male": 75.6,
+          "female": 81.4,
+          "gap": 5.800000000000011
+        },
+        {
+          "year": 1988,
+          "male": 75.6,
+          "female": 81.3,
+          "gap": 5.700000000000003
+        },
+        {
+          "year": 1989,
+          "male": 76.0,
+          "female": 81.8,
+          "gap": 5.799999999999997
+        },
+        {
+          "year": 1990,
+          "male": 75.9,
+          "female": 81.9,
+          "gap": 6.0
+        },
+        {
+          "year": 1991,
+          "male": 76.2,
+          "female": 82.2,
+          "gap": 6.0
+        },
+        {
+          "year": 1992,
+          "male": 76.1,
+          "female": 82.3,
+          "gap": 6.200000000000003
+        },
+        {
+          "year": 1993,
+          "male": 76.3,
+          "female": 82.4,
+          "gap": 6.1000000000000085
+        },
+        {
+          "year": 1994,
+          "male": 76.6,
+          "female": 82.9,
+          "gap": 6.300000000000011
+        },
+        {
+          "year": 1995,
+          "male": 76.4,
+          "female": 82.8,
+          "gap": 6.3999999999999915
+        },
+        {
+          "year": 1996,
+          "male": 77.0,
+          "female": 83.5,
+          "gap": 6.5
+        },
+        {
+          "year": 1997,
+          "male": 77.2,
+          "female": 83.7,
+          "gap": 6.5
+        },
+        {
+          "year": 1998,
+          "male": 77.2,
+          "female": 83.9,
+          "gap": 6.700000000000003
+        },
+        {
+          "year": 1999,
+          "male": 77.2,
+          "female": 83.9,
+          "gap": 6.700000000000003
+        },
+        {
+          "year": 2000,
+          "male": 77.7,
+          "female": 84.5,
+          "gap": 6.799999999999997
+        },
+        {
+          "year": 2001,
+          "male": 78.0,
+          "female": 84.8,
+          "gap": 6.799999999999997
+        },
+        {
+          "year": 2002,
+          "male": 78.3,
+          "female": 85.1,
+          "gap": 6.799999999999997
+        },
+        {
+          "year": 2003,
+          "male": 78.3,
+          "female": 85.2,
+          "gap": 6.900000000000006
+        },
+        {
+          "year": 2004,
+          "male": 78.6,
+          "female": 85.5,
+          "gap": 6.900000000000006
+        },
+        {
+          "year": 2005,
+          "male": 78.5,
+          "female": 85.4,
+          "gap": 6.900000000000006
+        },
+        {
+          "year": 2006,
+          "male": 78.9,
+          "female": 85.7,
+          "gap": 6.799999999999997
+        },
+        {
+          "year": 2007,
+          "male": 79.1,
+          "female": 85.9,
+          "gap": 6.800000000000011
+        },
+        {
+          "year": 2008,
+          "male": 79.2,
+          "female": 85.9,
+          "gap": 6.700000000000003
+        },
+        {
+          "year": 2009,
+          "male": 79.5,
+          "female": 86.3,
+          "gap": 6.799999999999997
+        },
+        {
+          "year": 2010,
+          "male": 79.5,
+          "female": 86.2,
+          "gap": 6.700000000000003
+        },
+        {
+          "year": 2011,
+          "male": 79.4,
+          "female": 85.9,
+          "gap": 6.5
+        },
+        {
+          "year": 2012,
+          "male": 79.9,
+          "female": 86.4,
+          "gap": 6.5
+        },
+        {
+          "year": 2013,
+          "male": 80.2,
+          "female": 86.5,
+          "gap": 6.299999999999997
+        },
+        {
+          "year": 2014,
+          "male": 80.4,
+          "female": 86.8,
+          "gap": 6.3999999999999915
+        },
+        {
+          "year": 2015,
+          "male": 80.7,
+          "female": 87.0,
+          "gap": 6.299999999999997
+        },
+        {
+          "year": 2016,
+          "male": 80.9,
+          "female": 87.1,
+          "gap": 6.199999999999989
+        },
+        {
+          "year": 2017,
+          "male": 81.1,
+          "female": 87.3,
+          "gap": 6.200000000000003
+        },
+        {
+          "year": 2018,
+          "male": 81.2,
+          "female": 87.3,
+          "gap": 6.099999999999994
+        },
+        {
+          "year": 2019,
+          "male": 81.4,
+          "female": 87.4,
+          "gap": 6.0
+        },
+        {
+          "year": 2020,
+          "male": 81.6,
+          "female": 87.7,
+          "gap": 6.1000000000000085
+        },
+        {
+          "year": 2021,
+          "male": 81.5,
+          "female": 87.6,
+          "gap": 6.099999999999994
+        },
+        {
+          "year": 2022,
+          "male": 81.1,
+          "female": 87.1,
+          "gap": 6.0
+        },
+        {
+          "year": 2023,
+          "male": 81.7,
+          "female": 87.7,
+          "gap": 6.0
+        }
+      ]
+    }
+  ],
+  "years": {
+    "start": 1950,
+    "end": 2023
+  }
+}

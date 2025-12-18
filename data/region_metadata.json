@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Africa",
+    "color": "#e41a1c"
+  },
+  {
+    "name": "Asia",
+    "color": "#377eb8"
+  },
+  {
+    "name": "Europe",
+    "color": "#4daf4a"
+  },
+  {
+    "name": "Latin America and the Caribbean",
+    "color": "#984ea3"
+  },
+  {
+    "name": "Northern America",
+    "color": "#ff7f00"
+  },
+  {
+    "name": "Oceania",
+    "color": "#a65628"
+  }
+]
