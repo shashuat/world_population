@@ -21,8 +21,8 @@ const RadarChartViz = {
         // Calculate dimensions
         const containerNode = container.node();
         const rect = containerNode.getBoundingClientRect();
-        this.width = Math.min(rect.width - this.margin.left - this.margin.right, 600);
-        this.height = Math.min(600 - this.margin.top - this.margin.bottom, 600);
+        this.width = Math.min(rect.width - this.margin.left - this.margin.right, 400);
+        this.height = Math.min(400 - this.margin.top - this.margin.bottom, 400);
         this.radius = Math.min(this.width, this.height) / 2;
         
         // Clear existing

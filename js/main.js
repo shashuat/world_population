@@ -401,9 +401,11 @@ function unhighlightAllCountries() {
 }
 
 /**
- * Show country detail view
+ * Show country detail view - FIXED DATA SOURCE & NORMALIZATION
  */
 function showCountryDetail(countryCode, countryName) {
+    const normalizedName = normalizeCountryName(countryName);
+    
     // Switch to country detail view
     document.querySelectorAll('.viz-view').forEach(view => {
         view.classList.remove('active');
@@ -415,11 +417,13 @@ function showCountryDetail(countryCode, countryName) {
     document.getElementById('detail-country-name').textContent = countryName;
     document.getElementById('detail-flag').src = `img/flags/${countryCode}.png`;
     
-    // Get country data
-    const countryData = DataLoader.getCountryDetailData(countryName);
+    // FIXED: Use the Full Timeseries data which contains the Graduate Level Metrics
+    const allCountryData = DataLoader.getCountryTimeSeriesData();
+    const countryData = allCountryData[normalizedName];
     
-    if (countryData.length === 0) {
-        console.warn('No data found for country:', countryName);
+    if (!countryData || countryData.length === 0) {
+        console.warn('No demographic data found for:', normalizedName);
+        document.getElementById('detail-country-stats').innerHTML = '<span style="color:red">Data unavailable for this country.</span>';
         return;
     }
     
@@ -429,17 +433,47 @@ function showCountryDetail(countryCode, countryName) {
     // Update stats
     document.getElementById('detail-country-stats').innerHTML = `
         Population: <strong>${DataLoader.formatPopulation(latestData.population)}</strong> | 
-        Density: <strong>${latestData.density.toFixed(1)} per km²</strong> | 
-        Sex Ratio: <strong>${latestData.sexRatio.toFixed(1)}</strong> | 
-        Median Age: <strong>${latestData.medianAge.toFixed(1)} years</strong>
+        Density: <strong>${latestData.density.toFixed(1)}/km²</strong> | 
+        Median Age: <strong>${latestData.medianAge.toFixed(1)}y</strong> |
+        Birth Rate: <strong>${latestData.birthRate?.toFixed(1) || 'N/A'}</strong>
     `;
     
-    // Draw charts
+    // Draw charts with a slight delay for container sizing
     setTimeout(() => {
+        // 1. Original 4 Metrics
         drawDetailChart(countryData, 'population', 'population-chart', 'Population');
         drawDetailChart(countryData, 'density', 'density-chart', 'Density (per km²)');
         drawDetailChart(countryData, 'sexRatio', 'sex-ratio-chart', 'Sex Ratio');
         drawDetailChart(countryData, 'medianAge', 'median-age-chart', 'Median Age (years)');
+        
+        // 2. NEW: 5 Graduate-Level Multi-Metric Charts
+        drawDetailChart(countryData, [
+            {key: 'birthRate', label: 'Birth Rate', color: '#4daf4a'},
+            {key: 'deathRate', label: 'Death Rate', color: '#e41a1c'}
+        ], 'transition-detail-chart', 'Rate (per 1,000)');
+        
+        drawDetailChart(countryData, [
+            {key: 'naturalChange', label: 'Natural Change', color: '#4daf4a'},
+            {key: 'migrationRate', label: 'Net Migration', color: '#984ea3'}
+        ], 'growth-detail-chart', 'Rate (per 1,000)');
+        
+        drawDetailChart(countryData, [
+            {key: 'lifeExpectancyMale', label: 'Male', color: '#377eb8'},
+            {key: 'lifeExpectancyFemale', label: 'Female', color: '#e41a1c'}
+        ], 'longevity-detail-chart', 'Life Expectancy (years)');
+        
+        drawDetailChart(countryData, [
+            {key: 'fertilityRate', label: 'Fertility', color: '#ff7f00'},
+            {key: 'meanAgeChildbearing', label: 'Childbearing Age', color: '#984ea3'}
+        ], 'fertility-detail-chart', 'Rate / Age');
+        
+        drawDetailChart(countryData, [
+            {key: 'infantMortality', label: 'Infant', color: '#e41a1c'},
+            {key: 'underFiveMortality', label: 'Under-5', color: '#ff7f00'}
+        ], 'healthcare-detail-chart', 'Mortality (per 1,000 births)');
+        
+        // 3. NEW: DNA Profile Radar Chart
+        drawDetailRadarChart(normalizedName);
     }, 100);
     
     // Set up close button
@@ -464,134 +498,95 @@ function showCountryDetail(countryCode, countryName) {
 /**
  * Draw line chart for country detail
  */
-function drawDetailChart(data, metric, chartId, yLabel) {
+/**
+ * Enhanced drawDetailChart to support single or multiple metric lines
+ */
+function drawDetailChart(data, metrics, chartId, yLabel) {
+    // Convert single string metric to standardized array format
+    if (typeof metrics === 'string') {
+        metrics = [{key: metrics, color: '#667eea', label: yLabel, showArea: true}];
+    }
+    
     const svg = d3.select(`#${chartId}`);
     svg.selectAll("*").remove();
-    
-    // Get container dimensions
     const container = svg.node().parentElement;
-    const containerWidth = container.getBoundingClientRect().width;
-    const containerHeight = 250;
-    
-    svg.attr("width", containerWidth).attr("height", containerHeight);
-    
+    const width_full = container.getBoundingClientRect().width;
+    const height_full = 250;
     const margin = {top: 20, right: 30, bottom: 40, left: 60};
-    const width = containerWidth - margin.left - margin.right;
-    const height = containerHeight - margin.top - margin.bottom;
+    const width = width_full - margin.left - margin.right;
+    const height = height_full - margin.top - margin.bottom;
     
-    const g = svg.append("g")
-        .attr("transform", `translate(${margin.left},${margin.top})`);
+    svg.attr("width", width_full).attr("height", height_full);
+    const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
     
-    // Create scales
-    const x = d3.scaleLinear()
-        .domain(d3.extent(data, d => d.year))
-        .range([0, width]);
+    const x = d3.scaleLinear().domain(d3.extent(data, d => d.year)).range([0, width]);
+    const maxVal = d3.max(data, d => d3.max(metrics.map(m => d[m.key] || 0))) * 1.1;
+    const y = d3.scaleLinear().domain([0, maxVal || 100]).range([height, 0]);
     
-    const y = d3.scaleLinear()
-        .domain([0, d3.max(data, d => d[metric]) * 1.1])
-        .range([height, 0]);
+    // Draw Grid
+    g.append("g").attr("class", "grid").selectAll("line").data(y.ticks(5)).enter()
+     .append("line").attr("x1", 0).attr("x2", width).attr("y1", d => y(d)).attr("y2", d => y(d))
+     .attr("stroke", "#e2e8f0").attr("stroke-dasharray", "2,2");
+
+    metrics.forEach(m => {
+        const line = d3.line().x(d => x(d.year)).y(d => y(d[m.key] || 0)).curve(d3.curveMonotoneX);
+        
+        // Area fill (only for single metric charts to avoid overlap confusion)
+        if (m.showArea) {
+            const area = d3.area().x(d => x(d.year)).y0(height).y1(d => y(d[m.key])).curve(d3.curveMonotoneX);
+            g.append("path").datum(data).attr("fill", m.color).attr("fill-opacity", 0.1).attr("d", area);
+        }
+        
+        g.append("path").datum(data).attr("fill", "none").attr("stroke", m.color).attr("stroke-width", 2).attr("d", line);
+        
+        // Add legend label at the end of the line
+        const last = data[data.length - 1];
+        g.append("text").attr("x", x(last.year)).attr("y", y(last[m.key])).attr("dx", -5).attr("dy", -5)
+         .attr("fill", m.color).style("font-size", "9px").style("text-anchor", "end").text(m.label);
+    });
+
+    g.append("g").attr("transform", `translate(0,${height})`).call(d3.axisBottom(x).ticks(5).tickFormat(d3.format("d")));
+    g.append("g").call(d3.axisLeft(y).ticks(5).tickFormat(d => (metrics[0].key === 'population' ? d3.format(".2s")(d) : d3.format(".1f")(d))));
+}
+
+/**
+ * Dedicated Radar Chart drawing for the Detail View
+ */
+function drawDetailRadarChart(normalizedName) {
+    const radarData = DataLoader.getRadarChartData();
+    if (!radarData || !radarData.countries[normalizedName]) return;
     
-    // Add gradient
-    const gradient = svg.append("defs")
-        .append("linearGradient")
-        .attr("id", `areaGradient-${chartId}`)
-        .attr("x1", "0%")
-        .attr("y1", "0%")
-        .attr("x2", "0%")
-        .attr("y2", "100%");
+    const svg = d3.select('#detail-radar-chart');
+    svg.selectAll("*").remove();
+    const width = 400, height = 400, radius = 150;
+    svg.attr("width", width).attr("height", height);
+    const g = svg.append("g").attr("transform", `translate(${width/2},${height/2})`);
     
-    gradient.append("stop")
-        .attr("offset", "0%")
-        .attr("stop-color", "#667eea")
-        .attr("stop-opacity", 0.4);
+    const indicators = Object.keys(radarData.indicators);
+    const angleSlice = (Math.PI * 2) / indicators.length;
     
-    gradient.append("stop")
-        .attr("offset", "100%")
-        .attr("stop-color", "#667eea")
-        .attr("stop-opacity", 0);
-    
-    // Add grid
-    g.append("g")
-        .attr("class", "grid")
-        .selectAll("line")
-        .data(y.ticks(5))
-        .enter().append("line")
-        .attr("x1", 0)
-        .attr("x2", width)
-        .attr("y1", d => y(d))
-        .attr("y2", d => y(d))
-        .attr("stroke", "#e2e8f0")
-        .attr("stroke-dasharray", "2,2");
-    
-    // Create area
-    const area = d3.area()
-        .x(d => x(d.year))
-        .y0(height)
-        .y1(d => y(d[metric]))
-        .curve(d3.curveMonotoneX);
-    
-    // Create line
-    const line = d3.line()
-        .x(d => x(d.year))
-        .y(d => y(d[metric]))
-        .curve(d3.curveMonotoneX);
-    
-    // Add area
-    g.append("path")
-        .datum(data)
-        .attr("fill", `url(#areaGradient-${chartId})`)
-        .attr("d", area);
-    
-    // Add line
-    g.append("path")
-        .datum(data)
-        .attr("fill", "none")
-        .attr("stroke", "#667eea")
-        .attr("stroke-width", 2)
-        .attr("d", line);
-    
-    // Add dots
-    g.selectAll(".dot")
-        .data(data.filter((d, i) => i % 5 === 0 || i === data.length - 1))
-        .enter().append("circle")
-        .attr("cx", d => x(d.year))
-        .attr("cy", d => y(d[metric]))
-        .attr("r", 3)
-        .attr("fill", "#667eea");
-    
-    // Add axes
-    const xAxis = d3.axisBottom(x)
-        .tickFormat(d3.format("d"))
-        .ticks(6);
-    
-    const yAxis = d3.axisLeft(y)
-        .ticks(5)
-        .tickFormat(d => {
-            if (metric === "population") {
-                return d3.format(".2s")(d);
-            }
-            return d3.format(".1f")(d);
-        });
-    
-    g.append("g")
-        .attr("class", "axis")
-        .attr("transform", `translate(0,${height})`)
-        .call(xAxis);
-    
-    g.append("g")
-        .attr("class", "axis")
-        .call(yAxis);
-    
-    // Add Y axis label
-    g.append("text")
-        .attr("transform", "rotate(-90)")
-        .attr("y", 0 - margin.left)
-        .attr("x", 0 - (height / 2))
-        .attr("dy", "1em")
-        .style("text-anchor", "middle")
-        .style("font-size", "12px")
-        .style("fill", "#4a5568")
-        .text(yLabel);
+    // Draw grid circles
+    [0.2, 0.4, 0.6, 0.8, 1].forEach(v => {
+        g.append("circle").attr("r", radius * v).attr("fill", "none").attr("stroke", "#e2e8f0");
+    });
+
+    // Draw axes and labels
+    indicators.forEach((ind, i) => {
+        const angle = angleSlice * i - Math.PI / 2;
+        g.append("line").attr("x1", 0).attr("y1", 0).attr("x2", Math.cos(angle) * radius).attr("y2", Math.sin(angle) * radius).attr("stroke", "#cbd5e0");
+        g.append("text").attr("x", Math.cos(angle) * (radius + 20)).attr("y", Math.sin(angle) * (radius + 20))
+         .attr("text-anchor", "middle").style("font-size", "10px").text(radarData.indicators[ind]);
+    });
+
+    const countryValues = radarData.countries[normalizedName].values;
+    const pathData = indicators.map((ind, i) => {
+        const val = countryValues[ind].normalized;
+        const angle = angleSlice * i - Math.PI / 2;
+        return [Math.cos(angle) * radius * val, Math.sin(angle) * radius * val];
+    });
+
+    g.append("path").datum(pathData).attr("d", d3.line().curve(d3.curveLinearClosed))
+     .attr("fill", "#e41a1c").attr("fill-opacity", 0.3).attr("stroke", "#e41a1c").attr("stroke-width", 3);
 }
 
 /**

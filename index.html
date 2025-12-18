@@ -190,6 +190,34 @@
                             <h3 class="chart-title">Median Age</h3>
                             <svg id="median-age-chart" class="detail-chart"></svg>
                         </div>
+
+                        <div class="chart-card">
+                            <h3 class="chart-title">Demographic Transition (Birth vs Death)</h3>
+                            <svg id="transition-detail-chart" class="detail-chart"></svg>
+                        </div>
+                        <div class="chart-card">
+                            <h3 class="chart-title">Growth Drivers (Natural vs Migration)</h3>
+                            <svg id="growth-detail-chart" class="detail-chart"></svg>
+                        </div>
+                        <div class="chart-card">
+                            <h3 class="chart-title">Longevity Gap (Male vs Female)</h3>
+                            <svg id="longevity-detail-chart" class="detail-chart"></svg>
+                        </div>
+                        <div class="chart-card">
+                            <h3 class="chart-title">Fertility & Reproductive Health</h3>
+                            <svg id="fertility-detail-chart" class="detail-chart"></svg>
+                        </div>
+                        <div class="chart-card">
+                            <h3 class="chart-title">Healthcare Quality (Mortality)</h3>
+                            <svg id="healthcare-detail-chart" class="detail-chart"></svg>
+                        </div>
+
+                        <div class="chart-card" style="grid-column: span 2;">
+                            <h3 class="chart-title">Demographic DNA Profile</h3>
+                            <div id="detail-radar-container" style="display: flex; justify-content: center; min-height: 450px; padding: 200px;">
+                                <svg id="detail-radar-chart"></svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
@@ -275,7 +303,7 @@
                         <span style="font-size: 20px; margin-right: 8px;">👈</span>
                         <strong>Click on any country on the globe</strong> to see its demographic DNA profile
                     </div>
-                    <div id="radar-container" style="display: flex; justify-content: center; align-items: center; min-height: 500px;">
+                    <div id="radar-container" style="display: flex; justify-content: center; align-items: center; min-height: 450px;">
                         <svg id="radar-chart" class="main-chart"></svg>
                     </div>
                     <div id="radar-legend" class="viz-legend"></div>
