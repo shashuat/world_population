@@ -437,6 +437,7 @@ const GlobeViz = {
      * Draw color legend
      */
     drawLegend(colorPalette, mode) {
+        // 1. Select the legend container and clear previous contents to prevent stacking
         const colorScale = d3.select('#color-scale');
         colorScale.selectAll('*').remove();
         
@@ -454,19 +455,24 @@ const GlobeViz = {
         const isLogScale = mode === 'population' || mode === 'density';
         const isDivergingScale = mode === 'gender-gap';
         
+        // 2. Use .nice() on scales to get rounded, clean tick intervals
         let xScale;
         if (isLogScale) {
             xScale = d3.scaleLog()
                 .domain(colorPalette.domain())
+                .nice()
                 .range([0, legendWidth]);
         } else {
             xScale = d3.scaleLinear()
                 .domain(colorPalette.domain())
+                .nice()
                 .range([0, legendWidth]);
         }
         
+        // 3. Force 5 specific labels to prevent cluttering
         const legendAxis = d3.axisBottom(xScale)
             .ticks(5)
+            .tickSize(10)
             .tickFormat(d => {
                 switch(mode) {
                     case 'sex-ratio':
@@ -489,15 +495,20 @@ const GlobeViz = {
                 }
             });
         
-        const legendSvg = colorScale.append('svg');
+        // 4. Create a clean SVG for the new legend
+        const legendSvg = colorScale.append('svg')
+            .attr('width', '100%')
+            .attr('height', 60);
+        
         const legendHeight = legendSvg.node().getBoundingClientRect().height;
         
         legendSvg.append('g')
             .attr('transform', `translate(0, ${legendHeight / 4})`)
             .call(legendAxis)
             .selectAll('text')
-            .style('fill', '#4a5568')
-            .style('font-size', '11px');
+            .style('fill', '#444')
+            .style('font-size', '11px')
+            .style('font-weight', '500');
         
         // Add center marker for diverging scales
         if (isDivergingScale) {

@@ -497,10 +497,25 @@ body {
 
 .color-legend {
     margin-top: var(--spacing-lg);
-    padding: var(--spacing-md);
-    background: var(--bg-tertiary);
-    border-radius: 6px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft depth */
+    border: 1px solid #ddd;
     height: 60px;
+    max-width: 100%;
+}
+
+.color-legend text {
+    font-size: 11px;
+    fill: #444; /* Standard readable text color */
+    font-weight: 500;
+}
+
+/* Style for axis lines and ticks */
+.color-legend .domain,
+.color-legend .tick line {
+    stroke: #666;
 }
 
 /* ============================================================================
