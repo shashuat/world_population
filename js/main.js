@@ -212,6 +212,20 @@ function switchVisualization(vizType) {
                 GenderGapViz.init(d3.select('#gender-gap-chart'), AppState);
             }
             break;
+            
+        case 'statistics':
+            document.getElementById('statistics-view').classList.add('active');
+            document.getElementById('details-title').textContent = 'Global Statistical Analysis';
+            
+            // Use requestAnimationFrame to ensure DOM is updated before calculating dimensions
+            requestAnimationFrame(() => {
+                if (!AppState.data.processed.statistics) {
+                    StatisticsViz.init(AppState);
+                } else {
+                    StatisticsViz.update();
+                }
+            });
+            break;
     }
     
     // Dispatch event
@@ -346,6 +360,9 @@ function setupEventListeners() {
         }
         if (GrowthDriversViz.update) {
             GrowthDriversViz.update(year);
+        }
+        if (AppState.currentMode === 'statistics' && AppState.data.processed.statistics) {
+            StatisticsViz.update();
         }
     });
     
