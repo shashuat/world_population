@@ -136,17 +136,21 @@ const DataLoader = {
 
     /**
      * Format population for display
+     * Note: Input values are in thousands, so we need to adjust the thresholds
      */
     formatPopulation(num) {
         if (!num || num === 0) return "N/A";
-        if (num >= 1000000000) {
-            return (num / 1000000000).toFixed(2) + " billion";
-        } else if (num >= 1000000) {
-            return (num / 1000000).toFixed(2) + " million";
+        // Values are already in thousands, so:
+        // >= 1000000 (thousands) = 1 billion actual
+        // >= 1000 (thousands) = 1 million actual
+        // < 1000 (thousands) = less than 1 million actual
+        if (num >= 1000000) {
+            return (num / 1000000).toFixed(2) + " billion";
         } else if (num >= 1000) {
-            return (num / 1000).toFixed(2) + " thousand";
+            return (num / 1000).toFixed(2) + " million";
+        } else {
+            return (num).toFixed(2) + " thousand";
         }
-        return num.toString();
     },
 
     /**
