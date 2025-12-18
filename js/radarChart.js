@@ -21,8 +21,11 @@ const RadarChartViz = {
         // Calculate dimensions
         const containerNode = container.node();
         const rect = containerNode.getBoundingClientRect();
-        this.width = Math.min(rect.width - this.margin.left - this.margin.right, 400);
-        this.height = Math.min(400 - this.margin.top - this.margin.bottom, 400);
+        const totalWidth = rect.width;
+        const totalHeight = rect.height > 0 ? rect.height : 500; // Use container height or fallback
+        
+        this.width = totalWidth - this.margin.left - this.margin.right;
+        this.height = totalHeight - this.margin.top - this.margin.bottom;
         this.radius = Math.min(this.width, this.height) / 2;
         
         // Clear existing
@@ -30,8 +33,10 @@ const RadarChartViz = {
         
         // Create SVG
         this.svg = container
-            .attr('width', this.width + this.margin.left + this.margin.right)
-            .attr('height', this.height + this.margin.top + this.margin.bottom)
+            .attr('width', '100%')
+            .attr('height', '100%')
+            .attr('viewBox', `0 0 ${totalWidth} ${totalHeight}`)
+            .attr('preserveAspectRatio', 'xMidYMid meet')
             .append('g')
             .attr('transform', `translate(${this.width/2 + this.margin.left},${this.height/2 + this.margin.top})`);
         

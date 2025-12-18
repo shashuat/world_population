@@ -16,7 +16,46 @@ const AnimationViz = {
         isPlaying: false,
         animationInterval: null,
         animationSpeed: 1000,
-        selectedCountries: new Set()
+        selectedCountries: new Set(),
+        xAxis: 'fertility',
+        yAxis: 'lifeExpectancy'
+    },
+    
+    // Major countries to always label
+    majorCountries: [
+        'China', 'India', 
+        'Brazil', 'Nigeria',
+        'Japan', 'Ethiopia', 
+        'Germany',  'France', 'Italy'
+    ],
+    
+    // Available metrics for axes
+    metrics: {
+        fertility: {
+            label: 'Fertility Rate (births per woman)',
+            accessor: d => d.fertility,
+            format: d3.format('.2f')
+        },
+        lifeExpectancy: {
+            label: 'Life Expectancy (years)',
+            accessor: d => d.lifeExpectancy,
+            format: d3.format('.1f')
+        },
+        population: {
+            label: 'Population (millions)',
+            accessor: d => d.population / 1000000,
+            format: d3.format(',.1f')
+        },
+        birthRate: {
+            label: 'Birth Rate (per 1000)',
+            accessor: d => d.birthRate || d.fertility * 15,
+            format: d3.format('.1f')
+        },
+        deathRate: {
+            label: 'Death Rate (per 1000)',
+            accessor: d => d.deathRate || (1000 / d.lifeExpectancy) * 13,
+            format: d3.format('.1f')
+        }
     },
     
     // Color scheme
@@ -61,17 +100,9 @@ const AnimationViz = {
         const animationData = DataLoader.processAnimationData();
         this.data = animationData;
         
-        // Create scales
-        this.xScale = d3.scaleLinear()
-            .domain([0, d3.max(animationData, d => d.fertility) * 1.1])
-            .range([0, this.width])
-            .nice();
-        
-        this.yScale = d3.scaleLinear()
-            .domain([d3.min(animationData, d => d.lifeExpectancy) * 0.9,
-                     d3.max(animationData, d => d.lifeExpectancy) * 1.05])
-            .range([this.height, 0])
-            .nice();
+        // Create scales (will be updated by updateScales)
+        this.xScale = d3.scaleLinear().range([0, this.width]);
+        this.yScale = d3.scaleLinear().range([this.height, 0]);
         
         this.sizeScale = d3.scaleSqrt()
             .domain([0, d3.max(animationData, d => d.population)])
@@ -80,6 +111,9 @@ const AnimationViz = {
         this.colorScale = d3.scaleOrdinal()
             .domain(Object.keys(this.regionColors))
             .range(Object.values(this.regionColors));
+        
+        // Update scales with initial axes
+        this.updateScales();
         
         // Draw static elements
         this.drawAxes();
@@ -98,50 +132,77 @@ const AnimationViz = {
     },
     
     /**
+     * Update scales based on selected axes
+     */
+    updateScales() {
+        const xMetric = this.metrics[this.state.xAxis];
+        const yMetric = this.metrics[this.state.yAxis];
+        
+        const xValues = this.data.map(xMetric.accessor);
+        const yValues = this.data.map(yMetric.accessor);
+        
+        this.xScale.domain([0, d3.max(xValues) * 1.1]).nice();
+        this.yScale.domain([d3.min(yValues) * 0.9, d3.max(yValues) * 1.05]).nice();
+    },
+    
+    /**
      * Draw axes and gridlines
      */
     drawAxes() {
+        // Create containers for dynamic elements
+        this.svg.append('g').attr('class', 'grid-x');
+        this.svg.append('g').attr('class', 'grid-y');
+        this.svg.append('g').attr('class', 'axis-x');
+        this.svg.append('g').attr('class', 'axis-y');
+        this.svg.append('text').attr('class', 'axis-label-x');
+        this.svg.append('text').attr('class', 'axis-label-y');
+        
+        // Initial draw
+        this.redrawAxes();
+    },
+    
+    /**
+     * Redraw axes with current selections
+     */
+    redrawAxes() {
+        const xMetric = this.metrics[this.state.xAxis];
+        const yMetric = this.metrics[this.state.yAxis];
+        
         // Gridlines
-        this.svg.append('g')
-            .attr('class', 'grid')
+        this.svg.select('.grid-x')
             .attr('transform', `translate(0,${this.height})`)
             .call(d3.axisBottom(this.xScale)
                 .tickSize(-this.height)
                 .tickFormat('')
                 .ticks(10));
         
-        this.svg.append('g')
-            .attr('class', 'grid')
+        this.svg.select('.grid-y')
             .call(d3.axisLeft(this.yScale)
                 .tickSize(-this.width)
                 .tickFormat('')
                 .ticks(10));
         
         // Axes
-        this.svg.append('g')
-            .attr('class', 'axis')
+        this.svg.select('.axis-x')
             .attr('transform', `translate(0,${this.height})`)
             .call(d3.axisBottom(this.xScale).ticks(10));
         
-        this.svg.append('g')
-            .attr('class', 'axis')
+        this.svg.select('.axis-y')
             .call(d3.axisLeft(this.yScale).ticks(10));
         
         // Axis labels
-        this.svg.append('text')
-            .attr('class', 'axis-label')
+        this.svg.select('.axis-label-x')
             .attr('text-anchor', 'middle')
             .attr('x', this.width / 2)
             .attr('y', this.height + 45)
-            .text('Total Fertility Rate (births per woman)');
+            .text(xMetric.label);
         
-        this.svg.append('text')
-            .attr('class', 'axis-label')
+        this.svg.select('.axis-label-y')
             .attr('text-anchor', 'middle')
             .attr('transform', 'rotate(-90)')
             .attr('x', -this.height / 2)
             .attr('y', -55)
-            .text('Life Expectancy at Birth (years)');
+            .text(yMetric.label);
     },
     
     /**
@@ -183,6 +244,31 @@ const AnimationViz = {
     setupControls() {
         const self = this;
         
+        // Create axis selection dropdowns if they don't exist
+        this.createAxisControls();
+        
+        // X-axis selector
+        const xAxisSelect = document.getElementById('anim-x-axis');
+        if (xAxisSelect) {
+            xAxisSelect.addEventListener('change', (e) => {
+                self.state.xAxis = e.target.value;
+                self.updateScales();
+                self.redrawAxes();
+                self.update(self.state.currentYear);
+            });
+        }
+        
+        // Y-axis selector
+        const yAxisSelect = document.getElementById('anim-y-axis');
+        if (yAxisSelect) {
+            yAxisSelect.addEventListener('change', (e) => {
+                self.state.yAxis = e.target.value;
+                self.updateScales();
+                self.redrawAxes();
+                self.update(self.state.currentYear);
+            });
+        }
+        
         // Play button
         document.getElementById('anim-play-btn').addEventListener('click', () => {
             self.play();
@@ -216,6 +302,43 @@ const AnimationViz = {
             });
         });
     },
+    
+    /**
+     * Create axis selection controls
+     */
+    createAxisControls() {
+        const controlsContainer = document.querySelector('#animation-view .animation-controls');
+        if (!controlsContainer || document.getElementById('anim-x-axis')) return;
+        
+        const axisControls = document.createElement('div');
+        axisControls.className = 'axis-controls';
+        axisControls.style.display = 'flex';
+        axisControls.style.gap = '20px';
+        axisControls.style.alignItems = 'center';
+        axisControls.style.marginBottom = '15px';
+        axisControls.style.paddingBottom = '15px';
+        axisControls.style.borderBottom = '1px solid #e0e0e0';
+        axisControls.innerHTML = `
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <label for="anim-x-axis" style="font-size: 14px; font-weight: 500; color: #333;">X-Axis:</label>
+                <select id="anim-x-axis" style="padding: 6px 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 13px; min-width: 200px;">
+                    ${Object.entries(this.metrics).map(([key, metric]) => 
+                        `<option value="${key}" ${key === 'fertility' ? 'selected' : ''}>${metric.label}</option>`
+                    ).join('')}
+                </select>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <label for="anim-y-axis" style="font-size: 14px; font-weight: 500; color: #333;">Y-Axis:</label>
+                <select id="anim-y-axis" style="padding: 6px 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 13px; min-width: 200px;">
+                    ${Object.entries(this.metrics).map(([key, metric]) => 
+                        `<option value="${key}" ${key === 'lifeExpectancy' ? 'selected' : ''}>${metric.label}</option>`
+                    ).join('')}
+                </select>
+            </div>
+        `;
+        
+        controlsContainer.insertBefore(axisControls, controlsContainer.firstChild);
+    },
     /**
  * Update visualization for given year
  */
@@ -231,6 +354,10 @@ update(year) {
     const yearData = this.data.filter(d => 
         d.year === year && d.region !== 'Unknown');
     
+    // Get current metric accessors
+    const xMetric = this.metrics[this.state.xAxis];
+    const yMetric = this.metrics[this.state.yAxis];
+    
     // Tooltip
     const tooltip = d3.select('#tooltip');
     const self = this;
@@ -243,8 +370,8 @@ update(year) {
     circles.enter()
         .append('circle')
         .attr('class', 'circle')
-        .attr('cx', d => this.xScale(d.fertility))
-        .attr('cy', d => this.yScale(d.lifeExpectancy))
+        .attr('cx', d => this.xScale(xMetric.accessor(d)))
+        .attr('cy', d => this.yScale(yMetric.accessor(d)))
         .attr('r', 0)
         .attr('fill', d => this.colorScale(d.region))
         .attr('fill-opacity', 0.7)
@@ -260,10 +387,16 @@ update(year) {
                 .attr('stroke-width', 2)
                 .attr('fill-opacity', 1);
             
+            // Get formatted values for current axes
+            const xValue = xMetric.format(xMetric.accessor(d));
+            const yValue = yMetric.format(yMetric.accessor(d));
+            const xLabel = xMetric.label.split('(')[0].trim();
+            const yLabel = yMetric.label.split('(')[0].trim();
+            
             // Show Tooltip with Flag and Name
             tooltip
                 .style('display', 'block')
-                .style('opacity', 1) // Critical fix: ensure opacity is 1
+                .style('opacity', 1)
                 .style('left', d3.event.pageX + 15 + 'px')
                 .style('top', d3.event.pageY - 15 + 'px')
                 .html(`
@@ -273,13 +406,13 @@ update(year) {
                     </div>
                     <div style="font-size: 13px; line-height: 1.5;">
                         <div style="display: flex; justify-content: space-between; gap: 20px;">
-                            <span>Fertility:</span> <strong>${d.fertility.toFixed(2)}</strong>
+                            <span>${xLabel}:</span> <strong>${xValue}</strong>
                         </div>
                         <div style="display: flex; justify-content: space-between; gap: 20px;">
-                            <span>Life Exp:</span> <strong>${d.lifeExpectancy.toFixed(1)}y</strong>
+                            <span>${yLabel}:</span> <strong>${yValue}</strong>
                         </div>
                         <div style="display: flex; justify-content: space-between; gap: 20px;">
-                            <span>Pop:</span> <strong>${d3.format(',.1f')(d.population/1000)}M</strong>
+                            <span>Population:</span> <strong>${d3.format(',.1f')(d.population/1000000)}M</strong>
                         </div>
                     </div>
                 `);
@@ -305,8 +438,8 @@ update(year) {
         .merge(circles)
         .transition()
         .duration(this.state.animationSpeed * 0.8)
-        .attr('cx', d => this.xScale(d.fertility))
-        .attr('cy', d => this.yScale(d.lifeExpectancy))
+        .attr('cx', d => this.xScale(xMetric.accessor(d)))
+        .attr('cy', d => this.yScale(yMetric.accessor(d)))
         .attr('r', d => this.sizeScale(d.population));
     
     // Exit
@@ -314,6 +447,37 @@ update(year) {
         .transition()
         .duration(this.state.animationSpeed * 0.3)
         .attr('r', 0)
+        .remove();
+    
+    // Update country labels for major countries
+    const labelData = yearData.filter(d => this.majorCountries.includes(d.country));
+    
+    const labels = this.svg.selectAll('.country-label')
+        .data(labelData, d => d.country);
+    
+    labels.enter()
+        .append('text')
+        .attr('class', 'country-label')
+        .attr('x', d => this.xScale(xMetric.accessor(d)) + 8)
+        .attr('y', d => this.yScale(yMetric.accessor(d)) + 4)
+        .attr('font-size', '11px')
+        .attr('font-weight', '600')
+        .attr('fill', '#333')
+        .attr('opacity', 0)
+        .attr('pointer-events', 'none')
+        .style('text-shadow', '0 0 3px white, 0 0 3px white, 0 0 3px white')
+        .text(d => d.country)
+        .merge(labels)
+        .transition()
+        .duration(this.state.animationSpeed * 0.8)
+        .attr('x', d => this.xScale(xMetric.accessor(d)) + 8)
+        .attr('y', d => this.yScale(yMetric.accessor(d)) + 4)
+        .attr('opacity', 0.8);
+    
+    labels.exit()
+        .transition()
+        .duration(this.state.animationSpeed * 0.3)
+        .attr('opacity', 0)
         .remove();
 },
     
