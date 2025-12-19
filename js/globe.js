@@ -186,6 +186,7 @@ const GlobeViz = {
         this.configureZoom(initialScale);
         
         // Draw countries
+        const self = this;
         globeMap.append('g')
             .attr('class', 'countries')
             .selectAll('path')
@@ -195,8 +196,9 @@ const GlobeViz = {
             .attr('fill', country => this.getColor(country, contextData, colorPalette))
             .attr('stroke', '#fff')
             .attr('stroke-width', 0.5)
-            .on('mouseover', (country) => this.onCountryMouseOver(country, contextData))
-            .on('mouseout', () => this.onCountryMouseOut())
+            .on('mouseover', function(country) { self.onCountryMouseOver(this, country, contextData); })
+            .on('mousemove', function() { self.onCountryMouseMove(); })
+            .on('mouseout', function() { self.onCountryMouseOut(this); })
             .on('click', (country) => this.onCountryClick(country));
         
         // Draw legend
@@ -335,9 +337,9 @@ const GlobeViz = {
     /**
      * Handle country mouse over
      */
-    onCountryMouseOver(country, contextData) {
+    onCountryMouseOver(element, country, contextData) {
         // Highlight country
-        d3.select(d3.event.target)
+        d3.select(element)
             .style('opacity', 0.7)
             .style('stroke', '#333')
             .style('stroke-width', '1.5px');
@@ -351,71 +353,151 @@ const GlobeViz = {
         
         if (countryData) {
             const mode = this.appState.currentVisualization;
+            let modeLabel = '';
             let modeSpecific = '';
             
-            // Add mode-specific data
+            // Add mode-specific data with descriptive labels
             switch(mode) {
                 case 'population':
-                    modeSpecific = `<div><strong>Population:</strong> ${countryData.population}</div>`;
+                    modeLabel = 'Population';
+                    modeSpecific = `
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Total Population:</span> <strong>${countryData.population}</strong>
+                        </div>`;
                     break;
                 case 'density':
-                    modeSpecific = `<div><strong>Density:</strong> ${countryData.population_density} per km²</div>`;
+                    modeLabel = 'Population Density';
+                    modeSpecific = `
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Density:</span> <strong>${countryData.population_density} per km²</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Population:</span> <strong>${countryData.population}</strong>
+                        </div>`;
                     break;
                 case 'sex-ratio':
-                    modeSpecific = `<div><strong>Sex Ratio:</strong> ${countryData.sex_ratio}</div>`;
+                    modeLabel = 'Sex Ratio';
+                    modeSpecific = `
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Sex Ratio:</span> <strong>${countryData.sex_ratio}</strong>
+                        </div>
+                        <div style="font-size: 11px; color: #ccc; margin-top: 4px;">Males per 100 females</div>`;
                     break;
                 case 'median-age':
-                    modeSpecific = `<div><strong>Median Age:</strong> ${countryData.median_age} years</div>`;
+                    modeLabel = 'Median Age';
+                    modeSpecific = `
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Median Age:</span> <strong>${countryData.median_age} years</strong>
+                        </div>
+                        <div style="font-size: 11px; color: #ccc; margin-top: 4px;">Half the population is older, half younger</div>`;
                     break;
                 case 'demographic-transition':
-                    modeSpecific = `<div><strong>Birth Rate:</strong> ${countryData.birth_rate} per 1,000</div>
-                                   <div><strong>Death Rate:</strong> ${countryData.death_rate} per 1,000</div>`;
+                    modeLabel = 'Demographic Transition';
+                    modeSpecific = `
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Birth Rate:</span> <strong>${countryData.birth_rate} per 1,000</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Death Rate:</span> <strong>${countryData.death_rate} per 1,000</strong>
+                        </div>`;
                     break;
                 case 'growth-drivers':
-                    modeSpecific = `<div><strong>Natural Change:</strong> ${countryData.natural_change} per 1,000</div>
-                                   <div><strong>Migration Rate:</strong> ${countryData.migration_rate} per 1,000</div>`;
+                    modeLabel = 'Population Growth Drivers';
+                    modeSpecific = `
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Natural Change:</span> <strong>${countryData.natural_change} per 1,000</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Migration Rate:</span> <strong>${countryData.migration_rate} per 1,000</strong>
+                        </div>`;
                     break;
                 case 'longevity-gap':
-                    modeSpecific = `<div><strong>Life Expectancy:</strong> ${countryData.life_expectancy} years</div>`;
+                    modeLabel = 'Life Expectancy';
+                    modeSpecific = `
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Life Expectancy:</span> <strong>${countryData.life_expectancy} years</strong>
+                        </div>`;
                     break;
                 case 'fertility-health':
-                    modeSpecific = `<div><strong>Fertility Rate:</strong> ${countryData.fertility_rate} births/woman</div>`;
+                    modeLabel = 'Fertility & Health';
+                    modeSpecific = `
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Fertility Rate:</span> <strong>${countryData.fertility_rate} births/woman</strong>
+                        </div>`;
                     break;
                 case 'healthcare-quality':
-                    modeSpecific = `<div><strong>Infant Mortality:</strong> ${countryData.infant_mortality} per 1,000</div>`;
+                    modeLabel = 'Healthcare Quality';
+                    modeSpecific = `
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Infant Mortality:</span> <strong>${countryData.infant_mortality} per 1,000</strong>
+                        </div>`;
                     break;
                 case 'gender-gap':
+                    modeLabel = 'Life Expectancy Gender Gap';
                     const femaleLE = countryData.life_expectancy_female_number || 0;
                     const maleLE = countryData.life_expectancy_male_number || 0;
                     const gap = femaleLE - maleLE;
-                    modeSpecific = `<div><strong>Female Life Expectancy:</strong> ${femaleLE.toFixed(1)} years</div>
-                                   <div><strong>Male Life Expectancy:</strong> ${maleLE.toFixed(1)} years</div>
-                                   <div><strong>Gender Gap:</strong> ${gap.toFixed(1)} years</div>`;
+                    const gapDescription = gap > 0 ? 
+                        `Females live ${gap.toFixed(1)} years longer` : 
+                        `Males live ${Math.abs(gap).toFixed(1)} years longer`;
+                    modeSpecific = `
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Female:</span> <strong>${femaleLE.toFixed(1)} years</strong>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; gap: 20px;">
+                            <span>Male:</span> <strong>${maleLE.toFixed(1)} years</strong>
+                        </div>
+                        <div style="background: ${gap > 0 ? 'rgba(255, 243, 205, 0.2)' : 'rgba(209, 236, 241, 0.2)'}; padding: 6px; margin-top: 6px; border-radius: 3px; border-left: 3px solid ${gap > 0 ? '#ff9800' : '#03a9f4'};">
+                            <strong>Gap:</strong> ${gapDescription}
+                        </div>`;
                     break;
             }
             
+            // Check if country flag exists
+            const flagPath = `img/flags/${countryCode}.png`;
+            
             tooltip
                 .style('display', 'block')
-                .style('left', d3.event.pageX + 'px')
-                .style('top', d3.event.pageY + 'px')
+                .style('opacity', 1)
+                .style('left', (d3.event.pageX + 15) + 'px')
+                .style('top', (d3.event.pageY - 10) + 'px')
                 .html(`
-                    <div style="font-weight: 600; margin-bottom: 4px;">${countryName}</div>
-                    ${modeSpecific}
-                    <div style="margin-top: 4px; font-size: 11px; color: #666;">Population: ${countryData.population}</div>
+                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 6px 10px; margin: -10px -12px 10px -12px; border-radius: 6px 6px 0 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">
+                        ${modeLabel}
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid #555;">
+                        <img src="${flagPath}" alt="" onerror="this.style.display='none'" style="width: 28px; height: 20px; border-radius: 2px; object-fit: cover; box-shadow: 0 1px 3px rgba(0,0,0,0.3);">
+                        <div style="font-weight: 700; font-size: 15px; color: #fff;">${countryName}</div>
+                    </div>
+                    <div style="font-size: 13px; line-height: 1.6;">
+                        ${modeSpecific}
+                    </div>
                 `);
         }
     },
     
     /**
+     * Handle country mouse move
+     */
+    onCountryMouseMove() {
+        const tooltip = d3.select('#tooltip');
+        tooltip
+            .style('left', (d3.event.pageX + 15) + 'px')
+            .style('top', (d3.event.pageY - 10) + 'px');
+    },
+    
+    /**
      * Handle country mouse out
      */
-    onCountryMouseOut() {
-        d3.select(d3.event.target)
+    onCountryMouseOut(element) {
+        d3.select(element)
             .style('opacity', 1)
             .style('stroke', '#fff')
             .style('stroke-width', '0.5px');
         
-        d3.select('#tooltip').style('display', 'none');
+        d3.select('#tooltip')
+            .style('opacity', 0)
+            .style('display', 'none');
     },
     
     /**
